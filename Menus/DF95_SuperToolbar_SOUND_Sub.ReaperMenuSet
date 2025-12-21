@@ -1,0 +1,17 @@
+# DF95 SuperToolbar SOUND Sub
+Item01=Custom: DF95 – FX Bus Selector
+	SCRIPT: Scripts/IfeelLikeSnow/DF95/DF95_FXBus_Selector.lua
+Item02=Custom: DF95 – FX Bus Chains GUI
+	SCRIPT: Scripts/IfeelLikeSnow/DF95/DF95_FXBus_Chains_ImGui.lua
+Item03=Custom: DF95 – Master Chains GUI
+	SCRIPT: Scripts/IfeelLikeSnow/DF95/DF95_Master_Chains_ImGui.lua
+Item04=Custom: DF95 – Coloring Bus
+	SCRIPT: Scripts/IfeelLikeSnow/DF95/DF95_Menu_Coloring_Dropdown.lua
+Item05=Custom: DF95 – GainMatch A/B
+	SCRIPT: Scripts/IfeelLikeSnow/DF95/DF95_GainMatch_AB.lua
+Item06=Custom: DF95 – BiasTools Toolbar Show
+	SCRIPT: Scripts/IfeelLikeSnow/DF95/Tools/DF95_Toolbar_BiasTools_Show.lua
+Item07=Custom: DF95 – ColorMaster Toolbar Show
+	SCRIPT: Scripts/IfeelLikeSnow/DF95/Tools/DF95_Toolbar_ColorMaster_Audition_SWS_Show.lua
+Item08=Custom: DF95 – SampleDB Speech/Loop Layers (V198)
+	SCRIPT: Scripts/IfeelLikeSnow/DF95/DF95_V198_SampleDB_SpeechLoopLayers.lua

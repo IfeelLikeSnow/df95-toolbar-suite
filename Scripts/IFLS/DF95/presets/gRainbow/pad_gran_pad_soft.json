@@ -1,0 +1,16 @@
+{
+  "version": 1,
+  "synth_id": "grainbow",
+  "role": "pad",
+  "variant": "gran_pad_soft",
+  "description": "gRainbow pad gran pad soft",
+  "params": {
+    "master.grain_rate": 0.25,
+    "master.grain_duration": 0.7,
+    "master.pitch_spray": 0.2,
+    "master.position_spray": 0.5,
+    "master.pan_spray": 0.5,
+    "master.octave_adjust": 0.4,
+    "master.gain": 0.6
+  }
+}

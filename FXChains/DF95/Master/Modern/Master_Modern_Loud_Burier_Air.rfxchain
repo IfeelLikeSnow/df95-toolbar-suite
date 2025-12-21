@@ -1,0 +1,8 @@
+// META:category=master
+// META:style=modern
+// META:lufs_target=-9
+// META:ceiling=-0.3
+// META:preferred_subs=ao:burier=Burier; aw:air=Air
+<VST "VST: ReaEQ (Cockos)" reacomp.dll>
+<VST "VST: ReaComp (Cockos)" reacomp.dll>
+<VST3 "VST3: ReaLimit (Cockos)" realimit.vst3>

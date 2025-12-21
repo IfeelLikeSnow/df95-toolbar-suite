@@ -1,0 +1,26 @@
+<REAPER_FXCHAIN
+SHOW 0
+LASTSEL 0
+DOCKED 0
+
+<FX
+BYPASS 0 0 0
+VST "DF95_META" "Tape Cassette 2 (Caelum Audio)" 0
+>
+
+<FX
+BYPASS 0 0 0
+VST "DF95_META" "ValhallaSupermassive (Valhalla DSP)" 0
+>
+
+<FX
+BYPASS 0 0 0
+VST "DF95_META" "bx_refinement V3 (Plugin Alliance)" 0
+>
+
+<FX
+BYPASS 0 0 0
+VST "DF95_META" "kHs Stereo (Kilohearts)" 0
+>
+
+>

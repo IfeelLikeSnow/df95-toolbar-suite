@@ -1,0 +1,8 @@
+// META:category=master
+// META:style=boc_warm
+// META:lufs_target=-15
+// META:ceiling=-0.6
+// META:preferred_subs=aw:tape=ToTape7; dither=DitherFloat
+<VST "VST: ReaEQ (Cockos)" reacomp.dll>
+<VST "VST: ReaComp (Cockos)" reacomp.dll>
+<VST3 "VST3: ReaLimit (Cockos)" realimit.vst3>

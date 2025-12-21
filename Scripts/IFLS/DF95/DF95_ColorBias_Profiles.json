@@ -1,0 +1,57 @@
+{
+  "None": {
+    "eq": {},
+    "saturation": "",
+    "description": "Neutral / Flat"
+  },
+  "Autechre \u2013 FM-Metal": {
+    "eq": {
+      "200": -1.0,
+      "7000": 2.0
+    },
+    "saturation": "VST3: Pressure4 (Airwindows)",
+    "description": "Metallic transients, slightly scooped low-mids, excited presence.",
+    "category": "Artists"
+  },
+  "Boards of Canada \u2013 Sunny Tape": {
+    "eq": {
+      "500": 1.5,
+      "14000": -2.0
+    },
+    "saturation": "VST3: ToTape8 (Airwindows)",
+    "description": "Warm mid emphasis, gentle high roll-off, tape-like softness.",
+    "category": "Artists"
+  },
+  "Aphex Twin \u2013 Drukqs Perc": {
+    "eq": {
+      "250": -0.5,
+      "12000": 1.0
+    },
+    "saturation": "VST3: PurestDrive (Airwindows)",
+    "description": "Punchy low-end control, refined top-end, clean saturation.",
+    "category": "Artists"
+  },
+  "Plaid / Arovane \u2013 Liquid Glass": {
+    "eq": {
+      "5000": 1.0
+    },
+    "saturation": "VST3: PurestAir (Airwindows)",
+    "description": "Subtle clarity lift, transparent hue, stereo-friendly.",
+    "category": "Artists"
+  },
+  "Squarepusher / \u03bc\u2011Ziq \u2013 Jitter Crush": {
+    "eq": {
+      "60": -1.0,
+      "3000": 1.0
+    },
+    "saturation": "VST3: Pressure4 (Airwindows)",
+    "description": "Energetic, edgy presence; tamed subbass for speed.",
+    "category": "Artists"
+  },
+  "DF95 \u2013 Field Neutral": {
+    "eq": {},
+    "saturation": "",
+    "description": "Clean, natural tone for field recordings.",
+    "category": "Neutral"
+  }
+}

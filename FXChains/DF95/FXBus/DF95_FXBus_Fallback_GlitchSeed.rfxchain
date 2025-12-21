@@ -1,0 +1,15 @@
+<REAPER_FXCHAIN
+SHOW 0
+LASTSEL 0
+DOCKED 0
+<FX
+BYPASS 0 0 0
+VST "VST: JS: Distortion/bitcrusher" bitcrush 0
+WET 1
+>
+<FX
+BYPASS 0 0 0
+VST "VST: ReaDelay (Cockos)" readelay.dll 0
+WET 1
+>
+>

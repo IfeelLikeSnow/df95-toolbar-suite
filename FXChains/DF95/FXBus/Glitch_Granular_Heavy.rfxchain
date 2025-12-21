@@ -1,0 +1,8 @@
+// META:category=fxbus
+// META:style=idm,glitch
+// META:intensity=heavy
+// META:lufs_target=-18
+<VST "VST: ReaEQ (Cockos)" reacomp.dll>
+<JS: time adjustment/time stretcher>
+<JS: distortion/bitcrush>
+<VST "VST: ReaComp (Cockos)" reacomp.dll>

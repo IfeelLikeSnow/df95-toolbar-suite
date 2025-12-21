@@ -1,0 +1,19 @@
+{
+  "version": 1,
+  "synth_id": "vital",
+  "role": "pluck",
+  "variant": "idm_pluck_sharp",
+  "description": "Vital pluck idm pluck sharp",
+  "params": {
+    "amp_env.attack": 0.0,
+    "amp_env.decay": 0.14,
+    "amp_env.sustain": 0.1,
+    "amp_env.release": 0.2,
+    "filter.cutoff": 0.75,
+    "filter.resonance": 0.22,
+    "macros.1": 0.8,
+    "macros.2": 0.55,
+    "macros.3": 0.55,
+    "macros.4": 0.3
+  }
+}

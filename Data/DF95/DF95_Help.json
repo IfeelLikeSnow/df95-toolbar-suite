@@ -1,0 +1,7 @@
+{
+  "tooltips": {
+    "humanize_artistbias": "Humanize: leichte Timing-/Fade-Variationen, gewichtet nach Artist/Style; LUFS-Deltas auf \u00b11.3 geklemmt.",
+    "slicing_weighted": "Slicing (Weighted): w\u00e4hlt Presets anhand deiner Artist/Style-Bias-Gewichte. Random (weighted) bevorzugt passende Presets.",
+    "seed_variator": "Seed Variator: Zufalls-Parameter f\u00fcr aktuelle FX-Chain. Seed wird projektweit in ExtState gespeichert und ist reproduzierbar."
+  }
+}

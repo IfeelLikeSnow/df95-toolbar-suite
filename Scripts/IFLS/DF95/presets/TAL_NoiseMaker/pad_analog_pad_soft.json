@@ -1,0 +1,15 @@
+{
+  "version": 1,
+  "synth_id": "tal_noisemaker",
+  "role": "pad",
+  "variant": "analog_pad_soft",
+  "description": "TAL NoiseMaker pad analog pad soft",
+  "params": {
+    "amp_env.attack": 0.3,
+    "amp_env.decay": 0.45,
+    "amp_env.sustain": 0.98,
+    "amp_env.release": 0.8,
+    "filter.cutoff": 0.5,
+    "filter.resonance": 0.18
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "version": 1,
+  "synth_id": "triplecheese",
+  "role": "pad",
+  "variant": "cheese_pad_soft",
+  "description": "TripleCheese pad cheese pad soft",
+  "params": {
+    "amp_env.attack": 0.25,
+    "amp_env.decay": 0.45,
+    "amp_env.sustain": 0.95,
+    "amp_env.release": 0.8
+  }
+}

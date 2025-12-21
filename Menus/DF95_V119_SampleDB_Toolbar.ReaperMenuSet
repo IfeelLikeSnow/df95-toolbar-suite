@@ -1,0 +1,28 @@
+# DF95 V119 SampleDB Toolbar
+Item01=Custom: DF95 – SampleDB: Folder scannen (ZoomF6/Fieldrec)
+	SCRIPT: Scripts/IfeelLikeSnow/DF95/DF95_V119_SampleDB_ScanFolder_ZoomF6.lua
+Item02=Custom: DF95 – SampleDB: auf UCS-Style umbenennen
+	SCRIPT: Scripts/IfeelLikeSnow/DF95/DF95_V119_SampleDB_RenameToUCSStyle.lua
+Item11=Custom: DF95 – SampleDB: Inspector V4 (AI Tags & Mapping)
+	SCRIPT: Scripts/IfeelLikeSnow/DF95/DF95_V132_SampleDB_Inspector_V4_AI_Mapping.lua
+Item12=Custom: DF95 – AI Beat & Soundscape Generator
+	SCRIPT: Scripts/IfeelLikeSnow/DF95/DF95_V133_AIBeat_Soundscape_Generator.lua
+
+Item13=Custom: DF95 – UCS Renamer
+	SCRIPT: Scripts/IfeelLikeSnow/DF95/DF95_V134_UCS_Renamer.lua
+Item14=Custom: DF95 – UCS Rename Revert Helper
+	SCRIPT: Scripts/IfeelLikeSnow/DF95/DF95_V136_UCS_RenameRevert_Helper.lua
+Item15=Custom: DF95 – SampleDB: Scan (UCS-Light Home Field)
+	SCRIPT: Scripts/IfeelLikeSnow/DF95/DF95_V137_SampleDB_ScanFolder_UCSLight_HomeField.lua
+Item16=Custom: DF95 – SampleDB: Library Analyzer (Stufe 10)
+	SCRIPT: Scripts/IfeelLikeSnow/DF95/DF95_V138_SampleDB_LibraryAnalyzer.lua
+Item17=Custom: DF95 – SampleDB: Record Planner (Stufe 11)
+	SCRIPT: Scripts/IfeelLikeSnow/DF95/DF95_V139_SampleDB_RecordPlanner.lua
+Item18=Custom: DF95 – SampleDB: Session Planner (Scenes)
+	SCRIPT: Scripts/IfeelLikeSnow/DF95/DF95_V140_SampleDB_SessionPlanner_Scenes.lua
+Item19=Custom: DF95 – SampleDB: Texture Presets (UCS-Light)
+	SCRIPT: Scripts/IfeelLikeSnow/DF95/DF95_V141_SampleDB_TexturePresets_UCSLight.lua
+Item20=Custom: DF95 – SampleDB: Pack Exporter
+	SCRIPT: Scripts/IfeelLikeSnow/DF95/DF95_V142_SampleDB_PackExporter.lua
+Item21=Custom: DF95 – SampleDB: PolyWAV Toolbox V2
+	SCRIPT: Scripts/IfeelLikeSnow/DF95/DF95_V147_PolyWAV_Toolbox_V2.lua
