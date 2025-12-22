@@ -1317,12 +1317,12 @@
         <source file="Scripts/IFLS/MicFX/B1.fxlist">https://raw.githubusercontent.com/IfeelLikeSnow/df95-toolbar-suite/main/Scripts/IFLS/MicFX/B1.fxlist</source>
         <source file="Scripts/IFLS/MicFX/C2.fxlist">https://raw.githubusercontent.com/IfeelLikeSnow/df95-toolbar-suite/main/Scripts/IFLS/MicFX/C2.fxlist</source>
         <source file="Scripts/IFLS/MicFX/CM300.fxlist">https://raw.githubusercontent.com/IfeelLikeSnow/df95-toolbar-suite/main/Scripts/IFLS/MicFX/CM300.fxlist</source>
-        <source file="Scripts/IFLS/MicFX/Cortado MK3.fxlist">https://raw.githubusercontent.com/IfeelLikeSnow/df95-toolbar-suite/main/Scripts/IFLS/MicFX/Cortado MK3.fxlist</source>
+        <source file="Scripts/IFLS/MicFX/Cortado MK3.fxlist">https://raw.githubusercontent.com/IfeelLikeSnow/df95-toolbar-suite/main/Scripts/IFLS/MicFX/Cortado%20MK3.fxlist</source>
         <source file="Scripts/IFLS/MicFX/Geofon.fxlist">https://raw.githubusercontent.com/IfeelLikeSnow/df95-toolbar-suite/main/Scripts/IFLS/MicFX/Geofon.fxlist</source>
-        <source file="Scripts/IFLS/MicFX/MCM Telecoil.fxlist">https://raw.githubusercontent.com/IfeelLikeSnow/df95-toolbar-suite/main/Scripts/IFLS/MicFX/MCM Telecoil.fxlist</source>
+        <source file="Scripts/IFLS/MicFX/MCM Telecoil.fxlist">https://raw.githubusercontent.com/IfeelLikeSnow/df95-toolbar-suite/main/Scripts/IFLS/MicFX/MCM%20Telecoil.fxlist</source>
         <source file="Scripts/IFLS/MicFX/MD400.fxlist">https://raw.githubusercontent.com/IfeelLikeSnow/df95-toolbar-suite/main/Scripts/IFLS/MicFX/MD400.fxlist</source>
-        <source file="Scripts/IFLS/MicFX/NTG4+.fxlist">https://raw.githubusercontent.com/IfeelLikeSnow/df95-toolbar-suite/main/Scripts/IFLS/MicFX/NTG4+.fxlist</source>
-        <source file="Scripts/IFLS/MicFX/SOMA Ether V2.fxlist">https://raw.githubusercontent.com/IfeelLikeSnow/df95-toolbar-suite/main/Scripts/IFLS/MicFX/SOMA Ether V2.fxlist</source>
+        <source file="Scripts/IFLS/MicFX/NTG4+.fxlist">https://raw.githubusercontent.com/IfeelLikeSnow/df95-toolbar-suite/main/Scripts/IFLS/MicFX/NTG4%2B.fxlist</source>
+        <source file="Scripts/IFLS/MicFX/SOMA Ether V2.fxlist">https://raw.githubusercontent.com/IfeelLikeSnow/df95-toolbar-suite/main/Scripts/IFLS/MicFX/SOMA%20Ether%20V2.fxlist</source>
         <source file="Scripts/IFLS/MicFX/TG-V35S.fxlist">https://raw.githubusercontent.com/IfeelLikeSnow/df95-toolbar-suite/main/Scripts/IFLS/MicFX/TG-V35S.fxlist</source>
         <source file="Scripts/IFLS/MicFX/XM8500.fxlist">https://raw.githubusercontent.com/IfeelLikeSnow/df95-toolbar-suite/main/Scripts/IFLS/MicFX/XM8500.fxlist</source>
         <source file="Scripts/IFLS_Diagnostics.lua">https://raw.githubusercontent.com/IfeelLikeSnow/df95-toolbar-suite/main/Scripts/IFLS_Diagnostics.lua</source>
@@ -1565,15 +1565,6 @@
         </metadata>
       <version name="1.0.0" author="IfeelLikeSnow" time="1766300833">
         <source file="Menus/DF95_AI_Toolbar.ReaperMenuSet">https://raw.githubusercontent.com/IfeelLikeSnow/df95-toolbar-suite/main/Menus/DF95_AI_Toolbar.ReaperMenuSet</source>
-        <source file="Scripts/IfeelLikeSnow/DF95/DF95_AI_ApplyFXChain_FromExtState.lua">https://raw.githubusercontent.com/IfeelLikeSnow/df95-toolbar-suite/main/Scripts/IfeelLikeSnow/DF95/DF95_AI_ApplyFXChain_FromExtState.lua</source>
-        <source file="Scripts/IfeelLikeSnow/DF95/DF95_AI_ArtistFXBrain_ImGui.lua">https://raw.githubusercontent.com/IfeelLikeSnow/df95-toolbar-suite/main/Scripts/IfeelLikeSnow/DF95/DF95_AI_ArtistFXBrain_ImGui.lua</source>
-        <source file="Scripts/IfeelLikeSnow/DF95/DF95_AI_FXChain_BatchRequest_FromSelection.lua">https://raw.githubusercontent.com/IfeelLikeSnow/df95-toolbar-suite/main/Scripts/IfeelLikeSnow/DF95/DF95_AI_FXChain_BatchRequest_FromSelection.lua</source>
-        <source file="Scripts/IfeelLikeSnow/DF95/DF95_AI_FXChain_From_AIResult.lua">https://raw.githubusercontent.com/IfeelLikeSnow/df95-toolbar-suite/main/Scripts/IfeelLikeSnow/DF95/DF95_AI_FXChain_From_AIResult.lua</source>
-        <source file="Scripts/IfeelLikeSnow/DF95/DF95_AI_FXChain_FullAuto_From_AIResult.lua">https://raw.githubusercontent.com/IfeelLikeSnow/df95-toolbar-suite/main/Scripts/IfeelLikeSnow/DF95/DF95_AI_FXChain_FullAuto_From_AIResult.lua</source>
-        <source file="Scripts/IfeelLikeSnow/DF95/DF95_AI_FXChain_FullAuto_TrackSelect.lua">https://raw.githubusercontent.com/IfeelLikeSnow/df95-toolbar-suite/main/Scripts/IfeelLikeSnow/DF95/DF95_AI_FXChain_FullAuto_TrackSelect.lua</source>
-        <source file="Scripts/IfeelLikeSnow/DF95/DF95_AI_FXMacro_Apply_From_AIResult.lua">https://raw.githubusercontent.com/IfeelLikeSnow/df95-toolbar-suite/main/Scripts/IfeelLikeSnow/DF95/DF95_AI_FXMacro_Apply_From_AIResult.lua</source>
-        <source file="Scripts/IfeelLikeSnow/DF95/DF95_FXChains_Index_Builder.lua">https://raw.githubusercontent.com/IfeelLikeSnow/df95-toolbar-suite/main/Scripts/IfeelLikeSnow/DF95/DF95_FXChains_Index_Builder.lua</source>
-        <source file="Scripts/IfeelLikeSnow/DF95/DF95_FXChains_Index_Enricher.lua">https://raw.githubusercontent.com/IfeelLikeSnow/df95-toolbar-suite/main/Scripts/IfeelLikeSnow/DF95/DF95_FXChains_Index_Enricher.lua</source>
         </version>
       </reapack>
     <reapack name="DF95_CoToolbar" type="script" desc="Toolbar/MenuSet + referenced scripts (shims included)">
@@ -1582,32 +1573,6 @@
         </metadata>
       <version name="1.0.0" author="IfeelLikeSnow" time="1766300833">
         <source file="Menus/DF95_CoToolbar.ReaperMenuSet">https://raw.githubusercontent.com/IfeelLikeSnow/df95-toolbar-suite/main/Menus/DF95_CoToolbar.ReaperMenuSet</source>
-        <source file="Scripts/IfeelLikeSnow/DF95/DF95_AutoSmokeTest_v1.lua">https://raw.githubusercontent.com/IfeelLikeSnow/df95-toolbar-suite/main/Scripts/IfeelLikeSnow/DF95/DF95_AutoSmokeTest_v1.lua</source>
-        <source file="Scripts/IfeelLikeSnow/DF95/DF95_ChainHardener_v3.lua">https://raw.githubusercontent.com/IfeelLikeSnow/df95-toolbar-suite/main/Scripts/IfeelLikeSnow/DF95/DF95_ChainHardener_v3.lua</source>
-        <source file="Scripts/IfeelLikeSnow/DF95/DF95_ChainRebuild_FromMeta.lua">https://raw.githubusercontent.com/IfeelLikeSnow/df95-toolbar-suite/main/Scripts/IfeelLikeSnow/DF95/DF95_ChainRebuild_FromMeta.lua</source>
-        <source file="Scripts/IfeelLikeSnow/DF95/DF95_Coloring_ArtistBias_Apply.lua">https://raw.githubusercontent.com/IfeelLikeSnow/df95-toolbar-suite/main/Scripts/IfeelLikeSnow/DF95/DF95_Coloring_ArtistBias_Apply.lua</source>
-        <source file="Scripts/IfeelLikeSnow/DF95/DF95_Coloring_Load_Audition.lua">https://raw.githubusercontent.com/IfeelLikeSnow/df95-toolbar-suite/main/Scripts/IfeelLikeSnow/DF95/DF95_Coloring_Load_Audition.lua</source>
-        <source file="Scripts/IfeelLikeSnow/DF95/DF95_Coloring_Load_Audition_LUFS.lua">https://raw.githubusercontent.com/IfeelLikeSnow/df95-toolbar-suite/main/Scripts/IfeelLikeSnow/DF95/DF95_Coloring_Load_Audition_LUFS.lua</source>
-        <source file="Scripts/IfeelLikeSnow/DF95/DF95_Diagnostics_RunAll.lua">https://raw.githubusercontent.com/IfeelLikeSnow/df95-toolbar-suite/main/Scripts/IfeelLikeSnow/DF95/DF95_Diagnostics_RunAll.lua</source>
-        <source file="Scripts/IfeelLikeSnow/DF95/DF95_FirstRun_Diagnostics_RunOnce.lua">https://raw.githubusercontent.com/IfeelLikeSnow/df95-toolbar-suite/main/Scripts/IfeelLikeSnow/DF95/DF95_FirstRun_Diagnostics_RunOnce.lua</source>
-        <source file="Scripts/IfeelLikeSnow/DF95/DF95_Installer_Hook_RunOnce.lua">https://raw.githubusercontent.com/IfeelLikeSnow/df95-toolbar-suite/main/Scripts/IfeelLikeSnow/DF95/DF95_Installer_Hook_RunOnce.lua</source>
-        <source file="Scripts/IfeelLikeSnow/DF95/DF95_Loudness_SWS_Analyze_Hook.lua">https://raw.githubusercontent.com/IfeelLikeSnow/df95-toolbar-suite/main/Scripts/IfeelLikeSnow/DF95/DF95_Loudness_SWS_Analyze_Hook.lua</source>
-        <source file="Scripts/IfeelLikeSnow/DF95/DF95_Menu_Coloring_Artist_Curated.lua">https://raw.githubusercontent.com/IfeelLikeSnow/df95-toolbar-suite/main/Scripts/IfeelLikeSnow/DF95/DF95_Menu_Coloring_Artist_Curated.lua</source>
-        <source file="Scripts/IfeelLikeSnow/DF95/DF95_Menu_Coloring_Artist_Dropdown.lua">https://raw.githubusercontent.com/IfeelLikeSnow/df95-toolbar-suite/main/Scripts/IfeelLikeSnow/DF95/DF95_Menu_Coloring_Artist_Dropdown.lua</source>
-        <source file="Scripts/IfeelLikeSnow/DF95/DF95_Menu_Coloring_Dropdown.lua">https://raw.githubusercontent.com/IfeelLikeSnow/df95-toolbar-suite/main/Scripts/IfeelLikeSnow/DF95/DF95_Menu_Coloring_Dropdown.lua</source>
-        <source file="Scripts/IfeelLikeSnow/DF95/DF95_Menu_Humanize_Dropdown.lua">https://raw.githubusercontent.com/IfeelLikeSnow/df95-toolbar-suite/main/Scripts/IfeelLikeSnow/DF95/DF95_Menu_Humanize_Dropdown.lua</source>
-        <source file="Scripts/IfeelLikeSnow/DF95/DF95_Menu_Slicing_Dropdown.lua">https://raw.githubusercontent.com/IfeelLikeSnow/df95-toolbar-suite/main/Scripts/IfeelLikeSnow/DF95/DF95_Menu_Slicing_Dropdown.lua</source>
-        <source file="Scripts/IfeelLikeSnow/DF95/DF95_Menu_StrictLinter.lua">https://raw.githubusercontent.com/IfeelLikeSnow/df95-toolbar-suite/main/Scripts/IfeelLikeSnow/DF95/DF95_Menu_StrictLinter.lua</source>
-        <source file="Scripts/IfeelLikeSnow/DF95/DF95_MicFX_ParamApply_v3_6.lua">https://raw.githubusercontent.com/IfeelLikeSnow/df95-toolbar-suite/main/Scripts/IfeelLikeSnow/DF95/DF95_MicFX_ParamApply_v3_6.lua</source>
-        <source file="Scripts/IfeelLikeSnow/DF95/DF95_Slicing_FadeShape_AutoFromPreset.lua">https://raw.githubusercontent.com/IfeelLikeSnow/df95-toolbar-suite/main/Scripts/IfeelLikeSnow/DF95/DF95_Slicing_FadeShape_AutoFromPreset.lua</source>
-        <source file="Scripts/IfeelLikeSnow/DF95/DF95_Slicing_FadeShape_Set_Fast.lua">https://raw.githubusercontent.com/IfeelLikeSnow/df95-toolbar-suite/main/Scripts/IfeelLikeSnow/DF95/DF95_Slicing_FadeShape_Set_Fast.lua</source>
-        <source file="Scripts/IfeelLikeSnow/DF95/DF95_Slicing_FadeShape_Set_Linear.lua">https://raw.githubusercontent.com/IfeelLikeSnow/df95-toolbar-suite/main/Scripts/IfeelLikeSnow/DF95/DF95_Slicing_FadeShape_Set_Linear.lua</source>
-        <source file="Scripts/IfeelLikeSnow/DF95/DF95_Slicing_FadeShape_Set_Slow.lua">https://raw.githubusercontent.com/IfeelLikeSnow/df95-toolbar-suite/main/Scripts/IfeelLikeSnow/DF95/DF95_Slicing_FadeShape_Set_Slow.lua</source>
-        <source file="Scripts/IfeelLikeSnow/DF95/DF95_Slicing_SmokeTest_v1.lua">https://raw.githubusercontent.com/IfeelLikeSnow/df95-toolbar-suite/main/Scripts/IfeelLikeSnow/DF95/DF95_Slicing_SmokeTest_v1.lua</source>
-        <source file="Scripts/IfeelLikeSnow/DF95/DF95_Slicing_Toggle_ZeroCross.lua">https://raw.githubusercontent.com/IfeelLikeSnow/df95-toolbar-suite/main/Scripts/IfeelLikeSnow/DF95/DF95_Slicing_Toggle_ZeroCross.lua</source>
-        <source file="Scripts/IfeelLikeSnow/DF95/DF95_Slicing_ZeroCross_PostFix.lua">https://raw.githubusercontent.com/IfeelLikeSnow/df95-toolbar-suite/main/Scripts/IfeelLikeSnow/DF95/DF95_Slicing_ZeroCross_PostFix.lua</source>
-        <source file="Scripts/IfeelLikeSnow/DF95/DF95_SmartLUFS_AutoLearn_LUFSI_v1.lua">https://raw.githubusercontent.com/IfeelLikeSnow/df95-toolbar-suite/main/Scripts/IfeelLikeSnow/DF95/DF95_SmartLUFS_AutoLearn_LUFSI_v1.lua</source>
-        <source file="Scripts/IfeelLikeSnow/DF95/DF95_SmartLUFS_AutoLearn_v3.lua">https://raw.githubusercontent.com/IfeelLikeSnow/df95-toolbar-suite/main/Scripts/IfeelLikeSnow/DF95/DF95_SmartLUFS_AutoLearn_v3.lua</source>
         </version>
       </reapack>
     <reapack name="DF95_CoToolbar_Context" type="script" desc="Toolbar/MenuSet + referenced scripts (shims included)">
@@ -1616,10 +1581,6 @@
         </metadata>
       <version name="1.0.0" author="IfeelLikeSnow" time="1766300833">
         <source file="Menus/DF95_CoToolbar_Context.ReaperMenuSet">https://raw.githubusercontent.com/IfeelLikeSnow/df95-toolbar-suite/main/Menus/DF95_CoToolbar_Context.ReaperMenuSet</source>
-        <source file="Scripts/IfeelLikeSnow/DF95/Design/DF95_FXBus_Seed.lua">https://raw.githubusercontent.com/IfeelLikeSnow/df95-toolbar-suite/main/Scripts/IfeelLikeSnow/DF95/Design/DF95_FXBus_Seed.lua</source>
-        <source file="Scripts/IfeelLikeSnow/DF95/Design/DF95_LoopBuilder.lua">https://raw.githubusercontent.com/IfeelLikeSnow/df95-toolbar-suite/main/Scripts/IfeelLikeSnow/DF95/Design/DF95_LoopBuilder.lua</source>
-        <source file="Scripts/IfeelLikeSnow/DF95/Design/DF95_Menu_Humanize_Dropdown.lua">https://raw.githubusercontent.com/IfeelLikeSnow/df95-toolbar-suite/main/Scripts/IfeelLikeSnow/DF95/Design/DF95_Menu_Humanize_Dropdown.lua</source>
-        <source file="Scripts/IfeelLikeSnow/DF95/Design/DF95_Slice_Menu.lua">https://raw.githubusercontent.com/IfeelLikeSnow/df95-toolbar-suite/main/Scripts/IfeelLikeSnow/DF95/Design/DF95_Slice_Menu.lua</source>
         </version>
       </reapack>
     <reapack name="DF95_CoToolbar_EditCreative" type="script" desc="Toolbar/MenuSet + referenced scripts (shims included)">
@@ -1628,11 +1589,6 @@
         </metadata>
       <version name="1.0.0" author="IfeelLikeSnow" time="1766300833">
         <source file="Menus/DF95_CoToolbar_EditCreative.ReaperMenuSet">https://raw.githubusercontent.com/IfeelLikeSnow/df95-toolbar-suite/main/Menus/DF95_CoToolbar_EditCreative.ReaperMenuSet</source>
-        <source file="Scripts/IfeelLikeSnow/DF95/DF95_FXBus_Seed.lua">https://raw.githubusercontent.com/IfeelLikeSnow/df95-toolbar-suite/main/Scripts/IfeelLikeSnow/DF95/DF95_FXBus_Seed.lua</source>
-        <source file="Scripts/IfeelLikeSnow/DF95/DF95_LoopBuilder.lua">https://raw.githubusercontent.com/IfeelLikeSnow/df95-toolbar-suite/main/Scripts/IfeelLikeSnow/DF95/DF95_LoopBuilder.lua</source>
-        <source file="Scripts/IfeelLikeSnow/DF95/DF95_Menu_Humanize_Dropdown.lua">https://raw.githubusercontent.com/IfeelLikeSnow/df95-toolbar-suite/main/Scripts/IfeelLikeSnow/DF95/DF95_Menu_Humanize_Dropdown.lua</source>
-        <source file="Scripts/IfeelLikeSnow/DF95/DF95_Rearrange_Align.lua">https://raw.githubusercontent.com/IfeelLikeSnow/df95-toolbar-suite/main/Scripts/IfeelLikeSnow/DF95/DF95_Rearrange_Align.lua</source>
-        <source file="Scripts/IfeelLikeSnow/DF95/DF95_Slice_Menu.lua">https://raw.githubusercontent.com/IfeelLikeSnow/df95-toolbar-suite/main/Scripts/IfeelLikeSnow/DF95/DF95_Slice_Menu.lua</source>
         </version>
       </reapack>
     <reapack name="DF95_CoToolbar_FlowErgo_Pro" type="script" desc="Toolbar/MenuSet + referenced scripts (shims included)">
@@ -1641,22 +1597,6 @@
         </metadata>
       <version name="1.0.0" author="IfeelLikeSnow" time="1766300833">
         <source file="Menus/DF95_CoToolbar_FlowErgo_Pro.ReaperMenuSet">https://raw.githubusercontent.com/IfeelLikeSnow/df95-toolbar-suite/main/Menus/DF95_CoToolbar_FlowErgo_Pro.ReaperMenuSet</source>
-        <source file="Scripts/IfeelLikeSnow/DF95/Core/DF95_Slice_Menu_Weighted.lua">https://raw.githubusercontent.com/IfeelLikeSnow/df95-toolbar-suite/main/Scripts/IfeelLikeSnow/DF95/Core/DF95_Slice_Menu_Weighted.lua</source>
-        <source file="Scripts/IfeelLikeSnow/DF95/DF95_Console7_Toggle.lua">https://raw.githubusercontent.com/IfeelLikeSnow/df95-toolbar-suite/main/Scripts/IfeelLikeSnow/DF95/DF95_Console7_Toggle.lua</source>
-        <source file="Scripts/IfeelLikeSnow/DF95/DF95_Explode_AutoBus.lua">https://raw.githubusercontent.com/IfeelLikeSnow/df95-toolbar-suite/main/Scripts/IfeelLikeSnow/DF95/DF95_Explode_AutoBus.lua</source>
-        <source file="Scripts/IfeelLikeSnow/DF95/DF95_FXBus_Seed.lua">https://raw.githubusercontent.com/IfeelLikeSnow/df95-toolbar-suite/main/Scripts/IfeelLikeSnow/DF95/DF95_FXBus_Seed.lua</source>
-        <source file="Scripts/IfeelLikeSnow/DF95/DF95_FXBus_Selector.lua">https://raw.githubusercontent.com/IfeelLikeSnow/df95-toolbar-suite/main/Scripts/IfeelLikeSnow/DF95/DF95_FXBus_Selector.lua</source>
-        <source file="Scripts/IfeelLikeSnow/DF95/DF95_FirstRun_LiveCheck.lua">https://raw.githubusercontent.com/IfeelLikeSnow/df95-toolbar-suite/main/Scripts/IfeelLikeSnow/DF95/DF95_FirstRun_LiveCheck.lua</source>
-        <source file="Scripts/IfeelLikeSnow/DF95/DF95_GainMatch_AB.lua">https://raw.githubusercontent.com/IfeelLikeSnow/df95-toolbar-suite/main/Scripts/IfeelLikeSnow/DF95/DF95_GainMatch_AB.lua</source>
-        <source file="Scripts/IfeelLikeSnow/DF95/DF95_LoopBuilder.lua">https://raw.githubusercontent.com/IfeelLikeSnow/df95-toolbar-suite/main/Scripts/IfeelLikeSnow/DF95/DF95_LoopBuilder.lua</source>
-        <source file="Scripts/IfeelLikeSnow/DF95/DF95_Menu_Coloring_Dropdown.lua">https://raw.githubusercontent.com/IfeelLikeSnow/df95-toolbar-suite/main/Scripts/IfeelLikeSnow/DF95/DF95_Menu_Coloring_Dropdown.lua</source>
-        <source file="Scripts/IfeelLikeSnow/DF95/DF95_Menu_Master_Dropdown.lua">https://raw.githubusercontent.com/IfeelLikeSnow/df95-toolbar-suite/main/Scripts/IfeelLikeSnow/DF95/DF95_Menu_Master_Dropdown.lua</source>
-        <source file="Scripts/IfeelLikeSnow/DF95/DF95_Menu_SafetyQA_Dropdown.lua">https://raw.githubusercontent.com/IfeelLikeSnow/df95-toolbar-suite/main/Scripts/IfeelLikeSnow/DF95/DF95_Menu_SafetyQA_Dropdown.lua</source>
-        <source file="Scripts/IfeelLikeSnow/DF95/DF95_Rearrange_Align.lua">https://raw.githubusercontent.com/IfeelLikeSnow/df95-toolbar-suite/main/Scripts/IfeelLikeSnow/DF95/DF95_Rearrange_Align.lua</source>
-        <source file="Scripts/IfeelLikeSnow/DF95/DF95_Validator_2_5.lua">https://raw.githubusercontent.com/IfeelLikeSnow/df95-toolbar-suite/main/Scripts/IfeelLikeSnow/DF95/DF95_Validator_2_5.lua</source>
-        <source file="Scripts/IfeelLikeSnow/DF95/Tools/DF95_MicFX_Profile_GUI.lua">https://raw.githubusercontent.com/IfeelLikeSnow/df95-toolbar-suite/main/Scripts/IfeelLikeSnow/DF95/Tools/DF95_MicFX_Profile_GUI.lua</source>
-        <source file="Scripts/IfeelLikeSnow/DF95/Tools/DF95_Slicing_AutoPipeline.lua">https://raw.githubusercontent.com/IfeelLikeSnow/df95-toolbar-suite/main/Scripts/IfeelLikeSnow/DF95/Tools/DF95_Slicing_AutoPipeline.lua</source>
-        <source file="Scripts/IfeelLikeSnow/DF95/Tools/DF95_Slicing_Browser_ImGui.lua">https://raw.githubusercontent.com/IfeelLikeSnow/df95-toolbar-suite/main/Scripts/IfeelLikeSnow/DF95/Tools/DF95_Slicing_Browser_ImGui.lua</source>
         </version>
       </reapack>
     <reapack name="DF95_EditToolbar_Arrange" type="script" desc="Toolbar/MenuSet + referenced scripts (shims included)">
@@ -1665,9 +1605,6 @@
         </metadata>
       <version name="1.0.0" author="IfeelLikeSnow" time="1766300833">
         <source file="Menus/DF95_EditToolbar_Arrange.ReaperMenuSet">https://raw.githubusercontent.com/IfeelLikeSnow/df95-toolbar-suite/main/Menus/DF95_EditToolbar_Arrange.ReaperMenuSet</source>
-        <source file="Scripts/IfeelLikeSnow/DF95/Edit/DF95_Fades_Timing_Helper.lua">https://raw.githubusercontent.com/IfeelLikeSnow/df95-toolbar-suite/main/Scripts/IfeelLikeSnow/DF95/Edit/DF95_Fades_Timing_Helper.lua</source>
-        <source file="Scripts/IfeelLikeSnow/DF95/Edit/DF95_Rearrange_Align.lua">https://raw.githubusercontent.com/IfeelLikeSnow/df95-toolbar-suite/main/Scripts/IfeelLikeSnow/DF95/Edit/DF95_Rearrange_Align.lua</source>
-        <source file="Scripts/IfeelLikeSnow/DF95/Edit/DF95_Slice_Direct.lua">https://raw.githubusercontent.com/IfeelLikeSnow/df95-toolbar-suite/main/Scripts/IfeelLikeSnow/DF95/Edit/DF95_Slice_Direct.lua</source>
         </version>
       </reapack>
     <reapack name="DF95_MainToolbar_FlowErgo" type="script" desc="Toolbar/MenuSet + referenced scripts (shims included)">
@@ -1676,14 +1613,6 @@
         </metadata>
       <version name="1.0.0" author="IfeelLikeSnow" time="1766300833">
         <source file="Menus/DF95_MainToolbar_FlowErgo.ReaperMenuSet">https://raw.githubusercontent.com/IfeelLikeSnow/df95-toolbar-suite/main/Menus/DF95_MainToolbar_FlowErgo.ReaperMenuSet</source>
-        <source file="Scripts/IfeelLikeSnow/DF95/DF95_Explode_AutoBus.lua">https://raw.githubusercontent.com/IfeelLikeSnow/df95-toolbar-suite/main/Scripts/IfeelLikeSnow/DF95/DF95_Explode_AutoBus.lua</source>
-        <source file="Scripts/IfeelLikeSnow/DF95/DF95_Export_UCS_MasterButton.lua">https://raw.githubusercontent.com/IfeelLikeSnow/df95-toolbar-suite/main/Scripts/IfeelLikeSnow/DF95/DF95_Export_UCS_MasterButton.lua</source>
-        <source file="Scripts/IfeelLikeSnow/DF95/DF95_FXBus_Seed.lua">https://raw.githubusercontent.com/IfeelLikeSnow/df95-toolbar-suite/main/Scripts/IfeelLikeSnow/DF95/DF95_FXBus_Seed.lua</source>
-        <source file="Scripts/IfeelLikeSnow/DF95/DF95_GainMatch_AB.lua">https://raw.githubusercontent.com/IfeelLikeSnow/df95-toolbar-suite/main/Scripts/IfeelLikeSnow/DF95/DF95_GainMatch_AB.lua</source>
-        <source file="Scripts/IfeelLikeSnow/DF95/DF95_MicFX_Manager.lua">https://raw.githubusercontent.com/IfeelLikeSnow/df95-toolbar-suite/main/Scripts/IfeelLikeSnow/DF95/DF95_MicFX_Manager.lua</source>
-        <source file="Scripts/IfeelLikeSnow/DF95/Tools/DF95_Menu_Coloring_Dropdown.lua">https://raw.githubusercontent.com/IfeelLikeSnow/df95-toolbar-suite/main/Scripts/IfeelLikeSnow/DF95/Tools/DF95_Menu_Coloring_Dropdown.lua</source>
-        <source file="Scripts/IfeelLikeSnow/DF95/Tools/DF95_Menu_FXBus_Dropdown.lua">https://raw.githubusercontent.com/IfeelLikeSnow/df95-toolbar-suite/main/Scripts/IfeelLikeSnow/DF95/Tools/DF95_Menu_FXBus_Dropdown.lua</source>
-        <source file="Scripts/IfeelLikeSnow/DF95/Tools/DF95_Menu_Master_Dropdown.lua">https://raw.githubusercontent.com/IfeelLikeSnow/df95-toolbar-suite/main/Scripts/IfeelLikeSnow/DF95/Tools/DF95_Menu_Master_Dropdown.lua</source>
         </version>
       </reapack>
     <reapack name="DF95_MainToolbar_FlowErgo_Hub" type="script" desc="Toolbar/MenuSet + referenced scripts (shims included)">
@@ -1692,14 +1621,6 @@
         </metadata>
       <version name="1.0.0" author="IfeelLikeSnow" time="1766300833">
         <source file="Menus/DF95_MainToolbar_FlowErgo_Hub.ReaperMenuSet">https://raw.githubusercontent.com/IfeelLikeSnow/df95-toolbar-suite/main/Menus/DF95_MainToolbar_FlowErgo_Hub.ReaperMenuSet</source>
-        <source file="Scripts/IfeelLikeSnow/DF95/DF95_Export_UCS_MasterButton.lua">https://raw.githubusercontent.com/IfeelLikeSnow/df95-toolbar-suite/main/Scripts/IfeelLikeSnow/DF95/DF95_Export_UCS_MasterButton.lua</source>
-        <source file="Scripts/IfeelLikeSnow/DF95/DF95_Menu_BiasHumanize_Hub.lua">https://raw.githubusercontent.com/IfeelLikeSnow/df95-toolbar-suite/main/Scripts/IfeelLikeSnow/DF95/DF95_Menu_BiasHumanize_Hub.lua</source>
-        <source file="Scripts/IfeelLikeSnow/DF95/DF95_Menu_BusRouting_Hub.lua">https://raw.githubusercontent.com/IfeelLikeSnow/df95-toolbar-suite/main/Scripts/IfeelLikeSnow/DF95/DF95_Menu_BusRouting_Hub.lua</source>
-        <source file="Scripts/IfeelLikeSnow/DF95/DF95_Menu_ColoringAudition_Hub.lua">https://raw.githubusercontent.com/IfeelLikeSnow/df95-toolbar-suite/main/Scripts/IfeelLikeSnow/DF95/DF95_Menu_ColoringAudition_Hub.lua</source>
-        <source file="Scripts/IfeelLikeSnow/DF95/DF95_Menu_InputLUFS_Hub.lua">https://raw.githubusercontent.com/IfeelLikeSnow/df95-toolbar-suite/main/Scripts/IfeelLikeSnow/DF95/DF95_Menu_InputLUFS_Hub.lua</source>
-        <source file="Scripts/IfeelLikeSnow/DF95/DF95_Menu_QASafety_Hub.lua">https://raw.githubusercontent.com/IfeelLikeSnow/df95-toolbar-suite/main/Scripts/IfeelLikeSnow/DF95/DF95_Menu_QASafety_Hub.lua</source>
-        <source file="Scripts/IfeelLikeSnow/DF95/DF95_Menu_SlicingEdit_Hub.lua">https://raw.githubusercontent.com/IfeelLikeSnow/df95-toolbar-suite/main/Scripts/IfeelLikeSnow/DF95/DF95_Menu_SlicingEdit_Hub.lua</source>
-        <source file="Scripts/IfeelLikeSnow/DF95/DF95_Reamp_Hub_ImGui.lua">https://raw.githubusercontent.com/IfeelLikeSnow/df95-toolbar-suite/main/Scripts/IfeelLikeSnow/DF95/DF95_Reamp_Hub_ImGui.lua</source>
         </version>
       </reapack>
     <reapack name="DF95_MainToolbar_FlowErgo_Pro" type="script" desc="Toolbar/MenuSet + referenced scripts (shims included)">
@@ -1708,32 +1629,6 @@
         </metadata>
       <version name="1.0.0" author="IfeelLikeSnow" time="1766300833">
         <source file="Menus/DF95_MainToolbar_FlowErgo_Pro.ReaperMenuSet">https://raw.githubusercontent.com/IfeelLikeSnow/df95-toolbar-suite/main/Menus/DF95_MainToolbar_FlowErgo_Pro.ReaperMenuSet</source>
-        <source file="Scripts/IfeelLikeSnow/DF95/Core/DF95_Menu_Coloring_Dropdown_v2b.lua">https://raw.githubusercontent.com/IfeelLikeSnow/df95-toolbar-suite/main/Scripts/IfeelLikeSnow/DF95/Core/DF95_Menu_Coloring_Dropdown_v2b.lua</source>
-        <source file="Scripts/IfeelLikeSnow/DF95/Core/DF95_Slice_Menu_Weighted.lua">https://raw.githubusercontent.com/IfeelLikeSnow/df95-toolbar-suite/main/Scripts/IfeelLikeSnow/DF95/Core/DF95_Slice_Menu_Weighted.lua</source>
-        <source file="Scripts/IfeelLikeSnow/DF95/DF95_AutoColor_Tracks_ByRole.lua">https://raw.githubusercontent.com/IfeelLikeSnow/df95-toolbar-suite/main/Scripts/IfeelLikeSnow/DF95/DF95_AutoColor_Tracks_ByRole.lua</source>
-        <source file="Scripts/IfeelLikeSnow/DF95/DF95_ColoringBus_Selector.lua">https://raw.githubusercontent.com/IfeelLikeSnow/df95-toolbar-suite/main/Scripts/IfeelLikeSnow/DF95/DF95_ColoringBus_Selector.lua</source>
-        <source file="Scripts/IfeelLikeSnow/DF95/DF95_Explode_AutoBus.lua">https://raw.githubusercontent.com/IfeelLikeSnow/df95-toolbar-suite/main/Scripts/IfeelLikeSnow/DF95/DF95_Explode_AutoBus.lua</source>
-        <source file="Scripts/IfeelLikeSnow/DF95/DF95_Export_UCS_MasterButton.lua">https://raw.githubusercontent.com/IfeelLikeSnow/df95-toolbar-suite/main/Scripts/IfeelLikeSnow/DF95/DF95_Export_UCS_MasterButton.lua</source>
-        <source file="Scripts/IfeelLikeSnow/DF95/DF95_FXBus_Chains_ImGui.lua">https://raw.githubusercontent.com/IfeelLikeSnow/df95-toolbar-suite/main/Scripts/IfeelLikeSnow/DF95/DF95_FXBus_Chains_ImGui.lua</source>
-        <source file="Scripts/IfeelLikeSnow/DF95/DF95_FXBus_Seed.lua">https://raw.githubusercontent.com/IfeelLikeSnow/df95-toolbar-suite/main/Scripts/IfeelLikeSnow/DF95/DF95_FXBus_Seed.lua</source>
-        <source file="Scripts/IfeelLikeSnow/DF95/DF95_FXBus_Selector.lua">https://raw.githubusercontent.com/IfeelLikeSnow/df95-toolbar-suite/main/Scripts/IfeelLikeSnow/DF95/DF95_FXBus_Selector.lua</source>
-        <source file="Scripts/IfeelLikeSnow/DF95/DF95_GainMatch_AB.lua">https://raw.githubusercontent.com/IfeelLikeSnow/df95-toolbar-suite/main/Scripts/IfeelLikeSnow/DF95/DF95_GainMatch_AB.lua</source>
-        <source file="Scripts/IfeelLikeSnow/DF95/DF95_LoopBuilder.lua">https://raw.githubusercontent.com/IfeelLikeSnow/df95-toolbar-suite/main/Scripts/IfeelLikeSnow/DF95/DF95_LoopBuilder.lua</source>
-        <source file="Scripts/IfeelLikeSnow/DF95/DF95_MasterBus_Selector.lua">https://raw.githubusercontent.com/IfeelLikeSnow/df95-toolbar-suite/main/Scripts/IfeelLikeSnow/DF95/DF95_MasterBus_Selector.lua</source>
-        <source file="Scripts/IfeelLikeSnow/DF95/DF95_Master_Chains_ImGui.lua">https://raw.githubusercontent.com/IfeelLikeSnow/df95-toolbar-suite/main/Scripts/IfeelLikeSnow/DF95/DF95_Master_Chains_ImGui.lua</source>
-        <source file="Scripts/IfeelLikeSnow/DF95/DF95_Menu_ToolbarSwitcher_ImGui.lua">https://raw.githubusercontent.com/IfeelLikeSnow/df95-toolbar-suite/main/Scripts/IfeelLikeSnow/DF95/DF95_Menu_ToolbarSwitcher_ImGui.lua</source>
-        <source file="Scripts/IfeelLikeSnow/DF95/DF95_Reamp_Hub_ImGui.lua">https://raw.githubusercontent.com/IfeelLikeSnow/df95-toolbar-suite/main/Scripts/IfeelLikeSnow/DF95/DF95_Reamp_Hub_ImGui.lua</source>
-        <source file="Scripts/IfeelLikeSnow/DF95/DF95_Rearrange_Align.lua">https://raw.githubusercontent.com/IfeelLikeSnow/df95-toolbar-suite/main/Scripts/IfeelLikeSnow/DF95/DF95_Rearrange_Align.lua</source>
-        <source file="Scripts/IfeelLikeSnow/DF95/DF95_Reset_TrackColors_All.lua">https://raw.githubusercontent.com/IfeelLikeSnow/df95-toolbar-suite/main/Scripts/IfeelLikeSnow/DF95/DF95_Reset_TrackColors_All.lua</source>
-        <source file="Scripts/IfeelLikeSnow/DF95/Tools/DF95_BiasSnapshot_BoC_Warm.lua">https://raw.githubusercontent.com/IfeelLikeSnow/df95-toolbar-suite/main/Scripts/IfeelLikeSnow/DF95/Tools/DF95_BiasSnapshot_BoC_Warm.lua</source>
-        <source file="Scripts/IfeelLikeSnow/DF95/Tools/DF95_BiasSnapshot_Glitch.lua">https://raw.githubusercontent.com/IfeelLikeSnow/df95-toolbar-suite/main/Scripts/IfeelLikeSnow/DF95/Tools/DF95_BiasSnapshot_Glitch.lua</source>
-        <source file="Scripts/IfeelLikeSnow/DF95/Tools/DF95_BiasSnapshot_IDM.lua">https://raw.githubusercontent.com/IfeelLikeSnow/df95-toolbar-suite/main/Scripts/IfeelLikeSnow/DF95/Tools/DF95_BiasSnapshot_IDM.lua</source>
-        <source file="Scripts/IfeelLikeSnow/DF95/Tools/DF95_BiasSnapshot_Neutral.lua">https://raw.githubusercontent.com/IfeelLikeSnow/df95-toolbar-suite/main/Scripts/IfeelLikeSnow/DF95/Tools/DF95_BiasSnapshot_Neutral.lua</source>
-        <source file="Scripts/IfeelLikeSnow/DF95/Tools/DF95_META_Bulk_Wizard.lua">https://raw.githubusercontent.com/IfeelLikeSnow/df95-toolbar-suite/main/Scripts/IfeelLikeSnow/DF95/Tools/DF95_META_Bulk_Wizard.lua</source>
-        <source file="Scripts/IfeelLikeSnow/DF95/Tools/DF95_META_Helper_GUI.lua">https://raw.githubusercontent.com/IfeelLikeSnow/df95-toolbar-suite/main/Scripts/IfeelLikeSnow/DF95/Tools/DF95_META_Helper_GUI.lua</source>
-        <source file="Scripts/IfeelLikeSnow/DF95/Tools/DF95_MicFX_Profile_GUI.lua">https://raw.githubusercontent.com/IfeelLikeSnow/df95-toolbar-suite/main/Scripts/IfeelLikeSnow/DF95/Tools/DF95_MicFX_Profile_GUI.lua</source>
-        <source file="Scripts/IfeelLikeSnow/DF95/Tools/DF95_MissingPlugin_AutoPatch.lua">https://raw.githubusercontent.com/IfeelLikeSnow/df95-toolbar-suite/main/Scripts/IfeelLikeSnow/DF95/Tools/DF95_MissingPlugin_AutoPatch.lua</source>
-        <source file="Scripts/IfeelLikeSnow/DF95/Tools/DF95_MissingPlugin_Reporter.lua">https://raw.githubusercontent.com/IfeelLikeSnow/df95-toolbar-suite/main/Scripts/IfeelLikeSnow/DF95/Tools/DF95_MissingPlugin_Reporter.lua</source>
         </version>
       </reapack>
     <reapack name="DF95_MicToolbar_Input" type="script" desc="Toolbar/MenuSet + referenced scripts (shims included)">
@@ -1742,9 +1637,6 @@
         </metadata>
       <version name="1.0.0" author="IfeelLikeSnow" time="1766300833">
         <source file="Menus/DF95_MicToolbar_Input.ReaperMenuSet">https://raw.githubusercontent.com/IfeelLikeSnow/df95-toolbar-suite/main/Menus/DF95_MicToolbar_Input.ReaperMenuSet</source>
-        <source file="Scripts/IfeelLikeSnow/DF95/Input/DF95_GainMatch_AB.lua">https://raw.githubusercontent.com/IfeelLikeSnow/df95-toolbar-suite/main/Scripts/IfeelLikeSnow/DF95/Input/DF95_GainMatch_AB.lua</source>
-        <source file="Scripts/IfeelLikeSnow/DF95/Input/DF95_LUFS_AutoTarget.lua">https://raw.githubusercontent.com/IfeelLikeSnow/df95-toolbar-suite/main/Scripts/IfeelLikeSnow/DF95/Input/DF95_LUFS_AutoTarget.lua</source>
-        <source file="Scripts/IfeelLikeSnow/DF95/Input/DF95_MicFX_Manager.lua">https://raw.githubusercontent.com/IfeelLikeSnow/df95-toolbar-suite/main/Scripts/IfeelLikeSnow/DF95/Input/DF95_MicFX_Manager.lua</source>
         </version>
       </reapack>
     <reapack name="DF95_QA_Toolbar_Safety" type="script" desc="Toolbar/MenuSet + referenced scripts (shims included)">
@@ -1753,11 +1645,6 @@
         </metadata>
       <version name="1.0.0" author="IfeelLikeSnow" time="1766300833">
         <source file="Menus/DF95_QA_Toolbar_Safety.ReaperMenuSet">https://raw.githubusercontent.com/IfeelLikeSnow/df95-toolbar-suite/main/Menus/DF95_QA_Toolbar_Safety.ReaperMenuSet</source>
-        <source file="Scripts/IfeelLikeSnow/DF95/DF95_FXChain_SaveName_Helper_ImGui.lua">https://raw.githubusercontent.com/IfeelLikeSnow/df95-toolbar-suite/main/Scripts/IfeelLikeSnow/DF95/DF95_FXChain_SaveName_Helper_ImGui.lua</source>
-        <source file="Scripts/IfeelLikeSnow/DF95/QA/DF95_FirstRun_LiveCheck.lua">https://raw.githubusercontent.com/IfeelLikeSnow/df95-toolbar-suite/main/Scripts/IfeelLikeSnow/DF95/QA/DF95_FirstRun_LiveCheck.lua</source>
-        <source file="Scripts/IfeelLikeSnow/DF95/QA/DF95_Master_Snapshot.lua">https://raw.githubusercontent.com/IfeelLikeSnow/df95-toolbar-suite/main/Scripts/IfeelLikeSnow/DF95/QA/DF95_Master_Snapshot.lua</source>
-        <source file="Scripts/IfeelLikeSnow/DF95/QA/DF95_Safety_Loudness_Menu.lua">https://raw.githubusercontent.com/IfeelLikeSnow/df95-toolbar-suite/main/Scripts/IfeelLikeSnow/DF95/QA/DF95_Safety_Loudness_Menu.lua</source>
-        <source file="Scripts/IfeelLikeSnow/DF95/QA/DF95_Validator_2_0.lua">https://raw.githubusercontent.com/IfeelLikeSnow/df95-toolbar-suite/main/Scripts/IfeelLikeSnow/DF95/QA/DF95_Validator_2_0.lua</source>
         </version>
       </reapack>
     <reapack name="DF95_Reamp_Toolbar" type="script" desc="Toolbar/MenuSet + referenced scripts (shims included)">
@@ -1766,11 +1653,6 @@
         </metadata>
       <version name="1.0.0" author="IfeelLikeSnow" time="1766300833">
         <source file="Menus/DF95_Reamp_Toolbar.ReaperMenuSet">https://raw.githubusercontent.com/IfeelLikeSnow/df95-toolbar-suite/main/Menus/DF95_Reamp_Toolbar.ReaperMenuSet</source>
-        <source file="Scripts/IfeelLikeSnow/DF95/DF95_Reamp_Hub_ImGui.lua">https://raw.githubusercontent.com/IfeelLikeSnow/df95-toolbar-suite/main/Scripts/IfeelLikeSnow/DF95/DF95_Reamp_Hub_ImGui.lua</source>
-        <source file="Scripts/IfeelLikeSnow/DF95/DF95_Reamp_Latency_Analyze_And_Align.lua">https://raw.githubusercontent.com/IfeelLikeSnow/df95-toolbar-suite/main/Scripts/IfeelLikeSnow/DF95/DF95_Reamp_Latency_Analyze_And_Align.lua</source>
-        <source file="Scripts/IfeelLikeSnow/DF95/DF95_Reamp_SafetyCheck_ImGui.lua">https://raw.githubusercontent.com/IfeelLikeSnow/df95-toolbar-suite/main/Scripts/IfeelLikeSnow/DF95/DF95_Reamp_SafetyCheck_ImGui.lua</source>
-        <source file="Scripts/IfeelLikeSnow/DF95/DF95_Reamp_TestAndAlign_Wizard.lua">https://raw.githubusercontent.com/IfeelLikeSnow/df95-toolbar-suite/main/Scripts/IfeelLikeSnow/DF95/DF95_Reamp_TestAndAlign_Wizard.lua</source>
-        <source file="Scripts/IfeelLikeSnow/DF95/DF95_Reamp_TestImpulse_Generate.lua">https://raw.githubusercontent.com/IfeelLikeSnow/df95-toolbar-suite/main/Scripts/IfeelLikeSnow/DF95/DF95_Reamp_TestImpulse_Generate.lua</source>
         </version>
       </reapack>
     <reapack name="DF95_SuperPipeline_Toolbar" type="script" desc="Toolbar/MenuSet + referenced scripts (shims included)">
@@ -1779,12 +1661,6 @@
         </metadata>
       <version name="1.0.0" author="IfeelLikeSnow" time="1766300833">
         <source file="Menus/DF95_SuperPipeline_Toolbar.ReaperMenuSet">https://raw.githubusercontent.com/IfeelLikeSnow/df95-toolbar-suite/main/Menus/DF95_SuperPipeline_Toolbar.ReaperMenuSet</source>
-        <source file="Scripts/IfeelLikeSnow/DF95/DF95_AutoChain_Fixer.lua">https://raw.githubusercontent.com/IfeelLikeSnow/df95-toolbar-suite/main/Scripts/IfeelLikeSnow/DF95/DF95_AutoChain_Fixer.lua</source>
-        <source file="Scripts/IfeelLikeSnow/DF95/DF95_AutoMic_Inserter.lua">https://raw.githubusercontent.com/IfeelLikeSnow/df95-toolbar-suite/main/Scripts/IfeelLikeSnow/DF95/DF95_AutoMic_Inserter.lua</source>
-        <source file="Scripts/IfeelLikeSnow/DF95/DF95_AutoMic_Inserter_GUI.lua">https://raw.githubusercontent.com/IfeelLikeSnow/df95-toolbar-suite/main/Scripts/IfeelLikeSnow/DF95/DF95_AutoMic_Inserter_GUI.lua</source>
-        <source file="Scripts/IfeelLikeSnow/DF95/DF95_Auto_SuperPipeline.lua">https://raw.githubusercontent.com/IfeelLikeSnow/df95-toolbar-suite/main/Scripts/IfeelLikeSnow/DF95/DF95_Auto_SuperPipeline.lua</source>
-        <source file="Scripts/IfeelLikeSnow/DF95/DF95_Auto_SuperPipeline_GUI.lua">https://raw.githubusercontent.com/IfeelLikeSnow/df95-toolbar-suite/main/Scripts/IfeelLikeSnow/DF95/DF95_Auto_SuperPipeline_GUI.lua</source>
-        <source file="Scripts/IfeelLikeSnow/DF95/DF95_Export_UCS_MicRecorder_FromTrackname.lua">https://raw.githubusercontent.com/IfeelLikeSnow/df95-toolbar-suite/main/Scripts/IfeelLikeSnow/DF95/DF95_Export_UCS_MicRecorder_FromTrackname.lua</source>
         </version>
       </reapack>
     <reapack name="DF95_SuperToolbar_AISEARCH_Sub" type="script" desc="Toolbar/MenuSet + referenced scripts (shims included)">
@@ -1793,10 +1669,6 @@
         </metadata>
       <version name="1.0.0" author="IfeelLikeSnow" time="1766300833">
         <source file="Menus/DF95_SuperToolbar_AISEARCH_Sub.ReaperMenuSet">https://raw.githubusercontent.com/IfeelLikeSnow/df95-toolbar-suite/main/Menus/DF95_SuperToolbar_AISEARCH_Sub.ReaperMenuSet</source>
-        <source file="Scripts/IfeelLikeSnow/DF95/DF95_AIWorker_Hub_ImGui.lua">https://raw.githubusercontent.com/IfeelLikeSnow/df95-toolbar-suite/main/Scripts/IfeelLikeSnow/DF95/DF95_AIWorker_Hub_ImGui.lua</source>
-        <source file="Scripts/IfeelLikeSnow/DF95/DF95_Safety_AIWorker.lua">https://raw.githubusercontent.com/IfeelLikeSnow/df95-toolbar-suite/main/Scripts/IfeelLikeSnow/DF95/DF95_Safety_AIWorker.lua</source>
-        <source file="Scripts/IfeelLikeSnow/DF95/DF95_SampleDB_AIWorker_UCS_Python_Skeleton.lua">https://raw.githubusercontent.com/IfeelLikeSnow/df95-toolbar-suite/main/Scripts/IfeelLikeSnow/DF95/DF95_SampleDB_AIWorker_UCS_Python_Skeleton.lua</source>
-        <source file="Scripts/IfeelLikeSnow/DF95/DF95_SampleDB_ExtendedTags_PitchLoopSpeech.lua">https://raw.githubusercontent.com/IfeelLikeSnow/df95-toolbar-suite/main/Scripts/IfeelLikeSnow/DF95/DF95_SampleDB_ExtendedTags_PitchLoopSpeech.lua</source>
         </version>
       </reapack>
     <reapack name="DF95_SuperToolbar_DRONES_Sub" type="script" desc="Toolbar/MenuSet + referenced scripts (shims included)">
@@ -1805,12 +1677,6 @@
         </metadata>
       <version name="1.0.0" author="IfeelLikeSnow" time="1766300833">
         <source file="Menus/DF95_SuperToolbar_DRONES_Sub.ReaperMenuSet">https://raw.githubusercontent.com/IfeelLikeSnow/df95-toolbar-suite/main/Menus/DF95_SuperToolbar_DRONES_Sub.ReaperMenuSet</source>
-        <source file="Scripts/IfeelLikeSnow/DF95/DF95_DroneAnalyzer_Dashboard_ImGui.lua">https://raw.githubusercontent.com/IfeelLikeSnow/df95-toolbar-suite/main/Scripts/IfeelLikeSnow/DF95/DF95_DroneAnalyzer_Dashboard_ImGui.lua</source>
-        <source file="Scripts/IfeelLikeSnow/DF95/DF95_Drone_Atmos_Builder_From_View_ImGui.lua">https://raw.githubusercontent.com/IfeelLikeSnow/df95-toolbar-suite/main/Scripts/IfeelLikeSnow/DF95/DF95_Drone_Atmos_Builder_From_View_ImGui.lua</source>
-        <source file="Scripts/IfeelLikeSnow/DF95/DF95_Drone_Producer_PhaseP.lua">https://raw.githubusercontent.com/IfeelLikeSnow/df95-toolbar-suite/main/Scripts/IfeelLikeSnow/DF95/DF95_Drone_Producer_PhaseP.lua</source>
-        <source file="Scripts/IfeelLikeSnow/DF95/DF95_Drone_System_Consistency_PhaseO.lua">https://raw.githubusercontent.com/IfeelLikeSnow/df95-toolbar-suite/main/Scripts/IfeelLikeSnow/DF95/DF95_Drone_System_Consistency_PhaseO.lua</source>
-        <source file="Scripts/IfeelLikeSnow/DF95/DF95_SampleDB_Drone_Migrate_PhaseN.lua">https://raw.githubusercontent.com/IfeelLikeSnow/df95-toolbar-suite/main/Scripts/IfeelLikeSnow/DF95/DF95_SampleDB_Drone_Migrate_PhaseN.lua</source>
-        <source file="Scripts/IfeelLikeSnow/DF95/DF95_SampleDB_Drone_QA_Validator.lua">https://raw.githubusercontent.com/IfeelLikeSnow/df95-toolbar-suite/main/Scripts/IfeelLikeSnow/DF95/DF95_SampleDB_Drone_QA_Validator.lua</source>
         </version>
       </reapack>
     <reapack name="DF95_SuperToolbar_FIELDREC_Sub" type="script" desc="Toolbar/MenuSet + referenced scripts (shims included)">
@@ -1819,13 +1685,6 @@
         </metadata>
       <version name="1.0.0" author="IfeelLikeSnow" time="1766300833">
         <source file="Menus/DF95_SuperToolbar_FIELDREC_Sub.ReaperMenuSet">https://raw.githubusercontent.com/IfeelLikeSnow/df95-toolbar-suite/main/Menus/DF95_SuperToolbar_FIELDREC_Sub.ReaperMenuSet</source>
-        <source file="Scripts/IfeelLikeSnow/DF95/DF95_Fieldrec_Fusion_GUI.lua">https://raw.githubusercontent.com/IfeelLikeSnow/df95-toolbar-suite/main/Scripts/IfeelLikeSnow/DF95/DF95_Fieldrec_Fusion_GUI.lua</source>
-        <source file="Scripts/IfeelLikeSnow/DF95/DF95_Fieldrec_Slicing_Hub_ImGui.lua">https://raw.githubusercontent.com/IfeelLikeSnow/df95-toolbar-suite/main/Scripts/IfeelLikeSnow/DF95/DF95_Fieldrec_Slicing_Hub_ImGui.lua</source>
-        <source file="Scripts/IfeelLikeSnow/DF95/DF95_V100_Fieldrec_ArtistBeatEngine_MIDI.lua">https://raw.githubusercontent.com/IfeelLikeSnow/df95-toolbar-suite/main/Scripts/IfeelLikeSnow/DF95/DF95_V100_Fieldrec_ArtistBeatEngine_MIDI.lua</source>
-        <source file="Scripts/IfeelLikeSnow/DF95/DF95_V101_Fieldrec_ArtistStyleBeatEngine_MIDI.lua">https://raw.githubusercontent.com/IfeelLikeSnow/df95-toolbar-suite/main/Scripts/IfeelLikeSnow/DF95/DF95_V101_Fieldrec_ArtistStyleBeatEngine_MIDI.lua</source>
-        <source file="Scripts/IfeelLikeSnow/DF95/DF95_V107_Fieldrec_AdaptiveBeatEngine_MIDI.lua">https://raw.githubusercontent.com/IfeelLikeSnow/df95-toolbar-suite/main/Scripts/IfeelLikeSnow/DF95/DF95_V107_Fieldrec_AdaptiveBeatEngine_MIDI.lua</source>
-        <source file="Scripts/IfeelLikeSnow/DF95/DF95_V110_FieldrecBeat_RenderAudioFromSlices.lua">https://raw.githubusercontent.com/IfeelLikeSnow/df95-toolbar-suite/main/Scripts/IfeelLikeSnow/DF95/DF95_V110_FieldrecBeat_RenderAudioFromSlices.lua</source>
-        <source file="Scripts/IfeelLikeSnow/DF95/DF95_V98_Fieldrec_SliceKitBuilder_RS5k.lua">https://raw.githubusercontent.com/IfeelLikeSnow/df95-toolbar-suite/main/Scripts/IfeelLikeSnow/DF95/DF95_V98_Fieldrec_SliceKitBuilder_RS5k.lua</source>
         </version>
       </reapack>
     <reapack name="DF95_SuperToolbar_LIBEXPORT_Sub" type="script" desc="Toolbar/MenuSet + referenced scripts (shims included)">
@@ -1834,21 +1693,6 @@
         </metadata>
       <version name="1.0.0" author="IfeelLikeSnow" time="1766300833">
         <source file="Menus/DF95_SuperToolbar_LIBEXPORT_Sub.ReaperMenuSet">https://raw.githubusercontent.com/IfeelLikeSnow/df95-toolbar-suite/main/Menus/DF95_SuperToolbar_LIBEXPORT_Sub.ReaperMenuSet</source>
-        <source file="Scripts/IfeelLikeSnow/DF95/DF95_AIWorker_Hub_ImGui.lua">https://raw.githubusercontent.com/IfeelLikeSnow/df95-toolbar-suite/main/Scripts/IfeelLikeSnow/DF95/DF95_AIWorker_Hub_ImGui.lua</source>
-        <source file="Scripts/IfeelLikeSnow/DF95/DF95_Export_UCS_MasterButton.lua">https://raw.githubusercontent.com/IfeelLikeSnow/df95-toolbar-suite/main/Scripts/IfeelLikeSnow/DF95/DF95_Export_UCS_MasterButton.lua</source>
-        <source file="Scripts/IfeelLikeSnow/DF95/DF95_SampleDB_AIWorker_UCS_Python_Skeleton.lua">https://raw.githubusercontent.com/IfeelLikeSnow/df95-toolbar-suite/main/Scripts/IfeelLikeSnow/DF95/DF95_SampleDB_AIWorker_UCS_Python_Skeleton.lua</source>
-        <source file="Scripts/IfeelLikeSnow/DF95/DF95_SampleDB_ExtendedTags_PitchLoopSpeech.lua">https://raw.githubusercontent.com/IfeelLikeSnow/df95-toolbar-suite/main/Scripts/IfeelLikeSnow/DF95/DF95_SampleDB_ExtendedTags_PitchLoopSpeech.lua</source>
-        <source file="Scripts/IfeelLikeSnow/DF95/DF95_V119_SampleDB_ScanFolder_ZoomF6.lua">https://raw.githubusercontent.com/IfeelLikeSnow/df95-toolbar-suite/main/Scripts/IfeelLikeSnow/DF95/DF95_V119_SampleDB_ScanFolder_ZoomF6.lua</source>
-        <source file="Scripts/IfeelLikeSnow/DF95/DF95_V132_SampleDB_Inspector_V4_AI_Mapping.lua">https://raw.githubusercontent.com/IfeelLikeSnow/df95-toolbar-suite/main/Scripts/IfeelLikeSnow/DF95/DF95_V132_SampleDB_Inspector_V4_AI_Mapping.lua</source>
-        <source file="Scripts/IfeelLikeSnow/DF95/DF95_V134_UCS_Renamer.lua">https://raw.githubusercontent.com/IfeelLikeSnow/df95-toolbar-suite/main/Scripts/IfeelLikeSnow/DF95/DF95_V134_UCS_Renamer.lua</source>
-        <source file="Scripts/IfeelLikeSnow/DF95/DF95_V136_UCS_RenameRevert_Helper.lua">https://raw.githubusercontent.com/IfeelLikeSnow/df95-toolbar-suite/main/Scripts/IfeelLikeSnow/DF95/DF95_V136_UCS_RenameRevert_Helper.lua</source>
-        <source file="Scripts/IfeelLikeSnow/DF95/DF95_V137_SampleDB_ScanFolder_UCSLight_HomeField.lua">https://raw.githubusercontent.com/IfeelLikeSnow/df95-toolbar-suite/main/Scripts/IfeelLikeSnow/DF95/DF95_V137_SampleDB_ScanFolder_UCSLight_HomeField.lua</source>
-        <source file="Scripts/IfeelLikeSnow/DF95/DF95_V138_SampleDB_LibraryAnalyzer.lua">https://raw.githubusercontent.com/IfeelLikeSnow/df95-toolbar-suite/main/Scripts/IfeelLikeSnow/DF95/DF95_V138_SampleDB_LibraryAnalyzer.lua</source>
-        <source file="Scripts/IfeelLikeSnow/DF95/DF95_V139_SampleDB_RecordPlanner.lua">https://raw.githubusercontent.com/IfeelLikeSnow/df95-toolbar-suite/main/Scripts/IfeelLikeSnow/DF95/DF95_V139_SampleDB_RecordPlanner.lua</source>
-        <source file="Scripts/IfeelLikeSnow/DF95/DF95_V140_SampleDB_SessionPlanner_Scenes.lua">https://raw.githubusercontent.com/IfeelLikeSnow/df95-toolbar-suite/main/Scripts/IfeelLikeSnow/DF95/DF95_V140_SampleDB_SessionPlanner_Scenes.lua</source>
-        <source file="Scripts/IfeelLikeSnow/DF95/DF95_V141_SampleDB_TexturePresets_UCSLight.lua">https://raw.githubusercontent.com/IfeelLikeSnow/df95-toolbar-suite/main/Scripts/IfeelLikeSnow/DF95/DF95_V141_SampleDB_TexturePresets_UCSLight.lua</source>
-        <source file="Scripts/IfeelLikeSnow/DF95/DF95_V142_SampleDB_PackExporter.lua">https://raw.githubusercontent.com/IfeelLikeSnow/df95-toolbar-suite/main/Scripts/IfeelLikeSnow/DF95/DF95_V142_SampleDB_PackExporter.lua</source>
-        <source file="Scripts/IfeelLikeSnow/DF95/DF95_V147_PolyWAV_Toolbox_V2.lua">https://raw.githubusercontent.com/IfeelLikeSnow/df95-toolbar-suite/main/Scripts/IfeelLikeSnow/DF95/DF95_V147_PolyWAV_Toolbox_V2.lua</source>
         </version>
       </reapack>
     <reapack name="DF95_SuperToolbar_Main" type="script" desc="Toolbar/MenuSet + referenced scripts (shims included)">
@@ -1857,13 +1701,6 @@
         </metadata>
       <version name="1.0.0" author="IfeelLikeSnow" time="1766300833">
         <source file="Menus/DF95_SuperToolbar_Main.ReaperMenuSet">https://raw.githubusercontent.com/IfeelLikeSnow/df95-toolbar-suite/main/Menus/DF95_SuperToolbar_Main.ReaperMenuSet</source>
-        <source file="Scripts/IfeelLikeSnow/DF95/DF95_SuperToolbar_Toggle_AISEARCH.lua">https://raw.githubusercontent.com/IfeelLikeSnow/df95-toolbar-suite/main/Scripts/IfeelLikeSnow/DF95/DF95_SuperToolbar_Toggle_AISEARCH.lua</source>
-        <source file="Scripts/IfeelLikeSnow/DF95/DF95_SuperToolbar_Toggle_DRONES.lua">https://raw.githubusercontent.com/IfeelLikeSnow/df95-toolbar-suite/main/Scripts/IfeelLikeSnow/DF95/DF95_SuperToolbar_Toggle_DRONES.lua</source>
-        <source file="Scripts/IfeelLikeSnow/DF95/DF95_SuperToolbar_Toggle_FIELDREC.lua">https://raw.githubusercontent.com/IfeelLikeSnow/df95-toolbar-suite/main/Scripts/IfeelLikeSnow/DF95/DF95_SuperToolbar_Toggle_FIELDREC.lua</source>
-        <source file="Scripts/IfeelLikeSnow/DF95/DF95_SuperToolbar_Toggle_LIBEXPORT.lua">https://raw.githubusercontent.com/IfeelLikeSnow/df95-toolbar-suite/main/Scripts/IfeelLikeSnow/DF95/DF95_SuperToolbar_Toggle_LIBEXPORT.lua</source>
-        <source file="Scripts/IfeelLikeSnow/DF95/DF95_SuperToolbar_Toggle_SESSION.lua">https://raw.githubusercontent.com/IfeelLikeSnow/df95-toolbar-suite/main/Scripts/IfeelLikeSnow/DF95/DF95_SuperToolbar_Toggle_SESSION.lua</source>
-        <source file="Scripts/IfeelLikeSnow/DF95/DF95_SuperToolbar_Toggle_SETUPQA.lua">https://raw.githubusercontent.com/IfeelLikeSnow/df95-toolbar-suite/main/Scripts/IfeelLikeSnow/DF95/DF95_SuperToolbar_Toggle_SETUPQA.lua</source>
-        <source file="Scripts/IfeelLikeSnow/DF95/DF95_SuperToolbar_Toggle_SOUND.lua">https://raw.githubusercontent.com/IfeelLikeSnow/df95-toolbar-suite/main/Scripts/IfeelLikeSnow/DF95/DF95_SuperToolbar_Toggle_SOUND.lua</source>
         </version>
       </reapack>
     <reapack name="DF95_SuperToolbar_SESSION_Sub" type="script" desc="Toolbar/MenuSet + referenced scripts (shims included)">
@@ -1872,15 +1709,6 @@
         </metadata>
       <version name="1.0.0" author="IfeelLikeSnow" time="1766300833">
         <source file="Menus/DF95_SuperToolbar_SESSION_Sub.ReaperMenuSet">https://raw.githubusercontent.com/IfeelLikeSnow/df95-toolbar-suite/main/Menus/DF95_SuperToolbar_SESSION_Sub.ReaperMenuSet</source>
-        <source file="Scripts/IfeelLikeSnow/DF95/DF95_Explode_AutoBus.lua">https://raw.githubusercontent.com/IfeelLikeSnow/df95-toolbar-suite/main/Scripts/IfeelLikeSnow/DF95/DF95_Explode_AutoBus.lua</source>
-        <source file="Scripts/IfeelLikeSnow/DF95/DF95_FXBus_Chains_ImGui.lua">https://raw.githubusercontent.com/IfeelLikeSnow/df95-toolbar-suite/main/Scripts/IfeelLikeSnow/DF95/DF95_FXBus_Chains_ImGui.lua</source>
-        <source file="Scripts/IfeelLikeSnow/DF95/DF95_FXBus_Selector.lua">https://raw.githubusercontent.com/IfeelLikeSnow/df95-toolbar-suite/main/Scripts/IfeelLikeSnow/DF95/DF95_FXBus_Selector.lua</source>
-        <source file="Scripts/IfeelLikeSnow/DF95/DF95_InputFX_Metering.lua">https://raw.githubusercontent.com/IfeelLikeSnow/df95-toolbar-suite/main/Scripts/IfeelLikeSnow/DF95/DF95_InputFX_Metering.lua</source>
-        <source file="Scripts/IfeelLikeSnow/DF95/DF95_InputFX_TapeColor.lua">https://raw.githubusercontent.com/IfeelLikeSnow/df95-toolbar-suite/main/Scripts/IfeelLikeSnow/DF95/DF95_InputFX_TapeColor.lua</source>
-        <source file="Scripts/IfeelLikeSnow/DF95/DF95_MasterBus_Selector.lua">https://raw.githubusercontent.com/IfeelLikeSnow/df95-toolbar-suite/main/Scripts/IfeelLikeSnow/DF95/DF95_MasterBus_Selector.lua</source>
-        <source file="Scripts/IfeelLikeSnow/DF95/DF95_Master_Chains_ImGui.lua">https://raw.githubusercontent.com/IfeelLikeSnow/df95-toolbar-suite/main/Scripts/IfeelLikeSnow/DF95/DF95_Master_Chains_ImGui.lua</source>
-        <source file="Scripts/IfeelLikeSnow/DF95/DF95_Menu_Coloring_Dropdown.lua">https://raw.githubusercontent.com/IfeelLikeSnow/df95-toolbar-suite/main/Scripts/IfeelLikeSnow/DF95/DF95_Menu_Coloring_Dropdown.lua</source>
-        <source file="Scripts/IfeelLikeSnow/DF95/Tools/DF95_MicFX_Profile_GUI.lua">https://raw.githubusercontent.com/IfeelLikeSnow/df95-toolbar-suite/main/Scripts/IfeelLikeSnow/DF95/Tools/DF95_MicFX_Profile_GUI.lua</source>
         </version>
       </reapack>
     <reapack name="DF95_SuperToolbar_SETUPQA_Sub" type="script" desc="Toolbar/MenuSet + referenced scripts (shims included)">
@@ -1889,14 +1717,6 @@
         </metadata>
       <version name="1.0.0" author="IfeelLikeSnow" time="1766300833">
         <source file="Menus/DF95_SuperToolbar_SETUPQA_Sub.ReaperMenuSet">https://raw.githubusercontent.com/IfeelLikeSnow/df95-toolbar-suite/main/Menus/DF95_SuperToolbar_SETUPQA_Sub.ReaperMenuSet</source>
-        <source file="Scripts/IfeelLikeSnow/DF95/DF95_DroneFXV1_Repo_AutoInstaller.lua">https://raw.githubusercontent.com/IfeelLikeSnow/df95-toolbar-suite/main/Scripts/IfeelLikeSnow/DF95/DF95_DroneFXV1_Repo_AutoInstaller.lua</source>
-        <source file="Scripts/IfeelLikeSnow/DF95/DF95_Installer_Helper.lua">https://raw.githubusercontent.com/IfeelLikeSnow/df95-toolbar-suite/main/Scripts/IfeelLikeSnow/DF95/DF95_Installer_Helper.lua</source>
-        <source file="Scripts/IfeelLikeSnow/DF95/DF95_Safety_Inspector_ImGui.lua">https://raw.githubusercontent.com/IfeelLikeSnow/df95-toolbar-suite/main/Scripts/IfeelLikeSnow/DF95/DF95_Safety_Inspector_ImGui.lua</source>
-        <source file="Scripts/IfeelLikeSnow/DF95/DF95_Safety_SelfCheck_Tool.lua">https://raw.githubusercontent.com/IfeelLikeSnow/df95-toolbar-suite/main/Scripts/IfeelLikeSnow/DF95/DF95_Safety_SelfCheck_Tool.lua</source>
-        <source file="Scripts/IfeelLikeSnow/DF95/DF95_Setup_Hub_ImGui.lua">https://raw.githubusercontent.com/IfeelLikeSnow/df95-toolbar-suite/main/Scripts/IfeelLikeSnow/DF95/DF95_Setup_Hub_ImGui.lua</source>
-        <source file="Scripts/IfeelLikeSnow/DF95/DF95_Workflow_Brain_ImGui.lua">https://raw.githubusercontent.com/IfeelLikeSnow/df95-toolbar-suite/main/Scripts/IfeelLikeSnow/DF95/DF95_Workflow_Brain_ImGui.lua</source>
-        <source file="Scripts/IfeelLikeSnow/DF95/Tools/DF95_ControlCenter_ImGui.lua">https://raw.githubusercontent.com/IfeelLikeSnow/df95-toolbar-suite/main/Scripts/IfeelLikeSnow/DF95/Tools/DF95_ControlCenter_ImGui.lua</source>
-        <source file="Scripts/IfeelLikeSnow/DF95/Tools/DF95_META_Helper_GUI.lua">https://raw.githubusercontent.com/IfeelLikeSnow/df95-toolbar-suite/main/Scripts/IfeelLikeSnow/DF95/Tools/DF95_META_Helper_GUI.lua</source>
         </version>
       </reapack>
     <reapack name="DF95_SuperToolbar_SOUND_Sub" type="script" desc="Toolbar/MenuSet + referenced scripts (shims included)">
@@ -1905,14 +1725,6 @@
         </metadata>
       <version name="1.0.0" author="IfeelLikeSnow" time="1766300833">
         <source file="Menus/DF95_SuperToolbar_SOUND_Sub.ReaperMenuSet">https://raw.githubusercontent.com/IfeelLikeSnow/df95-toolbar-suite/main/Menus/DF95_SuperToolbar_SOUND_Sub.ReaperMenuSet</source>
-        <source file="Scripts/IfeelLikeSnow/DF95/DF95_FXBus_Chains_ImGui.lua">https://raw.githubusercontent.com/IfeelLikeSnow/df95-toolbar-suite/main/Scripts/IfeelLikeSnow/DF95/DF95_FXBus_Chains_ImGui.lua</source>
-        <source file="Scripts/IfeelLikeSnow/DF95/DF95_FXBus_Selector.lua">https://raw.githubusercontent.com/IfeelLikeSnow/df95-toolbar-suite/main/Scripts/IfeelLikeSnow/DF95/DF95_FXBus_Selector.lua</source>
-        <source file="Scripts/IfeelLikeSnow/DF95/DF95_GainMatch_AB.lua">https://raw.githubusercontent.com/IfeelLikeSnow/df95-toolbar-suite/main/Scripts/IfeelLikeSnow/DF95/DF95_GainMatch_AB.lua</source>
-        <source file="Scripts/IfeelLikeSnow/DF95/DF95_Master_Chains_ImGui.lua">https://raw.githubusercontent.com/IfeelLikeSnow/df95-toolbar-suite/main/Scripts/IfeelLikeSnow/DF95/DF95_Master_Chains_ImGui.lua</source>
-        <source file="Scripts/IfeelLikeSnow/DF95/DF95_Menu_Coloring_Dropdown.lua">https://raw.githubusercontent.com/IfeelLikeSnow/df95-toolbar-suite/main/Scripts/IfeelLikeSnow/DF95/DF95_Menu_Coloring_Dropdown.lua</source>
-        <source file="Scripts/IfeelLikeSnow/DF95/DF95_V198_SampleDB_SpeechLoopLayers.lua">https://raw.githubusercontent.com/IfeelLikeSnow/df95-toolbar-suite/main/Scripts/IfeelLikeSnow/DF95/DF95_V198_SampleDB_SpeechLoopLayers.lua</source>
-        <source file="Scripts/IfeelLikeSnow/DF95/Tools/DF95_Toolbar_BiasTools_Show.lua">https://raw.githubusercontent.com/IfeelLikeSnow/df95-toolbar-suite/main/Scripts/IfeelLikeSnow/DF95/Tools/DF95_Toolbar_BiasTools_Show.lua</source>
-        <source file="Scripts/IfeelLikeSnow/DF95/Tools/DF95_Toolbar_ColorMaster_Audition_SWS_Show.lua">https://raw.githubusercontent.com/IfeelLikeSnow/df95-toolbar-suite/main/Scripts/IfeelLikeSnow/DF95/Tools/DF95_Toolbar_ColorMaster_Audition_SWS_Show.lua</source>
         </version>
       </reapack>
     <reapack name="DF95_Toolbar_BiasTools" type="script" desc="Toolbar/MenuSet + referenced scripts (shims included)">
@@ -1921,21 +1733,6 @@
         </metadata>
       <version name="1.0.0" author="IfeelLikeSnow" time="1766300833">
         <source file="Menus/DF95_Toolbar_BiasTools.ReaperMenuSet">https://raw.githubusercontent.com/IfeelLikeSnow/df95-toolbar-suite/main/Menus/DF95_Toolbar_BiasTools.ReaperMenuSet</source>
-        <source file="Scripts/IfeelLikeSnow/DF95/Core/DF95_LUFS_AutoGain_FromSWS.lua">https://raw.githubusercontent.com/IfeelLikeSnow/df95-toolbar-suite/main/Scripts/IfeelLikeSnow/DF95/Core/DF95_LUFS_AutoGain_FromSWS.lua</source>
-        <source file="Scripts/IfeelLikeSnow/DF95/Core/DF95_LUFS_AutoGain_FromSWS_CSV.lua">https://raw.githubusercontent.com/IfeelLikeSnow/df95-toolbar-suite/main/Scripts/IfeelLikeSnow/DF95/Core/DF95_LUFS_AutoGain_FromSWS_CSV.lua</source>
-        <source file="Scripts/IfeelLikeSnow/DF95/Core/DF95_SetClamp_LUFS_1_0.lua">https://raw.githubusercontent.com/IfeelLikeSnow/df95-toolbar-suite/main/Scripts/IfeelLikeSnow/DF95/Core/DF95_SetClamp_LUFS_1_0.lua</source>
-        <source file="Scripts/IfeelLikeSnow/DF95/Core/DF95_SetClamp_LUFS_1_3.lua">https://raw.githubusercontent.com/IfeelLikeSnow/df95-toolbar-suite/main/Scripts/IfeelLikeSnow/DF95/Core/DF95_SetClamp_LUFS_1_3.lua</source>
-        <source file="Scripts/IfeelLikeSnow/DF95/Core/DF95_SetClamp_LUFS_2_0.lua">https://raw.githubusercontent.com/IfeelLikeSnow/df95-toolbar-suite/main/Scripts/IfeelLikeSnow/DF95/Core/DF95_SetClamp_LUFS_2_0.lua</source>
-        <source file="Scripts/IfeelLikeSnow/DF95/Core/DF95_Slice_Menu_Weighted.lua">https://raw.githubusercontent.com/IfeelLikeSnow/df95-toolbar-suite/main/Scripts/IfeelLikeSnow/DF95/Core/DF95_Slice_Menu_Weighted.lua</source>
-        <source file="Scripts/IfeelLikeSnow/DF95/Core/DF95_Toggle_SWS_LUFS.lua">https://raw.githubusercontent.com/IfeelLikeSnow/df95-toolbar-suite/main/Scripts/IfeelLikeSnow/DF95/Core/DF95_Toggle_SWS_LUFS.lua</source>
-        <source file="Scripts/IfeelLikeSnow/DF95/Tools/DF95_BiasSnapshot_BoC_Warm.lua">https://raw.githubusercontent.com/IfeelLikeSnow/df95-toolbar-suite/main/Scripts/IfeelLikeSnow/DF95/Tools/DF95_BiasSnapshot_BoC_Warm.lua</source>
-        <source file="Scripts/IfeelLikeSnow/DF95/Tools/DF95_BiasSnapshot_Glitch.lua">https://raw.githubusercontent.com/IfeelLikeSnow/df95-toolbar-suite/main/Scripts/IfeelLikeSnow/DF95/Tools/DF95_BiasSnapshot_Glitch.lua</source>
-        <source file="Scripts/IfeelLikeSnow/DF95/Tools/DF95_BiasSnapshot_IDM.lua">https://raw.githubusercontent.com/IfeelLikeSnow/df95-toolbar-suite/main/Scripts/IfeelLikeSnow/DF95/Tools/DF95_BiasSnapshot_IDM.lua</source>
-        <source file="Scripts/IfeelLikeSnow/DF95/Tools/DF95_BiasSnapshot_Neutral.lua">https://raw.githubusercontent.com/IfeelLikeSnow/df95-toolbar-suite/main/Scripts/IfeelLikeSnow/DF95/Tools/DF95_BiasSnapshot_Neutral.lua</source>
-        <source file="Scripts/IfeelLikeSnow/DF95/Tools/DF95_META_Bulk_Wizard.lua">https://raw.githubusercontent.com/IfeelLikeSnow/df95-toolbar-suite/main/Scripts/IfeelLikeSnow/DF95/Tools/DF95_META_Bulk_Wizard.lua</source>
-        <source file="Scripts/IfeelLikeSnow/DF95/Tools/DF95_META_Helper_GUI.lua">https://raw.githubusercontent.com/IfeelLikeSnow/df95-toolbar-suite/main/Scripts/IfeelLikeSnow/DF95/Tools/DF95_META_Helper_GUI.lua</source>
-        <source file="Scripts/IfeelLikeSnow/DF95/Tools/DF95_MissingPlugin_AutoPatch.lua">https://raw.githubusercontent.com/IfeelLikeSnow/df95-toolbar-suite/main/Scripts/IfeelLikeSnow/DF95/Tools/DF95_MissingPlugin_AutoPatch.lua</source>
-        <source file="Scripts/IfeelLikeSnow/DF95/Tools/DF95_MissingPlugin_Reporter.lua">https://raw.githubusercontent.com/IfeelLikeSnow/df95-toolbar-suite/main/Scripts/IfeelLikeSnow/DF95/Tools/DF95_MissingPlugin_Reporter.lua</source>
         </version>
       </reapack>
     <reapack name="DF95_Toolbar_ColorMaster_Audition_SWS" type="script" desc="Toolbar/MenuSet + referenced scripts (shims included)">
@@ -1944,12 +1741,6 @@
         </metadata>
       <version name="1.0.0" author="IfeelLikeSnow" time="1766300833">
         <source file="Menus/DF95_Toolbar_ColorMaster_Audition_SWS.ReaperMenuSet">https://raw.githubusercontent.com/IfeelLikeSnow/df95-toolbar-suite/main/Menus/DF95_Toolbar_ColorMaster_Audition_SWS.ReaperMenuSet</source>
-        <source file="Scripts/IfeelLikeSnow/DF95/Tools/DF95_Coloring_Audition_v1.lua">https://raw.githubusercontent.com/IfeelLikeSnow/df95-toolbar-suite/main/Scripts/IfeelLikeSnow/DF95/Tools/DF95_Coloring_Audition_v1.lua</source>
-        <source file="Scripts/IfeelLikeSnow/DF95/Tools/DF95_FXBus_Audition_v1.lua">https://raw.githubusercontent.com/IfeelLikeSnow/df95-toolbar-suite/main/Scripts/IfeelLikeSnow/DF95/Tools/DF95_FXBus_Audition_v1.lua</source>
-        <source file="Scripts/IfeelLikeSnow/DF95/Tools/DF95_Master_Audition_v1.lua">https://raw.githubusercontent.com/IfeelLikeSnow/df95-toolbar-suite/main/Scripts/IfeelLikeSnow/DF95/Tools/DF95_Master_Audition_v1.lua</source>
-        <source file="Scripts/IfeelLikeSnow/DF95/Tools/DF95_Menu_Coloring_Dropdown.lua">https://raw.githubusercontent.com/IfeelLikeSnow/df95-toolbar-suite/main/Scripts/IfeelLikeSnow/DF95/Tools/DF95_Menu_Coloring_Dropdown.lua</source>
-        <source file="Scripts/IfeelLikeSnow/DF95/Tools/DF95_Menu_Master_Dropdown.lua">https://raw.githubusercontent.com/IfeelLikeSnow/df95-toolbar-suite/main/Scripts/IfeelLikeSnow/DF95/Tools/DF95_Menu_Master_Dropdown.lua</source>
-        <source file="Scripts/IfeelLikeSnow/DF95/Tools/DF95_SWS_LUFS_Hook.lua">https://raw.githubusercontent.com/IfeelLikeSnow/df95-toolbar-suite/main/Scripts/IfeelLikeSnow/DF95/Tools/DF95_SWS_LUFS_Hook.lua</source>
         </version>
       </reapack>
     <reapack name="DF95_Toolbar_FXBus_Variants" type="script" desc="Toolbar/MenuSet + referenced scripts (shims included)">
@@ -1958,8 +1749,6 @@
         </metadata>
       <version name="1.0.0" author="IfeelLikeSnow" time="1766300833">
         <source file="Menus/DF95_Toolbar_FXBus_Variants.ReaperMenuSet">https://raw.githubusercontent.com/IfeelLikeSnow/df95-toolbar-suite/main/Menus/DF95_Toolbar_FXBus_Variants.ReaperMenuSet</source>
-        <source file="Scripts/IfeelLikeSnow/DF95/Tools/DF95_MicroGainMatch_Trim.lua">https://raw.githubusercontent.com/IfeelLikeSnow/df95-toolbar-suite/main/Scripts/IfeelLikeSnow/DF95/Tools/DF95_MicroGainMatch_Trim.lua</source>
-        <source file="Scripts/IfeelLikeSnow/DF95/Tools/DF95_SeedLock_Toggle.lua">https://raw.githubusercontent.com/IfeelLikeSnow/df95-toolbar-suite/main/Scripts/IfeelLikeSnow/DF95/Tools/DF95_SeedLock_Toggle.lua</source>
         </version>
       </reapack>
     <reapack name="DF95_Toolbar_QA_Audition" type="script" desc="Toolbar/MenuSet + referenced scripts (shims included)">
@@ -1968,9 +1757,6 @@
         </metadata>
       <version name="1.0.0" author="IfeelLikeSnow" time="1766300833">
         <source file="Menus/DF95_Toolbar_QA_Audition.ReaperMenuSet">https://raw.githubusercontent.com/IfeelLikeSnow/df95-toolbar-suite/main/Menus/DF95_Toolbar_QA_Audition.ReaperMenuSet</source>
-        <source file="Scripts/IfeelLikeSnow/DF95/Tools/DF95_Coloring_Audition_v1.lua">https://raw.githubusercontent.com/IfeelLikeSnow/df95-toolbar-suite/main/Scripts/IfeelLikeSnow/DF95/Tools/DF95_Coloring_Audition_v1.lua</source>
-        <source file="Scripts/IfeelLikeSnow/DF95/Tools/DF95_FXBus_Audition_v1.lua">https://raw.githubusercontent.com/IfeelLikeSnow/df95-toolbar-suite/main/Scripts/IfeelLikeSnow/DF95/Tools/DF95_FXBus_Audition_v1.lua</source>
-        <source file="Scripts/IfeelLikeSnow/DF95/Tools/DF95_Master_Audition_v1.lua">https://raw.githubusercontent.com/IfeelLikeSnow/df95-toolbar-suite/main/Scripts/IfeelLikeSnow/DF95/Tools/DF95_Master_Audition_v1.lua</source>
         </version>
       </reapack>
     <reapack name="DF95_V113_ArtistStyleFX_Toolbar" type="script" desc="Toolbar/MenuSet + referenced scripts (shims included)">
@@ -1979,8 +1765,6 @@
         </metadata>
       <version name="1.0.0" author="IfeelLikeSnow" time="1766300833">
         <source file="Menus/DF95_V113_ArtistStyleFX_Toolbar.ReaperMenuSet">https://raw.githubusercontent.com/IfeelLikeSnow/df95-toolbar-suite/main/Menus/DF95_V113_ArtistStyleFX_Toolbar.ReaperMenuSet</source>
-        <source file="Scripts/IfeelLikeSnow/DF95/DF95_V113_ArtistStyleFX_Apply.lua">https://raw.githubusercontent.com/IfeelLikeSnow/df95-toolbar-suite/main/Scripts/IfeelLikeSnow/DF95/DF95_V113_ArtistStyleFX_Apply.lua</source>
-        <source file="Scripts/IfeelLikeSnow/DF95/DF95_V113_ArtistStyleFX_SetProfile_Quick.lua">https://raw.githubusercontent.com/IfeelLikeSnow/df95-toolbar-suite/main/Scripts/IfeelLikeSnow/DF95/DF95_V113_ArtistStyleFX_SetProfile_Quick.lua</source>
         </version>
       </reapack>
     <reapack name="DF95_V119_SampleDB_Toolbar" type="script" desc="Toolbar/MenuSet + referenced scripts (shims included)">
@@ -1989,19 +1773,6 @@
         </metadata>
       <version name="1.0.0" author="IfeelLikeSnow" time="1766300833">
         <source file="Menus/DF95_V119_SampleDB_Toolbar.ReaperMenuSet">https://raw.githubusercontent.com/IfeelLikeSnow/df95-toolbar-suite/main/Menus/DF95_V119_SampleDB_Toolbar.ReaperMenuSet</source>
-        <source file="Scripts/IfeelLikeSnow/DF95/DF95_V119_SampleDB_RenameToUCSStyle.lua">https://raw.githubusercontent.com/IfeelLikeSnow/df95-toolbar-suite/main/Scripts/IfeelLikeSnow/DF95/DF95_V119_SampleDB_RenameToUCSStyle.lua</source>
-        <source file="Scripts/IfeelLikeSnow/DF95/DF95_V119_SampleDB_ScanFolder_ZoomF6.lua">https://raw.githubusercontent.com/IfeelLikeSnow/df95-toolbar-suite/main/Scripts/IfeelLikeSnow/DF95/DF95_V119_SampleDB_ScanFolder_ZoomF6.lua</source>
-        <source file="Scripts/IfeelLikeSnow/DF95/DF95_V132_SampleDB_Inspector_V4_AI_Mapping.lua">https://raw.githubusercontent.com/IfeelLikeSnow/df95-toolbar-suite/main/Scripts/IfeelLikeSnow/DF95/DF95_V132_SampleDB_Inspector_V4_AI_Mapping.lua</source>
-        <source file="Scripts/IfeelLikeSnow/DF95/DF95_V133_AIBeat_Soundscape_Generator.lua">https://raw.githubusercontent.com/IfeelLikeSnow/df95-toolbar-suite/main/Scripts/IfeelLikeSnow/DF95/DF95_V133_AIBeat_Soundscape_Generator.lua</source>
-        <source file="Scripts/IfeelLikeSnow/DF95/DF95_V134_UCS_Renamer.lua">https://raw.githubusercontent.com/IfeelLikeSnow/df95-toolbar-suite/main/Scripts/IfeelLikeSnow/DF95/DF95_V134_UCS_Renamer.lua</source>
-        <source file="Scripts/IfeelLikeSnow/DF95/DF95_V136_UCS_RenameRevert_Helper.lua">https://raw.githubusercontent.com/IfeelLikeSnow/df95-toolbar-suite/main/Scripts/IfeelLikeSnow/DF95/DF95_V136_UCS_RenameRevert_Helper.lua</source>
-        <source file="Scripts/IfeelLikeSnow/DF95/DF95_V137_SampleDB_ScanFolder_UCSLight_HomeField.lua">https://raw.githubusercontent.com/IfeelLikeSnow/df95-toolbar-suite/main/Scripts/IfeelLikeSnow/DF95/DF95_V137_SampleDB_ScanFolder_UCSLight_HomeField.lua</source>
-        <source file="Scripts/IfeelLikeSnow/DF95/DF95_V138_SampleDB_LibraryAnalyzer.lua">https://raw.githubusercontent.com/IfeelLikeSnow/df95-toolbar-suite/main/Scripts/IfeelLikeSnow/DF95/DF95_V138_SampleDB_LibraryAnalyzer.lua</source>
-        <source file="Scripts/IfeelLikeSnow/DF95/DF95_V139_SampleDB_RecordPlanner.lua">https://raw.githubusercontent.com/IfeelLikeSnow/df95-toolbar-suite/main/Scripts/IfeelLikeSnow/DF95/DF95_V139_SampleDB_RecordPlanner.lua</source>
-        <source file="Scripts/IfeelLikeSnow/DF95/DF95_V140_SampleDB_SessionPlanner_Scenes.lua">https://raw.githubusercontent.com/IfeelLikeSnow/df95-toolbar-suite/main/Scripts/IfeelLikeSnow/DF95/DF95_V140_SampleDB_SessionPlanner_Scenes.lua</source>
-        <source file="Scripts/IfeelLikeSnow/DF95/DF95_V141_SampleDB_TexturePresets_UCSLight.lua">https://raw.githubusercontent.com/IfeelLikeSnow/df95-toolbar-suite/main/Scripts/IfeelLikeSnow/DF95/DF95_V141_SampleDB_TexturePresets_UCSLight.lua</source>
-        <source file="Scripts/IfeelLikeSnow/DF95/DF95_V142_SampleDB_PackExporter.lua">https://raw.githubusercontent.com/IfeelLikeSnow/df95-toolbar-suite/main/Scripts/IfeelLikeSnow/DF95/DF95_V142_SampleDB_PackExporter.lua</source>
-        <source file="Scripts/IfeelLikeSnow/DF95/DF95_V147_PolyWAV_Toolbox_V2.lua">https://raw.githubusercontent.com/IfeelLikeSnow/df95-toolbar-suite/main/Scripts/IfeelLikeSnow/DF95/DF95_V147_PolyWAV_Toolbox_V2.lua</source>
         </version>
       </reapack>
     <reapack name="DF95_MainToolbar" type="script" desc="Toolbar/MenuSet + referenced scripts (shims included)">
@@ -2010,20 +1781,6 @@
         </metadata>
       <version name="1.0.0" author="IfeelLikeSnow" time="1766300833">
         <source file="Menus/Legacy_46c/DF95_MainToolbar.ReaperMenuSet">https://raw.githubusercontent.com/IfeelLikeSnow/df95-toolbar-suite/main/Menus/Legacy_46c/DF95_MainToolbar.ReaperMenuSet</source>
-        <source file="Scripts/IfeelLikeSnow/DF95/Core/DF95_Slice_Menu_Weighted.lua">https://raw.githubusercontent.com/IfeelLikeSnow/df95-toolbar-suite/main/Scripts/IfeelLikeSnow/DF95/Core/DF95_Slice_Menu_Weighted.lua</source>
-        <source file="Scripts/IfeelLikeSnow/DF95/DF95_ColoringBus_Selector.lua">https://raw.githubusercontent.com/IfeelLikeSnow/df95-toolbar-suite/main/Scripts/IfeelLikeSnow/DF95/DF95_ColoringBus_Selector.lua</source>
-        <source file="Scripts/IfeelLikeSnow/DF95/DF95_Explode_AutoBus.lua">https://raw.githubusercontent.com/IfeelLikeSnow/df95-toolbar-suite/main/Scripts/IfeelLikeSnow/DF95/DF95_Explode_AutoBus.lua</source>
-        <source file="Scripts/IfeelLikeSnow/DF95/DF95_Export_UCS_MasterButton.lua">https://raw.githubusercontent.com/IfeelLikeSnow/df95-toolbar-suite/main/Scripts/IfeelLikeSnow/DF95/DF95_Export_UCS_MasterButton.lua</source>
-        <source file="Scripts/IfeelLikeSnow/DF95/DF95_FXBus_Seed.lua">https://raw.githubusercontent.com/IfeelLikeSnow/df95-toolbar-suite/main/Scripts/IfeelLikeSnow/DF95/DF95_FXBus_Seed.lua</source>
-        <source file="Scripts/IfeelLikeSnow/DF95/DF95_FXBus_Selector.lua">https://raw.githubusercontent.com/IfeelLikeSnow/df95-toolbar-suite/main/Scripts/IfeelLikeSnow/DF95/DF95_FXBus_Selector.lua</source>
-        <source file="Scripts/IfeelLikeSnow/DF95/DF95_FirstRun_LiveCheck.lua">https://raw.githubusercontent.com/IfeelLikeSnow/df95-toolbar-suite/main/Scripts/IfeelLikeSnow/DF95/DF95_FirstRun_LiveCheck.lua</source>
-        <source file="Scripts/IfeelLikeSnow/DF95/DF95_GainMatch_AB.lua">https://raw.githubusercontent.com/IfeelLikeSnow/df95-toolbar-suite/main/Scripts/IfeelLikeSnow/DF95/DF95_GainMatch_AB.lua</source>
-        <source file="Scripts/IfeelLikeSnow/DF95/DF95_LoopBuilder.lua">https://raw.githubusercontent.com/IfeelLikeSnow/df95-toolbar-suite/main/Scripts/IfeelLikeSnow/DF95/DF95_LoopBuilder.lua</source>
-        <source file="Scripts/IfeelLikeSnow/DF95/DF95_MasterBus_Selector.lua">https://raw.githubusercontent.com/IfeelLikeSnow/df95-toolbar-suite/main/Scripts/IfeelLikeSnow/DF95/DF95_MasterBus_Selector.lua</source>
-        <source file="Scripts/IfeelLikeSnow/DF95/DF95_PostInstall_Validator.lua">https://raw.githubusercontent.com/IfeelLikeSnow/df95-toolbar-suite/main/Scripts/IfeelLikeSnow/DF95/DF95_PostInstall_Validator.lua</source>
-        <source file="Scripts/IfeelLikeSnow/DF95/DF95_Rearrange_Align.lua">https://raw.githubusercontent.com/IfeelLikeSnow/df95-toolbar-suite/main/Scripts/IfeelLikeSnow/DF95/DF95_Rearrange_Align.lua</source>
-        <source file="Scripts/IfeelLikeSnow/DF95/DF95_Safety_Loudness_Menu.lua">https://raw.githubusercontent.com/IfeelLikeSnow/df95-toolbar-suite/main/Scripts/IfeelLikeSnow/DF95/DF95_Safety_Loudness_Menu.lua</source>
-        <source file="Scripts/IfeelLikeSnow/DF95/Tools/DF95_MicFX_Profile_GUI.lua">https://raw.githubusercontent.com/IfeelLikeSnow/df95-toolbar-suite/main/Scripts/IfeelLikeSnow/DF95/Tools/DF95_MicFX_Profile_GUI.lua</source>
         </version>
       </reapack>
     <reapack name="DF95_ReampSuite_Toolbar" type="script" desc="Toolbar/MenuSet + referenced scripts (shims included)">
@@ -2031,11 +1788,6 @@
         <description>Toolbar/MenuSet + referenced scripts (shims included)</description>
         </metadata>
       <version name="1.0.0" author="IfeelLikeSnow" time="1766300833">
-        <source file="Scripts/IfeelLikeSnow/DF95/DF95_V71_ReampRouter.lua">https://raw.githubusercontent.com/IfeelLikeSnow/df95-toolbar-suite/main/Scripts/IfeelLikeSnow/DF95/DF95_V71_ReampRouter.lua</source>
-        <source file="Scripts/IfeelLikeSnow/DF95/ReampSuite/DF95_ReampSuite_LatencyHelper.lua">https://raw.githubusercontent.com/IfeelLikeSnow/df95-toolbar-suite/main/Scripts/IfeelLikeSnow/DF95/ReampSuite/DF95_ReampSuite_LatencyHelper.lua</source>
-        <source file="Scripts/IfeelLikeSnow/DF95/ReampSuite/DF95_ReampSuite_MainGUI.lua">https://raw.githubusercontent.com/IfeelLikeSnow/df95-toolbar-suite/main/Scripts/IfeelLikeSnow/DF95/ReampSuite/DF95_ReampSuite_MainGUI.lua</source>
-        <source file="Scripts/IfeelLikeSnow/DF95/ReampSuite/DF95_ReampSuite_PedalChains_GUI.lua">https://raw.githubusercontent.com/IfeelLikeSnow/df95-toolbar-suite/main/Scripts/IfeelLikeSnow/DF95/ReampSuite/DF95_ReampSuite_PedalChains_GUI.lua</source>
-        <source file="Scripts/IfeelLikeSnow/DF95/ReampSuite/DF95_ReampSuite_Router.lua">https://raw.githubusercontent.com/IfeelLikeSnow/df95-toolbar-suite/main/Scripts/IfeelLikeSnow/DF95/ReampSuite/DF95_ReampSuite_Router.lua</source>
         <source file="Toolbars/DF95_ReampSuite_Toolbar.ReaperMenuSet">https://raw.githubusercontent.com/IfeelLikeSnow/df95-toolbar-suite/main/Toolbars/DF95_ReampSuite_Toolbar.ReaperMenuSet</source>
         </version>
       </reapack>
@@ -2044,9 +1796,6 @@
         <description>Toolbar/MenuSet + referenced scripts (shims included)</description>
         </metadata>
       <version name="1.0.0" author="IfeelLikeSnow" time="1766300833">
-        <source file="Scripts/IfeelLikeSnow/DF95/DF95_V71_LatencyAnalyzer.lua">https://raw.githubusercontent.com/IfeelLikeSnow/df95-toolbar-suite/main/Scripts/IfeelLikeSnow/DF95/DF95_V71_LatencyAnalyzer.lua</source>
-        <source file="Scripts/IfeelLikeSnow/DF95/DF95_V71_ReampRouter.lua">https://raw.githubusercontent.com/IfeelLikeSnow/df95-toolbar-suite/main/Scripts/IfeelLikeSnow/DF95/DF95_V71_ReampRouter.lua</source>
-        <source file="Scripts/IfeelLikeSnow/DF95/DF95_V71_SuperPipeline.lua">https://raw.githubusercontent.com/IfeelLikeSnow/df95-toolbar-suite/main/Scripts/IfeelLikeSnow/DF95/DF95_V71_SuperPipeline.lua</source>
         <source file="Toolbars/DF95_V71_SuperPipeline_Reamp_Toolbar.ReaperMenuSet">https://raw.githubusercontent.com/IfeelLikeSnow/df95-toolbar-suite/main/Toolbars/DF95_V71_SuperPipeline_Reamp_Toolbar.ReaperMenuSet</source>
         </version>
       </reapack>
@@ -2055,9 +1804,6 @@
         <description>Toolbar/MenuSet + referenced scripts (shims included)</description>
         </metadata>
       <version name="1.0.0" author="IfeelLikeSnow" time="1766300833">
-        <source file="Scripts/IfeelLikeSnow/DF95/DF95_V71_LatencyAnalyzer.lua">https://raw.githubusercontent.com/IfeelLikeSnow/df95-toolbar-suite/main/Scripts/IfeelLikeSnow/DF95/DF95_V71_LatencyAnalyzer.lua</source>
-        <source file="Scripts/IfeelLikeSnow/DF95/DF95_V71_ReampRouter.lua">https://raw.githubusercontent.com/IfeelLikeSnow/df95-toolbar-suite/main/Scripts/IfeelLikeSnow/DF95/DF95_V71_ReampRouter.lua</source>
-        <source file="Scripts/IfeelLikeSnow/DF95/DF95_V72_SuperPipeline.lua">https://raw.githubusercontent.com/IfeelLikeSnow/df95-toolbar-suite/main/Scripts/IfeelLikeSnow/DF95/DF95_V72_SuperPipeline.lua</source>
         <source file="Toolbars/DF95_V72_SuperPipeline_Reamp_Toolbar.ReaperMenuSet">https://raw.githubusercontent.com/IfeelLikeSnow/df95-toolbar-suite/main/Toolbars/DF95_V72_SuperPipeline_Reamp_Toolbar.ReaperMenuSet</source>
         </version>
       </reapack>
