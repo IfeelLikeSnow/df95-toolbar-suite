@@ -1,14 +1,148 @@
 <?xml version='1.0' encoding='utf-8'?>
-<index version="1" name="DF95 Toolbar Suite" desc="Standalone DF95/IFLS toolbar suite (Core + MenuSets)">
+<index name="DF95 Toolbar Suite" version="1" desc="Standalone DF95/IFLS toolbar suite (Core + MenuSets)">
   <category name="DF95 Toolbar Suite">
     <category name="DF95/00 Core">
       <reapack name="Core scripts/resources used by toolbars" type="script">
         <metadata>
-          <description>Standalone Core: scripts, framework, data, effects. Install this FIRST.</description>
+          <description>Install FIRST. Contains scripts/resources required by DF95/IFLS toolbars.</description>
           <author>IfeelLikeSnow</author>
         </metadata>
         <version name="1.0.0">
-          <time>2025-12-22T21:05:33Z</time>
+          <time>2025-12-22T21:33:59Z</time>
+          <source file="Chains/Coloring/Airwindows/CPU-Light/AW_CPU_PurestDrive_Light.RfxChain">https://raw.githubusercontent.com/IfeelLikeSnow/df95-toolbar-suite/main/Chains/Coloring/Airwindows/CPU-Light/AW_CPU_PurestDrive_Light.RfxChain</source>
+          <source file="Chains/Coloring/Airwindows/CPU-Light/AW_CPU_PurestGain_ToTape7.RfxChain">https://raw.githubusercontent.com/IfeelLikeSnow/df95-toolbar-suite/main/Chains/Coloring/Airwindows/CPU-Light/AW_CPU_PurestGain_ToTape7.RfxChain</source>
+          <source file="Chains/Coloring/Airwindows/CPU-Light/AW_CPU_PurestGain_ToTape7_Safe.RfxChain">https://raw.githubusercontent.com/IfeelLikeSnow/df95-toolbar-suite/main/Chains/Coloring/Airwindows/CPU-Light/AW_CPU_PurestGain_ToTape7_Safe.RfxChain</source>
+          <source file="Chains/Coloring/Airwindows/CPU-Light/AW_CPU_ToTape7_Solo.RfxChain">https://raw.githubusercontent.com/IfeelLikeSnow/df95-toolbar-suite/main/Chains/Coloring/Airwindows/CPU-Light/AW_CPU_ToTape7_Solo.RfxChain</source>
+          <source file="Chains/Coloring/Airwindows/CPU-Light/AW_CPU_ToTape7_Solo_Safe.RfxChain">https://raw.githubusercontent.com/IfeelLikeSnow/df95-toolbar-suite/main/Chains/Coloring/Airwindows/CPU-Light/AW_CPU_ToTape7_Solo_Safe.RfxChain</source>
+          <source file="Chains/Coloring/Airwindows/CleanHarmonic/AW_Clean_PurestGain_PreTrim.RfxChain">https://raw.githubusercontent.com/IfeelLikeSnow/df95-toolbar-suite/main/Chains/Coloring/Airwindows/CleanHarmonic/AW_Clean_PurestGain_PreTrim.RfxChain</source>
+          <source file="Chains/Coloring/Airwindows/Console/AW_Console_BussColors_Soft.RfxChain">https://raw.githubusercontent.com/IfeelLikeSnow/df95-toolbar-suite/main/Chains/Coloring/Airwindows/Console/AW_Console_BussColors_Soft.RfxChain</source>
+          <source file="Chains/Coloring/Airwindows/Rich/AW_Rich_Tape_Air_Glue.RfxChain">https://raw.githubusercontent.com/IfeelLikeSnow/df95-toolbar-suite/main/Chains/Coloring/Airwindows/Rich/AW_Rich_Tape_Air_Glue.RfxChain</source>
+          <source file="Chains/Coloring/Airwindows/Rich/AW_Rich_Tape_Air_Glue_Safe.RfxChain">https://raw.githubusercontent.com/IfeelLikeSnow/df95-toolbar-suite/main/Chains/Coloring/Airwindows/Rich/AW_Rich_Tape_Air_Glue_Safe.RfxChain</source>
+          <source file="Chains/Coloring/Airwindows/Rich/AW_Rich_Tape_Console_Glue.RfxChain">https://raw.githubusercontent.com/IfeelLikeSnow/df95-toolbar-suite/main/Chains/Coloring/Airwindows/Rich/AW_Rich_Tape_Console_Glue.RfxChain</source>
+          <source file="Chains/Coloring/Airwindows/Rich/AW_Rich_Tape_Console_Glue_Safe.RfxChain">https://raw.githubusercontent.com/IfeelLikeSnow/df95-toolbar-suite/main/Chains/Coloring/Airwindows/Rich/AW_Rich_Tape_Console_Glue_Safe.RfxChain</source>
+          <source file="Chains/Coloring/Airwindows/Tape/AW_Tape_ToTape7_Soft.RfxChain">https://raw.githubusercontent.com/IfeelLikeSnow/df95-toolbar-suite/main/Chains/Coloring/Airwindows/Tape/AW_Tape_ToTape7_Soft.RfxChain</source>
+          <source file="Chains/Coloring/Airwindows/Tape/AW_Tape_ToTape7_Soft_PreHPF_Safe.RfxChain">https://raw.githubusercontent.com/IfeelLikeSnow/df95-toolbar-suite/main/Chains/Coloring/Airwindows/Tape/AW_Tape_ToTape7_Soft_PreHPF_Safe.RfxChain</source>
+          <source file="Chains/Coloring/Airwindows/Tape/AW_Tape_ToTape7_Soft_Safe.RfxChain">https://raw.githubusercontent.com/IfeelLikeSnow/df95-toolbar-suite/main/Chains/Coloring/Airwindows/Tape/AW_Tape_ToTape7_Soft_Safe.RfxChain</source>
+          <source file="Chains/Coloring/Airwindows/Tape/AW_Tape_ToTape8_Subtle.RfxChain">https://raw.githubusercontent.com/IfeelLikeSnow/df95-toolbar-suite/main/Chains/Coloring/Airwindows/Tape/AW_Tape_ToTape8_Subtle.RfxChain</source>
+          <source file="Chains/Coloring/Airwindows/Tape/AW_Tape_ToTape8_Subtle_Safe.RfxChain">https://raw.githubusercontent.com/IfeelLikeSnow/df95-toolbar-suite/main/Chains/Coloring/Airwindows/Tape/AW_Tape_ToTape8_Subtle_Safe.RfxChain</source>
+          <source file="Chains/Coloring/Airwindows/Warm/AW_Warm_PurestDrive_Glue.RfxChain">https://raw.githubusercontent.com/IfeelLikeSnow/df95-toolbar-suite/main/Chains/Coloring/Airwindows/Warm/AW_Warm_PurestDrive_Glue.RfxChain</source>
+          <source file="Chains/Coloring/Airwindows/Warm/AW_Warm_PurestDrive_Light.RfxChain">https://raw.githubusercontent.com/IfeelLikeSnow/df95-toolbar-suite/main/Chains/Coloring/Airwindows/Warm/AW_Warm_PurestDrive_Light.RfxChain</source>
+          <source file="Chains/Coloring/AnalogObsession/Drive/AO_Drive_Distox_Light.RfxChain">https://raw.githubusercontent.com/IfeelLikeSnow/df95-toolbar-suite/main/Chains/Coloring/AnalogObsession/Drive/AO_Drive_Distox_Light.RfxChain</source>
+          <source file="Chains/Coloring/AnalogObsession/Presence/AO_Presence_SSQ_Bright.RfxChain">https://raw.githubusercontent.com/IfeelLikeSnow/df95-toolbar-suite/main/Chains/Coloring/AnalogObsession/Presence/AO_Presence_SSQ_Bright.RfxChain</source>
+          <source file="Chains/Coloring/AnalogObsession/Punch/AO_Punch_FETish_Soft.RfxChain">https://raw.githubusercontent.com/IfeelLikeSnow/df95-toolbar-suite/main/Chains/Coloring/AnalogObsession/Punch/AO_Punch_FETish_Soft.RfxChain</source>
+          <source file="Chains/Coloring/AnalogObsession/Tone/AO_Tone_RareSE_Subtle.RfxChain">https://raw.githubusercontent.com/IfeelLikeSnow/df95-toolbar-suite/main/Chains/Coloring/AnalogObsession/Tone/AO_Tone_RareSE_Subtle.RfxChain</source>
+          <source file="Chains/Coloring/AnalogObsession/Tone/AO_Tone_Rare_PultecSweet.RfxChain">https://raw.githubusercontent.com/IfeelLikeSnow/df95-toolbar-suite/main/Chains/Coloring/AnalogObsession/Tone/AO_Tone_Rare_PultecSweet.RfxChain</source>
+          <source file="Chains/Coloring/AnalogObsession/Warm/AO_Warm_ChannelGlue.RfxChain">https://raw.githubusercontent.com/IfeelLikeSnow/df95-toolbar-suite/main/Chains/Coloring/AnalogObsession/Warm/AO_Warm_ChannelGlue.RfxChain</source>
+          <source file="Chains/Coloring/AnalogObsession/Warm/AO_Warm_NeveClean.RfxChain">https://raw.githubusercontent.com/IfeelLikeSnow/df95-toolbar-suite/main/Chains/Coloring/AnalogObsession/Warm/AO_Warm_NeveClean.RfxChain</source>
+          <source file="Chains/Coloring/Clean/Clean_Glue.RfxChain">https://raw.githubusercontent.com/IfeelLikeSnow/df95-toolbar-suite/main/Chains/Coloring/Clean/Clean_Glue.RfxChain</source>
+          <source file="Chains/Coloring/Clean/Clean_Subtle.RfxChain">https://raw.githubusercontent.com/IfeelLikeSnow/df95-toolbar-suite/main/Chains/Coloring/Clean/Clean_Subtle.RfxChain</source>
+          <source file="Chains/Coloring/Cool/Cool_Bright_Airy.RfxChain">https://raw.githubusercontent.com/IfeelLikeSnow/df95-toolbar-suite/main/Chains/Coloring/Cool/Cool_Bright_Airy.RfxChain</source>
+          <source file="Chains/Coloring/Cool/Cool_Presence_Clean.RfxChain">https://raw.githubusercontent.com/IfeelLikeSnow/df95-toolbar-suite/main/Chains/Coloring/Cool/Cool_Presence_Clean.RfxChain</source>
+          <source file="Chains/Coloring/Presence/Presence_Soft_Spectral.RfxChain">https://raw.githubusercontent.com/IfeelLikeSnow/df95-toolbar-suite/main/Chains/Coloring/Presence/Presence_Soft_Spectral.RfxChain</source>
+          <source file="Chains/Coloring/Safety/Safety_ReaLimit_CleanTP.RfxChain">https://raw.githubusercontent.com/IfeelLikeSnow/df95-toolbar-suite/main/Chains/Coloring/Safety/Safety_ReaLimit_CleanTP.RfxChain</source>
+          <source file="Chains/Coloring/Saturate/Saturate_Light_Bus.RfxChain">https://raw.githubusercontent.com/IfeelLikeSnow/df95-toolbar-suite/main/Chains/Coloring/Saturate/Saturate_Light_Bus.RfxChain</source>
+          <source file="Chains/Coloring/Tape/Tape_Soft_Decimort.RfxChain">https://raw.githubusercontent.com/IfeelLikeSnow/df95-toolbar-suite/main/Chains/Coloring/Tape/Tape_Soft_Decimort.RfxChain</source>
+          <source file="Chains/Coloring/Warm/Warm_Neutral_Rea.RfxChain">https://raw.githubusercontent.com/IfeelLikeSnow/df95-toolbar-suite/main/Chains/Coloring/Warm/Warm_Neutral_Rea.RfxChain</source>
+          <source file="Chains/Coloring/Warm/Warm_TapeLike_Light.RfxChain">https://raw.githubusercontent.com/IfeelLikeSnow/df95-toolbar-suite/main/Chains/Coloring/Warm/Warm_TapeLike_Light.RfxChain</source>
+          <source file="Chains/FXBus/Artist/Autechre_Glitch_Mechanism_909.RfxChain">https://raw.githubusercontent.com/IfeelLikeSnow/df95-toolbar-suite/main/Chains/FXBus/Artist/Autechre_Glitch_Mechanism_909.RfxChain</source>
+          <source file="Chains/FXBus/ArtistExtended/Plaid_FilterWeave.RfxChain">https://raw.githubusercontent.com/IfeelLikeSnow/df95-toolbar-suite/main/Chains/FXBus/ArtistExtended/Plaid_FilterWeave.RfxChain</source>
+          <source file="Chains/FXBus/ArtistSubstyles/AphexTwin_Drukqs_Perc.RfxChain">https://raw.githubusercontent.com/IfeelLikeSnow/df95-toolbar-suite/main/Chains/FXBus/ArtistSubstyles/AphexTwin_Drukqs_Perc.RfxChain</source>
+          <source file="Chains/FXBus/ArtistSubstyles/BoardsOfCanada_Sunny_Tape.RfxChain">https://raw.githubusercontent.com/IfeelLikeSnow/df95-toolbar-suite/main/Chains/FXBus/ArtistSubstyles/BoardsOfCanada_Sunny_Tape.RfxChain</source>
+          <source file="Chains/FXBus/ArtistSubstyles2/AphexTwin_Granular_Bounce.RfxChain">https://raw.githubusercontent.com/IfeelLikeSnow/df95-toolbar-suite/main/Chains/FXBus/ArtistSubstyles2/AphexTwin_Granular_Bounce.RfxChain</source>
+          <source file="Chains/FXBus/ArtistSubstyles2/Arovane_Granular_Silk.RfxChain">https://raw.githubusercontent.com/IfeelLikeSnow/df95-toolbar-suite/main/Chains/FXBus/ArtistSubstyles2/Arovane_Granular_Silk.RfxChain</source>
+          <source file="Chains/FXBus/ArtistSubstyles2/Arovane_SoftGrain_Motion.RfxChain">https://raw.githubusercontent.com/IfeelLikeSnow/df95-toolbar-suite/main/Chains/FXBus/ArtistSubstyles2/Arovane_SoftGrain_Motion.RfxChain</source>
+          <source file="Chains/FXBus/ArtistSubstyles2/Autechre_FM_Metal_Neutral.RfxChain">https://raw.githubusercontent.com/IfeelLikeSnow/df95-toolbar-suite/main/Chains/FXBus/ArtistSubstyles2/Autechre_FM_Metal_Neutral.RfxChain</source>
+          <source file="Chains/FXBus/ArtistSubstyles2/BoardsOfCanada_DustyTape.RfxChain">https://raw.githubusercontent.com/IfeelLikeSnow/df95-toolbar-suite/main/Chains/FXBus/ArtistSubstyles2/BoardsOfCanada_DustyTape.RfxChain</source>
+          <source file="Chains/FXBus/ArtistSubstyles2/BogdanRaczynski_SpikeRush.RfxChain">https://raw.githubusercontent.com/IfeelLikeSnow/df95-toolbar-suite/main/Chains/FXBus/ArtistSubstyles2/BogdanRaczynski_SpikeRush.RfxChain</source>
+          <source file="Chains/FXBus/ArtistSubstyles2/FourTet_Minimal_Orbital.RfxChain">https://raw.githubusercontent.com/IfeelLikeSnow/df95-toolbar-suite/main/Chains/FXBus/ArtistSubstyles2/FourTet_Minimal_Orbital.RfxChain</source>
+          <source file="Chains/FXBus/ArtistSubstyles2/JanJelinek_TapeTexture.RfxChain">https://raw.githubusercontent.com/IfeelLikeSnow/df95-toolbar-suite/main/Chains/FXBus/ArtistSubstyles2/JanJelinek_TapeTexture.RfxChain</source>
+          <source file="Chains/FXBus/ArtistSubstyles2/MouseOnMars_Modular_Motion.RfxChain">https://raw.githubusercontent.com/IfeelLikeSnow/df95-toolbar-suite/main/Chains/FXBus/ArtistSubstyles2/MouseOnMars_Modular_Motion.RfxChain</source>
+          <source file="Chains/FXBus/ArtistSubstyles2/MuZiq_SoftFold_IDM.RfxChain">https://raw.githubusercontent.com/IfeelLikeSnow/df95-toolbar-suite/main/Chains/FXBus/ArtistSubstyles2/MuZiq_SoftFold_IDM.RfxChain</source>
+          <source file="Chains/FXBus/ArtistSubstyles2/Proem_GlassClouds.RfxChain">https://raw.githubusercontent.com/IfeelLikeSnow/df95-toolbar-suite/main/Chains/FXBus/ArtistSubstyles2/Proem_GlassClouds.RfxChain</source>
+          <source file="Chains/FXBus/ArtistSubstyles2/Squarepusher_DrumScience.RfxChain">https://raw.githubusercontent.com/IfeelLikeSnow/df95-toolbar-suite/main/Chains/FXBus/ArtistSubstyles2/Squarepusher_DrumScience.RfxChain</source>
+          <source file="Chains/FXBus/ArtistSubstyles2/Squarepusher_JungleJazz.RfxChain">https://raw.githubusercontent.com/IfeelLikeSnow/df95-toolbar-suite/main/Chains/FXBus/ArtistSubstyles2/Squarepusher_JungleJazz.RfxChain</source>
+          <source file="Chains/FXBus/Generative_Random/Evolve_RandomFlow.RfxChain">https://raw.githubusercontent.com/IfeelLikeSnow/df95-toolbar-suite/main/Chains/FXBus/Generative_Random/Evolve_RandomFlow.RfxChain</source>
+          <source file="Chains/FXBus/Generative_Random/Orbital_Grainfield.RfxChain">https://raw.githubusercontent.com/IfeelLikeSnow/df95-toolbar-suite/main/Chains/FXBus/Generative_Random/Orbital_Grainfield.RfxChain</source>
+          <source file="Chains/FXBus/Generative_Random/Seed_Evolving_01.RfxChain">https://raw.githubusercontent.com/IfeelLikeSnow/df95-toolbar-suite/main/Chains/FXBus/Generative_Random/Seed_Evolving_01.RfxChain</source>
+          <source file="Chains/FXBus/Generative_Random/Seed_Evolving_02.RfxChain">https://raw.githubusercontent.com/IfeelLikeSnow/df95-toolbar-suite/main/Chains/FXBus/Generative_Random/Seed_Evolving_02.RfxChain</source>
+          <source file="Chains/FXBus/Generative_Random/Seed_Random_PulseCloud.RfxChain">https://raw.githubusercontent.com/IfeelLikeSnow/df95-toolbar-suite/main/Chains/FXBus/Generative_Random/Seed_Random_PulseCloud.RfxChain</source>
+          <source file="Chains/FXBus/Glitch_Granular/Bus_IDM_Glitch_SmashTransient_01.RfxChain">https://raw.githubusercontent.com/IfeelLikeSnow/df95-toolbar-suite/main/Chains/FXBus/Glitch_Granular/Bus_IDM_Glitch_SmashTransient_01.RfxChain</source>
+          <source file="Chains/FXBus/Glitch_Granular/Data_Fracture.RfxChain">https://raw.githubusercontent.com/IfeelLikeSnow/df95-toolbar-suite/main/Chains/FXBus/Glitch_Granular/Data_Fracture.RfxChain</source>
+          <source file="Chains/FXBus/Glitch_Granular/Hard_Cutup_Machine.RfxChain">https://raw.githubusercontent.com/IfeelLikeSnow/df95-toolbar-suite/main/Chains/FXBus/Glitch_Granular/Hard_Cutup_Machine.RfxChain</source>
+          <source file="Chains/FXBus/Glitch_Granular/Micrograin_Chaos.RfxChain">https://raw.githubusercontent.com/IfeelLikeSnow/df95-toolbar-suite/main/Chains/FXBus/Glitch_Granular/Micrograin_Chaos.RfxChain</source>
+          <source file="Chains/FXBus/Glitch_Granular/Microslice_Scatter.RfxChain">https://raw.githubusercontent.com/IfeelLikeSnow/df95-toolbar-suite/main/Chains/FXBus/Glitch_Granular/Microslice_Scatter.RfxChain</source>
+          <source file="Chains/FXBus/Hybrid_Analog/Sampler_12bit_Pulse.RfxChain">https://raw.githubusercontent.com/IfeelLikeSnow/df95-toolbar-suite/main/Chains/FXBus/Hybrid_Analog/Sampler_12bit_Pulse.RfxChain</source>
+          <source file="Chains/FXBus/Hybrid_Analog/TapeDust_Drone.RfxChain">https://raw.githubusercontent.com/IfeelLikeSnow/df95-toolbar-suite/main/Chains/FXBus/Hybrid_Analog/TapeDust_Drone.RfxChain</source>
+          <source file="Chains/FXBus/Hybrid_Analog/WarmNoise_TapeFold.RfxChain">https://raw.githubusercontent.com/IfeelLikeSnow/df95-toolbar-suite/main/Chains/FXBus/Hybrid_Analog/WarmNoise_TapeFold.RfxChain</source>
+          <source file="Chains/FXBus/IDM_Clicks/Bus_IDM_ClicksPops_Clean_01.RfxChain">https://raw.githubusercontent.com/IfeelLikeSnow/df95-toolbar-suite/main/Chains/FXBus/IDM_Clicks/Bus_IDM_ClicksPops_Clean_01.RfxChain</source>
+          <source file="Chains/FXBus/IDM_Clicks/Bus_IDM_ClicksPops_Trash_01.RfxChain">https://raw.githubusercontent.com/IfeelLikeSnow/df95-toolbar-suite/main/Chains/FXBus/IDM_Clicks/Bus_IDM_ClicksPops_Trash_01.RfxChain</source>
+          <source file="Chains/FXBus/IDM_DrumSweetspots/Drum_Bus_TapeGlue_Safe_01.RfxChain">https://raw.githubusercontent.com/IfeelLikeSnow/df95-toolbar-suite/main/Chains/FXBus/IDM_DrumSweetspots/Drum_Bus_TapeGlue_Safe_01.RfxChain</source>
+          <source file="Chains/FXBus/IDM_DrumSweetspots/Drum_Hats_Tick_Air_Safe_01.RfxChain">https://raw.githubusercontent.com/IfeelLikeSnow/df95-toolbar-suite/main/Chains/FXBus/IDM_DrumSweetspots/Drum_Hats_Tick_Air_Safe_01.RfxChain</source>
+          <source file="Chains/FXBus/IDM_DrumSweetspots/Drum_Kick_Punch_Sub_Safe_01.RfxChain">https://raw.githubusercontent.com/IfeelLikeSnow/df95-toolbar-suite/main/Chains/FXBus/IDM_DrumSweetspots/Drum_Kick_Punch_Sub_Safe_01.RfxChain</source>
+          <source file="Chains/FXBus/IDM_DrumSweetspots/Drum_Snare_Snap_Body_Safe_01.RfxChain">https://raw.githubusercontent.com/IfeelLikeSnow/df95-toolbar-suite/main/Chains/FXBus/IDM_DrumSweetspots/Drum_Snare_Snap_Body_Safe_01.RfxChain</source>
+          <source file="Chains/FXBus/IDM_Hats/Bus_IDM_Hats_Air_01.RfxChain">https://raw.githubusercontent.com/IfeelLikeSnow/df95-toolbar-suite/main/Chains/FXBus/IDM_Hats/Bus_IDM_Hats_Air_01.RfxChain</source>
+          <source file="Chains/FXBus/IDM_Hats/Bus_IDM_Hats_Air_Extreme_01.RfxChain">https://raw.githubusercontent.com/IfeelLikeSnow/df95-toolbar-suite/main/Chains/FXBus/IDM_Hats/Bus_IDM_Hats_Air_Extreme_01.RfxChain</source>
+          <source file="Chains/FXBus/IDM_Hats/Bus_IDM_Hats_Air_Safe_01.RfxChain">https://raw.githubusercontent.com/IfeelLikeSnow/df95-toolbar-suite/main/Chains/FXBus/IDM_Hats/Bus_IDM_Hats_Air_Safe_01.RfxChain</source>
+          <source file="Chains/FXBus/IDM_Hats/Bus_IDM_Hats_TickDry_01.RfxChain">https://raw.githubusercontent.com/IfeelLikeSnow/df95-toolbar-suite/main/Chains/FXBus/IDM_Hats/Bus_IDM_Hats_TickDry_01.RfxChain</source>
+          <source file="Chains/FXBus/IDM_Kicks/Bus_IDM_Kicks_AnalogWarm_B.RfxChain">https://raw.githubusercontent.com/IfeelLikeSnow/df95-toolbar-suite/main/Chains/FXBus/IDM_Kicks/Bus_IDM_Kicks_AnalogWarm_B.RfxChain</source>
+          <source file="Chains/FXBus/IDM_Kicks/Bus_IDM_Kicks_IDMHard_C.RfxChain">https://raw.githubusercontent.com/IfeelLikeSnow/df95-toolbar-suite/main/Chains/FXBus/IDM_Kicks/Bus_IDM_Kicks_IDMHard_C.RfxChain</source>
+          <source file="Chains/FXBus/IDM_Kicks/Bus_IDM_Kicks_PunchSub_A.RfxChain">https://raw.githubusercontent.com/IfeelLikeSnow/df95-toolbar-suite/main/Chains/FXBus/IDM_Kicks/Bus_IDM_Kicks_PunchSub_A.RfxChain</source>
+          <source file="Chains/FXBus/IDM_Kicks/Bus_IDM_Kicks_Punch_01.RfxChain">https://raw.githubusercontent.com/IfeelLikeSnow/df95-toolbar-suite/main/Chains/FXBus/IDM_Kicks/Bus_IDM_Kicks_Punch_01.RfxChain</source>
+          <source file="Chains/FXBus/IDM_Kicks/Bus_IDM_Kicks_Punch_Extreme_01.RfxChain">https://raw.githubusercontent.com/IfeelLikeSnow/df95-toolbar-suite/main/Chains/FXBus/IDM_Kicks/Bus_IDM_Kicks_Punch_Extreme_01.RfxChain</source>
+          <source file="Chains/FXBus/IDM_Kicks/Bus_IDM_Kicks_Punch_Safe_01.RfxChain">https://raw.githubusercontent.com/IfeelLikeSnow/df95-toolbar-suite/main/Chains/FXBus/IDM_Kicks/Bus_IDM_Kicks_Punch_Safe_01.RfxChain</source>
+          <source file="Chains/FXBus/IDM_Kicks/Bus_IDM_Kicks_Thump_Sub_01.RfxChain">https://raw.githubusercontent.com/IfeelLikeSnow/df95-toolbar-suite/main/Chains/FXBus/IDM_Kicks/Bus_IDM_Kicks_Thump_Sub_01.RfxChain</source>
+          <source file="Chains/FXBus/IDM_MicroPerc/Bus_IDM_MicroPerc_01.RfxChain">https://raw.githubusercontent.com/IfeelLikeSnow/df95-toolbar-suite/main/Chains/FXBus/IDM_MicroPerc/Bus_IDM_MicroPerc_01.RfxChain</source>
+          <source file="Chains/FXBus/IDM_MicroPerc/Bus_IDM_MicroPerc_TransientGlue_01.RfxChain">https://raw.githubusercontent.com/IfeelLikeSnow/df95-toolbar-suite/main/Chains/FXBus/IDM_MicroPerc/Bus_IDM_MicroPerc_TransientGlue_01.RfxChain</source>
+          <source file="Chains/FXBus/IDM_Snares/Bus_IDM_Snares_SnapBody_01.RfxChain">https://raw.githubusercontent.com/IfeelLikeSnow/df95-toolbar-suite/main/Chains/FXBus/IDM_Snares/Bus_IDM_Snares_SnapBody_01.RfxChain</source>
+          <source file="Chains/FXBus/IDM_Snares/Bus_IDM_Snares_Snap_01.RfxChain">https://raw.githubusercontent.com/IfeelLikeSnow/df95-toolbar-suite/main/Chains/FXBus/IDM_Snares/Bus_IDM_Snares_Snap_01.RfxChain</source>
+          <source file="Chains/FXBus/IDM_Snares/Bus_IDM_Snares_Snap_Extreme_01.RfxChain">https://raw.githubusercontent.com/IfeelLikeSnow/df95-toolbar-suite/main/Chains/FXBus/IDM_Snares/Bus_IDM_Snares_Snap_Extreme_01.RfxChain</source>
+          <source file="Chains/FXBus/IDM_Snares/Bus_IDM_Snares_Snap_Safe_01.RfxChain">https://raw.githubusercontent.com/IfeelLikeSnow/df95-toolbar-suite/main/Chains/FXBus/IDM_Snares/Bus_IDM_Snares_Snap_Safe_01.RfxChain</source>
+          <source file="Chains/FXBus/IDM_Snares/Bus_IDM_Snares_ThumpBody_01.RfxChain">https://raw.githubusercontent.com/IfeelLikeSnow/df95-toolbar-suite/main/Chains/FXBus/IDM_Snares/Bus_IDM_Snares_ThumpBody_01.RfxChain</source>
+          <source file="Chains/FXBus/Spectral_IDM/Formant_Shift_Air.RfxChain">https://raw.githubusercontent.com/IfeelLikeSnow/df95-toolbar-suite/main/Chains/FXBus/Spectral_IDM/Formant_Shift_Air.RfxChain</source>
+          <source file="Chains/FXBus/Spectral_IDM/SpectraFold.RfxChain">https://raw.githubusercontent.com/IfeelLikeSnow/df95-toolbar-suite/main/Chains/FXBus/Spectral_IDM/SpectraFold.RfxChain</source>
+          <source file="Chains/FXBus/Spectral_IDM/Spectral_Morph_IDM.RfxChain">https://raw.githubusercontent.com/IfeelLikeSnow/df95-toolbar-suite/main/Chains/FXBus/Spectral_IDM/Spectral_Morph_IDM.RfxChain</source>
+          <source file="Chains/Master/DF95_Master_Generative_-0.5dB_LA2_5ms_R160ms.RfxChain">https://raw.githubusercontent.com/IfeelLikeSnow/df95-toolbar-suite/main/Chains/Master/DF95_Master_Generative_-0.5dB_LA2_5ms_R160ms.RfxChain</source>
+          <source file="Chains/Master/DF95_Master_Live_-0.8dB.RfxChain">https://raw.githubusercontent.com/IfeelLikeSnow/df95-toolbar-suite/main/Chains/Master/DF95_Master_Live_-0.8dB.RfxChain</source>
+          <source file="Chains/Master/DF95_Master_Live_-0.8dB_LA1_5ms_R120ms.RfxChain">https://raw.githubusercontent.com/IfeelLikeSnow/df95-toolbar-suite/main/Chains/Master/DF95_Master_Live_-0.8dB_LA1_5ms_R120ms.RfxChain</source>
+          <source file="Chains/Master/DF95_Master_Release_-0.1dB.RfxChain">https://raw.githubusercontent.com/IfeelLikeSnow/df95-toolbar-suite/main/Chains/Master/DF95_Master_Release_-0.1dB.RfxChain</source>
+          <source file="Chains/Master/DF95_Master_Release_-0.1dB_LA1ms_R100ms.RfxChain">https://raw.githubusercontent.com/IfeelLikeSnow/df95-toolbar-suite/main/Chains/Master/DF95_Master_Release_-0.1dB_LA1ms_R100ms.RfxChain</source>
+          <source file="Chains/Master/DF95_Master_Sample_-0.3dB.RfxChain">https://raw.githubusercontent.com/IfeelLikeSnow/df95-toolbar-suite/main/Chains/Master/DF95_Master_Sample_-0.3dB.RfxChain</source>
+          <source file="Chains/Master/DF95_Master_Sample_-0.3dB_LA2ms_R140ms.RfxChain">https://raw.githubusercontent.com/IfeelLikeSnow/df95-toolbar-suite/main/Chains/Master/DF95_Master_Sample_-0.3dB_LA2ms_R140ms.RfxChain</source>
+          <source file="Chains/Master/DF95_Master_Streaming_-1.0dB.RfxChain">https://raw.githubusercontent.com/IfeelLikeSnow/df95-toolbar-suite/main/Chains/Master/DF95_Master_Streaming_-1.0dB.RfxChain</source>
+          <source file="Chains/Master/DF95_Master_Streaming_-1.0dB_LA2ms_R200ms.RfxChain">https://raw.githubusercontent.com/IfeelLikeSnow/df95-toolbar-suite/main/Chains/Master/DF95_Master_Streaming_-1.0dB_LA2ms_R200ms.RfxChain</source>
+          <source file="Chains/Master/Extended/Bright/Bright_Air_Spectral.RfxChain">https://raw.githubusercontent.com/IfeelLikeSnow/df95-toolbar-suite/main/Chains/Master/Extended/Bright/Bright_Air_Spectral.RfxChain</source>
+          <source file="Chains/Master/Extended/Broadcast/Broadcast_Safe_TP.RfxChain">https://raw.githubusercontent.com/IfeelLikeSnow/df95-toolbar-suite/main/Chains/Master/Extended/Broadcast/Broadcast_Safe_TP.RfxChain</source>
+          <source file="Chains/Master/Extended/Club/Club_Tight_Spectral.RfxChain">https://raw.githubusercontent.com/IfeelLikeSnow/df95-toolbar-suite/main/Chains/Master/Extended/Club/Club_Tight_Spectral.RfxChain</source>
+          <source file="Chains/Master/Extended/Neutral/Neutral_Minimal_Spectral.RfxChain">https://raw.githubusercontent.com/IfeelLikeSnow/df95-toolbar-suite/main/Chains/Master/Extended/Neutral/Neutral_Minimal_Spectral.RfxChain</source>
+          <source file="Chains/Master/Extended/Warm/Warm_TapeTone.RfxChain">https://raw.githubusercontent.com/IfeelLikeSnow/df95-toolbar-suite/main/Chains/Master/Extended/Warm/Warm_TapeTone.RfxChain</source>
+          <source file="Chains/Master/Extended/Warm/Warm_TapeTone_Lite.RfxChain">https://raw.githubusercontent.com/IfeelLikeSnow/df95-toolbar-suite/main/Chains/Master/Extended/Warm/Warm_TapeTone_Lite.RfxChain</source>
+          <source file="Chains/Master/Extended_AO/Console/AO_Console_Brit_SSQ_TP.RfxChain">https://raw.githubusercontent.com/IfeelLikeSnow/df95-toolbar-suite/main/Chains/Master/Extended_AO/Console/AO_Console_Brit_SSQ_TP.RfxChain</source>
+          <source file="Chains/Master/Extended_AO/Glue/AO_Glue_BUSTERse_TP.RfxChain">https://raw.githubusercontent.com/IfeelLikeSnow/df95-toolbar-suite/main/Chains/Master/Extended_AO/Glue/AO_Glue_BUSTERse_TP.RfxChain</source>
+          <source file="Chains/Master/Extended_AO/MasterEQ/AO_MasterEQ_N492ME_TP.RfxChain">https://raw.githubusercontent.com/IfeelLikeSnow/df95-toolbar-suite/main/Chains/Master/Extended_AO/MasterEQ/AO_MasterEQ_N492ME_TP.RfxChain</source>
+          <source file="Chains/Master/Extended_AO/Neutral/AO_Neutral_BritChannel_TP.RfxChain">https://raw.githubusercontent.com/IfeelLikeSnow/df95-toolbar-suite/main/Chains/Master/Extended_AO/Neutral/AO_Neutral_BritChannel_TP.RfxChain</source>
+          <source file="Chains/Master/Extended_AO/Opto/AO_Opto_LALA_TP.RfxChain">https://raw.githubusercontent.com/IfeelLikeSnow/df95-toolbar-suite/main/Chains/Master/Extended_AO/Opto/AO_Opto_LALA_TP.RfxChain</source>
+          <source file="Chains/Master/Extended_Airwindows/ClipSafety/AW_Clip_ADClip8_to_ReaLimit.RfxChain">https://raw.githubusercontent.com/IfeelLikeSnow/df95-toolbar-suite/main/Chains/Master/Extended_Airwindows/ClipSafety/AW_Clip_ADClip8_to_ReaLimit.RfxChain</source>
+          <source file="Chains/Master/Extended_Airwindows/Console/AW_Console_BussColors_TP.RfxChain">https://raw.githubusercontent.com/IfeelLikeSnow/df95-toolbar-suite/main/Chains/Master/Extended_Airwindows/Console/AW_Console_BussColors_TP.RfxChain</source>
+          <source file="Chains/Master/Extended_Airwindows/Neutral/AW_Neutral_PurestGain_Limit.RfxChain">https://raw.githubusercontent.com/IfeelLikeSnow/df95-toolbar-suite/main/Chains/Master/Extended_Airwindows/Neutral/AW_Neutral_PurestGain_Limit.RfxChain</source>
+          <source file="Chains/Master/Extended_Airwindows/Punch/AW_Punch_Pressure4_Glue.RfxChain">https://raw.githubusercontent.com/IfeelLikeSnow/df95-toolbar-suite/main/Chains/Master/Extended_Airwindows/Punch/AW_Punch_Pressure4_Glue.RfxChain</source>
+          <source file="Chains/Master/Extended_Airwindows/Warm/AW_Warm_TapeTone_ToTape7.RfxChain">https://raw.githubusercontent.com/IfeelLikeSnow/df95-toolbar-suite/main/Chains/Master/Extended_Airwindows/Warm/AW_Warm_TapeTone_ToTape7.RfxChain</source>
+          <source file="Chains/Master/Stock/Bright/Bright_Presence.RfxChain">https://raw.githubusercontent.com/IfeelLikeSnow/df95-toolbar-suite/main/Chains/Master/Stock/Bright/Bright_Presence.RfxChain</source>
+          <source file="Chains/Master/Stock/Broadcast/Broadcast_Safe.RfxChain">https://raw.githubusercontent.com/IfeelLikeSnow/df95-toolbar-suite/main/Chains/Master/Stock/Broadcast/Broadcast_Safe.RfxChain</source>
+          <source file="Chains/Master/Stock/Club/Club_Tight_LUFS.RfxChain">https://raw.githubusercontent.com/IfeelLikeSnow/df95-toolbar-suite/main/Chains/Master/Stock/Club/Club_Tight_LUFS.RfxChain</source>
+          <source file="Chains/Master/Stock/Neutral/Neutral_Minimal.RfxChain">https://raw.githubusercontent.com/IfeelLikeSnow/df95-toolbar-suite/main/Chains/Master/Stock/Neutral/Neutral_Minimal.RfxChain</source>
+          <source file="Chains/Master/Stock/Warm/Warm_Glue.RfxChain">https://raw.githubusercontent.com/IfeelLikeSnow/df95-toolbar-suite/main/Chains/Master/Stock/Warm/Warm_Glue.RfxChain</source>
+          <source file="Chains/Slicing/IDM/Slicing_IDM_ClicksPops_01.RfxChain">https://raw.githubusercontent.com/IfeelLikeSnow/df95-toolbar-suite/main/Chains/Slicing/IDM/Slicing_IDM_ClicksPops_01.RfxChain</source>
+          <source file="Chains/Slicing/IDM/Slicing_IDM_GlitchGrains_01.RfxChain">https://raw.githubusercontent.com/IfeelLikeSnow/df95-toolbar-suite/main/Chains/Slicing/IDM/Slicing_IDM_GlitchGrains_01.RfxChain</source>
+          <source file="Chains/Slicing/IDM/Slicing_IDM_Hats_01.RfxChain">https://raw.githubusercontent.com/IfeelLikeSnow/df95-toolbar-suite/main/Chains/Slicing/IDM/Slicing_IDM_Hats_01.RfxChain</source>
+          <source file="Chains/Slicing/IDM/Slicing_IDM_Kicks_01.RfxChain">https://raw.githubusercontent.com/IfeelLikeSnow/df95-toolbar-suite/main/Chains/Slicing/IDM/Slicing_IDM_Kicks_01.RfxChain</source>
+          <source file="Chains/Slicing/IDM/Slicing_IDM_MicroPerc_01.RfxChain">https://raw.githubusercontent.com/IfeelLikeSnow/df95-toolbar-suite/main/Chains/Slicing/IDM/Slicing_IDM_MicroPerc_01.RfxChain</source>
+          <source file="Chains/Slicing/IDM/Slicing_IDM_NoiseBursts_01.RfxChain">https://raw.githubusercontent.com/IfeelLikeSnow/df95-toolbar-suite/main/Chains/Slicing/IDM/Slicing_IDM_NoiseBursts_01.RfxChain</source>
+          <source file="Chains/Slicing/IDM/Slicing_IDM_Snares_01.RfxChain">https://raw.githubusercontent.com/IfeelLikeSnow/df95-toolbar-suite/main/Chains/Slicing/IDM/Slicing_IDM_Snares_01.RfxChain</source>
+          <source file="Config/DF95_MenuRegistry_v156.json">https://raw.githubusercontent.com/IfeelLikeSnow/df95-toolbar-suite/main/Config/DF95_MenuRegistry_v156.json</source>
+          <source file="DF95_MetaCore/UI/Icons/DF95_Icon_Assignment.json">https://raw.githubusercontent.com/IfeelLikeSnow/df95-toolbar-suite/main/DF95_MetaCore/UI/Icons/DF95_Icon_Assignment.json</source>
+          <source file="DF95_MetaCore/UI/Icons/DF95_Icon_Assignment_Summary.txt">https://raw.githubusercontent.com/IfeelLikeSnow/df95-toolbar-suite/main/DF95_MetaCore/UI/Icons/DF95_Icon_Assignment_Summary.txt</source>
+          <source file="DF95_MetaCore/UI/Icons/DF95_Icon_PromptPack_v1.txt">https://raw.githubusercontent.com/IfeelLikeSnow/df95-toolbar-suite/main/DF95_MetaCore/UI/Icons/DF95_Icon_PromptPack_v1.txt</source>
+          <source file="DF95_MetaCore/UI/Icons/DF95_Icon_Spec_FULL_v1.txt">https://raw.githubusercontent.com/IfeelLikeSnow/df95-toolbar-suite/main/DF95_MetaCore/UI/Icons/DF95_Icon_Spec_FULL_v1.txt</source>
           <source file="Data/DF95/Audition_Durations_v1.json">https://raw.githubusercontent.com/IfeelLikeSnow/df95-toolbar-suite/main/Data/DF95/Audition_Durations_v1.json</source>
           <source file="Data/DF95/BiasProfiles/BoC_Warm.json">https://raw.githubusercontent.com/IfeelLikeSnow/df95-toolbar-suite/main/Data/DF95/BiasProfiles/BoC_Warm.json</source>
           <source file="Data/DF95/BiasProfiles/Glitch.json">https://raw.githubusercontent.com/IfeelLikeSnow/df95-toolbar-suite/main/Data/DF95/BiasProfiles/Glitch.json</source>
@@ -444,12 +578,13 @@
           <source file="Icons/DF95_lufs.png">https://raw.githubusercontent.com/IfeelLikeSnow/df95-toolbar-suite/main/Icons/DF95_lufs.png</source>
           <source file="Icons/DF95_qa.png">https://raw.githubusercontent.com/IfeelLikeSnow/df95-toolbar-suite/main/Icons/DF95_qa.png</source>
           <source file="Icons/DF95_slice.png">https://raw.githubusercontent.com/IfeelLikeSnow/df95-toolbar-suite/main/Icons/DF95_slice.png</source>
-          <source file="MenuSets/IFLS_Phase94_Integration_Notes.txt">https://raw.githubusercontent.com/IfeelLikeSnow/df95-toolbar-suite/main/MenuSets/IFLS_Phase94_Integration_Notes.txt</source>
           <source file="Projects/Templates/DF95_Creative_Template.RPP">https://raw.githubusercontent.com/IfeelLikeSnow/df95-toolbar-suite/main/Projects/Templates/DF95_Creative_Template.RPP</source>
           <source file="Projects/Templates/DF95_Default_Session_Template.RPP">https://raw.githubusercontent.com/IfeelLikeSnow/df95-toolbar-suite/main/Projects/Templates/DF95_Default_Session_Template.RPP</source>
           <source file="Projects/Templates/DF95_Dialog_Template.RPP">https://raw.githubusercontent.com/IfeelLikeSnow/df95-toolbar-suite/main/Projects/Templates/DF95_Dialog_Template.RPP</source>
           <source file="Projects/Templates/DF95_ExportPrep_Template.RPP">https://raw.githubusercontent.com/IfeelLikeSnow/df95-toolbar-suite/main/Projects/Templates/DF95_ExportPrep_Template.RPP</source>
           <source file="Projects/Templates/DF95_Fieldrec_Template.RPP">https://raw.githubusercontent.com/IfeelLikeSnow/df95-toolbar-suite/main/Projects/Templates/DF95_Fieldrec_Template.RPP</source>
+          <source file="RenderPresets/CircuitRhythm.rpp-render">https://raw.githubusercontent.com/IfeelLikeSnow/df95-toolbar-suite/main/RenderPresets/CircuitRhythm.rpp-render</source>
+          <source file="RenderPresets/UCS_24bit.rpp-render">https://raw.githubusercontent.com/IfeelLikeSnow/df95-toolbar-suite/main/RenderPresets/UCS_24bit.rpp-render</source>
           <source file="Scripts/DF95Framework/Lib/DF95_Capabilities.lua">https://raw.githubusercontent.com/IfeelLikeSnow/df95-toolbar-suite/main/Scripts/DF95Framework/Lib/DF95_Capabilities.lua</source>
           <source file="Scripts/DF95Framework/Lib/DF95_Config.lua">https://raw.githubusercontent.com/IfeelLikeSnow/df95-toolbar-suite/main/Scripts/DF95Framework/Lib/DF95_Config.lua</source>
           <source file="Scripts/DF95Framework/Lib/DF95_Core.lua">https://raw.githubusercontent.com/IfeelLikeSnow/df95-toolbar-suite/main/Scripts/DF95Framework/Lib/DF95_Core.lua</source>
@@ -471,7 +606,6 @@
           <source file="Scripts/DF95Framework/Templates/README_V3_Templates.txt">https://raw.githubusercontent.com/IfeelLikeSnow/df95-toolbar-suite/main/Scripts/DF95Framework/Templates/README_V3_Templates.txt</source>
           <source file="Scripts/DF95Framework/Tools/DF95_StartupCheck.lua">https://raw.githubusercontent.com/IfeelLikeSnow/df95-toolbar-suite/main/Scripts/DF95Framework/Tools/DF95_StartupCheck.lua</source>
           <source file="Scripts/DF95_IFLS_Rebuild_Toolbar_MenuSet.lua">https://raw.githubusercontent.com/IfeelLikeSnow/df95-toolbar-suite/main/Scripts/DF95_IFLS_Rebuild_Toolbar_MenuSet.lua</source>
-          <source file="Scripts/DF95_IFLS_Register_All_Actions.lua">https://raw.githubusercontent.com/IfeelLikeSnow/df95-toolbar-suite/main/Scripts/DF95_IFLS_Register_All_Actions.lua</source>
           <source file="Scripts/DF95_IFLS_Repo_Installer_RealPath_SelfTest.lua">https://raw.githubusercontent.com/IfeelLikeSnow/df95-toolbar-suite/main/Scripts/DF95_IFLS_Repo_Installer_RealPath_SelfTest.lua</source>
           <source file="Scripts/DF95_List_Scripts_Tree.lua">https://raw.githubusercontent.com/IfeelLikeSnow/df95-toolbar-suite/main/Scripts/DF95_List_Scripts_Tree.lua</source>
           <source file="Scripts/DF95_Resolve_Toolbar_Templates.lua">https://raw.githubusercontent.com/IfeelLikeSnow/df95-toolbar-suite/main/Scripts/DF95_Resolve_Toolbar_Templates.lua</source>
@@ -1186,12 +1320,12 @@
           <source file="Scripts/IFLS/MicFX/B1.fxlist">https://raw.githubusercontent.com/IfeelLikeSnow/df95-toolbar-suite/main/Scripts/IFLS/MicFX/B1.fxlist</source>
           <source file="Scripts/IFLS/MicFX/C2.fxlist">https://raw.githubusercontent.com/IfeelLikeSnow/df95-toolbar-suite/main/Scripts/IFLS/MicFX/C2.fxlist</source>
           <source file="Scripts/IFLS/MicFX/CM300.fxlist">https://raw.githubusercontent.com/IfeelLikeSnow/df95-toolbar-suite/main/Scripts/IFLS/MicFX/CM300.fxlist</source>
-          <source file="Scripts/IFLS/MicFX/Cortado MK3.fxlist">https://raw.githubusercontent.com/IfeelLikeSnow/df95-toolbar-suite/main/Scripts/IFLS/MicFX/Cortado%20MK3.fxlist</source>
+          <source file="Scripts/IFLS/MicFX/Cortado MK3.fxlist">https://raw.githubusercontent.com/IfeelLikeSnow/df95-toolbar-suite/main/Scripts/IFLS/MicFX/Cortado%2520MK3.fxlist</source>
           <source file="Scripts/IFLS/MicFX/Geofon.fxlist">https://raw.githubusercontent.com/IfeelLikeSnow/df95-toolbar-suite/main/Scripts/IFLS/MicFX/Geofon.fxlist</source>
-          <source file="Scripts/IFLS/MicFX/MCM Telecoil.fxlist">https://raw.githubusercontent.com/IfeelLikeSnow/df95-toolbar-suite/main/Scripts/IFLS/MicFX/MCM%20Telecoil.fxlist</source>
+          <source file="Scripts/IFLS/MicFX/MCM Telecoil.fxlist">https://raw.githubusercontent.com/IfeelLikeSnow/df95-toolbar-suite/main/Scripts/IFLS/MicFX/MCM%2520Telecoil.fxlist</source>
           <source file="Scripts/IFLS/MicFX/MD400.fxlist">https://raw.githubusercontent.com/IfeelLikeSnow/df95-toolbar-suite/main/Scripts/IFLS/MicFX/MD400.fxlist</source>
-          <source file="Scripts/IFLS/MicFX/NTG4+.fxlist">https://raw.githubusercontent.com/IfeelLikeSnow/df95-toolbar-suite/main/Scripts/IFLS/MicFX/NTG4%2B.fxlist</source>
-          <source file="Scripts/IFLS/MicFX/SOMA Ether V2.fxlist">https://raw.githubusercontent.com/IfeelLikeSnow/df95-toolbar-suite/main/Scripts/IFLS/MicFX/SOMA%20Ether%20V2.fxlist</source>
+          <source file="Scripts/IFLS/MicFX/NTG4+.fxlist">https://raw.githubusercontent.com/IfeelLikeSnow/df95-toolbar-suite/main/Scripts/IFLS/MicFX/NTG4%252B.fxlist</source>
+          <source file="Scripts/IFLS/MicFX/SOMA Ether V2.fxlist">https://raw.githubusercontent.com/IfeelLikeSnow/df95-toolbar-suite/main/Scripts/IFLS/MicFX/SOMA%2520Ether%2520V2.fxlist</source>
           <source file="Scripts/IFLS/MicFX/TG-V35S.fxlist">https://raw.githubusercontent.com/IfeelLikeSnow/df95-toolbar-suite/main/Scripts/IFLS/MicFX/TG-V35S.fxlist</source>
           <source file="Scripts/IFLS/MicFX/XM8500.fxlist">https://raw.githubusercontent.com/IfeelLikeSnow/df95-toolbar-suite/main/Scripts/IFLS/MicFX/XM8500.fxlist</source>
           <source file="Scripts/IFLS_Diagnostics.lua">https://raw.githubusercontent.com/IfeelLikeSnow/df95-toolbar-suite/main/Scripts/IFLS_Diagnostics.lua</source>
@@ -1412,33 +1546,13 @@
       </reapack>
     </category>
     <category name="DF95/10 Toolbars">
-      <reapack name="DF95 – DF95_Fieldrec_Export" type="script">
-        <metadata>
-          <description>Toolbar/MenuSet (requires Core). Import via Options → Customize menus/toolbars… → Import.</description>
-          <author>IfeelLikeSnow</author>
-        </metadata>
-        <version name="1.0.0">
-          <time>2025-12-22T21:05:33Z</time>
-          <source file="MenuSets/DF95 Toolbar Suite/DF95/DF95_Fieldrec_Export.Toolbar.ReaperMenu">https://raw.githubusercontent.com/IfeelLikeSnow/df95-toolbar-suite/main/MenuSets/DF95_Fieldrec_Export.Toolbar.ReaperMenu</source>
-        </version>
-      </reapack>
-      <reapack name="DF95 – DF95_Fieldrec_ToolbarV2" type="script">
-        <metadata>
-          <description>Toolbar/MenuSet (requires Core). Import via Options → Customize menus/toolbars… → Import.</description>
-          <author>IfeelLikeSnow</author>
-        </metadata>
-        <version name="1.0.0">
-          <time>2025-12-22T21:05:33Z</time>
-          <source file="MenuSets/DF95 Toolbar Suite/DF95/DF95_Fieldrec_ToolbarV2.Toolbar.ReaperMenu">https://raw.githubusercontent.com/IfeelLikeSnow/df95-toolbar-suite/main/MenuSets/DF95_Fieldrec_ToolbarV2.Toolbar.ReaperMenu</source>
-        </version>
-      </reapack>
       <reapack name="DF95 – DF95_AI_Toolbar" type="script">
         <metadata>
           <description>Toolbar/MenuSet (requires Core). Import via Options → Customize menus/toolbars… → Import.</description>
           <author>IfeelLikeSnow</author>
         </metadata>
         <version name="1.0.0">
-          <time>2025-12-22T21:05:33Z</time>
+          <time>2025-12-22T21:33:59Z</time>
           <source file="MenuSets/DF95 Toolbar Suite/DF95/DF95_AI_Toolbar.ReaperMenuSet">https://raw.githubusercontent.com/IfeelLikeSnow/df95-toolbar-suite/main/Menus/DF95_AI_Toolbar.ReaperMenuSet</source>
         </version>
       </reapack>
@@ -1448,7 +1562,7 @@
           <author>IfeelLikeSnow</author>
         </metadata>
         <version name="1.0.0">
-          <time>2025-12-22T21:05:33Z</time>
+          <time>2025-12-22T21:33:59Z</time>
           <source file="MenuSets/DF95 Toolbar Suite/DF95/DF95_CoToolbar.ReaperMenuSet">https://raw.githubusercontent.com/IfeelLikeSnow/df95-toolbar-suite/main/Menus/DF95_CoToolbar.ReaperMenuSet</source>
         </version>
       </reapack>
@@ -1458,7 +1572,7 @@
           <author>IfeelLikeSnow</author>
         </metadata>
         <version name="1.0.0">
-          <time>2025-12-22T21:05:33Z</time>
+          <time>2025-12-22T21:33:59Z</time>
           <source file="MenuSets/DF95 Toolbar Suite/DF95/DF95_CoToolbar_Context.ReaperMenuSet">https://raw.githubusercontent.com/IfeelLikeSnow/df95-toolbar-suite/main/Menus/DF95_CoToolbar_Context.ReaperMenuSet</source>
         </version>
       </reapack>
@@ -1468,7 +1582,7 @@
           <author>IfeelLikeSnow</author>
         </metadata>
         <version name="1.0.0">
-          <time>2025-12-22T21:05:33Z</time>
+          <time>2025-12-22T21:33:59Z</time>
           <source file="MenuSets/DF95 Toolbar Suite/DF95/DF95_CoToolbar_EditCreative.ReaperMenuSet">https://raw.githubusercontent.com/IfeelLikeSnow/df95-toolbar-suite/main/Menus/DF95_CoToolbar_EditCreative.ReaperMenuSet</source>
         </version>
       </reapack>
@@ -1478,7 +1592,7 @@
           <author>IfeelLikeSnow</author>
         </metadata>
         <version name="1.0.0">
-          <time>2025-12-22T21:05:33Z</time>
+          <time>2025-12-22T21:33:59Z</time>
           <source file="MenuSets/DF95 Toolbar Suite/DF95/DF95_CoToolbar_FlowErgo_Pro.ReaperMenuSet">https://raw.githubusercontent.com/IfeelLikeSnow/df95-toolbar-suite/main/Menus/DF95_CoToolbar_FlowErgo_Pro.ReaperMenuSet</source>
         </version>
       </reapack>
@@ -1488,8 +1602,38 @@
           <author>IfeelLikeSnow</author>
         </metadata>
         <version name="1.0.0">
-          <time>2025-12-22T21:05:33Z</time>
+          <time>2025-12-22T21:33:59Z</time>
           <source file="MenuSets/DF95 Toolbar Suite/DF95/DF95_EditToolbar_Arrange.ReaperMenuSet">https://raw.githubusercontent.com/IfeelLikeSnow/df95-toolbar-suite/main/Menus/DF95_EditToolbar_Arrange.ReaperMenuSet</source>
+        </version>
+      </reapack>
+      <reapack name="DF95 – DF95_Fieldrec_Export" type="script">
+        <metadata>
+          <description>Toolbar/MenuSet (requires Core). Import via Options → Customize menus/toolbars… → Import.</description>
+          <author>IfeelLikeSnow</author>
+        </metadata>
+        <version name="1.0.0">
+          <time>2025-12-22T21:33:59Z</time>
+          <source file="MenuSets/DF95 Toolbar Suite/DF95/DF95_Fieldrec_Export.Toolbar.ReaperMenu">https://raw.githubusercontent.com/IfeelLikeSnow/df95-toolbar-suite/main/MenuSets/DF95_Fieldrec_Export.Toolbar.ReaperMenu</source>
+        </version>
+      </reapack>
+      <reapack name="DF95 – DF95_Fieldrec_ToolbarV2" type="script">
+        <metadata>
+          <description>Toolbar/MenuSet (requires Core). Import via Options → Customize menus/toolbars… → Import.</description>
+          <author>IfeelLikeSnow</author>
+        </metadata>
+        <version name="1.0.0">
+          <time>2025-12-22T21:33:59Z</time>
+          <source file="MenuSets/DF95 Toolbar Suite/DF95/DF95_Fieldrec_ToolbarV2.Toolbar.ReaperMenu">https://raw.githubusercontent.com/IfeelLikeSnow/df95-toolbar-suite/main/MenuSets/DF95_Fieldrec_ToolbarV2.Toolbar.ReaperMenu</source>
+        </version>
+      </reapack>
+      <reapack name="DF95 – DF95_MainToolbar" type="script">
+        <metadata>
+          <description>Toolbar/MenuSet (requires Core). Import via Options → Customize menus/toolbars… → Import.</description>
+          <author>IfeelLikeSnow</author>
+        </metadata>
+        <version name="1.0.0">
+          <time>2025-12-22T21:33:59Z</time>
+          <source file="MenuSets/DF95 Toolbar Suite/DF95/DF95_MainToolbar.ReaperMenuSet">https://raw.githubusercontent.com/IfeelLikeSnow/df95-toolbar-suite/main/Menus/Legacy_46c/DF95_MainToolbar.ReaperMenuSet</source>
         </version>
       </reapack>
       <reapack name="DF95 – DF95_MainToolbar_FlowErgo" type="script">
@@ -1498,7 +1642,7 @@
           <author>IfeelLikeSnow</author>
         </metadata>
         <version name="1.0.0">
-          <time>2025-12-22T21:05:33Z</time>
+          <time>2025-12-22T21:33:59Z</time>
           <source file="MenuSets/DF95 Toolbar Suite/DF95/DF95_MainToolbar_FlowErgo.ReaperMenuSet">https://raw.githubusercontent.com/IfeelLikeSnow/df95-toolbar-suite/main/Menus/DF95_MainToolbar_FlowErgo.ReaperMenuSet</source>
         </version>
       </reapack>
@@ -1508,7 +1652,7 @@
           <author>IfeelLikeSnow</author>
         </metadata>
         <version name="1.0.0">
-          <time>2025-12-22T21:05:33Z</time>
+          <time>2025-12-22T21:33:59Z</time>
           <source file="MenuSets/DF95 Toolbar Suite/DF95/DF95_MainToolbar_FlowErgo_Hub.ReaperMenuSet">https://raw.githubusercontent.com/IfeelLikeSnow/df95-toolbar-suite/main/Menus/DF95_MainToolbar_FlowErgo_Hub.ReaperMenuSet</source>
         </version>
       </reapack>
@@ -1518,7 +1662,7 @@
           <author>IfeelLikeSnow</author>
         </metadata>
         <version name="1.0.0">
-          <time>2025-12-22T21:05:33Z</time>
+          <time>2025-12-22T21:33:59Z</time>
           <source file="MenuSets/DF95 Toolbar Suite/DF95/DF95_MainToolbar_FlowErgo_Pro.ReaperMenuSet">https://raw.githubusercontent.com/IfeelLikeSnow/df95-toolbar-suite/main/Menus/DF95_MainToolbar_FlowErgo_Pro.ReaperMenuSet</source>
         </version>
       </reapack>
@@ -1528,7 +1672,7 @@
           <author>IfeelLikeSnow</author>
         </metadata>
         <version name="1.0.0">
-          <time>2025-12-22T21:05:33Z</time>
+          <time>2025-12-22T21:33:59Z</time>
           <source file="MenuSets/DF95 Toolbar Suite/DF95/DF95_MicToolbar_Input.ReaperMenuSet">https://raw.githubusercontent.com/IfeelLikeSnow/df95-toolbar-suite/main/Menus/DF95_MicToolbar_Input.ReaperMenuSet</source>
         </version>
       </reapack>
@@ -1538,8 +1682,18 @@
           <author>IfeelLikeSnow</author>
         </metadata>
         <version name="1.0.0">
-          <time>2025-12-22T21:05:33Z</time>
+          <time>2025-12-22T21:33:59Z</time>
           <source file="MenuSets/DF95 Toolbar Suite/DF95/DF95_QA_Toolbar_Safety.ReaperMenuSet">https://raw.githubusercontent.com/IfeelLikeSnow/df95-toolbar-suite/main/Menus/DF95_QA_Toolbar_Safety.ReaperMenuSet</source>
+        </version>
+      </reapack>
+      <reapack name="DF95 – DF95_ReampSuite_Toolbar" type="script">
+        <metadata>
+          <description>Toolbar/MenuSet (requires Core). Import via Options → Customize menus/toolbars… → Import.</description>
+          <author>IfeelLikeSnow</author>
+        </metadata>
+        <version name="1.0.0">
+          <time>2025-12-22T21:33:59Z</time>
+          <source file="MenuSets/DF95 Toolbar Suite/DF95/DF95_ReampSuite_Toolbar.ReaperMenuSet">https://raw.githubusercontent.com/IfeelLikeSnow/df95-toolbar-suite/main/Toolbars/DF95_ReampSuite_Toolbar.ReaperMenuSet</source>
         </version>
       </reapack>
       <reapack name="DF95 – DF95_Reamp_Toolbar" type="script">
@@ -1548,7 +1702,7 @@
           <author>IfeelLikeSnow</author>
         </metadata>
         <version name="1.0.0">
-          <time>2025-12-22T21:05:33Z</time>
+          <time>2025-12-22T21:33:59Z</time>
           <source file="MenuSets/DF95 Toolbar Suite/DF95/DF95_Reamp_Toolbar.ReaperMenuSet">https://raw.githubusercontent.com/IfeelLikeSnow/df95-toolbar-suite/main/Menus/DF95_Reamp_Toolbar.ReaperMenuSet</source>
         </version>
       </reapack>
@@ -1558,7 +1712,7 @@
           <author>IfeelLikeSnow</author>
         </metadata>
         <version name="1.0.0">
-          <time>2025-12-22T21:05:33Z</time>
+          <time>2025-12-22T21:33:59Z</time>
           <source file="MenuSets/DF95 Toolbar Suite/DF95/DF95_SuperPipeline_Toolbar.ReaperMenuSet">https://raw.githubusercontent.com/IfeelLikeSnow/df95-toolbar-suite/main/Menus/DF95_SuperPipeline_Toolbar.ReaperMenuSet</source>
         </version>
       </reapack>
@@ -1568,7 +1722,7 @@
           <author>IfeelLikeSnow</author>
         </metadata>
         <version name="1.0.0">
-          <time>2025-12-22T21:05:33Z</time>
+          <time>2025-12-22T21:33:59Z</time>
           <source file="MenuSets/DF95 Toolbar Suite/DF95/DF95_SuperToolbar_AISEARCH_Sub.ReaperMenuSet">https://raw.githubusercontent.com/IfeelLikeSnow/df95-toolbar-suite/main/Menus/DF95_SuperToolbar_AISEARCH_Sub.ReaperMenuSet</source>
         </version>
       </reapack>
@@ -1578,7 +1732,7 @@
           <author>IfeelLikeSnow</author>
         </metadata>
         <version name="1.0.0">
-          <time>2025-12-22T21:05:33Z</time>
+          <time>2025-12-22T21:33:59Z</time>
           <source file="MenuSets/DF95 Toolbar Suite/DF95/DF95_SuperToolbar_DRONES_Sub.ReaperMenuSet">https://raw.githubusercontent.com/IfeelLikeSnow/df95-toolbar-suite/main/Menus/DF95_SuperToolbar_DRONES_Sub.ReaperMenuSet</source>
         </version>
       </reapack>
@@ -1588,7 +1742,7 @@
           <author>IfeelLikeSnow</author>
         </metadata>
         <version name="1.0.0">
-          <time>2025-12-22T21:05:33Z</time>
+          <time>2025-12-22T21:33:59Z</time>
           <source file="MenuSets/DF95 Toolbar Suite/DF95/DF95_SuperToolbar_FIELDREC_Sub.ReaperMenuSet">https://raw.githubusercontent.com/IfeelLikeSnow/df95-toolbar-suite/main/Menus/DF95_SuperToolbar_FIELDREC_Sub.ReaperMenuSet</source>
         </version>
       </reapack>
@@ -1598,7 +1752,7 @@
           <author>IfeelLikeSnow</author>
         </metadata>
         <version name="1.0.0">
-          <time>2025-12-22T21:05:33Z</time>
+          <time>2025-12-22T21:33:59Z</time>
           <source file="MenuSets/DF95 Toolbar Suite/DF95/DF95_SuperToolbar_LIBEXPORT_Sub.ReaperMenuSet">https://raw.githubusercontent.com/IfeelLikeSnow/df95-toolbar-suite/main/Menus/DF95_SuperToolbar_LIBEXPORT_Sub.ReaperMenuSet</source>
         </version>
       </reapack>
@@ -1608,7 +1762,7 @@
           <author>IfeelLikeSnow</author>
         </metadata>
         <version name="1.0.0">
-          <time>2025-12-22T21:05:33Z</time>
+          <time>2025-12-22T21:33:59Z</time>
           <source file="MenuSets/DF95 Toolbar Suite/DF95/DF95_SuperToolbar_Main.ReaperMenuSet">https://raw.githubusercontent.com/IfeelLikeSnow/df95-toolbar-suite/main/Menus/DF95_SuperToolbar_Main.ReaperMenuSet</source>
         </version>
       </reapack>
@@ -1618,7 +1772,7 @@
           <author>IfeelLikeSnow</author>
         </metadata>
         <version name="1.0.0">
-          <time>2025-12-22T21:05:33Z</time>
+          <time>2025-12-22T21:33:59Z</time>
           <source file="MenuSets/DF95 Toolbar Suite/DF95/DF95_SuperToolbar_SESSION_Sub.ReaperMenuSet">https://raw.githubusercontent.com/IfeelLikeSnow/df95-toolbar-suite/main/Menus/DF95_SuperToolbar_SESSION_Sub.ReaperMenuSet</source>
         </version>
       </reapack>
@@ -1628,7 +1782,7 @@
           <author>IfeelLikeSnow</author>
         </metadata>
         <version name="1.0.0">
-          <time>2025-12-22T21:05:33Z</time>
+          <time>2025-12-22T21:33:59Z</time>
           <source file="MenuSets/DF95 Toolbar Suite/DF95/DF95_SuperToolbar_SETUPQA_Sub.ReaperMenuSet">https://raw.githubusercontent.com/IfeelLikeSnow/df95-toolbar-suite/main/Menus/DF95_SuperToolbar_SETUPQA_Sub.ReaperMenuSet</source>
         </version>
       </reapack>
@@ -1638,7 +1792,7 @@
           <author>IfeelLikeSnow</author>
         </metadata>
         <version name="1.0.0">
-          <time>2025-12-22T21:05:33Z</time>
+          <time>2025-12-22T21:33:59Z</time>
           <source file="MenuSets/DF95 Toolbar Suite/DF95/DF95_SuperToolbar_SOUND_Sub.ReaperMenuSet">https://raw.githubusercontent.com/IfeelLikeSnow/df95-toolbar-suite/main/Menus/DF95_SuperToolbar_SOUND_Sub.ReaperMenuSet</source>
         </version>
       </reapack>
@@ -1648,7 +1802,7 @@
           <author>IfeelLikeSnow</author>
         </metadata>
         <version name="1.0.0">
-          <time>2025-12-22T21:05:33Z</time>
+          <time>2025-12-22T21:33:59Z</time>
           <source file="MenuSets/DF95 Toolbar Suite/DF95/DF95_Toolbar_BiasTools.ReaperMenuSet">https://raw.githubusercontent.com/IfeelLikeSnow/df95-toolbar-suite/main/Menus/DF95_Toolbar_BiasTools.ReaperMenuSet</source>
         </version>
       </reapack>
@@ -1658,7 +1812,7 @@
           <author>IfeelLikeSnow</author>
         </metadata>
         <version name="1.0.0">
-          <time>2025-12-22T21:05:33Z</time>
+          <time>2025-12-22T21:33:59Z</time>
           <source file="MenuSets/DF95 Toolbar Suite/DF95/DF95_Toolbar_ColorMaster_Audition_SWS.ReaperMenuSet">https://raw.githubusercontent.com/IfeelLikeSnow/df95-toolbar-suite/main/Menus/DF95_Toolbar_ColorMaster_Audition_SWS.ReaperMenuSet</source>
         </version>
       </reapack>
@@ -1668,7 +1822,7 @@
           <author>IfeelLikeSnow</author>
         </metadata>
         <version name="1.0.0">
-          <time>2025-12-22T21:05:33Z</time>
+          <time>2025-12-22T21:33:59Z</time>
           <source file="MenuSets/DF95 Toolbar Suite/DF95/DF95_Toolbar_FXBus_Variants.ReaperMenuSet">https://raw.githubusercontent.com/IfeelLikeSnow/df95-toolbar-suite/main/Menus/DF95_Toolbar_FXBus_Variants.ReaperMenuSet</source>
         </version>
       </reapack>
@@ -1678,7 +1832,7 @@
           <author>IfeelLikeSnow</author>
         </metadata>
         <version name="1.0.0">
-          <time>2025-12-22T21:05:33Z</time>
+          <time>2025-12-22T21:33:59Z</time>
           <source file="MenuSets/DF95 Toolbar Suite/DF95/DF95_Toolbar_QA_Audition.ReaperMenuSet">https://raw.githubusercontent.com/IfeelLikeSnow/df95-toolbar-suite/main/Menus/DF95_Toolbar_QA_Audition.ReaperMenuSet</source>
         </version>
       </reapack>
@@ -1688,7 +1842,7 @@
           <author>IfeelLikeSnow</author>
         </metadata>
         <version name="1.0.0">
-          <time>2025-12-22T21:05:33Z</time>
+          <time>2025-12-22T21:33:59Z</time>
           <source file="MenuSets/DF95 Toolbar Suite/DF95/DF95_V113_ArtistStyleFX_Toolbar.ReaperMenuSet">https://raw.githubusercontent.com/IfeelLikeSnow/df95-toolbar-suite/main/Menus/DF95_V113_ArtistStyleFX_Toolbar.ReaperMenuSet</source>
         </version>
       </reapack>
@@ -1698,28 +1852,8 @@
           <author>IfeelLikeSnow</author>
         </metadata>
         <version name="1.0.0">
-          <time>2025-12-22T21:05:33Z</time>
+          <time>2025-12-22T21:33:59Z</time>
           <source file="MenuSets/DF95 Toolbar Suite/DF95/DF95_V119_SampleDB_Toolbar.ReaperMenuSet">https://raw.githubusercontent.com/IfeelLikeSnow/df95-toolbar-suite/main/Menus/DF95_V119_SampleDB_Toolbar.ReaperMenuSet</source>
-        </version>
-      </reapack>
-      <reapack name="DF95 – DF95_MainToolbar" type="script">
-        <metadata>
-          <description>Toolbar/MenuSet (requires Core). Import via Options → Customize menus/toolbars… → Import.</description>
-          <author>IfeelLikeSnow</author>
-        </metadata>
-        <version name="1.0.0">
-          <time>2025-12-22T21:05:33Z</time>
-          <source file="MenuSets/DF95 Toolbar Suite/DF95/DF95_MainToolbar.ReaperMenuSet">https://raw.githubusercontent.com/IfeelLikeSnow/df95-toolbar-suite/main/Menus/Legacy_46c/DF95_MainToolbar.ReaperMenuSet</source>
-        </version>
-      </reapack>
-      <reapack name="DF95 – DF95_ReampSuite_Toolbar" type="script">
-        <metadata>
-          <description>Toolbar/MenuSet (requires Core). Import via Options → Customize menus/toolbars… → Import.</description>
-          <author>IfeelLikeSnow</author>
-        </metadata>
-        <version name="1.0.0">
-          <time>2025-12-22T21:05:33Z</time>
-          <source file="MenuSets/DF95 Toolbar Suite/DF95/DF95_ReampSuite_Toolbar.ReaperMenuSet">https://raw.githubusercontent.com/IfeelLikeSnow/df95-toolbar-suite/main/Toolbars/DF95_ReampSuite_Toolbar.ReaperMenuSet</source>
         </version>
       </reapack>
       <reapack name="DF95 – DF95_V71_SuperPipeline_Reamp_Toolbar" type="script">
@@ -1728,7 +1862,7 @@
           <author>IfeelLikeSnow</author>
         </metadata>
         <version name="1.0.0">
-          <time>2025-12-22T21:05:33Z</time>
+          <time>2025-12-22T21:33:59Z</time>
           <source file="MenuSets/DF95 Toolbar Suite/DF95/DF95_V71_SuperPipeline_Reamp_Toolbar.ReaperMenuSet">https://raw.githubusercontent.com/IfeelLikeSnow/df95-toolbar-suite/main/Toolbars/DF95_V71_SuperPipeline_Reamp_Toolbar.ReaperMenuSet</source>
         </version>
       </reapack>
@@ -1738,7 +1872,7 @@
           <author>IfeelLikeSnow</author>
         </metadata>
         <version name="1.0.0">
-          <time>2025-12-22T21:05:33Z</time>
+          <time>2025-12-22T21:33:59Z</time>
           <source file="MenuSets/DF95 Toolbar Suite/DF95/DF95_V72_SuperPipeline_Reamp_Toolbar.ReaperMenuSet">https://raw.githubusercontent.com/IfeelLikeSnow/df95-toolbar-suite/main/Toolbars/DF95_V72_SuperPipeline_Reamp_Toolbar.ReaperMenuSet</source>
         </version>
       </reapack>
@@ -1750,7 +1884,7 @@
           <author>IfeelLikeSnow</author>
         </metadata>
         <version name="1.0.0">
-          <time>2025-12-22T21:05:33Z</time>
+          <time>2025-12-22T21:33:59Z</time>
           <source file="MenuSets/DF95 Toolbar Suite/IFLS/IFLS_Beat.Toolbar.ReaperMenu">https://raw.githubusercontent.com/IfeelLikeSnow/df95-toolbar-suite/main/MenuSets/IFLS_Beat.Toolbar.ReaperMenu</source>
         </version>
       </reapack>
@@ -1760,7 +1894,7 @@
           <author>IfeelLikeSnow</author>
         </metadata>
         <version name="1.0.0">
-          <time>2025-12-22T21:05:33Z</time>
+          <time>2025-12-22T21:33:59Z</time>
           <source file="MenuSets/DF95 Toolbar Suite/IFLS/IFLS_Debug.Toolbar.ReaperMenu">https://raw.githubusercontent.com/IfeelLikeSnow/df95-toolbar-suite/main/MenuSets/IFLS_Debug.Toolbar.ReaperMenu</source>
         </version>
       </reapack>
@@ -1770,7 +1904,7 @@
           <author>IfeelLikeSnow</author>
         </metadata>
         <version name="1.0.0">
-          <time>2025-12-22T21:05:33Z</time>
+          <time>2025-12-22T21:33:59Z</time>
           <source file="MenuSets/DF95 Toolbar Suite/IFLS/IFLS_Main.Toolbar.ReaperMenu">https://raw.githubusercontent.com/IfeelLikeSnow/df95-toolbar-suite/main/MenuSets/IFLS_Main.Toolbar.ReaperMenu</source>
         </version>
       </reapack>
@@ -1780,7 +1914,7 @@
           <author>IfeelLikeSnow</author>
         </metadata>
         <version name="1.0.0">
-          <time>2025-12-22T21:05:33Z</time>
+          <time>2025-12-22T21:33:59Z</time>
           <source file="MenuSets/DF95 Toolbar Suite/IFLS/IFLS_Main.Toolbar.ReaperMenuSet">https://raw.githubusercontent.com/IfeelLikeSnow/df95-toolbar-suite/main/MenuSets/IFLS_Main.Toolbar.ReaperMenuSet</source>
         </version>
       </reapack>
@@ -1790,7 +1924,7 @@
           <author>IfeelLikeSnow</author>
         </metadata>
         <version name="1.0.0">
-          <time>2025-12-22T21:05:33Z</time>
+          <time>2025-12-22T21:33:59Z</time>
           <source file="MenuSets/DF95 Toolbar Suite/IFLS/IFLS_Sample.Toolbar.ReaperMenu">https://raw.githubusercontent.com/IfeelLikeSnow/df95-toolbar-suite/main/MenuSets/IFLS_Sample.Toolbar.ReaperMenu</source>
         </version>
       </reapack>
