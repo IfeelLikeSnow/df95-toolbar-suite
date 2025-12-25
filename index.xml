@@ -1,5 +1,5 @@
-<?xml version='1.0' encoding='utf-8'?>
-<index version="1" name="DF95 Toolbar Suite" desc="Toolbars + required scripts/resources">
+<?xml version="1.0" encoding="utf-8"?>
+<index version="1" name="DF95 Toolbar Suite" desc="Toolbars + required scripts/resources" commit="f251cc6d06a16d18c9cb017d94c6e79f08b2a284">
   <category name="DF95/00 Core">
     <reapack name="DF95 Toolbar Suite – Core" type="script" desc="Core scripts/resources used by toolbars">
       <metadata>
@@ -1543,22 +1543,6 @@
     </reapack>
   </category>
   <category name="DF95/10 Toolbars">
-    <reapack name="DF95 – DF95_Fieldrec_Export" type="script" desc="Toolbar/MenuSet + referenced scripts (shims included)">
-      <metadata>
-        <description>Toolbar/MenuSet (requires Core). Import via Options → Customize menus/toolbars… → Import.</description>
-      </metadata>
-      <version name="1.0.0" author="IfeelLikeSnow" time="1766300833">
-        <source file="MenuSets/DF95_Fieldrec_Export.Toolbar.ReaperMenu">https://raw.githubusercontent.com/IfeelLikeSnow/df95-toolbar-suite/main/MenuSets/DF95_Fieldrec_Export.Toolbar.ReaperMenu</source>
-      </version>
-    </reapack>
-    <reapack name="DF95 – DF95_Fieldrec_ToolbarV2" type="script" desc="Toolbar/MenuSet + referenced scripts (shims included)">
-      <metadata>
-        <description>Toolbar/MenuSet (requires Core). Import via Options → Customize menus/toolbars… → Import.</description>
-      </metadata>
-      <version name="1.0.0" author="IfeelLikeSnow" time="1766300833">
-        <source file="MenuSets/DF95_Fieldrec_ToolbarV2.Toolbar.ReaperMenu">https://raw.githubusercontent.com/IfeelLikeSnow/df95-toolbar-suite/main/MenuSets/DF95_Fieldrec_ToolbarV2.Toolbar.ReaperMenu</source>
-      </version>
-    </reapack>
     <reapack name="DF95 – DF95_AI_Toolbar" type="script" desc="Toolbar/MenuSet + referenced scripts (shims included)">
       <metadata>
         <description>Toolbar/MenuSet (requires Core). Import via Options → Customize menus/toolbars… → Import.</description>
@@ -1607,6 +1591,30 @@
         <source file="MenuSets/DF95 Toolbar Suite/DF95/DF95_EditToolbar_Arrange.ReaperMenuSet">https://raw.githubusercontent.com/IfeelLikeSnow/df95-toolbar-suite/main/Menus/DF95_EditToolbar_Arrange.ReaperMenuSet</source>
       </version>
     </reapack>
+    <reapack name="DF95 – DF95_Fieldrec_Export" type="script" desc="Toolbar/MenuSet + referenced scripts (shims included)">
+      <metadata>
+        <description>Toolbar/MenuSet (requires Core). Import via Options → Customize menus/toolbars… → Import.</description>
+      </metadata>
+      <version name="1.0.0" author="IfeelLikeSnow" time="1766300833">
+        <source file="MenuSets/DF95_Fieldrec_Export.Toolbar.ReaperMenu">https://raw.githubusercontent.com/IfeelLikeSnow/df95-toolbar-suite/main/MenuSets/DF95_Fieldrec_Export.Toolbar.ReaperMenu</source>
+      </version>
+    </reapack>
+    <reapack name="DF95 – DF95_Fieldrec_ToolbarV2" type="script" desc="Toolbar/MenuSet + referenced scripts (shims included)">
+      <metadata>
+        <description>Toolbar/MenuSet (requires Core). Import via Options → Customize menus/toolbars… → Import.</description>
+      </metadata>
+      <version name="1.0.0" author="IfeelLikeSnow" time="1766300833">
+        <source file="MenuSets/DF95_Fieldrec_ToolbarV2.Toolbar.ReaperMenu">https://raw.githubusercontent.com/IfeelLikeSnow/df95-toolbar-suite/main/MenuSets/DF95_Fieldrec_ToolbarV2.Toolbar.ReaperMenu</source>
+      </version>
+    </reapack>
+    <reapack name="DF95 – DF95_MainToolbar" type="script" desc="Toolbar/MenuSet + referenced scripts (shims included)">
+      <metadata>
+        <description>Toolbar/MenuSet (requires Core). Import via Options → Customize menus/toolbars… → Import.</description>
+      </metadata>
+      <version name="1.0.0" author="IfeelLikeSnow" time="1766300833">
+        <source file="MenuSets/DF95 Toolbar Suite/DF95/DF95_MainToolbar.ReaperMenuSet">https://raw.githubusercontent.com/IfeelLikeSnow/df95-toolbar-suite/main/Menus/Legacy_46c/DF95_MainToolbar.ReaperMenuSet</source>
+      </version>
+    </reapack>
     <reapack name="DF95 – DF95_MainToolbar_FlowErgo" type="script" desc="Toolbar/MenuSet + referenced scripts (shims included)">
       <metadata>
         <description>Toolbar/MenuSet (requires Core). Import via Options → Customize menus/toolbars… → Import.</description>
@@ -1653,6 +1661,14 @@
       </metadata>
       <version name="1.0.0" author="IfeelLikeSnow" time="1766300833">
         <source file="MenuSets/DF95 Toolbar Suite/DF95/DF95_Reamp_Toolbar.ReaperMenuSet">https://raw.githubusercontent.com/IfeelLikeSnow/df95-toolbar-suite/main/Menus/DF95_Reamp_Toolbar.ReaperMenuSet</source>
+      </version>
+    </reapack>
+    <reapack name="DF95 – DF95_ReampSuite_Toolbar" type="script" desc="Toolbar/MenuSet + referenced scripts (shims included)">
+      <metadata>
+        <description>Toolbar/MenuSet (requires Core). Import via Options → Customize menus/toolbars… → Import.</description>
+      </metadata>
+      <version name="1.0.0" author="IfeelLikeSnow" time="1766300833">
+        <source file="MenuSets/DF95 Toolbar Suite/DF95/DF95_ReampSuite_Toolbar.ReaperMenuSet">https://raw.githubusercontent.com/IfeelLikeSnow/df95-toolbar-suite/main/Toolbars/DF95_ReampSuite_Toolbar.ReaperMenuSet</source>
       </version>
     </reapack>
     <reapack name="DF95 – DF95_SuperPipeline_Toolbar" type="script" desc="Toolbar/MenuSet + referenced scripts (shims included)">
@@ -1775,22 +1791,6 @@
         <source file="MenuSets/DF95 Toolbar Suite/DF95/DF95_V119_SampleDB_Toolbar.ReaperMenuSet">https://raw.githubusercontent.com/IfeelLikeSnow/df95-toolbar-suite/main/Menus/DF95_V119_SampleDB_Toolbar.ReaperMenuSet</source>
       </version>
     </reapack>
-    <reapack name="DF95 – DF95_MainToolbar" type="script" desc="Toolbar/MenuSet + referenced scripts (shims included)">
-      <metadata>
-        <description>Toolbar/MenuSet (requires Core). Import via Options → Customize menus/toolbars… → Import.</description>
-      </metadata>
-      <version name="1.0.0" author="IfeelLikeSnow" time="1766300833">
-        <source file="MenuSets/DF95 Toolbar Suite/DF95/DF95_MainToolbar.ReaperMenuSet">https://raw.githubusercontent.com/IfeelLikeSnow/df95-toolbar-suite/main/Menus/Legacy_46c/DF95_MainToolbar.ReaperMenuSet</source>
-      </version>
-    </reapack>
-    <reapack name="DF95 – DF95_ReampSuite_Toolbar" type="script" desc="Toolbar/MenuSet + referenced scripts (shims included)">
-      <metadata>
-        <description>Toolbar/MenuSet (requires Core). Import via Options → Customize menus/toolbars… → Import.</description>
-      </metadata>
-      <version name="1.0.0" author="IfeelLikeSnow" time="1766300833">
-        <source file="MenuSets/DF95 Toolbar Suite/DF95/DF95_ReampSuite_Toolbar.ReaperMenuSet">https://raw.githubusercontent.com/IfeelLikeSnow/df95-toolbar-suite/main/Toolbars/DF95_ReampSuite_Toolbar.ReaperMenuSet</source>
-      </version>
-    </reapack>
     <reapack name="DF95 – DF95_V71_SuperPipeline_Reamp_Toolbar" type="script" desc="Toolbar/MenuSet + referenced scripts (shims included)">
       <metadata>
         <description>Toolbar/MenuSet (requires Core). Import via Options → Customize menus/toolbars… → Import.</description>
@@ -1850,4 +1850,23 @@
       </version>
     </reapack>
   </category>
+  <metadata>
+    <description><![CDATA[{\rtf1\ansi\deff0{\fonttbl{\f0 \fswiss Helvetica;}{\f1 \fmodern Courier;}}
+{\colortbl;\red255\green0\blue0;\red0\green0\blue255;}
+\widowctrl\hyphauto
+
+{\pard \ql \f0 \sa180 \li0 \fi0 \outlinelevel0 \b \fs36 DF95 Toolbar Suite (Generated Repo)\par}
+{\pard \ql \f0 \sa180 \li0 \fi0 This repository snapshot was generated from the {\f1 df95-ifls-full} repo and is focused on {\b toolbars + all scripts/resources they require}.\par}
+{\pard \ql \f0 \sa180 \li0 \fi0 \outlinelevel1 \b \fs32 Quick workflow\par}
+{\pard \ql \f0 \sa0 \li360 \fi-360 1.\tx360\tab Install via ReaPack using {\f1 index.xml} (after you host this repo on GitHub).\par}
+{\pard \ql \f0 \sa0 \li360 \fi-360 2.\tx360\tab In REAPER: {\f1 Options -> Customize menus/toolbars...} and import the desired {\f1 .ReaperMenuSet} from {\f1 Menus/} or {\f1 Toolbars/}.\par}
+{\pard \ql \f0 \sa0 \li360 \fi-360 3.\tx360\tab If a toolbar button doesn't run, check {\f1 Reports/unresolved_script_targets.md}.\sa180\par}
+{\pard \ql \f0 \sa180 \li0 \fi0 \outlinelevel1 \b \fs32 Tools\par}
+{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab {\f1 tools/generate_shims_from_toolbars.py}: creates {\f1 Scripts/IfeelLikeSnow/...} shims so toolbar targets resolve.\par}
+{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab {\f1 tools/icon_report.py}: reports toolbar icon references.\par}
+{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab {\f1 tools/build_index_from_toolbars.py}: generates {\f1 index.xml} (no Ruby/reapack-index needed).\par}
+{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab {\f1 tools/resolve_missing_from_github.sh}: tries to fetch unresolved targets from upstream GitHub repos.\sa180\par}
+}
+]]></description>
+  </metadata>
 </index>
