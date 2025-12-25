@@ -1,0 +1,11 @@
+# DF95_QA_Toolbar_Safety.ReaperMenuSet (DF95 v1.56 Smart Context Flow)
+Item01=Custom: Validator 2.0
+	SCRIPT: Scripts/IfeelLikeSnow/DF95/QA/DF95_Validator_2_0.lua
+Item02=Custom: Safety / Loudness
+	SCRIPT: Scripts/IfeelLikeSnow/DF95/QA/DF95_Safety_Loudness_Menu.lua
+Item03=Custom: LiveCheck
+	SCRIPT: Scripts/IfeelLikeSnow/DF95/QA/DF95_FirstRun_LiveCheck.lua
+Item04=Custom: Master Snapshot
+	SCRIPT: Scripts/IfeelLikeSnow/DF95/QA/DF95_Master_Snapshot.lua
+Item05=Custom: FXChain Naming Helper
+	SCRIPT: Scripts/IfeelLikeSnow/DF95/DF95_FXChain_SaveName_Helper_ImGui.lua
