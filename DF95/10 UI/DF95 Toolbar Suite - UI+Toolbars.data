@@ -1,0 +1,20 @@
+@description DF95 Toolbar Suite - UI (Toolbars, MenuSets, Icons, Menus)
+@version 1.0.0
+@author DF95
+@metapackage
+@about
+  Installs DF95 UI assets: Toolbars/MenuSets/Menus + Icons.
+
+  NOTE:
+  - Installing does NOT automatically activate toolbars.
+  - Import manually in REAPER:
+    Options -> Customize menus/toolbars -> Import...
+
+  Stability contract:
+  - Do not move/rename THIS package file once published.
+  - Do not change the TARGET install paths (right side of '>') once published.
+@provides
+  _payload/Toolbars/** > Toolbars/
+  _payload/MenuSets/** > MenuSets/
+  _payload/Menus/**    > Menus/
+  _payload/Icons/**    > Icons/

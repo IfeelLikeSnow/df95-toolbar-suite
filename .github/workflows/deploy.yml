@@ -1,0 +1,35 @@
+name: deploy
+
+on:
+  push:
+    branches: [ "master", "main" ]
+
+permissions:
+  contents: write
+
+jobs:
+  reapack-index-deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Set up Ruby
+        uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: '3.2'
+          bundler-cache: false
+
+      - name: Install reapack-index
+        run: gem install reapack-index
+
+      - name: Scan commits & update index.xml
+        run: |
+          reapack-index --scan --amend --commit
+          git status --porcelain
+
+      - name: Push updated index.xml
+        run: |
+          git push
