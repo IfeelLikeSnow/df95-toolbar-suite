@@ -27,4 +27,4 @@ jobs:
         run: gem install reapack-index
 
       - name: Validate repository (strict)
-        run: reapack-index --check --no-commit
+        run: reapack-index --check --no-commit .
