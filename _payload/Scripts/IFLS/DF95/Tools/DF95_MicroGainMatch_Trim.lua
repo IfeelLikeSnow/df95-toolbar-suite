@@ -1,4 +1,5 @@
 -- @description Micro Gain Match ±0.5 dB (Track trim)
+-- @version 0.0.0
 local r=reaper; local tr=r.GetSelectedTrack(0,0); if not tr then return end
 local vol = ({r.GetMediaTrackInfo_Value(tr,"D_VOL")})[2]
 local step = 10^(0.5/20) -- +0.5 dB

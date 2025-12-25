@@ -1,4 +1,5 @@
 -- @description Toggle SWS LUFS measurement for Humanize
+-- @version 0.0.0
 local r = reaper
 local sep = package.config:sub(1,1)
 local res = r.GetResourcePath()

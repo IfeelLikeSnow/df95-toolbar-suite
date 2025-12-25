@@ -1,4 +1,5 @@
 -- @description MetaCore VSTi module (auto-extracted)
+-- @version 0.0.0
 -- @author DF95 + Reaper DAW Ultimate Assistant
 -- @noindex
 

@@ -1,4 +1,5 @@
 -- @description SmartFlow AutoInstaller (minimal)
+-- @version 0.0.0
 local r=reaper; local sep=package.config:sub(1,1); local res=r.GetResourcePath()
 
 -- Auto-Index-Hook: führe nach Import den Chain Indexer einmal aus
