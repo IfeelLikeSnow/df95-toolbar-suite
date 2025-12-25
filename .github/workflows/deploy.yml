@@ -25,9 +25,14 @@ jobs:
       - name: Install reapack-index
         run: gem install reapack-index
 
+      - name: Configure git user
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+
       - name: Scan commits & update index.xml
         run: |
-          reapack-index --scan --amend --commit
+          reapack-index --scan --amend --commit .
           git status --porcelain
 
       - name: Push updated index.xml
