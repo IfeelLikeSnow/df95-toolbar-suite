@@ -1,5 +1,350 @@
-<?xml version='1.0' encoding='utf-8'?>
-<index version="1" name="DF95 Toolbar Suite" desc="Toolbars + required scripts/resources">
+<?xml version="1.0" encoding="utf-8"?>
+<index version="1" name="DF95 Toolbar Suite" desc="Toolbars + required scripts/resources" commit="f251cc6d06a16d18c9cb017d94c6e79f08b2a284">
+  <category name="_payload/Effects/DF95">
+    <reapack name="DF95_Euclid_Slicer.jsfx" type="effect" desc="DF95 Euclid Slicer (tempo-synced Euclidean gate)">
+      <version name="1.0" author="DF95" time="2025-12-25T20:46:43Z">
+        <source>https://github.com/IfeelLikeSnow/df95-toolbar-suite/raw/f251cc6d06a16d18c9cb017d94c6e79f08b2a284/_payload/Effects/DF95/DF95_Euclid_Slicer.jsfx</source>
+      </version>
+    </reapack>
+    <reapack name="DF95_Granular_Hold.jsfx" type="effect" desc="DF95 Granular Hold (micro-grain freeze)">
+      <version name="1.0" author="DF95" time="2025-12-25T20:46:43Z">
+        <source>https://github.com/IfeelLikeSnow/df95-toolbar-suite/raw/f251cc6d06a16d18c9cb017d94c6e79f08b2a284/_payload/Effects/DF95/DF95_Granular_Hold.jsfx</source>
+      </version>
+    </reapack>
+    <reapack name="DF95_IDM_Chopper.jsfx" type="effect" desc="DF95 IDM Chopper (tempo-synced gate)">
+      <version name="1.0" author="DF95" time="2025-12-25T20:46:43Z">
+        <source>https://github.com/IfeelLikeSnow/df95-toolbar-suite/raw/f251cc6d06a16d18c9cb017d94c6e79f08b2a284/_payload/Effects/DF95/DF95_IDM_Chopper.jsfx</source>
+      </version>
+    </reapack>
+    <reapack name="DF95_IDM_ClicksPops_BusTone.jsfx" type="effect" desc="DF95 IDM Clicks&amp;Pops Bus Tone">
+      <version name="1.0" author="DF95" time="2025-12-25T20:46:43Z">
+        <source>https://github.com/IfeelLikeSnow/df95-toolbar-suite/raw/f251cc6d06a16d18c9cb017d94c6e79f08b2a284/_payload/Effects/DF95/DF95_IDM_ClicksPops_BusTone.jsfx</source>
+      </version>
+    </reapack>
+    <reapack name="DF95_IDM_Hats_BusTone.jsfx" type="effect" desc="DF95 IDM Hats Bus Tone">
+      <version name="1.0" author="DF95" time="2025-12-25T20:46:43Z">
+        <source>https://github.com/IfeelLikeSnow/df95-toolbar-suite/raw/f251cc6d06a16d18c9cb017d94c6e79f08b2a284/_payload/Effects/DF95/DF95_IDM_Hats_BusTone.jsfx</source>
+      </version>
+    </reapack>
+    <reapack name="DF95_IDM_Kick_BusTone.jsfx" type="effect" desc="DF95 IDM Kick Bus Tone">
+      <version name="1.0" author="DF95" time="2025-12-25T20:46:43Z">
+        <source>https://github.com/IfeelLikeSnow/df95-toolbar-suite/raw/f251cc6d06a16d18c9cb017d94c6e79f08b2a284/_payload/Effects/DF95/DF95_IDM_Kick_BusTone.jsfx</source>
+      </version>
+    </reapack>
+    <reapack name="DF95_IDM_MicroPerc_BusTone.jsfx" type="effect" desc="DF95 IDM MicroPerc Bus Tone">
+      <version name="1.0" author="DF95" time="2025-12-25T20:46:43Z">
+        <source>https://github.com/IfeelLikeSnow/df95-toolbar-suite/raw/f251cc6d06a16d18c9cb017d94c6e79f08b2a284/_payload/Effects/DF95/DF95_IDM_MicroPerc_BusTone.jsfx</source>
+      </version>
+    </reapack>
+    <reapack name="DF95_IDM_Snare_BusTone.jsfx" type="effect" desc="DF95 IDM Snare Bus Tone">
+      <version name="1.0" author="DF95" time="2025-12-25T20:46:43Z">
+        <source>https://github.com/IfeelLikeSnow/df95-toolbar-suite/raw/f251cc6d06a16d18c9cb017d94c6e79f08b2a284/_payload/Effects/DF95/DF95_IDM_Snare_BusTone.jsfx</source>
+      </version>
+    </reapack>
+    <reapack name="DF95_Stereo_Alternator.jsfx" type="effect" desc="DF95 Stereo Alternator (tempo-synced L/R switcher)">
+      <version name="1.0" author="DF95" time="2025-12-25T20:46:43Z">
+        <source>https://github.com/IfeelLikeSnow/df95-toolbar-suite/raw/f251cc6d06a16d18c9cb017d94c6e79f08b2a284/_payload/Effects/DF95/DF95_Stereo_Alternator.jsfx</source>
+      </version>
+    </reapack>
+  </category>
+  <category name="_payload/Scripts/IFLS/DF95">
+    <reapack name="DF95_Apply_IDM_Bus_Recommended.lua" type="script" desc="Apply IDM Bus Recommended Settings (Bus_IDM, Bus_IDM_Drums, FXBus)">
+      <version name="1.0" author="DF95" time="2025-12-25T20:46:43Z">
+        <source main="main">https://github.com/IfeelLikeSnow/df95-toolbar-suite/raw/f251cc6d06a16d18c9cb017d94c6e79f08b2a284/_payload/Scripts/IFLS/DF95/DF95_Apply_IDM_Bus_Recommended.lua</source>
+      </version>
+    </reapack>
+    <reapack name="DF95_Artist_FilterMotion_Apply.lua" type="script" desc="Artist Filter Motion Apply (FilterProfile-aware)">
+      <version name="1.0" author="DF95" time="2025-12-25T20:46:43Z">
+        <source main="main">https://github.com/IfeelLikeSnow/df95-toolbar-suite/raw/f251cc6d06a16d18c9cb017d94c6e79f08b2a284/_payload/Scripts/IFLS/DF95/DF95_Artist_FilterMotion_Apply.lua</source>
+      </version>
+    </reapack>
+    <reapack name="DF95_ArtistDrum_GhostPerc_Apply.lua" type="script" desc="Artist Drum Ghost &amp; Perc Density Apply (SamplerProfile-aware)">
+      <version name="1.0" author="DF95" time="2025-12-25T20:46:43Z">
+        <source main="main">https://github.com/IfeelLikeSnow/df95-toolbar-suite/raw/f251cc6d06a16d18c9cb017d94c6e79f08b2a284/_payload/Scripts/IFLS/DF95/DF95_ArtistDrum_GhostPerc_Apply.lua</source>
+      </version>
+    </reapack>
+    <reapack name="DF95_ArtistDrum_KickEngine_Apply.lua" type="script" desc="Artist Drum KickEngine Apply (Chooses Kick Synth per Artist SamplerProfile)">
+      <version name="1.0" author="DF95" time="2025-12-25T20:46:43Z">
+        <source main="main">https://github.com/IfeelLikeSnow/df95-toolbar-suite/raw/f251cc6d06a16d18c9cb017d94c6e79f08b2a284/_payload/Scripts/IFLS/DF95/DF95_ArtistDrum_KickEngine_Apply.lua</source>
+      </version>
+    </reapack>
+    <reapack name="DF95_ArtistProfile_Loader.lua" type="script" desc="ArtistProfile Loader (Slicing/Humanize/Rearrange/Loop/Sampler/Warp/Coloring)">
+      <version name="1.0" author="DF95" time="2025-12-25T20:46:43Z">
+        <source main="main">https://github.com/IfeelLikeSnow/df95-toolbar-suite/raw/f251cc6d06a16d18c9cb017d94c6e79f08b2a284/_payload/Scripts/IFLS/DF95/DF95_ArtistProfile_Loader.lua</source>
+      </version>
+    </reapack>
+    <reapack name="DF95_AutoIcon_Assign_ThemeAware.lua" type="script" desc="Auto-Icon Assign (Theme-Aware, light/dark sets)">
+      <version name="1.1" author="IfeelLikeSnow" time="2025-12-25T20:46:43Z">
+        <source main="main">https://github.com/IfeelLikeSnow/df95-toolbar-suite/raw/f251cc6d06a16d18c9cb017d94c6e79f08b2a284/_payload/Scripts/IFLS/DF95/DF95_AutoIcon_Assign_ThemeAware.lua</source>
+      </version>
+    </reapack>
+    <reapack name="DF95_CreateLoop_Menu_V2.lua" type="script" desc="Create Loop Menu V2 (Artist-Profile)">
+      <version name="1.1" author="DF95" time="2025-12-25T20:46:43Z">
+        <source main="main">https://github.com/IfeelLikeSnow/df95-toolbar-suite/raw/f251cc6d06a16d18c9cb017d94c6e79f08b2a284/_payload/Scripts/IFLS/DF95/DF95_CreateLoop_Menu_V2.lua</source>
+      </version>
+    </reapack>
+    <reapack name="DF95_Export_Metadata_CSV_FromTags.lua" type="script" desc="Export – UCS Metadata CSV From Tags">
+      <version name="1.0" author="DF95" time="2025-12-25T20:46:43Z">
+        <source main="main">https://github.com/IfeelLikeSnow/df95-toolbar-suite/raw/f251cc6d06a16d18c9cb017d94c6e79f08b2a284/_payload/Scripts/IFLS/DF95/DF95_Export_Metadata_CSV_FromTags.lua</source>
+      </version>
+    </reapack>
+    <reapack name="DF95_Export_UCS_Browser_ImGui.lua" type="script" desc="Export UCS Browser (ImGui)">
+      <version name="1.0" author="DF95" time="2025-12-25T20:46:43Z">
+        <source main="main">https://github.com/IfeelLikeSnow/df95-toolbar-suite/raw/f251cc6d06a16d18c9cb017d94c6e79f08b2a284/_payload/Scripts/IFLS/DF95/DF95_Export_UCS_Browser_ImGui.lua</source>
+      </version>
+    </reapack>
+    <reapack name="DF95_Export_UCS_FromFilename.lua" type="script" desc="Export – UCS Guess From Filename">
+      <version name="1.0" author="DF95" time="2025-12-25T20:46:43Z">
+        <source main="main">https://github.com/IfeelLikeSnow/df95-toolbar-suite/raw/f251cc6d06a16d18c9cb017d94c6e79f08b2a284/_payload/Scripts/IFLS/DF95/DF95_Export_UCS_FromFilename.lua</source>
+      </version>
+    </reapack>
+    <reapack name="DF95_Export_UCS_Helper.lua" type="script" desc="Export UCS Helper (preset UCS CatID/FXName/Creator/Source for Export Wizard)">
+      <version name="1.0" author="DF95" time="2025-12-25T20:46:43Z">
+        <source main="main">https://github.com/IfeelLikeSnow/df95-toolbar-suite/raw/f251cc6d06a16d18c9cb017d94c6e79f08b2a284/_payload/Scripts/IFLS/DF95/DF95_Export_UCS_Helper.lua</source>
+      </version>
+    </reapack>
+    <reapack name="DF95_Export_UCS_ImGui.lua" type="script" desc="Export UCS ImGui (UCS-aware Export Frontend)">
+      <version name="1.0" author="DF95" time="2025-12-25T20:46:43Z">
+        <source main="main">https://github.com/IfeelLikeSnow/df95-toolbar-suite/raw/f251cc6d06a16d18c9cb017d94c6e79f08b2a284/_payload/Scripts/IFLS/DF95/DF95_Export_UCS_ImGui.lua</source>
+      </version>
+    </reapack>
+    <reapack name="DF95_Export_UCS_MasterButton.lua" type="script" desc="Export Master Button (Target -&gt; UCS -&gt; Export)">
+      <version name="1.0" author="DF95" time="2025-12-25T20:46:43Z">
+        <source main="main">https://github.com/IfeelLikeSnow/df95-toolbar-suite/raw/f251cc6d06a16d18c9cb017d94c6e79f08b2a284/_payload/Scripts/IFLS/DF95/DF95_Export_UCS_MasterButton.lua</source>
+      </version>
+    </reapack>
+    <reapack name="DF95_Export_UCS_MicRecorder_FromFX.lua" type="script" desc="Export – UCS Mic/Recorder From FX">
+      <version name="1.0" author="DF95" time="2025-12-25T20:46:43Z">
+        <source main="main">https://github.com/IfeelLikeSnow/df95-toolbar-suite/raw/f251cc6d06a16d18c9cb017d94c6e79f08b2a284/_payload/Scripts/IFLS/DF95/DF95_Export_UCS_MicRecorder_FromFX.lua</source>
+      </version>
+    </reapack>
+    <reapack name="DF95_Export_UCS_README.lua" type="script" desc="Export – UCS README (Help Window)">
+      <version name="1.0" author="DF95" time="2025-12-25T20:46:43Z">
+        <source main="main">https://github.com/IfeelLikeSnow/df95-toolbar-suite/raw/f251cc6d06a16d18c9cb017d94c6e79f08b2a284/_payload/Scripts/IFLS/DF95/DF95_Export_UCS_README.lua</source>
+      </version>
+    </reapack>
+    <reapack name="DF95_Export_Wizard.lua" type="script" desc="Export Wizard (Slices &amp; Loops, post Master, Tag-aware)">
+      <version name="1.2" author="DF95" time="2025-12-25T20:46:43Z">
+        <source main="main">https://github.com/IfeelLikeSnow/df95-toolbar-suite/raw/f251cc6d06a16d18c9cb017d94c6e79f08b2a284/_payload/Scripts/IFLS/DF95/DF95_Export_Wizard.lua</source>
+      </version>
+    </reapack>
+    <reapack name="DF95_Fix_Chain_LiveMode.lua" type="script" desc="LiveMode – Bypass high-latency suspects">
+      <version name="1.1" author="DF95" time="2025-12-25T20:46:43Z">
+        <source main="main">https://github.com/IfeelLikeSnow/df95-toolbar-suite/raw/f251cc6d06a16d18c9cb017d94c6e79f08b2a284/_payload/Scripts/IFLS/DF95/DF95_Fix_Chain_LiveMode.lua</source>
+      </version>
+    </reapack>
+    <reapack name="DF95_Fix_Chain_SafetyLast.lua" type="script" desc="Fix Chains – SafetyLast (move limiters last / ensure on Master)">
+      <version name="1.0" author="DF95" time="2025-12-25T20:46:43Z">
+        <source main="main">https://github.com/IfeelLikeSnow/df95-toolbar-suite/raw/f251cc6d06a16d18c9cb017d94c6e79f08b2a284/_payload/Scripts/IFLS/DF95/DF95_Fix_Chain_SafetyLast.lua</source>
+      </version>
+    </reapack>
+    <reapack name="DF95_FlowBus.lua" type="script" desc="FlowBus (ExtState sync)">
+      <version name="1.0" author="DF95" time="2025-12-25T20:46:43Z">
+        <source main="main">https://github.com/IfeelLikeSnow/df95-toolbar-suite/raw/f251cc6d06a16d18c9cb017d94c6e79f08b2a284/_payload/Scripts/IFLS/DF95/DF95_FlowBus.lua</source>
+      </version>
+    </reapack>
+    <reapack name="DF95_GainMatch_v2.lua" type="script" desc="GainMatch v2 (LUFS-linked simple)">
+      <version name="1.0" time="2025-12-25T20:46:43Z">
+        <source main="main">https://github.com/IfeelLikeSnow/df95-toolbar-suite/raw/f251cc6d06a16d18c9cb017d94c6e79f08b2a284/_payload/Scripts/IFLS/DF95/DF95_GainMatch_v2.lua</source>
+      </version>
+    </reapack>
+    <reapack name="DF95_Humanize_Apply.lua" type="script" desc="Humanize Apply (Items + MIDI, Artist-Profile aware)">
+      <version name="2.0" author="DF95" time="2025-12-25T20:46:43Z">
+        <source main="main">https://github.com/IfeelLikeSnow/df95-toolbar-suite/raw/f251cc6d06a16d18c9cb017d94c6e79f08b2a284/_payload/Scripts/IFLS/DF95/DF95_Humanize_Apply.lua</source>
+      </version>
+    </reapack>
+    <reapack name="DF95_Humanize_Menu_V2.lua" type="script" desc="Humanize Menu V2 (Artist-Profile)">
+      <version name="1.1" author="DF95" time="2025-12-25T20:46:43Z">
+        <source main="main">https://github.com/IfeelLikeSnow/df95-toolbar-suite/raw/f251cc6d06a16d18c9cb017d94c6e79f08b2a284/_payload/Scripts/IFLS/DF95/DF95_Humanize_Menu_V2.lua</source>
+      </version>
+    </reapack>
+    <reapack name="DF95_Installer_FirstRun.lua" type="script" desc="Installer &amp; First-Run Wizard">
+      <version name="1.0" author="DF95" time="2025-12-25T20:46:43Z">
+        <source main="main">https://github.com/IfeelLikeSnow/df95-toolbar-suite/raw/f251cc6d06a16d18c9cb017d94c6e79f08b2a284/_payload/Scripts/IFLS/DF95/DF95_Installer_FirstRun.lua</source>
+      </version>
+    </reapack>
+    <reapack name="DF95_LoopBuilder.lua" type="script" desc="LoopBuilder – Build rhythm track from selected slices">
+      <version name="1.44.0" time="2025-12-25T20:46:43Z">
+        <source main="main">https://github.com/IfeelLikeSnow/df95-toolbar-suite/raw/f251cc6d06a16d18c9cb017d94c6e79f08b2a284/_payload/Scripts/IFLS/DF95/DF95_LoopBuilder.lua</source>
+      </version>
+    </reapack>
+    <reapack name="DF95_Master_UI_OneClick_Installer.lua" type="script" desc="One-Click UI Master Installer (Balanced Studio)">
+      <version name="1.0" author="IfeelLikeSnow" time="2025-12-25T20:46:43Z">
+        <source main="main">https://github.com/IfeelLikeSnow/df95-toolbar-suite/raw/f251cc6d06a16d18c9cb017d94c6e79f08b2a284/_payload/Scripts/IFLS/DF95/DF95_Master_UI_OneClick_Installer.lua</source>
+      </version>
+    </reapack>
+    <reapack name="DF95_Menu_BiasHumanize_Hub.lua" type="script" desc="Bias &amp; Humanize Hub">
+      <version name="1.1" author="DF95" time="2025-12-25T20:46:43Z">
+        <source main="main">https://github.com/IfeelLikeSnow/df95-toolbar-suite/raw/f251cc6d06a16d18c9cb017d94c6e79f08b2a284/_payload/Scripts/IFLS/DF95/DF95_Menu_BiasHumanize_Hub.lua</source>
+      </version>
+    </reapack>
+    <reapack name="DF95_Menu_BusRouting_Hub_Legacy.lua" type="script" desc="Bus &amp; Routing Hub">
+      <version name="1.1" author="DF95" time="2025-12-25T20:46:43Z">
+        <source main="main">https://github.com/IfeelLikeSnow/df95-toolbar-suite/raw/f251cc6d06a16d18c9cb017d94c6e79f08b2a284/_payload/Scripts/IFLS/DF95/DF95_Menu_BusRouting_Hub_Legacy.lua</source>
+      </version>
+    </reapack>
+    <reapack name="DF95_Menu_ColoringAudition_Hub_Legacy.lua" type="script" desc="Coloring &amp; Audition Hub">
+      <version name="1.1" author="DF95" time="2025-12-25T20:46:43Z">
+        <source main="main">https://github.com/IfeelLikeSnow/df95-toolbar-suite/raw/f251cc6d06a16d18c9cb017d94c6e79f08b2a284/_payload/Scripts/IFLS/DF95/DF95_Menu_ColoringAudition_Hub_Legacy.lua</source>
+      </version>
+    </reapack>
+    <reapack name="DF95_Menu_InputLUFS_Hub_Legacy.lua" type="script" desc="Input &amp; LUFS Hub">
+      <version name="1.1" author="DF95" time="2025-12-25T20:46:43Z">
+        <source main="main">https://github.com/IfeelLikeSnow/df95-toolbar-suite/raw/f251cc6d06a16d18c9cb017d94c6e79f08b2a284/_payload/Scripts/IFLS/DF95/DF95_Menu_InputLUFS_Hub_Legacy.lua</source>
+      </version>
+    </reapack>
+    <reapack name="DF95_Menu_ToolbarSwitcher_ImGui.lua" type="script" desc="Toolbar Switcher (ImGui Dropdown, Kategorien, Status)">
+      <version name="1.2" author="DF95" time="2025-12-25T20:46:43Z">
+        <changelog><![CDATA[+ Alle DF95-Toolbars einzeln anwählbar
++ Kategorien (zweite Ebene) im Dropdown
++ Status-Anzeige (on/off) pro Toolbar via GetToggleCommandStateEx
++ Optionaler Name-Import aus .ReaperMenuSet (auto-detect Display-Namen)]]></changelog>
+        <source main="main">https://github.com/IfeelLikeSnow/df95-toolbar-suite/raw/f251cc6d06a16d18c9cb017d94c6e79f08b2a284/_payload/Scripts/IFLS/DF95/DF95_Menu_ToolbarSwitcher_ImGui.lua</source>
+      </version>
+    </reapack>
+    <reapack name="DF95_MicFX_ParamApply_v3_6.lua" type="script" desc="MicFX ParamApply v3.6 (LiveAware – JSFX Meter, Drive &amp; Comp Bias)">
+      <version name="1.0" time="2025-12-25T20:46:43Z">
+        <source main="main">https://github.com/IfeelLikeSnow/df95-toolbar-suite/raw/f251cc6d06a16d18c9cb017d94c6e79f08b2a284/_payload/Scripts/IFLS/DF95/DF95_MicFX_ParamApply_v3_6.lua</source>
+      </version>
+    </reapack>
+    <reapack name="DF95_Rearrange_Align.lua" type="script" desc="Rearrange – Align slices vertically">
+      <version name="1.44.0" time="2025-12-25T20:46:43Z">
+        <source main="main">https://github.com/IfeelLikeSnow/df95-toolbar-suite/raw/f251cc6d06a16d18c9cb017d94c6e79f08b2a284/_payload/Scripts/IFLS/DF95/DF95_Rearrange_Align.lua</source>
+      </version>
+    </reapack>
+    <reapack name="DF95_Rearrange_ArtistAware_Align.lua" type="script" desc="Rearrange Artist-Aware Align+Glitch (uses DF95_REARRANGE profile)">
+      <version name="1.1" author="DF95" time="2025-12-25T20:46:43Z">
+        <source main="main">https://github.com/IfeelLikeSnow/df95-toolbar-suite/raw/f251cc6d06a16d18c9cb017d94c6e79f08b2a284/_payload/Scripts/IFLS/DF95/DF95_Rearrange_ArtistAware_Align.lua</source>
+      </version>
+    </reapack>
+    <reapack name="DF95_Rearrange_Menu_V2.lua" type="script" desc="Rearrange Menu V2 (Artist-Profile)">
+      <version name="1.1" author="DF95" time="2025-12-25T20:46:43Z">
+        <source main="main">https://github.com/IfeelLikeSnow/df95-toolbar-suite/raw/f251cc6d06a16d18c9cb017d94c6e79f08b2a284/_payload/Scripts/IFLS/DF95/DF95_Rearrange_Menu_V2.lua</source>
+      </version>
+    </reapack>
+    <reapack name="DF95_Sampler_Menu_V2.lua" type="script" desc="Sampler Menu V2 (Artist-Profile)">
+      <version name="1.1" author="DF95" time="2025-12-25T20:46:43Z">
+        <source main="main">https://github.com/IfeelLikeSnow/df95-toolbar-suite/raw/f251cc6d06a16d18c9cb017d94c6e79f08b2a284/_payload/Scripts/IFLS/DF95/DF95_Sampler_Menu_V2.lua</source>
+      </version>
+    </reapack>
+    <reapack name="DF95_SmartLUFS_AutoLearn_v3.lua" type="script" desc="SmartLUFS AutoLearn v3 (Mic-aware Targets + Ceilings)">
+      <version name="1.0" time="2025-12-25T20:46:43Z">
+        <source main="main">https://github.com/IfeelLikeSnow/df95-toolbar-suite/raw/f251cc6d06a16d18c9cb017d94c6e79f08b2a284/_payload/Scripts/IFLS/DF95/DF95_SmartLUFS_AutoLearn_v3.lua</source>
+      </version>
+    </reapack>
+    <reapack name="DF95_SpezialToolbars_Installer_V1.lua" type="script" desc="Spezial-Toolbars Installer (FX / Sampler / Loop-Warp / Arrangement)">
+      <version name="1.0" author="DF95" time="2025-12-25T20:46:43Z">
+        <source main="main">https://github.com/IfeelLikeSnow/df95-toolbar-suite/raw/f251cc6d06a16d18c9cb017d94c6e79f08b2a284/_payload/Scripts/IFLS/DF95/DF95_SpezialToolbars_Installer_V1.lua</source>
+      </version>
+    </reapack>
+    <reapack name="DF95_ThemeSync_Apply.lua" type="script" desc="ThemeSync – auto-adapt DF95 UX profile to active theme">
+      <version name="1.0" author="IfeelLikeSnow" time="2025-12-25T20:46:43Z">
+        <source main="main">https://github.com/IfeelLikeSnow/df95-toolbar-suite/raw/f251cc6d06a16d18c9cb017d94c6e79f08b2a284/_payload/Scripts/IFLS/DF95/DF95_ThemeSync_Apply.lua</source>
+      </version>
+    </reapack>
+    <reapack name="DF95_ThemeZip_AutoInstall.lua" type="script" desc="ThemeZip Auto-Install + ThemeSync">
+      <version name="1.0" time="2025-12-25T20:46:43Z">
+        <source main="main">https://github.com/IfeelLikeSnow/df95-toolbar-suite/raw/f251cc6d06a16d18c9cb017d94c6e79f08b2a284/_payload/Scripts/IFLS/DF95/DF95_ThemeZip_AutoInstall.lua</source>
+      </version>
+    </reapack>
+  </category>
+  <category name="_payload/Scripts/IFLS/DF95/Core">
+    <reapack name="DF95_ColoringBus_Selector.lua" type="script" desc="DF95_ColoringBus_Selector (wrapper)">
+      <version name="1.1" time="2025-12-25T20:46:43Z">
+        <source main="main">https://github.com/IfeelLikeSnow/df95-toolbar-suite/raw/f251cc6d06a16d18c9cb017d94c6e79f08b2a284/_payload/Scripts/IFLS/DF95/Core/DF95_ColoringBus_Selector.lua</source>
+      </version>
+    </reapack>
+    <reapack name="DF95_DeviceProfiles.lua" type="script">
+      <version name="1.0" time="2025-12-25T20:46:43Z">
+        <source main="main">https://github.com/IfeelLikeSnow/df95-toolbar-suite/raw/f251cc6d06a16d18c9cb017d94c6e79f08b2a284/_payload/Scripts/IFLS/DF95/Core/DF95_DeviceProfiles.lua</source>
+      </version>
+    </reapack>
+    <reapack name="DF95_Explode_AutoBus.lua" type="script" desc="DF95_Explode_AutoBus (wrapper)">
+      <version name="1.1" time="2025-12-25T20:46:43Z">
+        <source main="main">https://github.com/IfeelLikeSnow/df95-toolbar-suite/raw/f251cc6d06a16d18c9cb017d94c6e79f08b2a284/_payload/Scripts/IFLS/DF95/Core/DF95_Explode_AutoBus.lua</source>
+      </version>
+    </reapack>
+    <reapack name="DF95_FXBus_Selector.lua" type="script" desc="DF95_FXBus_Selector (wrapper)">
+      <version name="1.1" time="2025-12-25T20:46:43Z">
+        <source main="main">https://github.com/IfeelLikeSnow/df95-toolbar-suite/raw/f251cc6d06a16d18c9cb017d94c6e79f08b2a284/_payload/Scripts/IFLS/DF95/Core/DF95_FXBus_Selector.lua</source>
+      </version>
+    </reapack>
+    <reapack name="DF95_JSON.lua" type="script">
+      <version name="1.0" time="2025-12-25T20:46:43Z">
+        <source main="main">https://github.com/IfeelLikeSnow/df95-toolbar-suite/raw/f251cc6d06a16d18c9cb017d94c6e79f08b2a284/_payload/Scripts/IFLS/DF95/Core/DF95_JSON.lua</source>
+      </version>
+    </reapack>
+    <reapack name="DF95_Log.lua" type="script">
+      <version name="1.0" time="2025-12-25T20:46:43Z">
+        <source main="main">https://github.com/IfeelLikeSnow/df95-toolbar-suite/raw/f251cc6d06a16d18c9cb017d94c6e79f08b2a284/_payload/Scripts/IFLS/DF95/Core/DF95_Log.lua</source>
+      </version>
+    </reapack>
+    <reapack name="DF95_MasterBus_Selector.lua" type="script" desc="DF95_MasterBus_Selector (wrapper)">
+      <version name="1.1" time="2025-12-25T20:46:43Z">
+        <source main="main">https://github.com/IfeelLikeSnow/df95-toolbar-suite/raw/f251cc6d06a16d18c9cb017d94c6e79f08b2a284/_payload/Scripts/IFLS/DF95/Core/DF95_MasterBus_Selector.lua</source>
+      </version>
+    </reapack>
+  </category>
+  <category name="_payload/Scripts/IFLS/DF95/Design">
+    <reapack name="DF95_FXBus_Seed.lua" type="script" desc="DF95_FXBus_Seed (wrapper)">
+      <version name="1.1" time="2025-12-25T20:46:43Z">
+        <source main="main">https://github.com/IfeelLikeSnow/df95-toolbar-suite/raw/f251cc6d06a16d18c9cb017d94c6e79f08b2a284/_payload/Scripts/IFLS/DF95/Design/DF95_FXBus_Seed.lua</source>
+      </version>
+    </reapack>
+    <reapack name="DF95_LoopBuilder.lua" type="script" desc="DF95_LoopBuilder (wrapper)">
+      <version name="1.1" time="2025-12-25T20:46:43Z">
+        <source main="main">https://github.com/IfeelLikeSnow/df95-toolbar-suite/raw/f251cc6d06a16d18c9cb017d94c6e79f08b2a284/_payload/Scripts/IFLS/DF95/Design/DF95_LoopBuilder.lua</source>
+      </version>
+    </reapack>
+    <reapack name="DF95_Menu_Humanize_Dropdown.lua" type="script" desc="DF95_Menu_Humanize_Dropdown (wrapper)">
+      <version name="1.1" time="2025-12-25T20:46:43Z">
+        <source main="main">https://github.com/IfeelLikeSnow/df95-toolbar-suite/raw/f251cc6d06a16d18c9cb017d94c6e79f08b2a284/_payload/Scripts/IFLS/DF95/Design/DF95_Menu_Humanize_Dropdown.lua</source>
+      </version>
+    </reapack>
+  </category>
+  <category name="_payload/Scripts/IFLS/DF95/Edit">
+    <reapack name="DF95_Rearrange_Align.lua" type="script" desc="DF95_Rearrange_Align (wrapper)">
+      <version name="1.1" time="2025-12-25T20:46:43Z">
+        <source main="main">https://github.com/IfeelLikeSnow/df95-toolbar-suite/raw/f251cc6d06a16d18c9cb017d94c6e79f08b2a284/_payload/Scripts/IFLS/DF95/Edit/DF95_Rearrange_Align.lua</source>
+      </version>
+    </reapack>
+  </category>
+  <category name="_payload/Scripts/IFLS/DF95/Input">
+    <reapack name="DF95_GainMatch_AB.lua" type="script" desc="DF95_GainMatch_AB (wrapper)">
+      <version name="1.1" time="2025-12-25T20:46:43Z">
+        <source main="main">https://github.com/IfeelLikeSnow/df95-toolbar-suite/raw/f251cc6d06a16d18c9cb017d94c6e79f08b2a284/_payload/Scripts/IFLS/DF95/Input/DF95_GainMatch_AB.lua</source>
+      </version>
+    </reapack>
+    <reapack name="DF95_MicFX_Manager.lua" type="script" desc="DF95_MicFX_Manager (wrapper)">
+      <version name="1.1" time="2025-12-25T20:46:43Z">
+        <source main="main">https://github.com/IfeelLikeSnow/df95-toolbar-suite/raw/f251cc6d06a16d18c9cb017d94c6e79f08b2a284/_payload/Scripts/IFLS/DF95/Input/DF95_MicFX_Manager.lua</source>
+      </version>
+    </reapack>
+  </category>
+  <category name="_payload/Scripts/IFLS/DF95/QA">
+    <reapack name="DF95_FirstRun_LiveCheck.lua" type="script" desc="DF95_FirstRun_LiveCheck (wrapper)">
+      <version name="1.1" time="2025-12-25T20:46:43Z">
+        <source main="main">https://github.com/IfeelLikeSnow/df95-toolbar-suite/raw/f251cc6d06a16d18c9cb017d94c6e79f08b2a284/_payload/Scripts/IFLS/DF95/QA/DF95_FirstRun_LiveCheck.lua</source>
+      </version>
+    </reapack>
+    <reapack name="DF95_Master_Snapshot.lua" type="script" desc="Master Snapshot (save/restore)">
+      <version name="1.1" author="DF95" time="2025-12-25T20:46:43Z">
+        <source main="main">https://github.com/IfeelLikeSnow/df95-toolbar-suite/raw/f251cc6d06a16d18c9cb017d94c6e79f08b2a284/_payload/Scripts/IFLS/DF95/QA/DF95_Master_Snapshot.lua</source>
+      </version>
+    </reapack>
+    <reapack name="DF95_Safety_Loudness_Menu.lua" type="script" desc="DF95_Safety_Loudness_Menu (wrapper)">
+      <version name="1.1" time="2025-12-25T20:46:43Z">
+        <source main="main">https://github.com/IfeelLikeSnow/df95-toolbar-suite/raw/f251cc6d06a16d18c9cb017d94c6e79f08b2a284/_payload/Scripts/IFLS/DF95/QA/DF95_Safety_Loudness_Menu.lua</source>
+      </version>
+    </reapack>
+  </category>
+  <category name="_payload/Scripts/IFLS/DF95/ReampSuite">
+    <reapack name="DF95_V83_SessionStateEngine.lua" type="script" desc="DF95_V83_SessionStateEngine">
+      <version name="1.0" author="DF95" time="2025-12-25T20:46:43Z">
+        <source main="main">https://github.com/IfeelLikeSnow/df95-toolbar-suite/raw/f251cc6d06a16d18c9cb017d94c6e79f08b2a284/_payload/Scripts/IFLS/DF95/ReampSuite/DF95_V83_SessionStateEngine.lua</source>
+      </version>
+    </reapack>
+  </category>
   <category name="DF95/00 Core">
     <reapack name="DF95 Toolbar Suite – Core" type="script" desc="Core scripts/resources used by toolbars">
       <metadata>
@@ -1543,22 +1888,6 @@
     </reapack>
   </category>
   <category name="DF95/10 Toolbars">
-    <reapack name="DF95 – DF95_Fieldrec_Export" type="script" desc="Toolbar/MenuSet + referenced scripts (shims included)">
-      <metadata>
-        <description>Toolbar/MenuSet (requires Core). Import via Options → Customize menus/toolbars… → Import.</description>
-      </metadata>
-      <version name="1.0.0" author="IfeelLikeSnow" time="1766300833">
-        <source file="MenuSets/DF95_Fieldrec_Export.Toolbar.ReaperMenu">https://raw.githubusercontent.com/IfeelLikeSnow/df95-toolbar-suite/main/MenuSets/DF95_Fieldrec_Export.Toolbar.ReaperMenu</source>
-      </version>
-    </reapack>
-    <reapack name="DF95 – DF95_Fieldrec_ToolbarV2" type="script" desc="Toolbar/MenuSet + referenced scripts (shims included)">
-      <metadata>
-        <description>Toolbar/MenuSet (requires Core). Import via Options → Customize menus/toolbars… → Import.</description>
-      </metadata>
-      <version name="1.0.0" author="IfeelLikeSnow" time="1766300833">
-        <source file="MenuSets/DF95_Fieldrec_ToolbarV2.Toolbar.ReaperMenu">https://raw.githubusercontent.com/IfeelLikeSnow/df95-toolbar-suite/main/MenuSets/DF95_Fieldrec_ToolbarV2.Toolbar.ReaperMenu</source>
-      </version>
-    </reapack>
     <reapack name="DF95 – DF95_AI_Toolbar" type="script" desc="Toolbar/MenuSet + referenced scripts (shims included)">
       <metadata>
         <description>Toolbar/MenuSet (requires Core). Import via Options → Customize menus/toolbars… → Import.</description>
@@ -1607,6 +1936,30 @@
         <source file="MenuSets/DF95 Toolbar Suite/DF95/DF95_EditToolbar_Arrange.ReaperMenuSet">https://raw.githubusercontent.com/IfeelLikeSnow/df95-toolbar-suite/main/Menus/DF95_EditToolbar_Arrange.ReaperMenuSet</source>
       </version>
     </reapack>
+    <reapack name="DF95 – DF95_Fieldrec_Export" type="script" desc="Toolbar/MenuSet + referenced scripts (shims included)">
+      <metadata>
+        <description>Toolbar/MenuSet (requires Core). Import via Options → Customize menus/toolbars… → Import.</description>
+      </metadata>
+      <version name="1.0.0" author="IfeelLikeSnow" time="1766300833">
+        <source file="MenuSets/DF95_Fieldrec_Export.Toolbar.ReaperMenu">https://raw.githubusercontent.com/IfeelLikeSnow/df95-toolbar-suite/main/MenuSets/DF95_Fieldrec_Export.Toolbar.ReaperMenu</source>
+      </version>
+    </reapack>
+    <reapack name="DF95 – DF95_Fieldrec_ToolbarV2" type="script" desc="Toolbar/MenuSet + referenced scripts (shims included)">
+      <metadata>
+        <description>Toolbar/MenuSet (requires Core). Import via Options → Customize menus/toolbars… → Import.</description>
+      </metadata>
+      <version name="1.0.0" author="IfeelLikeSnow" time="1766300833">
+        <source file="MenuSets/DF95_Fieldrec_ToolbarV2.Toolbar.ReaperMenu">https://raw.githubusercontent.com/IfeelLikeSnow/df95-toolbar-suite/main/MenuSets/DF95_Fieldrec_ToolbarV2.Toolbar.ReaperMenu</source>
+      </version>
+    </reapack>
+    <reapack name="DF95 – DF95_MainToolbar" type="script" desc="Toolbar/MenuSet + referenced scripts (shims included)">
+      <metadata>
+        <description>Toolbar/MenuSet (requires Core). Import via Options → Customize menus/toolbars… → Import.</description>
+      </metadata>
+      <version name="1.0.0" author="IfeelLikeSnow" time="1766300833">
+        <source file="MenuSets/DF95 Toolbar Suite/DF95/DF95_MainToolbar.ReaperMenuSet">https://raw.githubusercontent.com/IfeelLikeSnow/df95-toolbar-suite/main/Menus/Legacy_46c/DF95_MainToolbar.ReaperMenuSet</source>
+      </version>
+    </reapack>
     <reapack name="DF95 – DF95_MainToolbar_FlowErgo" type="script" desc="Toolbar/MenuSet + referenced scripts (shims included)">
       <metadata>
         <description>Toolbar/MenuSet (requires Core). Import via Options → Customize menus/toolbars… → Import.</description>
@@ -1653,6 +2006,14 @@
       </metadata>
       <version name="1.0.0" author="IfeelLikeSnow" time="1766300833">
         <source file="MenuSets/DF95 Toolbar Suite/DF95/DF95_Reamp_Toolbar.ReaperMenuSet">https://raw.githubusercontent.com/IfeelLikeSnow/df95-toolbar-suite/main/Menus/DF95_Reamp_Toolbar.ReaperMenuSet</source>
+      </version>
+    </reapack>
+    <reapack name="DF95 – DF95_ReampSuite_Toolbar" type="script" desc="Toolbar/MenuSet + referenced scripts (shims included)">
+      <metadata>
+        <description>Toolbar/MenuSet (requires Core). Import via Options → Customize menus/toolbars… → Import.</description>
+      </metadata>
+      <version name="1.0.0" author="IfeelLikeSnow" time="1766300833">
+        <source file="MenuSets/DF95 Toolbar Suite/DF95/DF95_ReampSuite_Toolbar.ReaperMenuSet">https://raw.githubusercontent.com/IfeelLikeSnow/df95-toolbar-suite/main/Toolbars/DF95_ReampSuite_Toolbar.ReaperMenuSet</source>
       </version>
     </reapack>
     <reapack name="DF95 – DF95_SuperPipeline_Toolbar" type="script" desc="Toolbar/MenuSet + referenced scripts (shims included)">
@@ -1773,22 +2134,6 @@
       </metadata>
       <version name="1.0.0" author="IfeelLikeSnow" time="1766300833">
         <source file="MenuSets/DF95 Toolbar Suite/DF95/DF95_V119_SampleDB_Toolbar.ReaperMenuSet">https://raw.githubusercontent.com/IfeelLikeSnow/df95-toolbar-suite/main/Menus/DF95_V119_SampleDB_Toolbar.ReaperMenuSet</source>
-      </version>
-    </reapack>
-    <reapack name="DF95 – DF95_MainToolbar" type="script" desc="Toolbar/MenuSet + referenced scripts (shims included)">
-      <metadata>
-        <description>Toolbar/MenuSet (requires Core). Import via Options → Customize menus/toolbars… → Import.</description>
-      </metadata>
-      <version name="1.0.0" author="IfeelLikeSnow" time="1766300833">
-        <source file="MenuSets/DF95 Toolbar Suite/DF95/DF95_MainToolbar.ReaperMenuSet">https://raw.githubusercontent.com/IfeelLikeSnow/df95-toolbar-suite/main/Menus/Legacy_46c/DF95_MainToolbar.ReaperMenuSet</source>
-      </version>
-    </reapack>
-    <reapack name="DF95 – DF95_ReampSuite_Toolbar" type="script" desc="Toolbar/MenuSet + referenced scripts (shims included)">
-      <metadata>
-        <description>Toolbar/MenuSet (requires Core). Import via Options → Customize menus/toolbars… → Import.</description>
-      </metadata>
-      <version name="1.0.0" author="IfeelLikeSnow" time="1766300833">
-        <source file="MenuSets/DF95 Toolbar Suite/DF95/DF95_ReampSuite_Toolbar.ReaperMenuSet">https://raw.githubusercontent.com/IfeelLikeSnow/df95-toolbar-suite/main/Toolbars/DF95_ReampSuite_Toolbar.ReaperMenuSet</source>
       </version>
     </reapack>
     <reapack name="DF95 – DF95_V71_SuperPipeline_Reamp_Toolbar" type="script" desc="Toolbar/MenuSet + referenced scripts (shims included)">
