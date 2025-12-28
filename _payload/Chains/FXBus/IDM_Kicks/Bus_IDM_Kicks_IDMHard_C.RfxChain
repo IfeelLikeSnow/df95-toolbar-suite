@@ -1,8 +1,0 @@
-<FXCHAIN
-SHOW 0
-LASTSEL 0
-DOCKED 0
-<FX VST "VST3" "kHs Transient Shaper (Kilohearts)" "" 0 WET 0 1.00 >
-<FX VST "VST3" "bx_boom (Plugin Alliance)" "" 0 WET 0 1.00 >
-<FX VST "VST3" "bx_subfilter (Plugin Alliance)" "" 0 WET 0 1.00 >
->

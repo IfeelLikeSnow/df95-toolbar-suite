@@ -1,7 +1,0 @@
-# DF95_EditToolbar_Arrange.ReaperMenuSet (DF95 v1.56 Smart Context Flow)
-Item01=Custom: Slice (Direct)
-	SCRIPT: Scripts/IfeelLikeSnow/DF95/Edit/DF95_Slice_Direct.lua
-Item02=Custom: Align / Rearrange
-	SCRIPT: Scripts/IfeelLikeSnow/DF95/Edit/DF95_Rearrange_Align.lua
-Item03=Custom: Fades & Timing Helper
-	SCRIPT: Scripts/IfeelLikeSnow/DF95/Edit/DF95_Fades_Timing_Helper.lua

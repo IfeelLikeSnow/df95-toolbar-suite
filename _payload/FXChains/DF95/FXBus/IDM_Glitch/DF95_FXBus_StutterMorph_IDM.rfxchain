@@ -1,9 +1,0 @@
-// META:category=FXBus
-// META:style=stutter
-// META:mood=edgy
-// META:lufs_target=-14.0
-// META:ceiling=-0.7
-<JS: stutter>
-<VST "VST: ReaDelay (Cockos)" readelay.dll>
-<VST "VST: ReaEQ (Cockos)" reaeq.dll>
-<VST "VST: ReaComp (Cockos)" reacomp.dll>

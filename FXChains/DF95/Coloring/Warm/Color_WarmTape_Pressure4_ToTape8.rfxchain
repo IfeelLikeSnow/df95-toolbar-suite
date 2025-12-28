@@ -1,8 +1,0 @@
-// META:category=coloring
-// META:style=warm
-// META:lufs_target=-15
-// META:ceiling=-0.8
-// META:preferred_subs=aw:tape=ToTape8; aw:pressure=Pressure4
-<VST "VST: ReaEQ (Cockos)" reacomp.dll>
-<VST "VST: ReaComp (Cockos)" reacomp.dll>
-<VST3 "VST3: ReaLimit (Cockos)" realimit.vst3>

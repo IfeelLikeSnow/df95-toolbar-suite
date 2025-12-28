@@ -1,8 +1,0 @@
-// META:category=coloring
-// META:style=wide
-// META:lufs_target=-14
-// META:ceiling=-0.7
-// META:preferred_subs=aw:tape=ToTape8; aw:console=Console8
-<VST "VST: ReaEQ (Cockos)" reacomp.dll>
-<VST "VST: ReaComp (Cockos)" reacomp.dll>
-<VST3 "VST3: ReaLimit (Cockos)" realimit.vst3>
