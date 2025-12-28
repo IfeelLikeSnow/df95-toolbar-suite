@@ -36,6 +36,11 @@ jobs:
       - name: Sanitize metaheaders (strict hygiene)
         run: python3 tools/sanitize_metaheaders.py
 
+      - name: Configure git identity for committing
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+
       - name: Build/Amend index.xml
         run: |
           reapack-index --scan --amend --commit .
