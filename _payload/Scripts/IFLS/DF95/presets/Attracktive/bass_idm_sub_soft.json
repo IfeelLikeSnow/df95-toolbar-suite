@@ -1,0 +1,15 @@
+{
+  "version": 1,
+  "synth_id": "attracktive",
+  "role": "bass",
+  "variant": "idm_sub_soft",
+  "description": "attracktive IDM Sub Soft",
+  "params": {
+    "amp_env.attack": 0.0,
+    "amp_env.decay": 0.2,
+    "amp_env.sustain": 0.85,
+    "amp_env.release": 0.22,
+    "filter.cutoff": 0.3,
+    "filter.resonance": 0.12
+  }
+}

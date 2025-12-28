@@ -1,0 +1,16 @@
+# DF95 Reamp Template – Creative MultiBus – Steinberg UR22mkII + Palmer DACCAPO
+# Routing-Idee:
+# - REAMP_SEND_UR22_DACCAPO: Out 1/2 als Reamp-Out -> DACCAPO -> Pedalboard.
+# - REAMP_RETURN_UR22_DACCAPO: Input 2 als Return.
+# - In DF95-Projekten kann REAMP_RETURN_UR22_DACCAPO zusätzlich per Sends
+#   auf FX_GLITCH_BUS, FX_FILTERMOTION_BUS, FX_PERC_BUS, Coloring Bus gelegt werden.
+# - Dieses Template erzeugt nur Send/Return-Tracks; Busse existieren im DF95-Template.
+
+<TRACK
+NAME REAMP_SEND_UR22_DACCAPO
+ISBUS 0 0
+>
+<TRACK
+NAME REAMP_RETURN_UR22_DACCAPO
+ISBUS 0 0
+>

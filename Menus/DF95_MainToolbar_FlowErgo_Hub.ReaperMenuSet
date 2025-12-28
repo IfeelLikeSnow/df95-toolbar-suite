@@ -1,0 +1,18 @@
+# DF95 Hub Toolbar (FlowErgo Hub Layout)
+Item01=Custom: Bus & Routing Hub
+	SCRIPT: Scripts/IfeelLikeSnow/DF95/DF95_Menu_BusRouting_Hub.lua
+Item02=Custom: Coloring & Audition Hub
+	SCRIPT: Scripts/IfeelLikeSnow/DF95/DF95_Menu_ColoringAudition_Hub.lua
+Item03=Custom: Bias & Humanize Hub
+	SCRIPT: Scripts/IfeelLikeSnow/DF95/DF95_Menu_BiasHumanize_Hub.lua
+Item04=Custom: Slicing & Edit Hub
+	SCRIPT: Scripts/IfeelLikeSnow/DF95/DF95_Menu_SlicingEdit_Hub.lua
+Item05=Custom: Input & LUFS Hub
+	SCRIPT: Scripts/IfeelLikeSnow/DF95/DF95_Menu_InputLUFS_Hub.lua
+Item06=Custom: QA & Safety Hub
+	SCRIPT: Scripts/IfeelLikeSnow/DF95/DF95_Menu_QASafety_Hub.lua
+Item07=Custom: Reamp Hub / Toolbar
+	SCRIPT: Scripts/IfeelLikeSnow/DF95/DF95_Reamp_Hub_ImGui.lua
+Item=Custom: Export (UCS)
+	SCRIPT: Scripts/IfeelLikeSnow/DF95/DF95_Export_UCS_MasterButton.lua
+

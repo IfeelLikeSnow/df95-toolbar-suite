@@ -1,0 +1,794 @@
+-- @description DF95: MetaCore VSTi module (auto-extracted)
+-- @author DF95 + Reaper DAW Ultimate Assistant
+-- @noindex
+
+local M = {
+
+  ------------------------------------------------------------------
+  -- ADSR Sample Manager (ADSR) – Sample-Browser/Trigger-Engine
+  ------------------------------------------------------------------
+  adsr_sample_manager = {
+    id      = "adsr_sample_manager",
+    display = "ADSR Sample Manager (ADSR)",
+    match   = {"adsr sample manager"},
+    vendor  = "ADSR",
+    type    = "sample_browser_engine",
+    roles   = {"Browser","Sample Trigger","Drums","Loops","One-Shots"},
+
+    sections = {
+      "LIBRARY / DATABASE",
+      "TAGGING & SEARCH",
+      "PLAYBACK / SYNC",
+      "MIDI TRIGGER / OUTPUT",
+    },
+
+    key_params = {
+      library_paths   = "Verzeichnisse, die gescannt und indiziert werden",
+      tag_filters     = "Tag-Filter / Kategorien (z.B. Kick, Snare, Pad)",
+      bpm_sync        = "Sync zum Host-Tempo für Loops",
+      key_match       = "Auto-Tuning / Key Matching",
+      gain            = "Output-Gain des Players",
+    },
+  },
+
+  ------------------------------------------------------------------
+  -- Attracktive (Tracktion) – FM/Wavetable-Hybrid (IDM Pads/Leads)
+  ------------------------------------------------------------------
+  attracktive = {
+    id      = "attracktive",
+    display = "Attracktive (Tracktion)",
+    match   = {"attracktive %(tracktion%)","tracktion attracktive"},
+    vendor  = "Tracktion / Dawesome",
+    type    = "hybrid_textural",
+    roles   = {"Pads","Textures","IDM","Sounddesign"},
+
+    sections = {
+      "OSC / SOURCE (Wavetables & Noise)",
+      "FILTER / DRIVE",
+      "ENVELOPES (Amp/Mod)",
+      "LFO / MOD ROUTING",
+      "FX (Delay, Reverb, etc.)",
+    },
+
+    key_params = {
+      osc_mix        = "Mix der Haupt-Oszillator-Layer",
+      osc_morph      = "Wavetable-Scroll / Morph",
+      filter_cutoff  = "Filter Cutoff / Mode",
+      filter_res     = "Filter Resonanz",
+      env_amp        = "Amp-Hüllkurve (Attack/Decay/Sustain/Release)",
+      lfo_rate       = "Primäre LFO-Geschwindigkeit",
+      fx_reverb      = "Reverb-Anteil",
+      fx_delay       = "Delay-Anteil",
+    },
+  },
+
+  ------------------------------------------------------------------
+  -- BucketPops – CR-78 Emulation (Full Bucket)
+  ------------------------------------------------------------------
+  bucketpops = {
+    id      = "bucketpops",
+    display = "BucketPops (Full Bucket Music) (16 out)",
+    match   = {"bucketpops %(full bucket music%)","bucketpops"},
+    vendor  = "Full Bucket Music",
+    type    = "drum_machine_vintage",
+    roles   = {"Drums","Patterns","Vintage","IDM","Electro"},
+
+    sections = {
+      "PATTERN SELECT / VARIATION",
+      "VOICE MIXER (Kick/Snare/Toms/Cymbals/etc.)",
+      "TONE / FILTER je Voice",
+      "ACCENT / SWING",
+      "MULTI-OUT ROUTING",
+    },
+
+    key_params = {
+      pattern_select = "Pattern-Nummer/Bank",
+      pattern_fill   = "Fill- oder Variation-Trigger",
+      voice_levels   = "Lautstärke der Drum-Stimmen",
+      tone_controls  = "Grundlegende Klangregler je Stimme (Brightness/Decay)",
+      accent_amount  = "Akzentstärke im Pattern",
+    },
+  },
+
+  ------------------------------------------------------------------
+  -- ChowKick – Physical-Model-Kick (chowdsp)
+  ------------------------------------------------------------------
+  chowkick = {
+    id      = "chowkick",
+    display = "ChowKick (chowdsp)",
+    match   = {"chowkick","chow kick"},
+    vendor  = "chowdsp",
+    type    = "kick_synth_physical_model",
+    roles   = {"Kick","Bass-Drum","IDM","Techno","Sounddesign"},
+
+    sections = {
+      "RESONATOR / BODY",
+      "CLICK / TRANSIENT",
+      "DRIVE / DISTORTION",
+      "ENVELOPE (Pitch/Amp)",
+      "MIX / OUTPUT",
+    },
+
+    key_params = {
+      freq_base      = "Grundfrequenz des Resonators (Kick-Pitch)",
+      decay_body     = "Decay des Korpus",
+      click_level    = "Anteil des Transienten/Click",
+      drive_amount   = "Drive/Distortion",
+      pitch_env_amt  = "Pitch-Envelope Amount",
+      output_gain    = "Output-Gain",
+    },
+  },
+
+  ------------------------------------------------------------------
+  -- Drum Boxx & Drumatic 3 – klassische Drum-Synths
+  ------------------------------------------------------------------
+  drum_boxx = {
+    id      = "drum_boxx_synth_free",
+    display = "Drum Boxx Synth Free (SonicXTC)",
+    match   = {"drum boxx synth free","drum boxx"},
+    vendor  = "SonicXTC",
+    type    = "drum_synth_multi",
+    roles   = {"Drums","Electro","House","IDM"},
+
+    sections = {
+      "VOICE SELECT (Kick/Snare/Toms/Cymbals)",
+      "OSC/TONE pro Voice",
+      "ENVELOPES (Amp/Pitch)",
+      "MIXER",
+    },
+
+    key_params = {
+      voice_select   = "Aktuelle Drum-Stimme",
+      pitch          = "Pitch/Frequenz",
+      decay          = "Decay/Länge",
+      tone           = "Tone/Brightness",
+      pan            = "Panorama der Voice",
+      level          = "Lautstärke der Voice",
+    },
+  },
+
+  drumatic3 = {
+    id      = "drumatic3",
+    display = "Drumatic 3 (Pieter-Jan Arts) (12 out)",
+    match   = {"drumatic 3","drumatic3"},
+    vendor  = "Pieter-Jan Arts",
+    type    = "drum_synth_analog_style",
+    roles   = {"Drums","Electro","Techno","IDM"},
+
+    sections = {
+      "VOICE ENGINES (6–8 Drum Engines)",
+      "OSC / NOISE pro Voice",
+      "FILTER / TONE",
+      "AMP ENVELOPE",
+      "MULTI-OUT ROUTING",
+    },
+
+    key_params = {
+      osc_pitch      = "Oszillator-Pitch der gewählten Voice",
+      noise_level    = "Noise-Anteil",
+      filter_cutoff  = "Filter Cutoff/Tone",
+      env_attack     = "Attack der Amp-Hüllkurve",
+      env_decay      = "Decay/Release",
+      voice_level    = "Lautstärke der Voice",
+    },
+  },
+
+  ------------------------------------------------------------------
+  -- Puremagnetik: Expanse, Leems, Verv – Texturen, LoFi, Tape
+  ------------------------------------------------------------------
+  expanse = {
+    id      = "expanse_puremagnetik",
+    display = "Expanse (Puremagnetik)",
+    match   = {"expanse %(puremagnetik%)","expanse | texture generator"},
+    vendor  = "Puremagnetik",
+    type    = "texture_noise_drone",
+    roles   = {"Noise","Drone","Texture","Ambient","IDM"},
+
+    sections = {
+      "SOURCE NOISE / TEXTURE",
+      "PITCH / SHIFT",
+      "SPECTRAL BLUR / STASIS",
+      "FILTER / SPACE",
+      "OUTPUT",
+    },
+
+    key_params = {
+      filter         = "Filter (Frequenz/Art)",
+      stasis         = "Stasis / Spectral Blur – Bewegungsgrad",
+      shift          = "Pitch Shift",
+      blend          = "Blend verschiedener Texturanteile",
+      space          = "Space / Reverb-Anteil",
+      size           = "Größe / Tiefenwirkung",
+      output_gain    = "Output-Gain",
+    },
+  },
+
+  leems = {
+    id      = "leems_puremagnetik",
+    display = "Leems (Puremagnetik)",
+    match   = {"leems %(puremagnetik%)","leems | supernatural lo%-fi portal"},
+    vendor  = "Puremagnetik",
+    type    = "lofi_portal_fx_synth",
+    roles   = {"LoFi","Texture","Ambient","Experimental"},
+
+    sections = {
+      "INPUT / SAMPLE",
+      "LO-FI / DEGRADE",
+      "FILTER / TONE",
+      "SPACE / REVERB",
+      "MIX / OUTPUT",
+    },
+
+    key_params = {
+      degrade        = "Degrade/LoFi-Intensität",
+      tone           = "Tonale Färbung (dunkel/hell)",
+      space          = "Reverb/Space",
+      mix            = "Dry/Wet",
+      output_gain    = "Output",
+    },
+  },
+
+  verv = {
+    id      = "verv_puremagnetik",
+    display = "Verv (Puremagnetik)",
+    match   = {"verv %(puremagnetik%)","verv | sunbaked tape loop","sunbaked tape loop"},
+    vendor  = "Puremagnetik",
+    type    = "string_tape_loop",
+    roles   = {"Strings","Pads","Tape","LoFi","Ambient"},
+
+    sections = {
+      "DUAL OSC / STRING SOURCE",
+      "ENVELOPE / SHAPE",
+      "TONE / ENSEMBLE",
+      "BAKE (Tape Degradation)",
+      "OUTPUT",
+    },
+
+    key_params = {
+      osc_mix        = "Mix zweier String-Oszillatoren",
+      env_attack     = "Attack der Amp-Hüllkurve",
+      env_release    = "Release",
+      tone           = "Tone / Helligkeit",
+      ensemble       = "Ensemble / Chorus-Style Modulation",
+      bake           = "Bake – Tape-Degradation (Wow/Flutter, Noise, Artefakte)",
+      output_gain    = "Output-Gain",
+    },
+  },
+
+  ------------------------------------------------------------------
+  -- MNDALA 2 – MNTRA Engine
+  ------------------------------------------------------------------
+  mndala2 = {
+    id      = "mndala2",
+    display = "MNDALA 2 (MNTRA)",
+    match   = {"mndala 2 %(mntra%)","mndala2 %(mntra%)"},
+    vendor  = "MNTRA",
+    type    = "multi_sampler_engine",
+    roles   = {"Hybrid","Texture","Acoustic Hybrid","IDM","Cinematic"},
+
+    sections = {
+      "LIBRARY / PRESET VIEW",
+      "PERFORM VIEW (X/Y/Z RTPC)",
+      "MATRIX PAGE (Mod Routing)",
+      "SAMPLER PAGE (Layer Samplers + AHDSR)",
+      "SEQUENCERS (Arp/Pattern)",
+      "GLOBAL FX (Reverb, Delay, etc.)",
+      "ANIMOD MODULATION SYSTEM",
+      "SETTINGS (Tuning, Sample Paths)",
+    },
+
+    key_params = {
+      axis_x         = "X-Achse – Makro für zugewiesene Klangparameter",
+      axis_y         = "Y-Achse – Makro",
+      axis_z         = "Z-Achse – Makro/Expression",
+      layer_levels   = "Lautstärken der Sampler-Layer",
+      layer_ahdsr    = "AHDSR-Hüllkurven pro Layer",
+      seq_rate       = "Sequencer-Rate / Steps",
+      global_reverb  = "Global Reverb Amount",
+      global_delay   = "Global Delay Amount",
+      vib_amount     = "Expressive Vibrato (bis ±2 Halbtöne)",
+    },
+  },
+
+  ------------------------------------------------------------------
+  -- Pendulate – Chaotic Mono-Synth (Newfangled Audio)
+  ------------------------------------------------------------------
+  pendulate = {
+    id      = "pendulate",
+    display = "Pendulate (Newfangled Audio)",
+    match   = {"pendulate %(newfangled audio%)","pendulate"},
+    vendor  = "Newfangled Audio",
+    type    = "chaotic_mono_synth",
+    roles   = {"Bass","Lead","FX","IDM","Experimental"},
+
+    sections = {
+      "DOUBLE-PENDULUM OSCILLATOR",
+      "WAVEFOLDER",
+      "LOW PASS GATE",
+      "MODULATION (Env, LFO, MPE)",
+      "GLOBAL (Voices/Pitch/Glide)",
+    },
+
+    key_params = {
+      chaos_amount   = "Chaos Amount – Stärke des chaotischen Pendelverhaltens",
+      osc_shape      = "Übergang Sinus → Chaos",
+      wavefold_drive = "Wavefolder Drive",
+      wavefold_sym   = "Wavefolder Symmetry",
+      lpg_cutoff     = "Low Pass Gate Cutoff",
+      lpg_resonance  = "LPG Resonanz",
+      env_attack     = "Hüllkurven-Attack",
+      env_decay      = "Hüllkurven-Decay",
+      lfo_rate       = "LFO Rate",
+      glide_time     = "Portamento / Glide",
+    },
+  },
+
+  ------------------------------------------------------------------
+  -- Podolski / Tyrell / ZebraHZ / TripleCheese – u-he Familie
+  ------------------------------------------------------------------
+  podolski = {
+    id      = "podolski",
+    display = "Podolski (u-he)",
+    match   = {"podolski %(u%-he%)","u%-he podolski"},
+    vendor  = "u-he",
+    type    = "mono_synth_simple",
+    roles   = {"Bass","Lead","Seq","Arp"},
+
+    sections = {
+      "OSC / SUB / NOISE",
+      "FILTER",
+      "AMP ENVELOPE",
+      "MOD ENVELOPE / LFO",
+      "ARPEGGIATOR",
+    },
+
+    key_params = {
+      osc_pitch      = "Oszillator-Pitch",
+      osc_wave       = "Wellenform / Shape",
+      filter_cutoff  = "Filter Cutoff",
+      filter_res     = "Resonanz",
+      env_amp        = "Amp-Hüllkurve",
+      lfo_rate       = "LFO Geschwindigkeit",
+      arp_mode       = "Arp-Modus / Richtung",
+    },
+  },
+
+  triplecheese = {
+    id      = "triplecheese",
+    display = "TripleCheese (u-he)",
+    match   = {"triplecheese %(u%-he%)","triple cheese"},
+    vendor  = "u-he",
+    type    = "comb_filter_synth",
+    roles   = {"Pads","Plucks","Textures","IDM"},
+
+    sections = {
+      "3 OSC / MODULE SLOTS (Comb/Noise/etc.)",
+      "FILTER / TONE",
+      "MOD ENVELOPES",
+      "LFOs",
+      "FX (Chorus/Delay/Reverb)",
+    },
+
+    key_params = {
+      module_types   = "Modultypen in den 3 Slots (Comb/Noise/etc.)",
+      module_pitch   = "Tonhöhe pro Modul",
+      filter_cutoff  = "Filter Cutoff",
+      mod_env_amt    = "Mod Envelope Amount",
+      lfo_rate       = "LFO Rate",
+      fx_mix         = "FX Mix-Level",
+    },
+  },
+
+  tyrelln6 = {
+    id      = "tyrelln6",
+    display = "TyrellN6 (u-he)",
+    match   = {"tyrelln6 %(u%-he%)","tyrell n6"},
+    vendor  = "u-he",
+    type    = "va_synth",
+    roles   = {"Bass","Lead","Pads","Classic VA"},
+
+    sections = {
+      "OSC 1/2 + SUB",
+      "MIXER / NOISE",
+      "FILTER (VCF)",
+      "AMP / FILTER ENVS",
+      "LFOs / MOD MATRIX",
+      "FX (Chorus/etc.)",
+    },
+
+    key_params = {
+      osc_wave       = "Wellenform OSC1/2",
+      osc_detune     = "Detune / Unison",
+      filter_cutoff  = "Cutoff",
+      filter_res     = "Resonanz",
+      env_filter     = "Filter-Hüllkurve",
+      env_amp        = "Amp-Hüllkurve",
+      lfo_rate       = "LFO Geschwindigkeiten",
+      fx_chorus      = "Chorus-Anteil",
+    },
+  },
+
+  zebra_hz = {
+    id      = "zebra_hz",
+    display = "ZebraHZ (u-he)",
+    match   = {"zebra hz","zebrahz","zebra2 hz"},
+    vendor  = "u-he",
+    type    = "modular_synth",
+    roles   = {"Complex","Cinematic","IDM","Sounddesign"},
+
+    sections = {
+      "OSC / SPECTRAL OSC MODULES",
+      "FILTER MODULES",
+      "ENVELOPES / MSEG",
+      "LFOs / MOD SOURCES",
+      "GRID (Modular Routing)",
+      "FX (Comp, Delay, Reverb, etc.)",
+    },
+
+    key_params = {
+      osc_config     = "Oszillator-Konfigurationen im Grid",
+      filter_routing = "Routing der Filter im Grid",
+      env_mseg       = "MSEG-/Multi-Segment Envelopes",
+      lfo_rate       = "LFO Rates",
+      fx_chain       = "FX-Kettenkonfiguration",
+    },
+  },
+
+  ------------------------------------------------------------------
+  -- Noise Engineering – Sinc/Virt Vereor
+  ------------------------------------------------------------------
+  sinc_vereor = {
+    id      = "sinc_vereor",
+    display = "Sinc Vereor (Noise Engineering)",
+    match   = {"sinc vereor","noise engineering sinc"},
+    vendor  = "Noise Engineering",
+    type    = "hybrid_digital_synth",
+    roles   = {"Bass","Lead","IDM","Aggro","Experimental"},
+
+    sections = {
+      "ALGORITHM SELECT",
+      "PITCH / TONE",
+      "ENVELOPES (Amp/Mod)",
+      "MODULATION (LFO/Velocity/etc.)",
+      "FX (falls angeboten)",
+    },
+
+    key_params = {
+      algo_select    = "Synth-Algorithmus (verschiedene Engines)",
+      pitch          = "Grundton",
+      tone           = "Helligkeit/Färbung",
+      env_amp        = "Amp-Hüllkurve",
+      env_mod        = "Mod-Hüllkurve",
+    },
+  },
+
+  virt_vereor = {
+    id      = "virt_vereor",
+    display = "Virt Vereor (Noise Engineering)",
+    match   = {"virt vereor","noise engineering virt"},
+    vendor  = "Noise Engineering",
+    type    = "hybrid_digital_synth",
+    roles   = {"Pads","Leads","Experimental"},
+
+    sections = {
+      "ALGORITHM SELECT",
+      "PITCH / TONE",
+      "ENVELOPES",
+      "MODULATION",
+      "FX",
+    },
+
+    key_params = {
+      algo_select    = "Algorithmus / Engine",
+      pitch          = "Grundton",
+      tone           = "Klangfarbe",
+      env_amp        = "Amp-Hüllkurve",
+      env_mod        = "Mod-Hüllkurve",
+    },
+  },
+
+  ------------------------------------------------------------------
+  -- Vital – Wavetable-Flaggschiff (Vital Audio)
+  ------------------------------------------------------------------
+  vital = {
+    id      = "vital",
+    display = "Vital (Vital Audio)",
+    match   = {"vital %(vital audio%)","vital vst"},
+    vendor  = "Vital Audio",
+    type    = "wavetable_synth_modular_mod",
+    roles   = {"Everything","Bass","Lead","Pads","FX","IDM"},
+
+    sections = {
+      "OSCILLATORS (3x + SAMPLER)",
+      "FILTERS (2x)",
+      "ENVELOPES (3x)",
+      "LFOs (4x + Random)",
+      "MOD MATRIX / MACROS",
+      "FX RACK (Multiband, Delay, Reverb, Chorus, Distortion, etc.)",
+    },
+
+    key_params = {
+      osc_wavetables = "Wahl und Position der Wavetables (OSC1–3)",
+      osc_unison     = "Unison-Stimmen + Detune",
+      filter_cutoff  = "Cutoff der Filter 1/2",
+      filter_res     = "Resonanz",
+      env1_amp       = "Envelope 1 – Haupt-Amp-Hüllkurve",
+      lfo_shapes     = "LFO-Shapes (frei zeichnen, Presets)",
+      macro_assign   = "Macro-Zuweisungen auf Zielparameter",
+      fx_order       = "Reihenfolge der FX im Rack",
+    },
+  },
+
+  ------------------------------------------------------------------
+  -- bx_oberhausen – SEM-inspirierter VA-Synth (Plugin Alliance)
+  ------------------------------------------------------------------
+  bx_oberhausen = {
+    id      = "bx_oberhausen",
+    display = "bx_oberhausen (Plugin Alliance)",
+    match   = {"bx_oberhausen","oberhausen %(plugin alliance%)"},
+    vendor  = "Brainworx / Plugin Alliance",
+    type    = "va_sem_style",
+    roles   = {"Bass","Lead","Poly","Pads","Analog-Style"},
+
+    sections = {
+      "OSCILLATORS (2x) + NOISE",
+      "MIXER",
+      "FILTER (SEM-Style Multimode)",
+      "ENVELOPES (Amp/Filter)",
+      "UNISON / VOICES",
+      "MODULATION (LFO, Mod Wheel, etc.)",
+      "FX (FX Rack/Drive/etc.)",
+    },
+
+    key_params = {
+      osc1_pitch     = "OSC1 Pitch/Range",
+      osc2_pitch     = "OSC2 Pitch/Detune",
+      osc_shape      = "Wellenformen",
+      noise_level    = "Noise-Level",
+      filter_mode    = "Filter-Modus (LP/BP/HP/Notch)",
+      filter_cutoff  = "Filter Cutoff",
+      filter_res     = "Resonanz",
+      env_amp        = "Amp-Envelope",
+      env_filter     = "Filter-Envelope",
+      unison_voices  = "Unison-Stimmen/Detune",
+    },
+  },
+
+  ------------------------------------------------------------------
+  -- gRainbow – Pitch-detecting Granular-Synth
+  ------------------------------------------------------------------
+  grainbow = {
+    id      = "grainbow",
+    display = "gRainbow (StrangeLoops)",
+    match   = {"grainbow","grainbow %(strangeloops%)","grainbow %(strange loops%)","grainbow %(brady boettcher%)"},
+    vendor  = "Strange Loops",
+    type    = "granular_pitch_detect",
+    roles   = {"Granular","Texture","IDM","Experimental"},
+
+    sections = {
+      "INPUT / SAMPLE / BUFFER",
+      "PITCH DETECTION / CANDIDATE SELECTION",
+      "GRAIN ENGINE (Length/Density/Position)",
+      "FILTER / TONE",
+      "MODULATION (LFO/Random)",
+    },
+
+    key_params = {
+      input_mode     = "Live Input oder Sample-File",
+      grain_length   = "Grain-Länge",
+      grain_density  = "Grain-Dichte",
+      position       = "Position im Buffer",
+      pitch_quant    = "Pitch-Quantisierung der Grains",
+      filter_cutoff  = "Filter Cutoff",
+      mix            = "Dry/Wet",
+    },
+  },
+
+  ------------------------------------------------------------------
+  -- Thump One – Kick/Bass/Lead Wavetable-Synth (Toybox)
+  ------------------------------------------------------------------
+  thump_one = {
+    id      = "thump_one",
+    display = "Thump One (Toybox)",
+    match   = {"thump one","thump one %(toybox%)"},
+    vendor  = "Toybox",
+    type    = "wavetable_kick_bass",
+    roles   = {"Kick","Bass","Lead","IDM","EDM"},
+
+    sections = {
+      "KICK ENGINE",
+      "LAYER ENGINE",
+      "MULTI-SEGMENT ENVELOPES",
+      "FILTER / DRIVE",
+      "FX (falls aktiv)",
+    },
+
+    key_params = {
+      kick_env       = "Pitch/Amplitude Envelope der Kick",
+      layer_wave     = "Wavetable-Auswahl für Layer",
+      layer_env      = "Envelope für Layer-Anteil",
+      filter_cutoff  = "Filter Cutoff",
+      drive_amount   = "Drive/Distortion",
+      mix            = "Kick/Layer-Mix",
+    },
+  },
+
+  ------------------------------------------------------------------
+  -- Tactic – Glitch Machines Step-Sequencer/Shot Player
+  ------------------------------------------------------------------
+  tactic = {
+    id      = "tactic",
+    display = "Tactic (Glitchmachines)",
+    match   = {"tactic %(glitchmachines%)","glitchmachines tactic"},
+    vendor  = "Glitchmachines",
+    type    = "step_shot_engine",
+    roles   = {"Glitch","IDM","Drums","Loops","Random"},
+
+    sections = {
+      "SAMPLE SLOTS / SHOTS",
+      "STEP SEQUENCER",
+      "TRIGGER MODES / RANDOM",
+      "FILTER / FX",
+    },
+
+    key_params = {
+      slot_assign    = "Zuordnung von Samples zu Slots",
+      step_pattern   = "Step-Pattern / Trigger-Matrix",
+      random_prob    = "Randomisierung / Probability",
+      filter_cutoff  = "Filter Cutoff",
+      fx_amount      = "FX-Intensität",
+    },
+  },
+
+  ------------------------------------------------------------------
+  -- Diverse weitere VSTi (Kurzmodelle)
+  ------------------------------------------------------------------
+  reasamplomatic = {
+    id      = "reasamplomatic5000",
+    display = "ReaSamplOmatic5000 (Cockos)",
+    match   = {"reasamplomatic5000","reasamplomatic"},
+    vendor  = "Cockos",
+    type    = "sampler_single",
+    roles   = {"Drums","One-Shots","Multi-Layer","Utility"},
+    sections = {"SAMPLE","AMPLITUDE","PITCH","FILTER","MOD"},
+    key_params = {
+      sample_path    = "Sample-Datei",
+      start_end      = "Start/Ende im Sample",
+      pitch          = "Pitch/Transpose",
+      vel_zones      = "Velocity-Layer",
+    },
+  },
+
+  reasynth = {
+    id      = "reasynth",
+    display = "ReaSynth (Cockos)",
+    match   = {"reasynth"},
+    vendor  = "Cockos",
+    type    = "basic_va",
+    roles   = {"Bass","Lead","Test","Utility"},
+    sections = {"OSC","FILTER","AMP ENV"},
+    key_params = {
+      osc_shape      = "Oszillator-Wellenform",
+      filter_cutoff  = "Filter Cutoff",
+      env_attack     = "Attack",
+      env_release    = "Release",
+    },
+  },
+
+  reasyn_dr = {
+    id      = "reasyn_dr",
+    display = "ReaSynDr (Cockos) (4 out)",
+    match   = {"reasyndr","reasyn dr"},
+    vendor  = "Cockos",
+    type    = "drum_synth_simple",
+    roles   = {"Drums","Test","Utility"},
+    sections = {"VOICE PARAMS","MIXER"},
+    key_params = {
+      pitch          = "Voice Pitch",
+      decay          = "Decay",
+      level          = "Level",
+    },
+  },
+
+  sqkone = {
+    id      = "sqkone",
+    display = "SQKONE (EvilTurtleProductions)",
+    match   = {"sqkone"},
+    vendor  = "EvilTurtleProductions",
+    type    = "va_synth_simple",
+    roles   = {"Bass","Lead"},
+    sections = {"OSC","FILTER","ENV","LFO"},
+    key_params = {
+      osc_wave       = "Waveform",
+      filter_cutoff  = "Cutoff",
+      env_amp        = "Amp Envelope",
+    },
+  },
+
+  thump_bass_alt = {
+    id      = "thump_one_alias",
+    display = "Thump One (Toybox) (Alias)",
+    match   = {"thump one 2","thump one v2"},
+    vendor  = "Toybox",
+    type    = "wavetable_kick_bass",
+    roles   = {"Kick","Bass"},
+    sections = {"KICK","LAYER","ENV"},
+    key_params = {},
+  },
+
+  unfiltered_battalion = {
+    id      = "ua_battalion",
+    display = "Unfiltered Audio Battalion (Plugin Alliance) (18 out)",
+    match   = {"battalion %(plugin alliance%)","unfiltered audio battalion"},
+    vendor  = "Unfiltered Audio",
+    type    = "drum_synth_drum_machine",
+    roles   = {"Drums","IDM","Glitch","Rhythm Designer"},
+    sections = {"VOICE ENGINES","SEQUENCER","MOD MATRIX","FX"},
+    key_params = {
+      voice_params   = "Parameter je Drum-Engine",
+      seq_steps      = "Sequencer-Steps",
+    },
+  },
+
+  adc_clap = {
+    id      = "adc_clap_instrument",
+    display = "adc Clap (Audec)",
+    match   = {"adc clap","adc_clap !!!vsti"},
+    vendor  = "Audec",
+    type    = "clap_synth",
+    roles   = {"Clap","Percussion","Drums"},
+    sections = {"TRANSIENT","BODY","TONE","WIDTH"},
+    key_params = {
+      attack_shape   = "Transient-Shape",
+      decay          = "Decay",
+      tone           = "Tone",
+      width          = "Stereo Width",
+    },
+  },
+
+  bong = {
+    id      = "bong",
+    display = "bong (rurik leffanta) (12 out)",
+    match   = {"bong %(rurik leffanta%)","bong 12 out"},
+    vendor  = "Rurik Leffanta",
+    type    = "drum_synth_multi",
+    roles   = {"Drums","IDM","Glitch"},
+    sections = {"VOICE PARAMS","MIXER","MULTI-OUT"},
+    key_params = {
+      voice_pitch    = "Pitch",
+      voice_decay    = "Decay",
+      voice_timbre   = "Timbre/Tone",
+    },
+  },
+
+  stoooner = {
+    id      = "stoooner",
+    display = "stoooner (rurik leffanta)",
+    match   = {"stoooner"},
+    vendor  = "Rurik Leffanta",
+    type    = "drone_fx_instrument",
+    roles   = {"Drone","Noise","Experimental"},
+    sections = {"OSC/NOISE","FILTER","MOD"},
+    key_params = {
+      noise_level    = "Noise",
+      filter_cutoff  = "Cutoff",
+      mod_rate       = "Modulation Rate",
+    },
+  },
+
+  voltage_modular = {
+    id      = "voltage_modular",
+    display = "Voltage Modular (Cherry Audio) (4->8ch)",
+    match   = {"voltage modular","voltage modular %(cherry audio%)"},
+    vendor  = "Cherry Audio",
+    type    = "modular_host",
+    roles   = {"Modular","FX Host","Instrument Host"},
+    sections = {"RACK","MODULES","ROUTING","IO"},
+    key_params = {
+      patch_state    = "Aktuelle Patch-Konfiguration",
+    },
+  },
+
+}
+
+return M

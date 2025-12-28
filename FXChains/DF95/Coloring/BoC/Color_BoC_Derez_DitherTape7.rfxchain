@@ -1,0 +1,8 @@
+// META:category=coloring
+// META:style=boc_warm
+// META:lufs_target=-15
+// META:ceiling=-0.8
+// META:preferred_subs=aw:tape=ToTape7; aw:derez=DeRez
+<VST "VST: ReaEQ (Cockos)" reacomp.dll>
+<VST "VST: ReaComp (Cockos)" reacomp.dll>
+<VST3 "VST3: ReaLimit (Cockos)" realimit.vst3>

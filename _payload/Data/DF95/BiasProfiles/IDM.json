@@ -1,0 +1,13 @@
+{
+  "weights": {
+    "style:idm": 3,
+    "style:glitch": 2,
+    "style:granular": 2,
+    "color:tape": 1
+  },
+  "random_profile": {
+    "musical": 0.7,
+    "gritty": 0.2,
+    "extreme": 0.1
+  }
+}

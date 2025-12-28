@@ -1,0 +1,40 @@
+-- IFLS_PatternDomain_EuclidMelody_Patch.lua
+-- Patch-Hinweis für IFLS_PatternDomain.lua (EuclidMelody-Integration)
+
+-- 1) normalize_mode(str) erweitern:
+--
+--   if s:find("melody") and s:find("euclid") then
+--     return "EUCLIDMELODY"
+--   end
+--
+-- 2) In M.generate(...) nach:
+--
+--   local mode = choose_mode(artist_state, beat_state, explicit_mode)
+--
+--   und VOR EUCLIDPOLY/EUCLIDPRO/MARKOV:
+--
+--   -- EUCLIDMELODY: delegiere an IFLS_EuclidMelodyDomain (falls vorhanden)
+--   if mode == "EUCLIDMELODY" then
+--     local md_ok, md = pcall(dofile, r.GetResourcePath() .. "/Scripts/IFLS/IFLS/Domain/IFLS_EuclidMelodyDomain.lua")
+--     if md_ok and type(md) == "table" and md.generate_from_extstate then
+--       local bs = {
+--         bpm    = bpm_proj,
+--         ts_num = ts_num,
+--         ts_den = ts_den,
+--         bars   = bars,
+--       }
+--       if beat_state then
+--         bs.bpm    = beat_state.bpm   or bs.bpm
+--         bs.ts_num = beat_state.ts_num or bs.ts_num
+--         bs.ts_den = beat_state.ts_den or bs.ts_den
+--         bs.bars   = beat_state.bars  or bs.bars
+--       end
+--       md.generate_from_extstate(bs, track)
+--       r.UpdateArrange()
+--       msg(string.format("IFLS_PatternDomain: EuclidMelody-Pattern erzeugt (%d Bars, %d/%d).", bs.bars or bars, bs.ts_num or ts_num, bs.ts_den or ts_den))
+--       return
+--     else
+--       msg("IFLS_PatternDomain: Mode 'EUCLIDMELODY', aber IFLS_EuclidMelodyDomain.lua fehlt oder ist ungültig. Fallback auf 'EUCLID'.")
+--       mode = "EUCLID"
+--     end
+--   end

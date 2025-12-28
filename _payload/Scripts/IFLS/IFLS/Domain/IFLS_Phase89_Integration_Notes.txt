@@ -1,0 +1,286 @@
+IFLS – Phase 89: Intelligent FX-Chain Recommendation
+==================================================
+
+Goal
+----
+
+Use your existing:
+  * PluginMetaBridge + Plugin Flavor System
+  * ArtistFX Engine / ArtistFXChainDomain
+  * IDM Flavors & Artist profiles
+
+to build a *recommender layer* that:
+
+  1. Picks an abstract FX-chain template based on context
+     (instrument, flavors, style adjectives).
+  2. Chooses concrete plugins per slot using PluginMeta + flavor tags.
+  3. Returns a chain-spec with explanations ("why this plugin here?")
+     that your FX Brain / ArtistFX Engine can display and instantiate.
+
+
+Files in this package
+---------------------
+
+1) IFLS_ChainTemplates.lua
+   ------------------------
+   - Defines abstract FX-chain templates like:
+
+       "Kick_Punchy_Modern"
+       "Snare_Cracky_Bright"
+       "Hat_Crisp_Controlled"
+       "DrumBus_Glue_Color"
+       "Drone_Wide_Evolving"
+       "Tonal_Lead_Clean_Animated"
+
+   - Template structure:
+
+       {
+         name    = "Kick_Punchy_Modern",
+         context = {
+           instrument = "kick",
+           flavors    = { "GlitchCore", "DrumFX" },
+           adjectives = { "punchy", "modern" },
+         },
+         slots = {
+           { role = "filter_eq",   tags = { "sub", "tight" } },
+           { role = "dynamics",    tags = { "punch", "fast" } },
+           { role = "saturation",  tags = { "clip", "transient" }, optional = true },
+           { role = "texture",     tags = { "click", "attack" },   optional = true },
+         }
+       }
+
+   - Public API:
+
+       local ChainTemplates = require("IFLS_ChainTemplates")
+
+       local list = ChainTemplates.list()
+       local t    = ChainTemplates.get("DrumBus_Glue_Color")
+
+       local best, score = ChainTemplates.find_best_for_context(ctx)
+       -- ctx = {instrument, flavors, adjectives}
+
+   - Includes a simple context-scoring function so you can also use it
+     directly in other tools if needed.
+
+
+2) IFLS_FXChainRecommender.lua
+   ----------------------------
+   - Core recommender module.
+
+   Public API:
+
+       local FXChainRecommender = require("IFLS_FXChainRecommender")
+
+       local ctx = FXChainRecommender.build_context{
+         slice_type        = "kick",   -- or "snare", "hat", "drone", etc.
+         flavors           = { "GlitchCore", "DrumFX" },
+         adjectives        = { "punchy", "modern" },
+         artist_style_tags = { "aggressive" }, -- optional
+       }
+
+       local chain_spec = FXChainRecommender.recommend(ctx)
+
+   - Context builder:
+
+       build_context can map slice_type and artist_style into a unified
+       context (instrument + adjectives + flavors). This is optional;
+       you can build your own context and call recommend(ctx) directly.
+
+   - Recommendation process:
+
+       1) select_template(ctx):
+            uses ChainTemplates.find_best_for_context(ctx) based on
+            instrument, flavor and adjective overlap.
+
+       2) For each slot in the chosen template:
+            * PluginMetaAdapter.find_plugins(slot, ctx)
+            * score_plugin_for_slot(plugin, slot, ctx)
+            * choose best candidate
+
+       3) Returns:
+
+            chain_spec = {
+              template_name = "<name>",
+              context       = ctx,
+              slots         = {
+                {
+                  role        = "filter_eq",
+                  optional    = false,
+                  plugin_id   = "<id>",
+                  plugin_name = "<name>",
+                  reason      = "role=filter_eq | slot_tags=sub,tight | plugin_flavors=..., ...",
+                },
+                ...
+              },
+              notes         = "Template: ... | Instrument: ... | Flavors: ...",
+            }
+
+
+3) PluginMetaAdapter (inside IFLS_FXChainRecommender.lua)
+   ------------------------------------------------------
+   - A small adapter placeholder that you should wire to your real
+     PluginMetaBridge / DF95 plugin metadata.
+
+   - Expected meta API:
+
+       meta.find_plugins(meta, query) -> { plugin1, plugin2, ... }
+
+     where "query" includes:
+
+       {
+         category   = slot.role,
+         tags       = slot.tags,
+         flavors    = context.flavors,
+         adjectives = context.adjectives,
+         instrument = context.instrument,
+       }
+
+   - Expected plugin entry fields (adapt as needed):
+
+       {
+         id          = "<internal id or name>",
+         name        = "Plugin Name",
+         category    = "filter_eq" | "dynamics" | "reverb" | ...,
+         tags        = { "bus", "punchy", ... },
+         flavors     = { "glitch", "granular", ... },
+         adjectives  = { "warm", "dirty", ... },
+         quality_score = 0.0..1.0 (optional),
+       }
+
+   - You can map from your existing DF95_PluginFlavors.lua /
+     PluginMetaBridge schema to this structure inside meta.find_plugins.
+
+
+4) IFLS_FXChainRecommender_DebugDemo.lua (optional)
+   -------------------------------------------------
+   - Minimal demo script to:
+       * Build a context for a "GlitchCore / punchy kick".
+       * Show which template would be selected.
+
+   - It does *not* talk to real PluginMeta by default; you can extend
+     it for in-REAPER testing once the adapter is wired.
+
+   - Good starting point for REAPER console-based debugging.
+
+
+Integration Steps
+-----------------
+
+A) Place the files
+   ---------------
+   - Copy into your IFLS/DF95 Lua module folder:
+
+       IFLS_ChainTemplates.lua
+       IFLS_FXChainRecommender.lua
+       IFLS_FXChainRecommender_DebugDemo.lua (optional)
+
+   - Make sure "require" works in your core scripts:
+
+       local ChainTemplates      = require("IFLS_ChainTemplates")
+       local FXChainRecommender  = require("IFLS_FXChainRecommender")
+
+
+B) Connect PluginMetaAdapter to your real PluginMetaBridge
+   -------------------------------------------------------
+   - In IFLS_FXChainRecommender.lua, locate PluginMetaAdapter.find_plugins.
+   - Replace the stub logic with calls into your existing DF95/IFLS
+     PluginMetaBridge:
+
+       * Map slot.role to your plugin category / type.
+       * Pass slot.tags, context.flavors, context.adjectives into your
+         flavor/tag system.
+       * Convert returned plugin meta to the simplified plugin-table
+         shape expected by the recommender.
+
+   - Once wired, the recommender will start returning real plugin IDs.
+
+
+C) Integrate with ArtistFX Engine / FX Brain
+   -----------------------------------------
+   - Wherever you currently build FX-chains for a given slice/track:
+
+       1) Assemble a context:
+
+            local ctx = FXChainRecommender.build_context{
+              slice_type        = slice_type,       -- or instrument type
+              flavors           = active_flavors,   -- from FlavorState
+              adjectives        = desired_adjectives, -- e.g. from UI
+              artist_style_tags = artist.style_tags,  -- if you have them
+            }
+
+       2) Get a chain spec:
+
+            local chain_spec = FXChainRecommender.recommend(ctx)
+
+       3) Let your ArtistFX Engine instantiate plugins in order of
+          chain_spec.slots, using plugin_id / plugin_name.
+
+       4) In FX Brain, display:
+            * chain_spec.template_name
+            * chain_spec.notes
+            * per-slot "reason" strings as tooltips or in a side panel.
+
+
+D) UI hooks (ArtistHub / FX Brain)
+   --------------------------------
+   - ArtistHub:
+       * Provide UI to set "desired adjectives" (punchy, warm, lofi, etc.)
+         per artist or per preset.
+       * Store these in the Artist profile so build_context can merge
+         them with flavors and slice/instrument info.
+
+   - FX Brain:
+       * Show which template was used and why.
+       * Make a "Regenerate chain" button that:
+           - re-calls recommend(ctx) possibly with new adjectives
+             or toggled Flavor overrides.
+       * Optionally add per-slot lock flags so that some slots remain
+         unchanged on regeneration.
+
+
+E) Relation to previous phases
+   ---------------------------
+   - With Phase 86 (Flavor Visualization), you know *which* flavor is
+     active at all times.
+   - With Phase 87 (Groove) and Phase 88 (Onset-Fusion), you have high
+     quality timing and segmentation.
+   - Phase 89 then uses:
+       * slice_type / instrument
+       * active Flavors (IDM profiles)
+       * artist adjectives / style tags
+     to recommend FX-chains that are *consistent* with the overall
+     aesthetic and timing context of the material.
+
+
+Next Recommended Phase
+----------------------
+
+With FX-Chain recommendation in place, you now cover:
+
+  * Analysis: slices, features, flavors
+  * Feel: groove, humanize
+  * Processing: context-aware FX chains
+
+The next highly synergistic step is:
+
+  ► Phase 90 – Sample-Galaxy & Similarity Search
+
+Reasoning:
+
+  * Your Slice and SampleDB systems already compute useful features
+    (spectral centroid, motion, transient sharpness, tonalness, etc.).
+  * By assembling these into feature vectors and adding a simple
+    distance metric, you can implement:
+       - "Find similar slice/sample"
+       - 2D timbre maps ("galaxy" view)
+       - flavor-aware browsing (e.g. glitchy slices only)
+  * This dramatically speeds up sound selection and pairs extremely well
+    with the FX recommender: you will be able to:
+       - pick a slice quickly,
+       - auto-suggest similar slices,
+       - and immediately apply context-aware FX-chains on them.
+
+Phase 90 can be implemented as:
+  - IFLS_SampleEmbeddings module (embedding storage + distance)
+  - ArtistHub / SampleDB UI for timbre-space & "find similar"
+  - Integration with existing Slice/KitBuilder workflows.

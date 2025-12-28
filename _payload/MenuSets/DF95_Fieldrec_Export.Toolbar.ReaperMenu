@@ -1,0 +1,29 @@
+\
+[ReaperMenu]
+title=DF95 Fieldrec Export
+
+ACT 0 0 _RS_DF95_FIELDREC_FUSION_GUI
+ICON 0 toolbar_fieldrec_fusion.png
+ITEM 0 DF95 Fieldrec – Fusion Export (MicFX / BusChain GUI)
+
+SEPARATOR
+
+ACT 1 0 _RS_DF95_FIELDREC_MIC_ONLY
+ICON 1 toolbar_fieldrec_micfx.png
+ITEM 1 DF95 Fieldrec – Export: Nur Mic-FX (alte Version)
+
+ACT 2 0 _RS_DF95_FIELDREC_MICFUSION_SLICES
+ICON 2 toolbar_fieldrec_micfusion.png
+ITEM 2 DF95 Fieldrec – MicFusion Slices (alte Version)
+
+ACT 3 0 _RS_DF95_FIELDREC_FUSION_BUSCHAIN
+ICON 3 toolbar_fieldrec_buschain.png
+ITEM 3 DF95 Fieldrec – Fusion BusChain (alte Version)
+
+SEPARATOR
+
+ACT 4 0 _SWS_SAVELOOP1
+ITEM 4 Save Time Selection 1 (SWS)
+
+ACT 5 0 _SWS_RESTLOOP1
+ITEM 5 Restore Time Selection 1 (SWS)

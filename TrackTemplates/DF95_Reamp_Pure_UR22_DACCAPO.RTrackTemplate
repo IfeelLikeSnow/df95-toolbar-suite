@@ -1,0 +1,15 @@
+# DF95 Reamp Template – Pure Reamp – Steinberg UR22mkII + Palmer DACCAPO
+# Routing-Idee:
+# - REAMP_SEND_UR22_DACCAPO: Output auf Out 1/2, per Track-Pan z.B. nur L als Reamp-Out.
+# - UR22 Line Out L -> Palmer DACCAPO -> Pedalboard -> DI/Interface-Return.
+# - REAMP_RETURN_UR22_DACCAPO: Input z.B. Input 2 als Return.
+# - Pegel vorsichtig einpegeln, da UR22 nur 2 Outs hat (kein dedizierter 3/4 Out).
+
+<TRACK
+NAME REAMP_SEND_UR22_DACCAPO
+ISBUS 0 0
+>
+<TRACK
+NAME REAMP_RETURN_UR22_DACCAPO
+ISBUS 0 0
+>

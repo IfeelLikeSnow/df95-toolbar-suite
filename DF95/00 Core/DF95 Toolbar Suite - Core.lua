@@ -1,0 +1,29 @@
+-- @description DF95 Toolbar Suite - Core
+-- @version 1.0.0
+-- @author DF95
+-- @metapackage
+-- @about
+--   Installs the DF95 core scripts + resources.
+--   STABILITY CONTRACT (do not break):
+--   1) Do not move/rename THIS package file once published.
+--   2) Do not change the TARGET install paths (right side of '>') once published.
+--   3) Refactors must happen only inside _payload/ while keeping these mappings stable.
+--
+-- @provides
+--   Scripts/** > Scripts/
+--   DF95_MetaCore/** > DF95_MetaCore/
+--
+--   Data/** > Data/
+--   Config/** > Config/
+--   Effects/** > Effects/
+--   FXChains/** > FXChains/
+--   Chains/** > Chains/
+--   TrackTemplates/** > TrackTemplates/
+--   RenderPresets/** > RenderPresets/
+--   Projects/** > Projects/
+--   Theme/** > Theme/
+--   ThemeMod/** > ThemeMod/
+--   Reports/** > Reports/
+--   Support/** > Support/
+--   _selectors/** > _selectors/
+--   tools/** > tools/

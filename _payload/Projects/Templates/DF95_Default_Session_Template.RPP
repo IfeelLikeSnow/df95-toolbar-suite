@@ -1,0 +1,87 @@
+# DF95 ZONING / COLORS
+# Input (Zoom F6 / H5 / Android) = Blau
+# Creative / FX = Orange / Lila / Magenta
+# Coloring = Neutral-Grau
+# Master = Grün
+# Export / Metadata = Gelb / Türkis
+# QA / Analyse = Anthrazit
+
+<REAPER_PROJECT 0.1 "6.82/x64" 16777216 0 0 60 4 0 0 0 0 0 0 0 0 0 0 0
+  RIPPLE 0
+  GROUPOVERRIDE 0 0 0
+  AUTOXFADE 1
+  ENVATTACH 1
+  POOLEDENVATTACH 1
+  MIXERUIFLAGS 11 48
+  PEAKGAIN 1
+  <TEMPOENVEX
+    0 120 0
+  >
+  <PROJBAY
+  >
+  <TRACK {GUID-INPUT}
+    NAME "Zoom F6 Recordings"
+    PEAKCOL 16576
+    <ITEM
+    >
+  >
+  # Input tracks (named by microphones)
+  <TRACK {GUID-01} NAME "Track 01 - NTG4+">
+  >
+  <TRACK {GUID-02} NAME "Track 02 - Cortado MK3 L">
+  >
+  <TRACK {GUID-03} NAME "Track 03 - Cortado MK3 R">
+  >
+  <TRACK {GUID-04} NAME "Track 04 - C2 L">
+  >
+  <TRACK {GUID-05} NAME "Track 05 - C2 R">
+  >
+  <TRACK {GUID-06} NAME "Track 06 - MD400">
+  >
+  <TRACK {GUID-07} NAME "Track 07 - CM300 L">
+  >
+  <TRACK {GUID-08} NAME "Track 08 - CM300 R">
+  >
+  <TRACK {GUID-09} NAME "Track 09 - Geofon">
+  >
+  <TRACK {GUID-10} NAME "Track 10 - B1">
+  >
+  <TRACK {GUID-11} NAME "Track 11 - XM8500">
+  >
+  <TRACK {GUID-12} NAME "Track 12 - TG-V35s">
+  >
+  <TRACK {GUID-13} NAME "Track 13 - MCM-36">
+  >
+  <TRACK {GUID-14} NAME "Track 14 - EtherV2">
+  >
+  # FX Bus
+  <TRACK {GUID-FXBUS}
+    NAME "[FX Bus]"
+    <FXCHAIN
+      SHOW 0
+      BYPASS 0 0 0
+      # Placeholder: load your default FX bus chain if present
+      # You can swap the next line to an absolute RFXChain file with S&M or via scripts:
+      # <VST "DF95_FXBus_DefaultChain.rfxchain">
+    >
+  >
+  # Coloring Bus
+  <TRACK {GUID-COLOR}
+    NAME "[Coloring Bus]"
+    <FXCHAIN
+      SHOW 0
+      BYPASS 0 0 0
+      # Placeholder: DF95_Coloring_DefaultChain_AW (PurestDrive → ToTape → BussColors → Pressure → ADClip)
+    >
+  >
+  # Master Bus
+  <TRACK {GUID-MASTER}
+    NAME "[Master Bus]"
+    <FXCHAIN
+      SHOW 0
+      BYPASS 0 0 0
+      # Placeholder: DF95_Master_DefaultChain (SafeGain → ReaLimit → Meter)
+    >
+  >
+  # Routing (connect FX → Coloring → Master via sends established by DF95 scripts)
+>

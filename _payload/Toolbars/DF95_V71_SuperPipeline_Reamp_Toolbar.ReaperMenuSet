@@ -1,0 +1,7 @@
+# V71 SuperPipeline + Reamp Toolbar
+Item01=Custom: V71 SuperPipeline
+	SCRIPT: Scripts/IfeelLikeSnow/DF95/DF95_V71_SuperPipeline.lua
+Item02=Custom: V71 Reamp Router
+	SCRIPT: Scripts/IfeelLikeSnow/DF95/DF95_V71_ReampRouter.lua
+Item03=Custom: V71 Latency Analyzer
+	SCRIPT: Scripts/IfeelLikeSnow/DF95/DF95_V71_LatencyAnalyzer.lua

@@ -1,0 +1,3 @@
+; Theme color mod placeholder
+set tcp.bgcolor [0.12 0.12 0.12]
+set tcp.textcolor [0.85 0.85 0.85]

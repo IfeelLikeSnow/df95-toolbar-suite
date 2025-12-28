@@ -1,0 +1,15 @@
+{
+  "version": 1,
+  "synth_id": "ua_battalion",
+  "role": "fx",
+  "variant": "idm_fx_hard",
+  "description": "ua_battalion IDM FX Hard",
+  "params": {
+    "amp_env.attack": 0.0,
+    "amp_env.decay": 0.18,
+    "amp_env.sustain": 0.4,
+    "amp_env.release": 0.25,
+    "filter.cutoff": 0.8,
+    "filter.resonance": 0.3
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "version": 1,
+  "synth_id": "vital",
+  "role": "drum",
+  "variant": "perc_body",
+  "description": "Vital drum perc body",
+  "params": {
+    "amp_env.attack": 0.0,
+    "amp_env.decay": 0.25,
+    "amp_env.sustain": 0.0,
+    "amp_env.release": 0.25,
+    "filter.cutoff": 0.55,
+    "filter.resonance": 0.2,
+    "macros.1": 0.6,
+    "macros.2": 0.3,
+    "macros.3": 0.5,
+    "macros.4": 0.45
+  }
+}

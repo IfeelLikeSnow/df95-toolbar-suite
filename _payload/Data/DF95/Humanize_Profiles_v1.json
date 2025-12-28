@@ -1,0 +1,128 @@
+{
+  "autechre_soft": {
+    "pos_jitter_ms": 6,
+    "vol_jitter_db": 1.0,
+    "len_jitter_frac": 0.06,
+    "swing": 0.0
+  },
+  "autechre_medium": {
+    "pos_jitter_ms": 10,
+    "vol_jitter_db": 1.8,
+    "len_jitter_frac": 0.1,
+    "swing": 0.02
+  },
+  "autechre_extreme": {
+    "pos_jitter_ms": 16,
+    "vol_jitter_db": 3.0,
+    "len_jitter_frac": 0.16,
+    "swing": 0.04
+  },
+  "boc_soft": {
+    "pos_jitter_ms": 4,
+    "vol_jitter_db": 0.8,
+    "len_jitter_frac": 0.05,
+    "swing": 0.0
+  },
+  "boc_medium": {
+    "pos_jitter_ms": 7,
+    "vol_jitter_db": 1.2,
+    "len_jitter_frac": 0.08,
+    "swing": 0.01
+  },
+  "boc_extreme": {
+    "pos_jitter_ms": 10,
+    "vol_jitter_db": 1.8,
+    "len_jitter_frac": 0.12,
+    "swing": 0.02
+  },
+  "squarepusher_soft": {
+    "pos_jitter_ms": 6,
+    "vol_jitter_db": 1.5,
+    "len_jitter_frac": 0.08,
+    "swing": 0.03
+  },
+  "squarepusher_medium": {
+    "pos_jitter_ms": 11,
+    "vol_jitter_db": 2.5,
+    "len_jitter_frac": 0.12,
+    "swing": 0.05
+  },
+  "squarepusher_extreme": {
+    "pos_jitter_ms": 18,
+    "vol_jitter_db": 3.5,
+    "len_jitter_frac": 0.18,
+    "swing": 0.08
+  },
+  "aphex_soft": {
+    "pos_jitter_ms": 5,
+    "vol_jitter_db": 1.0,
+    "len_jitter_frac": 0.07,
+    "swing": 0.02
+  },
+  "aphex_medium": {
+    "pos_jitter_ms": 10,
+    "vol_jitter_db": 2.0,
+    "len_jitter_frac": 0.11,
+    "swing": 0.04
+  },
+  "aphex_extreme": {
+    "pos_jitter_ms": 16,
+    "vol_jitter_db": 3.2,
+    "len_jitter_frac": 0.18,
+    "swing": 0.06
+  },
+  "flylo_soft": {
+    "pos_jitter_ms": 7,
+    "vol_jitter_db": 1.2,
+    "len_jitter_frac": 0.09,
+    "swing": 0.04
+  },
+  "flylo_medium": {
+    "pos_jitter_ms": 12,
+    "vol_jitter_db": 2.0,
+    "len_jitter_frac": 0.13,
+    "swing": 0.06
+  },
+  "flylo_extreme": {
+    "pos_jitter_ms": 18,
+    "vol_jitter_db": 3.0,
+    "len_jitter_frac": 0.18,
+    "swing": 0.08
+  },
+  "jelinek_soft": {
+    "pos_jitter_ms": 4,
+    "vol_jitter_db": 0.7,
+    "len_jitter_frac": 0.05,
+    "swing": 0.01
+  },
+  "jelinek_medium": {
+    "pos_jitter_ms": 7,
+    "vol_jitter_db": 1.0,
+    "len_jitter_frac": 0.08,
+    "swing": 0.02
+  },
+  "jelinek_extreme": {
+    "pos_jitter_ms": 11,
+    "vol_jitter_db": 1.6,
+    "len_jitter_frac": 0.12,
+    "swing": 0.03
+  },
+  "tta_soft": {
+    "pos_jitter_ms": 5,
+    "vol_jitter_db": 1.0,
+    "len_jitter_frac": 0.06,
+    "swing": 0.01
+  },
+  "tta_medium": {
+    "pos_jitter_ms": 8,
+    "vol_jitter_db": 1.5,
+    "len_jitter_frac": 0.09,
+    "swing": 0.03
+  },
+  "tta_extreme": {
+    "pos_jitter_ms": 12,
+    "vol_jitter_db": 2.0,
+    "len_jitter_frac": 0.13,
+    "swing": 0.04
+  }
+}

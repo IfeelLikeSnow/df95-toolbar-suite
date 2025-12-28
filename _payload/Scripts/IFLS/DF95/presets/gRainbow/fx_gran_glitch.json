@@ -1,0 +1,16 @@
+{
+  "version": 1,
+  "synth_id": "grainbow",
+  "role": "fx",
+  "variant": "gran_glitch",
+  "description": "gRainbow fx gran glitch",
+  "params": {
+    "master.grain_rate": 0.55,
+    "master.grain_duration": 0.35,
+    "master.pitch_spray": 0.45,
+    "master.position_spray": 0.65,
+    "master.pan_spray": 0.75,
+    "master.octave_adjust": 0.6,
+    "master.gain": 0.5
+  }
+}

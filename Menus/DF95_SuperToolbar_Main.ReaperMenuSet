@@ -1,0 +1,15 @@
+# DF95 SuperToolbar Main
+Item01=Custom: DF95 – SESSION
+	SCRIPT: Scripts/IfeelLikeSnow/DF95/DF95_SuperToolbar_Toggle_SESSION.lua
+Item02=Custom: DF95 – FIELDREC
+	SCRIPT: Scripts/IfeelLikeSnow/DF95/DF95_SuperToolbar_Toggle_FIELDREC.lua
+Item03=Custom: DF95 – SOUND
+	SCRIPT: Scripts/IfeelLikeSnow/DF95/DF95_SuperToolbar_Toggle_SOUND.lua
+Item04=Custom: DF95 – DRONES
+	SCRIPT: Scripts/IfeelLikeSnow/DF95/DF95_SuperToolbar_Toggle_DRONES.lua
+Item05=Custom: DF95 – LIB / EXPORT
+	SCRIPT: Scripts/IfeelLikeSnow/DF95/DF95_SuperToolbar_Toggle_LIBEXPORT.lua
+Item06=Custom: DF95 – AI & SEARCH
+	SCRIPT: Scripts/IfeelLikeSnow/DF95/DF95_SuperToolbar_Toggle_AISEARCH.lua
+Item07=Custom: DF95 – SETUP / QA
+	SCRIPT: Scripts/IfeelLikeSnow/DF95/DF95_SuperToolbar_Toggle_SETUPQA.lua

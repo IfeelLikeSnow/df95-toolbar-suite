@@ -1,0 +1,54 @@
+{
+  "version": 1,
+  "pipelines": [
+    {
+      "id": "FIELDREC_MATERIAL_TAGGING",
+      "label": "Fieldrec – Material/Instrument Tagging",
+      "description": "Analysiert Fieldrec-Ordner, klassifiziert Material & Instrument und schlägt df95_*/UCS-Felder für neue Aufnahmen vor.",
+      "worker_mode": "material",
+      "requested_tasks": [
+        "classify_material",
+        "classify_instrument",
+        "suggest_df95_fields",
+        "suggest_ucs_fields",
+        "suggest_ai_tags"
+      ],
+      "auto_apply_material_proposed_new": true,
+      "auto_run_phase_o": false,
+      "auto_run_drone_qa": false,
+      "min_confidence_apply": 0.7
+    },
+    {
+      "id": "DRONE_ENUM_CLEANUP",
+      "label": "Drone – Enum Cleanup & Analysis",
+      "description": "Lässt den Drone/Drone-Mode laufen, um df95_drone_* Felder zu prüfen/ergänzen (ohne Auto-Apply).",
+      "worker_mode": "drone",
+      "requested_tasks": [
+        "analyze_drone_character",
+        "suggest_df95_drone_fields",
+        "suggest_ucs_fields",
+        "suggest_ai_tags"
+      ],
+      "auto_apply_material_proposed_new": false,
+      "auto_run_phase_o": true,
+      "auto_run_drone_qa": true,
+      "min_confidence_apply": 0.8
+    },
+    {
+      "id": "FULL_DRONE_QA_CYCLE",
+      "label": "Full Drone QA Cycle",
+      "description": "Kompletter Drone-QA-Zyklus: AIWorker-Drone-Job, manuelle Conflict-Review, optional Apply + Phase O + Drone QA.",
+      "worker_mode": "drone",
+      "requested_tasks": [
+        "analyze_drone_character",
+        "suggest_df95_drone_fields",
+        "suggest_ucs_fields",
+        "suggest_ai_tags"
+      ],
+      "auto_apply_material_proposed_new": false,
+      "auto_run_phase_o": true,
+      "auto_run_drone_qa": true,
+      "min_confidence_apply": 0.85
+    }
+  ]
+}

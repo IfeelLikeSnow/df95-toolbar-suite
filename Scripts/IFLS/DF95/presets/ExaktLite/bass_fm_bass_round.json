@@ -1,0 +1,13 @@
+{
+  "version": 1,
+  "synth_id": "exaktlite",
+  "role": "bass",
+  "variant": "fm_bass_round",
+  "description": "ExaktLite bass fm bass round",
+  "params": {
+    "operators.A.output_level": 0.8,
+    "operators.B.output_level": 0.4,
+    "operators.C.output_level": 0.7,
+    "operators.D.output_level": 0.35
+  }
+}

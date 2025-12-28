@@ -1,0 +1,14 @@
+<FXCHAIN SHOW 0 LASTSEL 0 DOCKED 0>
+// META:style=boc_wobble
+// META:mood=wowflutter
+// META:lufs_target=-15.5
+// META:ceiling=-0.8
+// META:preferred_subs=aw:flutter=Flutter;aw:tape=ToTape8;aw:console=Console7Buss
+<VST "VST: ReaPitch (Cockos)" reapitch.dll>
+<VST "VST: ReaDelay (Cockos)" readelay.dll>
+<VST "VST: ReaEQ (Cockos)" reaeq.dll>
+<VST "VST: ReaComp (Cockos)" reacomp.dll>
+<FX VST "VST3" "ReaLimit (Cockos)" "" 0 WET 0 1.00 >
+<FX JS "Loudness Meter Peak/RMS" 0 WET 0 1.00 >
+<JS "JS: Volume Adjustment">
+<JS "JS: Volume Adjustment">

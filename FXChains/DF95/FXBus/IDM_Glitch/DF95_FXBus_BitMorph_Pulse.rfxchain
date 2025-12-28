@@ -1,0 +1,9 @@
+// META:category=FXBus
+// META:style=bit
+// META:mood=pulsed
+// META:lufs_target=-14.3
+// META:ceiling=-0.7
+// META:preferred_subs=aw:derez=DeRez2
+<VST "VST: ReaEQ (Cockos)" reaeq.dll>
+<VST "VST: ReaComp (Cockos)" reacomp.dll>
+<VST3 "VST3: ReaLimit (Cockos)" realimit.vst3>

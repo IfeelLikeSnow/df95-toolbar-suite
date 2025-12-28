@@ -1,0 +1,15 @@
+{
+  "version": 1,
+  "synth_id": "sqkone",
+  "role": "keys",
+  "variant": "idm_keys_soft",
+  "description": "sqkone keys idm_keys_soft",
+  "params": {
+    "amp_env.attack": 0.02,
+    "amp_env.decay": 0.26,
+    "amp_env.sustain": 0.92,
+    "amp_env.release": 0.45,
+    "filter.cutoff": 0.52,
+    "filter.resonance": 0.14
+  }
+}

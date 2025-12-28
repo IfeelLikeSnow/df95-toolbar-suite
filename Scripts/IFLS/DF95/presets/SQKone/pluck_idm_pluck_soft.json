@@ -1,0 +1,15 @@
+{
+  "version": 1,
+  "synth_id": "sqkone",
+  "role": "pluck",
+  "variant": "idm_pluck_soft",
+  "description": "sqkone pluck idm_pluck_soft",
+  "params": {
+    "amp_env.attack": 0.0,
+    "amp_env.decay": 0.16,
+    "amp_env.sustain": 0.2,
+    "amp_env.release": 0.22,
+    "filter.cutoff": 0.7,
+    "filter.resonance": 0.18
+  }
+}

@@ -1,0 +1,336 @@
+IFLS – Phase 90: Sample-Galaxy & Similarity Search
+=================================================
+
+Goal
+----
+
+Turn your existing Slice/Sample feature pipeline into a *content-based
+sample browser* with:
+
+  * numeric embeddings for each sample/slice
+  * similarity search ("find similar")
+  * a simple 2D "timbre space" for UI galaxy views
+
+This mirrors concepts used in modern sample managers (XO, Atlas, Sononym,
+COSMOS), which compute feature-based embeddings and show samples in a
+2D map or similarity list for fast browsing. citeturn4search4turn4search8turn4search26
+
+
+Files in this package
+---------------------
+
+1) IFLS_SampleEmbeddings.lua
+   --------------------------
+   - In-memory embedding store and distance functions.
+
+   Embedding model:
+
+     * A fixed-size numeric vector for each sample/slice, derived from
+       features you already compute (spectral centroid, flux, etc.). citeturn4search12turn4search18turn4search19
+
+   Configuration:
+
+     * FEATURE_ORDER defines which feature dimensions (and order) the
+       embedding uses:
+
+         local FEATURE_ORDER = {
+           "spectral_centroid",
+           "spectral_spread",
+           "spectral_flux",
+           "spectral_flatness",
+           "zcr",
+           "transient_sharpness",
+           "tonalness",
+           "loudness",
+           "brightness",
+           "noisiness",
+         }
+
+       Adapt this list to match your actual feature names from the
+       Slice/Feature pipeline.
+
+   API:
+
+     local SampleEmbeddings = require("IFLS_SampleEmbeddings")
+
+     -- Build from feature table (e.g. from your analysis)
+     local vec = SampleEmbeddings.from_features{
+       spectral_centroid   = ...,
+       spectral_spread     = ...,
+       spectral_flux       = ...,
+       spectral_flatness   = ...,
+       zcr                 = ...,
+       transient_sharpness = ...,
+       tonalness           = ...,
+       loudness            = ...,
+       brightness          = ...,
+       noisiness           = ...,
+     }
+
+     -- Register embedding
+     SampleEmbeddings.set(sample_id, feature_table, meta)
+
+     -- Or set directly from precomputed numeric vector:
+     SampleEmbeddings.set(sample_id, vec, meta, true)
+
+     -- Retrieve
+     local entry = SampleEmbeddings.get(sample_id)
+     -- entry = { id, vec, meta }
+
+     -- All embeddings
+     local list = SampleEmbeddings.all()
+
+     -- Clear / remove
+     SampleEmbeddings.remove(sample_id)
+     SampleEmbeddings.clear()
+
+     -- Distance
+     local d_cos  = SampleEmbeddings.distance(vecA, vecB, "cosine")
+     local d_eucl = SampleEmbeddings.distance(vecA, vecB, "euclidean")
+
+   Notes:
+
+     * Embeddings are normalized to max-abs = 1 internally.
+     * Persistence (storing/loading) is intentionally left to your
+       SampleDB / IFLS infrastructure; you can serialize entries or
+       recompute them on scan.
+
+
+2) IFLS_SimilaritySearch.lua
+   --------------------------
+   - K-NN similarity search + simple 2D timbre-space projection.
+
+   API:
+
+     local SimilaritySearch = require("IFLS_SimilaritySearch")
+
+     -- Find K nearest neighbours for a given sample id:
+     local results = SimilaritySearch.find_similar_to_sample("snare_012", {
+       k      = 16,
+       metric = "cosine", -- or "euclidean"
+       filter = function(entry)
+         -- optional: restrict to same instrument/flavor/folder etc.
+         return entry.meta.instrument == "snare"
+       end,
+     })
+
+     -- Find similar to an arbitrary vector (e.g. average of several):
+     local res2 = SimilaritySearch.find_similar_to_vector(vec, {k = 8})
+
+   Each result entry:
+
+     {
+       id    = sample_id,
+       vec   = embedding_vector,
+       meta  = meta_table,
+       dist  = distance_value,
+     }
+
+   2D "timbre space":
+
+     local points = SimilaritySearch.build_timbre_space{
+       filter = function(entry)
+         return entry.meta.instrument == "snare"
+       end,
+       dim_x  = 1, -- embedding dimension index for X
+       dim_y  = 2, -- embedding dimension index for Y
+     }
+
+   Each point:
+
+     {
+       id   = sample_id,
+       x    = 0..1,   -- normalized coordinate
+       y    = 0..1,
+       vec  = embedding_vector,
+       meta = meta_table,
+     }
+
+   Notes:
+
+     * Projection uses a simple linear map of two embedding dimensions
+       and normalizes to [0,1]; this is fast and easy to implement in
+       ImGui and consistent with 2D timbre-maps used in research. citeturn4search3turn4search7turn4search17
+     * If you want PCA/t-SNE/UMAP-based projections later, you can compute
+       them offline or via a separate tool and feed 2D coordinates back
+       into IFLS.
+
+
+3) IFLS_SampleGalaxy_DebugDemo.lua (optional)
+   ------------------------------------------
+   - Small REAPER console demo that:
+       * seeds a handful of fake embeddings,
+       * runs k-NN search on "kick_01",
+       * builds a simple timbre-space projection.
+
+   - Use it to verify that:
+       * requires work,
+       * distances and sort order behave as expected,
+       * projection coordinates are sane.
+
+
+Integration Steps
+-----------------
+
+A) Place the files
+   ---------------
+   - Copy into your IFLS/DF95 Lua module folder:
+
+       IFLS_SampleEmbeddings.lua
+       IFLS_SimilaritySearch.lua
+       IFLS_SampleGalaxy_DebugDemo.lua (optional)
+
+   - Ensure they are require-able from your SampleDB / ArtistHub scripts:
+
+       local SampleEmbeddings = require("IFLS_SampleEmbeddings")
+       local SimilaritySearch = require("IFLS_SimilaritySearch")
+
+
+B) Hook into your Slice/Feature pipeline
+   --------------------------------------
+   Your snapshot indicates you already compute spectral descriptors,
+   transient measures, and tonalness for slice classification. fileciteturn1file0
+
+   1) After computing per-slice features, construct a feature table:
+
+        local features = {
+          spectral_centroid   = slice.features.spectral_centroid,
+          spectral_spread     = slice.features.spectral_spread,
+          spectral_flux       = slice.features.spectral_flux,
+          spectral_flatness   = slice.features.spectral_flatness,
+          zcr                 = slice.features.zcr,
+          transient_sharpness = slice.features.transient_sharpness,
+          tonalness           = slice.features.tonalness,
+          loudness            = slice.features.loudness,
+          brightness          = slice.features.brightness,
+          noisiness           = slice.features.noisiness,
+        }
+
+   2) Build and register embedding:
+
+        local vec = SampleEmbeddings.from_features(features)
+        SampleEmbeddings.set(slice.id, vec, {
+          path       = slice.path,
+          instrument = slice.class,      -- "kick", "snare", "hat", "fx", ...
+          flavor     = slice.flavor,     -- optional mapping from IDM flavor
+          tags       = slice.tags,       -- SampleDB tags / folder info
+        }, true)
+
+      (If your analysis pipeline already outputs a numeric vector, you
+       can skip from_features and call set(..., vec, meta, true) directly.)
+
+   3) Optionally persist embeddings:
+      - store vec + meta in your SampleDB
+      - or write them into a sidecar file (JSON, binary, etc.)
+      - or recompute on scan if analysis is fast enough.
+
+
+C) ArtistHub / Sample Browser UI integration
+   -----------------------------------------
+   To implement a "Sample Galaxy" view similar to XO/Atlas/Sononym: citeturn4search3turn4search7turn4search8turn4search26
+
+   1) Build timbre-space points:
+
+        local points = SimilaritySearch.build_timbre_space{
+          filter = function(entry)
+            -- e.g. filter by instrument or folder
+            return entry.meta.instrument == "snare"
+          end,
+          dim_x = 1,  -- choose feature for horizontal axis
+          dim_y = 2,  -- choose feature for vertical axis
+        }
+
+   2) In ImGui, render each point as a small circle / marker:
+        * x, y in [0,1] -> map to canvas width/height
+        * color by flavor or instrument
+        * tooltip: sample name, path, tags, flavor
+
+   3) On click:
+        * audition the sample
+        * "Add to Kit" / "Replace in current slice lane"
+        * "Open in FX Brain" (then apply FX-Chain Recommender from Phase 89)
+
+   4) Context menu:
+        * "Find similar" -> call SimilaritySearch.find_similar_to_sample(id)
+          and show a list of neighbours.
+
+
+D) "Find similar" operations
+   --------------------------
+   1) In SampleDB / ArtistHub list view:
+        - Right-click on a sample/slice:
+            "Find similar (same instrument)"
+        - Implementation:
+
+            local function similar_to(id)
+              local entry = SampleEmbeddings.get(id)
+              if not entry then return end
+
+              local results = SimilaritySearch.find_similar_to_sample(id, {
+                k = 32,
+                filter = function(e)
+                  return e.meta.instrument == entry.meta.instrument
+                end,
+              })
+
+              -- Show results in a side panel / popup list
+            end
+
+   2) In a "focus + neighbours" detail view:
+        - Show the focused sample in center, with 4/8 neighbours around,
+          similar to "similar sounds" features in modern browsers. citeturn4search3turn4search17
+
+
+E) Relation to FX-Chain Recommender (Phase 89)
+   -------------------------------------------
+   - Once you select a sample (either directly or via similarity search),
+     you can feed its context into the FX-Chain Recommender:
+
+       local ctx = FXChainRecommender.build_context{
+         slice_type        = entry.meta.instrument,
+         flavors           = { entry.meta.flavor or active_flavor },
+         adjectives        = { "punchy" }, -- from user, artist, or mapping
+         artist_style_tags = artist.style_tags,
+       }
+
+       local chain = FXChainRecommender.recommend(ctx)
+       -- then pass 'chain' to ArtistFX Engine
+
+   - This closes a powerful loop:
+       1) Discover sample in timbre space.
+       2) Find similar variants.
+       3) Auto-generate FX chains tailored to instrument + flavor.
+
+
+Next Recommended Phase
+----------------------
+
+After Phase 90, your system offers:
+
+  * Strong analysis (slices, features, fusion)
+  * Expressive feel (groove, humanize)
+  * Context-aware FX-chains
+  * Content-based sample browsing & similarity
+
+A natural next step is to focus on *pattern-level creativity*:
+
+  ► Phase 91 – Rhythm Transformation & Morphing
+
+Reasoning:
+
+  * With high-quality slices and similarity search, users can quickly
+    assemble interesting kits and sample sets.
+  * Rhythm transformation (morphing patterns toward style templates,
+    introducing micro-variations, generative fills) acts at the pattern
+    level and synergizes with:
+       - IDM MicroSlice (dense, microtimed slices)
+       - Groove profiles (feel)
+       - FX recommendations (sound design)
+  * Research on rhythm transformation and style transfer offers many
+    strategies (hit probability maps, pattern morphing, style templates)
+    that can be implemented incrementally on top of your BeatEngine.
+
+Phase 91 can include:
+  - Rhythm template definitions ("IDM Chaos", "Broken Beat", "Dilla Swing")
+  - Morph functions (original -> target style, with amount slider)
+  - BeatControlCenter UI to control amount/complexity and preview/apply.

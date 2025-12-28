@@ -1,0 +1,26 @@
+{
+  "Warm": [
+    "Warm/Color_WarmTape_Pressure4_ToTape8.rfxchain"
+  ],
+  "Neutral": [
+    "Neutral/Color_Reference_NeutralGain_Capacitor.rfxchain"
+  ],
+  "HighDef": [
+    "HighDef/Color_Modern_AO_BritPre_Fetish.rfxchain"
+  ],
+  "BoC": [
+    "BoC/Color_BoC_Derez_DitherTape7.rfxchain"
+  ],
+  "Glitch": [
+    "Glitch/Color_Glitch_Burier_Density2.rfxchain"
+  ],
+  "Spectral": [
+    "Spectral/Color_Spectral_Spread_Air_Ambi.rfxchain"
+  ],
+  "IDM": [
+    "IDM/Color_IDM_Pressure3_DeRez.rfxchain"
+  ],
+  "Wide": [
+    "Wide/Color_Wide_ToTape8_Console8.rfxchain"
+  ]
+}
