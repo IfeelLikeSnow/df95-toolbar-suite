@@ -1,9 +1,0 @@
-// META:category=FXBus
-// META:style=spectral
-// META:mood=weird
-// META:lufs_target=-16.0
-// META:ceiling=-0.9
-<VST "VST: ReaFIR (Cockos)" reafir.dll>
-<VST "VST: ReaPitch (Cockos)" reapitch.dll>
-<VST "VST: ReaEQ (Cockos)" reaeq.dll>
-<VST "VST: ReaComp (Cockos)" reacomp.dll>
