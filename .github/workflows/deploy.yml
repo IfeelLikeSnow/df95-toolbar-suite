@@ -27,6 +27,9 @@ jobs:
         with:
           ruby-version: "3.2"
 
+      - name: Assert repo root layout
+        run: python3 tools/assert_repo_root_layout.py
+
       - name: Install reapack-index
         run: gem install reapack-index
 
