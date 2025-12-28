@@ -1,31 +1,34 @@
 -- @description DF95 Toolbar Suite - Core
 -- @version 1.0.0
--- @author DF95
+-- @author DF95 / IFLS
 -- @metapackage
 -- @about
---   Installs the DF95 core scripts + resources.
---   STABILITY CONTRACT (do not break):
---   1) Do not move/rename THIS package file once published.
---   2) Do not change the TARGET install paths (right side of '>') once published.
---   3) Refactors must happen only inside _payload/ while keeping these mappings stable.
+--   Installs DF95/IFLS core assets (scripts, chains, templates, themes, etc.).
+--   After installation, run:
+--     - DF95/IFLS: Sanity check (install paths + dependencies)
+--     - DF95/IFLS: Register all DF95/IFLS actions (first run)
 --
 -- @provides
 --   [main] Scripts/DF95_IFLS_Register_All_Actions.lua
 --   [main] Scripts/DF95_IFLS_Sanity_Check.lua
 --   [main] Scripts/DF95_IFLS_Open_Resource_Path.lua
---   [nomain] Scripts/** > Scripts/
+--
+--   Scripts/** > Scripts/
 --   DF95_MetaCore/** > DF95_MetaCore/
 --
 --   Data/** > Data/
 --   Config/** > Config/
+--
 --   Effects/** > Effects/
 --   FXChains/** > FXChains/
 --   Chains/** > Chains/
 --   TrackTemplates/** > TrackTemplates/
 --   RenderPresets/** > RenderPresets/
 --   Projects/** > Projects/
+--
 --   Theme/** > Theme/
 --   ThemeMod/** > ThemeMod/
+--
 --   Reports/** > Reports/
 --   Support/** > Support/
 --   _selectors/** > _selectors/

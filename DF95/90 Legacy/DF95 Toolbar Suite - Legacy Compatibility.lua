@@ -1,11 +1,10 @@
--- @description DF95 Toolbar Suite - Legacy Compatibility (optional)
+-- @description DF95 Toolbar Suite - Legacy Compatibility (stubs/tombstones)
 -- @version 1.0.0
--- @author DF95
+-- @author DF95 / IFLS
 -- @metapackage
 -- @about
---   OPTIONAL compatibility layer for older DF95 installs.
---   Use ONLY if you previously published scripts under different target paths.
---   Put stub/tombstone scripts under _payload/Legacy/ and keep old entry points alive.
+--   Optional compatibility layer for older DF95 installs.
+--   This package intentionally installs into Scripts/DF95_Legacy/.
 --
 -- @provides
 --   Legacy/** > Scripts/DF95_Legacy/

@@ -1,46 +1,42 @@
-name: deploy
+name: ReaPack - deploy index.xml
 
 on:
   push:
-    branches: [ "master", "main" ]
+    branches: [ "main", "master" ]
+  workflow_dispatch:
 
 permissions:
   contents: write
 
 jobs:
-  reapack-index-deploy:
+  deploy:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout
+      - name: Checkout (full history)
         uses: actions/checkout@v4
         with:
           fetch-depth: 0
-
-      - name: Set up Ruby
-        uses: ruby/setup-ruby@v1
-        with:
-          ruby-version: '3.2'
-          bundler-cache: false
-
 
       - name: Install pandoc
         run: |
           sudo apt-get update
           sudo apt-get install -y pandoc
 
+      - name: Install Ruby
+        uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: "3.2"
+
       - name: Install reapack-index
         run: gem install reapack-index
 
-      - name: Configure git user
-        run: |
-          git config user.name "github-actions[bot]"
-          git config user.email "github-actions[bot]@users.noreply.github.com"
-
-      - name: Scan commits & update index.xml
+      - name: Build/Amend index.xml
         run: |
           reapack-index --scan --amend --commit .
           git status --porcelain
 
       - name: Push updated index.xml
         run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
           git push
