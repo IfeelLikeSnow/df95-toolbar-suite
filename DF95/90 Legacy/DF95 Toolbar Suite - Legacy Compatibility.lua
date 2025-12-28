@@ -4,7 +4,6 @@
 -- @metapackage
 -- @about
 --   Optional compatibility layer for older DF95 installs.
---   This package intentionally installs into Scripts/DF95_Legacy/.
 --
 -- @provides
 --   Legacy/** > Scripts/DF95_Legacy/
