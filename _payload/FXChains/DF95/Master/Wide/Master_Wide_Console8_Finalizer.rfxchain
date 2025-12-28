@@ -1,8 +1,0 @@
-// META:category=master
-// META:style=wide
-// META:lufs_target=-13
-// META:ceiling=-0.5
-// META:preferred_subs=aw:console=Console8; limiter=ReaLimit
-<VST "VST: ReaEQ (Cockos)" reacomp.dll>
-<VST "VST: ReaComp (Cockos)" reacomp.dll>
-<VST3 "VST3: ReaLimit (Cockos)" realimit.vst3>

@@ -1,9 +1,0 @@
-<FXCHAIN SHOW 0 LASTSEL 0 DOCKED 0>
-// META:target=live_fast
-// META:lufs_target=-8.0
-// META:truepeak_ceiling=-0.8
-<FX JS "Volume Adjustment" 0 WET 0 1.00 >
-<FX VST "VST3" "ReaLimit (Cockos)" "" 0 WET 0 1.00 >
-<FX JS "Loudness Meter Peak/RMS" 0 WET 0 1.00 >
-<JS "JS: Volume Adjustment">
-<JS "JS: Volume Adjustment">

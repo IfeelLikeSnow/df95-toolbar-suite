@@ -1,7 +1,0 @@
-// META:category=master
-// META:color=tight
-// META:lufs_target=-10
-// META:ceiling=-0.8
-<VST "VST: ReaEQ (Cockos)" reacomp.dll>
-<VST "VST: ReaComp (Cockos)" reacomp.dll>
-<VST3 "VST3: ReaLimit (Cockos)" realimit.vst3>

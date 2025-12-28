@@ -1,3 +1,0 @@
--- IFLS_EuclidMelodyHub_ImGui.lua
--- (vollständige Version siehe vorheriges Patch)
--- ImGui-Hub für die EuclidMelodyDomain.

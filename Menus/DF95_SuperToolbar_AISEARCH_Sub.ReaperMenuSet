@@ -1,9 +1,0 @@
-# DF95 SuperToolbar AI&SEARCH Sub
-Item01=Custom: DF95 – AIWorker Hub (ImGui)
-	SCRIPT: Scripts/IfeelLikeSnow/DF95/DF95_AIWorker_Hub_ImGui.lua
-Item02=Custom: DF95 – AIWorker UCS (Python Skeleton)
-	SCRIPT: Scripts/IfeelLikeSnow/DF95/DF95_SampleDB_AIWorker_UCS_Python_Skeleton.lua
-Item03=Custom: DF95 – Safety AIWorker Status
-	SCRIPT: Scripts/IfeelLikeSnow/DF95/DF95_Safety_AIWorker.lua
-Item04=Custom: DF95 – SampleDB Extended Tags (Pitch/Loop/Speech)
-	SCRIPT: Scripts/IfeelLikeSnow/DF95/DF95_SampleDB_ExtendedTags_PitchLoopSpeech.lua

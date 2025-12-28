@@ -1,9 +1,0 @@
--- @description DF95 Toolbar Suite - Legacy Compatibility (stubs/tombstones)
--- @version 1.0.0
--- @author DF95 / IFLS
--- @metapackage
--- @about
---   Optional compatibility layer for older DF95 installs.
---
--- @provides
---   Legacy/** > Scripts/DF95_Legacy/
