@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<index version="1" name="DF95 Toolbar Suite" commit="ebf455eba8c8f7b1b420151b4d143a4805399b80">
+<index version="1" name="DF95 Toolbar Suite" commit="93faea0650f64277cda7ca8a4ef667ca4a254e01">
   <!--
     This file is generated/maintained by reapack-index.
     Do not hand-edit after CI is working.
@@ -132,12 +132,12 @@
 {\colortbl;\red255\green0\blue0;\red0\green0\blue255;}
 \widowctrl\hyphauto
 
-{\pard \ql \f0 \sa180 \li0 \fi0 One-time bootstrap: scans the repository Scripts folders and registers DF95/IFLS scripts as Actions in REAPER's Action List. Safe to re-run. Tip: If you only want a subset registered, edit the allowlist patterns in this script.\par}
+{\pard \ql \f0 \sa180 \li0 \fi0 Registers DF95/IFLS scripts as actions. Safe to re-run.\par}
 }
 ]]></description>
       </metadata>
       <version name="1.0.0" author="DF95 / IFLS" time="2025-12-28T16:35:46Z">
-        <source main="main">https://github.com/IfeelLikeSnow/df95-toolbar-suite/raw/ebf455eba8c8f7b1b420151b4d143a4805399b80/Scripts/DF95_IFLS_Register_All_Actions.lua</source>
+        <source main="main">https://github.com/IfeelLikeSnow/df95-toolbar-suite/raw/93faea0650f64277cda7ca8a4ef667ca4a254e01/Scripts/DF95_IFLS_Register_All_Actions.lua</source>
       </version>
     </reapack>
     <reapack name="DF95_IFLS_Sanity_Check.lua" type="script" desc="DF95/IFLS: Sanity check (install paths + dependencies)">
