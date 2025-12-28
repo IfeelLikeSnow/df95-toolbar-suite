@@ -10,7 +10,10 @@
 --   3) Refactors must happen only inside _payload/ while keeping these mappings stable.
 --
 -- @provides
---   Scripts/** > Scripts/
+--   [main] Scripts/DF95_IFLS_Register_All_Actions.lua
+--   [main] Scripts/DF95_IFLS_Sanity_Check.lua
+--   [main] Scripts/DF95_IFLS_Open_Resource_Path.lua
+--   [nomain] Scripts/** > Scripts/
 --   DF95_MetaCore/** > DF95_MetaCore/
 --
 --   Data/** > Data/

@@ -1,166 +1,141 @@
--- DF95/IFLS: Register all installed scripts as Actions (bulk)
--- Runs once. Safe to re-run (existing scripts won't duplicate; REAPER returns 0 if already added).
--- Source: AddRemoveReaScript API in REAPER ReaScript docs. :contentReference[oaicite:1]{index=1}
+-- @description DF95/IFLS: Register all DF95/IFLS actions (first run)
+-- @version 1.0.0
+-- @author DF95 / IFLS
+-- @about
+--   One-time bootstrap: scans the repository Scripts folders and registers DF95/IFLS scripts
+--   as Actions in REAPER's Action List. Safe to re-run.
+--   Tip: If you only want a subset registered, edit the allowlist patterns in this script.
 
-local function msg(s) reaper.ShowConsoleMsg(tostring(s) .. "\n") end
+local function msg(s) reaper.ShowMessageBox(tostring(s), "DF95/IFLS Register Actions", 0) end
 
-local function path_join(a, b)
-  if a:sub(-1) == "\\" or a:sub(-1) == "/" then return a .. b end
-  return a .. package.config:sub(1,1) .. b
+local function norm(p)
+  p = p:gsub('\\','/')
+  return p
 end
 
-local function norm(p) return (p:gsub("/", package.config:sub(1,1))) end
+local function join(a,b)
+  if a:sub(-1) == '/' then return a .. b end
+  return a .. '/' .. b
+end
 
 local function file_exists(p)
-  local f = io.open(p, "rb")
+  local f = io.open(p,'rb')
   if f then f:close() return true end
   return false
 end
 
-local function read_head(p, max_bytes)
-  local f = io.open(p, "rb")
-  if not f then return "" end
-  local s = f:read(max_bytes or 2048) or ""
+local function read_first_kb(p, maxbytes)
+  local f = io.open(p,'rb')
+  if not f then return '' end
+  local data = f:read(maxbytes or 2048) or ''
   f:close()
-  return s
+  return data
 end
 
--- Heuristik: nur "Action-taugliche" Scripts registrieren
--- (damit nicht tausende Lib-Dateien die Action List zumüllen)
-local function is_action_candidate(fullpath, filename)
-  local lower = filename:lower()
-  if lower:match("^_") then return false end
-  if lower:match("lib") and not lower:match("library") then
-    -- viele Libs heißen *Lib*; trotzdem erlauben wir DF95_/IFLS_ Entry-Skripte
-    -- und Skripte mit @description
+-- Allowlist patterns: keep Action List clean.
+-- Add more prefixes if you want other namespaces to be registered automatically.
+local allow_patterns = {
+  "^DF95_",
+  "^IFLS_",
+  "^DF95IFLS_",
+}
+
+-- Folders to scan relative to REAPER resource path
+local scan_roots = {
+  "Scripts/DF95_ToolbarSuite",
+  "Scripts/IFLS",
+  "Scripts/DF95",
+  "Scripts/DF95Framework",
+  "Scripts",
+}
+
+-- Heuristic: only register scripts that look like runnable ReaScripts (not pure libs/templates).
+-- - must be .lua
+-- - file name must match allow_patterns
+-- - skip files in Lib/, Templates/, Docs/
+local skip_dir_patterns = {
+  "/Lib/",
+  "/lib/",
+  "/Templates/",
+  "/templates/",
+  "/Docs/",
+  "/docs/",
+}
+
+local function is_allowed_file(path)
+  local fn = path:match("([^/]+)$") or path
+  if not fn:lower():match("%.lua$") then return false end
+  local base = fn:gsub("%.lua$","")
+  local ok=false
+  for _,p in ipairs(allow_patterns) do
+    if base:match(p) then ok=true break end
   end
-
-  -- Nur ReaScripts: .lua/.eel/.py
-  if not (lower:match("%.lua$") or lower:match("%.eel$") or lower:match("%.py$")) then return false end
-
-  -- DF95/IFLS Namenspattern (deckt deine Suite gut ab)
-  if filename:match("^DF95_") or filename:match("^IFLS_") then return true end
-
-  -- ReaPack/ReaScript Header: @description etc.
-  local head = read_head(fullpath, 4096)
-  if head:match("@description") or head:match("@about") or head:match("@version") then
-    return true
+  if not ok then return false end
+  for _,sp in ipairs(skip_dir_patterns) do
+    if path:find(sp, 1, true) then return false end
   end
-
+  -- If file has a ReaScript metaheader, it's probably intended to be runnable
+  local head = read_first_kb(path, 4096)
+  if head:find("@description", 1, true) then return true end
+  -- Otherwise still allow, but only if it contains `reaper.` calls (cheap signal it's runnable)
+  if head:find("reaper%.", 1, true) then return true end
   return false
 end
 
-local function enum_files_recursive(root_dir, out)
-  out = out or {}
+local function scan_dir(dir, out)
   local i = 0
   while true do
-    local fn = reaper.EnumerateFiles(root_dir, i)
-    if not fn then break end
-    local full = path_join(root_dir, fn)
-    table.insert(out, { full = full, name = fn, is_dir = false })
+    local file = reaper.EnumerateFiles(dir, i)
+    if not file then break end
+    local full = join(dir, file)
+    full = norm(full)
+    if is_allowed_file(full) then
+      out[#out+1] = full
+    end
     i = i + 1
   end
 
   local j = 0
   while true do
-    local dn = reaper.EnumerateSubdirectories(root_dir, j)
-    if not dn then break end
-    local full = path_join(root_dir, dn)
-    table.insert(out, { full = full, name = dn, is_dir = true })
-    enum_files_recursive(full, out)
+    local sub = reaper.EnumerateSubdirectories(dir, j)
+    if not sub then break end
+    local full = join(dir, sub)
+    full = norm(full)
+    scan_dir(full, out)
     j = j + 1
   end
-
-  return out
 end
 
-local function find_candidate_roots(scripts_root)
-  -- Wir suchen typische Install-Pfade innerhalb des Scripts-Ordners
-  local roots = {}
-
-  -- 1) häufig: Scripts/DF95 Toolbar Suite/...
-  local guess1 = path_join(scripts_root, "DF95 Toolbar Suite")
-  if reaper.EnumerateSubdirectories(guess1, 0) ~= nil then table.insert(roots, guess1) end
-
-  -- 2) häufig: Scripts/IfeelLikeSnow/...
-  local guess2 = path_join(scripts_root, "IfeelLikeSnow")
-  if reaper.EnumerateSubdirectories(guess2, 0) ~= nil then table.insert(roots, guess2) end
-
-  -- 3) häufig: Scripts/IFLS/...
-  local guess3 = path_join(scripts_root, "IFLS")
-  if reaper.EnumerateSubdirectories(guess3, 0) ~= nil then table.insert(roots, guess3) end
-
-  -- 4) fallback: kompletten Scripts-Ordner scannen (langsamer, aber sicher)
-  if #roots == 0 then table.insert(roots, scripts_root) end
-
-  return roots
+local resource = norm(reaper.GetResourcePath())
+local found = {}
+for _,rel in ipairs(scan_roots) do
+  local dir = norm(join(resource, rel))
+  if reaper.EnumerateFiles(dir, 0) or reaper.EnumerateSubdirectories(dir, 0) then
+    scan_dir(dir, found)
+  end
 end
 
-local function main()
-  reaper.ClearConsole()
-  msg("DF95/IFLS Register: start")
-
-  local resource = reaper.GetResourcePath()
-  local scripts_root = path_join(resource, "Scripts")
-  scripts_root = norm(scripts_root)
-
-  if not reaper.EnumerateSubdirectories(scripts_root, 0) and not reaper.EnumerateFiles(scripts_root, 0) then
-    msg("ERROR: Scripts folder not found/empty: " .. scripts_root)
-    return
+-- Remove duplicates
+local uniq, seen = {}, {}
+for _,p in ipairs(found) do
+  if not seen[p] then
+    seen[p] = true
+    uniq[#uniq+1] = p
   end
-
-  local roots = find_candidate_roots(scripts_root)
-  msg("Scanning roots:")
-  for _, r in ipairs(roots) do msg("  - " .. r) end
-
-  local candidates = {}
-  for _, r in ipairs(roots) do
-    local entries = enum_files_recursive(r)
-    for _, e in ipairs(entries) do
-      if not e.is_dir then
-        if is_action_candidate(e.full, e.name) then
-          table.insert(candidates, e.full)
-        end
-      end
-    end
-  end
-
-  -- de-dupe
-  local seen, uniq = {}, {}
-  for _, p in ipairs(candidates) do
-    if not seen[p] and file_exists(p) then
-      seen[p] = true
-      table.insert(uniq, p)
-    end
-  end
-
-  table.sort(uniq)
-  msg(("Candidates: %d"):format(#uniq))
-
-  if #uniq == 0 then
-    msg("No candidate scripts found. Check install path under ResourcePath/Scripts.")
-    return
-  end
-
-  -- Register into Main section (0)
-  -- Signature: reaper.AddRemoveReaScript(add, sectionID, scriptfn, commit). :contentReference[oaicite:2]{index=2}
-  local sectionID = 0
-  local added, already = 0, 0
-
-  reaper.Undo_BeginBlock()
-  for idx, p in ipairs(uniq) do
-    local commit = (idx == #uniq) -- commit only at end for speed
-    local cmd = reaper.AddRemoveReaScript(true, sectionID, p, commit)
-    if cmd ~= 0 then
-      added = added + 1
-    else
-      already = already + 1
-    end
-  end
-  reaper.Undo_EndBlock("DF95/IFLS: register scripts to action list", -1)
-
-  msg(("Done. Added: %d, Already/Skipped: %d"):format(added, already))
-  msg("Now open Actions and search for IFLS / DF95. If still empty: restart REAPER once.")
 end
 
-main()
+if #uniq == 0 then
+  msg("No DF95/IFLS scripts found to register.\n\nCheck that the repository installed files into your REAPER resource path.")
+  return
+end
+
+-- Register with AddRemoveReaScript (sectionID 0 = Main actions list)
+local ok, fail = 0, 0
+reaper.Undo_BeginBlock()
+for _,p in ipairs(uniq) do
+  local rv = reaper.AddRemoveReaScript(true, 0, p, true)
+  if rv ~= 0 then ok = ok + 1 else fail = fail + 1 end
+end
+reaper.Undo_EndBlock("DF95/IFLS: Register Actions", -1)
+
+msg(("Registered: %d\nFailed: %d\n\nTip: open Action List and search for DF95 or IFLS."):format(ok, fail))
