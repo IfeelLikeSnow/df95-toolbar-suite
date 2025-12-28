@@ -1,0 +1,21 @@
+<REAPER_FXCHAIN
+SHOW 0
+LASTSEL 0
+DOCKED 0
+
+<FX
+BYPASS 0 0 0
+VST "DF95_META" "OTT (Xfer Records)" 0
+>
+
+<FX
+BYPASS 0 0 0
+VST "DF95_META" "KClip Zero (Kazrog)" 0
+>
+
+<FX
+BYPASS 0 0 0
+VST "DF95_META" "LengthSeparator v1.5 (Anarchy Sound Software)" 0
+>
+
+>

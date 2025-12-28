@@ -1,0 +1,45 @@
+name: ReaPack - deploy index.xml
+
+on:
+  push:
+    branches: [ "main", "master" ]
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout (full history)
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Install pandoc
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y pandoc
+
+      - name: Install Ruby
+        uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: "3.2"
+
+      - name: Install reapack-index
+        run: gem install reapack-index
+
+      - name: Sanitize metaheaders (strict hygiene)
+        run: python3 tools/sanitize_metaheaders.py
+
+      - name: Build/Amend index.xml
+        run: |
+          reapack-index --scan --amend --commit .
+          git status --porcelain
+
+      - name: Push updated index.xml
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git push

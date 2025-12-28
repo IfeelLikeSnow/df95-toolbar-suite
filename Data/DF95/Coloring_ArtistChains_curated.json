@@ -1,0 +1,60 @@
+{
+  "Autechre": [
+    {
+      "label": "AE \u2013 MetalFM Crunch Bus",
+      "chain": "AE_MetalFM_Crunch_Bus.rfxchain"
+    },
+    {
+      "label": "AE \u2013 Sparse Glitch Glue",
+      "chain": "AE_Sparse_Glitch_Glue.rfxchain"
+    }
+  ],
+  "AphexTwin": [
+    {
+      "label": "AT \u2013 Drukqs Perc Snap",
+      "chain": "AT_Drukqs_Perc_Snap.rfxchain"
+    }
+  ],
+  "BoardsOfCanada": [
+    {
+      "label": "BoC \u2013 Sunny Tape Glow",
+      "chain": "BoC_Sunny_Tape_Glow.rfxchain"
+    }
+  ],
+  "Squarepusher": [
+    {
+      "label": "SP \u2013 JazzBass Drive Glue",
+      "chain": "SP_JazzBass_Drive_Glue.rfxchain"
+    }
+  ],
+  "uZiq": [
+    {
+      "label": "\u00b5-Ziq \u2013 Bright IDM Glue",
+      "chain": "uZiq_Bright_IDM_Glue.rfxchain"
+    }
+  ],
+  "Moderat": [
+    {
+      "label": "Moderat \u2013 Minimal Film Tone",
+      "chain": "Moderat_Minimal_FilmTone.rfxchain"
+    }
+  ],
+  "Plaid": [
+    {
+      "label": "Plaid \u2013 Warm Chords Shimmer",
+      "chain": "Plaid_Warm_Chords_Shimmer.rfxchain"
+    }
+  ],
+  "Proem": [
+    {
+      "label": "Proem \u2013 Grain Soft Saturate",
+      "chain": "Proem_Grain_SoftSat.rfxchain"
+    }
+  ],
+  "Arovane": [
+    {
+      "label": "Arovane \u2013 Airy Scapes Color",
+      "chain": "Arovane_Airy_Scapes_Color.rfxchain"
+    }
+  ]
+}

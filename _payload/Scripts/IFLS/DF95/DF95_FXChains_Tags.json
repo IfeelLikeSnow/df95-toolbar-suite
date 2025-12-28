@@ -1,0 +1,1096 @@
+{
+  "FXBus": {
+    "FXBus/DF95_FXBus_Fallback_GlitchSeed.rfxchain": {
+      "tags": [
+        "glitch"
+      ],
+      "role": [
+        "fxbus"
+      ],
+      "tone": [],
+      "intensity": "medium",
+      "safe": false
+    },
+    "FXBus/Glitch_Granular_Light.rfxchain": {
+      "tags": [
+        "glitch"
+      ],
+      "role": [
+        "fxbus"
+      ],
+      "tone": [],
+      "intensity": "medium",
+      "safe": false
+    },
+    "FXBus/Glitch_Granular_Heavy.rfxchain": {
+      "tags": [
+        "glitch"
+      ],
+      "role": [
+        "fxbus"
+      ],
+      "tone": [],
+      "intensity": "medium",
+      "safe": false
+    },
+    "FXBus/BeatRepeat_TimeWarp.rfxchain": {
+      "tags": [],
+      "role": [
+        "fxbus"
+      ],
+      "tone": [],
+      "intensity": "medium",
+      "safe": false
+    },
+    "FXBus/IDM_Randomized_Base.rfxchain": {
+      "tags": [
+        "idm"
+      ],
+      "role": [
+        "fxbus"
+      ],
+      "tone": [],
+      "intensity": "medium",
+      "safe": false
+    },
+    "FXBus/IDM_Glitch/DF95_FXBus_PitchStep_Glitch.rfxchain": {
+      "tags": [
+        "glitch",
+        "idm"
+      ],
+      "role": [
+        "fxbus"
+      ],
+      "tone": [],
+      "intensity": "medium",
+      "safe": false
+    },
+    "FXBus/IDM_Glitch/DF95_FXBus_FilterMatrix_Looper.rfxchain": {
+      "tags": [
+        "glitch",
+        "idm"
+      ],
+      "role": [
+        "fxbus"
+      ],
+      "tone": [],
+      "intensity": "medium",
+      "safe": false
+    },
+    "FXBus/IDM_Glitch/DF95_FXBus_GlitchGranular_01.rfxchain": {
+      "tags": [
+        "glitch",
+        "idm"
+      ],
+      "role": [
+        "fxbus"
+      ],
+      "tone": [],
+      "intensity": "medium",
+      "safe": false
+    },
+    "FXBus/IDM_Glitch/DF95_FXBus_PitchWobble_ModSync.rfxchain": {
+      "tags": [
+        "glitch",
+        "idm"
+      ],
+      "role": [
+        "fxbus"
+      ],
+      "tone": [],
+      "intensity": "medium",
+      "safe": false
+    },
+    "FXBus/IDM_Glitch/DF95_FXBus_FilterGate_RhythmGlitch.rfxchain": {
+      "tags": [
+        "glitch",
+        "idm"
+      ],
+      "role": [
+        "fxbus"
+      ],
+      "tone": [],
+      "intensity": "medium",
+      "safe": false
+    },
+    "FXBus/IDM_Glitch/DF95_FXBus_SpectralDeform_01.rfxchain": {
+      "tags": [
+        "glitch",
+        "idm",
+        "spectral"
+      ],
+      "role": [
+        "fxbus"
+      ],
+      "tone": [],
+      "intensity": "medium",
+      "safe": false
+    },
+    "FXBus/IDM_Glitch/DF95_FXBus_StutterMorph_IDM.rfxchain": {
+      "tags": [
+        "glitch",
+        "idm"
+      ],
+      "role": [
+        "fxbus"
+      ],
+      "tone": [],
+      "intensity": "medium",
+      "safe": false
+    },
+    "FXBus/IDM_Glitch/DF95_FXBus_BitMorph_Pulse.rfxchain": {
+      "tags": [
+        "glitch",
+        "idm"
+      ],
+      "role": [
+        "fxbus"
+      ],
+      "tone": [],
+      "intensity": "medium",
+      "safe": false
+    },
+    "FXBus/IDM_Glitch/DF95_FXBus_PulseSync_Warp.rfxchain": {
+      "tags": [
+        "glitch",
+        "idm"
+      ],
+      "role": [
+        "fxbus"
+      ],
+      "tone": [],
+      "intensity": "medium",
+      "safe": false
+    },
+    "FXBus/IDM_Glitch/DF95_FXBus_IDMHybrid_MorphGrid.rfxchain": {
+      "tags": [
+        "glitch",
+        "idm"
+      ],
+      "role": [
+        "fxbus"
+      ],
+      "tone": [],
+      "intensity": "medium",
+      "safe": false
+    },
+    "FXBus/IDM_Glitch_CLEAN/DF95_FXBus_PitchStep_Glitch_CLEAN.rfxchain": {
+      "tags": [
+        "clean",
+        "glitch",
+        "idm"
+      ],
+      "role": [
+        "fxbus"
+      ],
+      "tone": [],
+      "intensity": "soft",
+      "safe": false
+    },
+    "FXBus/IDM_Glitch_CLEAN/DF95_FXBus_FilterMatrix_Looper_CLEAN.rfxchain": {
+      "tags": [
+        "clean",
+        "glitch",
+        "idm"
+      ],
+      "role": [
+        "fxbus"
+      ],
+      "tone": [],
+      "intensity": "soft",
+      "safe": false
+    },
+    "FXBus/IDM_Glitch_CLEAN/DF95_FXBus_GlitchGranular_01_CLEAN.rfxchain": {
+      "tags": [
+        "clean",
+        "glitch",
+        "idm"
+      ],
+      "role": [
+        "fxbus"
+      ],
+      "tone": [],
+      "intensity": "soft",
+      "safe": false
+    },
+    "FXBus/IDM_Glitch_CLEAN/DF95_FXBus_PitchWobble_ModSync_CLEAN.rfxchain": {
+      "tags": [
+        "clean",
+        "glitch",
+        "idm"
+      ],
+      "role": [
+        "fxbus"
+      ],
+      "tone": [],
+      "intensity": "soft",
+      "safe": false
+    },
+    "FXBus/IDM_Glitch_CLEAN/DF95_FXBus_FilterGate_RhythmGlitch_CLEAN.rfxchain": {
+      "tags": [
+        "clean",
+        "glitch",
+        "idm"
+      ],
+      "role": [
+        "fxbus"
+      ],
+      "tone": [],
+      "intensity": "soft",
+      "safe": false
+    },
+    "FXBus/IDM_Glitch_CLEAN/DF95_FXBus_SpectralDeform_01_CLEAN.rfxchain": {
+      "tags": [
+        "clean",
+        "glitch",
+        "idm",
+        "spectral"
+      ],
+      "role": [
+        "fxbus"
+      ],
+      "tone": [],
+      "intensity": "soft",
+      "safe": false
+    },
+    "FXBus/IDM_Glitch_CLEAN/DF95_FXBus_StutterMorph_IDM_CLEAN.rfxchain": {
+      "tags": [
+        "clean",
+        "glitch",
+        "idm"
+      ],
+      "role": [
+        "fxbus"
+      ],
+      "tone": [],
+      "intensity": "soft",
+      "safe": false
+    },
+    "FXBus/IDM_Glitch_CLEAN/DF95_FXBus_BitMorph_Pulse_CLEAN.rfxchain": {
+      "tags": [
+        "clean",
+        "glitch",
+        "idm"
+      ],
+      "role": [
+        "fxbus"
+      ],
+      "tone": [],
+      "intensity": "soft",
+      "safe": false
+    },
+    "FXBus/IDM_Glitch_CLEAN/DF95_FXBus_PulseSync_Warp_CLEAN.rfxchain": {
+      "tags": [
+        "clean",
+        "glitch",
+        "idm"
+      ],
+      "role": [
+        "fxbus"
+      ],
+      "tone": [],
+      "intensity": "soft",
+      "safe": false
+    },
+    "FXBus/IDM_Glitch_CLEAN/DF95_FXBus_IDMHybrid_MorphGrid_CLEAN.rfxchain": {
+      "tags": [
+        "clean",
+        "glitch",
+        "idm"
+      ],
+      "role": [
+        "fxbus"
+      ],
+      "tone": [],
+      "intensity": "soft",
+      "safe": false
+    },
+    "FXBus/IDM_Glitch_EXTREME/DF95_FXBus_PitchStep_Glitch_EXTREME.rfxchain": {
+      "tags": [
+        "extreme",
+        "glitch",
+        "idm"
+      ],
+      "role": [
+        "fxbus"
+      ],
+      "tone": [],
+      "intensity": "extreme",
+      "safe": false
+    },
+    "FXBus/IDM_Glitch_EXTREME/DF95_FXBus_FilterMatrix_Looper_EXTREME.rfxchain": {
+      "tags": [
+        "extreme",
+        "glitch",
+        "idm"
+      ],
+      "role": [
+        "fxbus"
+      ],
+      "tone": [],
+      "intensity": "extreme",
+      "safe": false
+    },
+    "FXBus/IDM_Glitch_EXTREME/DF95_FXBus_GlitchGranular_01_EXTREME.rfxchain": {
+      "tags": [
+        "extreme",
+        "glitch",
+        "idm"
+      ],
+      "role": [
+        "fxbus"
+      ],
+      "tone": [],
+      "intensity": "extreme",
+      "safe": false
+    },
+    "FXBus/IDM_Glitch_EXTREME/DF95_FXBus_PitchWobble_ModSync_EXTREME.rfxchain": {
+      "tags": [
+        "extreme",
+        "glitch",
+        "idm"
+      ],
+      "role": [
+        "fxbus"
+      ],
+      "tone": [],
+      "intensity": "extreme",
+      "safe": false
+    },
+    "FXBus/IDM_Glitch_EXTREME/DF95_FXBus_FilterGate_RhythmGlitch_EXTREME.rfxchain": {
+      "tags": [
+        "extreme",
+        "glitch",
+        "idm"
+      ],
+      "role": [
+        "fxbus"
+      ],
+      "tone": [],
+      "intensity": "extreme",
+      "safe": false
+    },
+    "FXBus/IDM_Glitch_EXTREME/DF95_FXBus_SpectralDeform_01_EXTREME.rfxchain": {
+      "tags": [
+        "extreme",
+        "glitch",
+        "idm",
+        "spectral"
+      ],
+      "role": [
+        "fxbus"
+      ],
+      "tone": [],
+      "intensity": "extreme",
+      "safe": false
+    },
+    "FXBus/IDM_Glitch_EXTREME/DF95_FXBus_StutterMorph_IDM_EXTREME.rfxchain": {
+      "tags": [
+        "extreme",
+        "glitch",
+        "idm"
+      ],
+      "role": [
+        "fxbus"
+      ],
+      "tone": [],
+      "intensity": "extreme",
+      "safe": false
+    },
+    "FXBus/IDM_Glitch_EXTREME/DF95_FXBus_BitMorph_Pulse_EXTREME.rfxchain": {
+      "tags": [
+        "extreme",
+        "glitch",
+        "idm"
+      ],
+      "role": [
+        "fxbus"
+      ],
+      "tone": [],
+      "intensity": "extreme",
+      "safe": false
+    },
+    "FXBus/IDM_Glitch_EXTREME/DF95_FXBus_PulseSync_Warp_EXTREME.rfxchain": {
+      "tags": [
+        "extreme",
+        "glitch",
+        "idm"
+      ],
+      "role": [
+        "fxbus"
+      ],
+      "tone": [],
+      "intensity": "extreme",
+      "safe": false
+    },
+    "FXBus/IDM_Glitch_EXTREME/DF95_FXBus_IDMHybrid_MorphGrid_EXTREME.rfxchain": {
+      "tags": [
+        "extreme",
+        "glitch",
+        "idm"
+      ],
+      "role": [
+        "fxbus"
+      ],
+      "tone": [],
+      "intensity": "extreme",
+      "safe": false
+    },
+    "FXBus/IDM_Glitch_LIVE/DF95_FXBus_PitchStep_Glitch_LIVE.rfxchain": {
+      "tags": [
+        "glitch",
+        "idm",
+        "live"
+      ],
+      "role": [
+        "fxbus"
+      ],
+      "tone": [],
+      "intensity": "medium",
+      "safe": false
+    },
+    "FXBus/IDM_Glitch_LIVE/DF95_FXBus_FilterMatrix_Looper_LIVE.rfxchain": {
+      "tags": [
+        "glitch",
+        "idm",
+        "live"
+      ],
+      "role": [
+        "fxbus"
+      ],
+      "tone": [],
+      "intensity": "medium",
+      "safe": false
+    },
+    "FXBus/IDM_Glitch_LIVE/DF95_FXBus_GlitchGranular_01_LIVE.rfxchain": {
+      "tags": [
+        "glitch",
+        "idm",
+        "live"
+      ],
+      "role": [
+        "fxbus"
+      ],
+      "tone": [],
+      "intensity": "medium",
+      "safe": false
+    },
+    "FXBus/IDM_Glitch_LIVE/DF95_FXBus_PitchWobble_ModSync_LIVE.rfxchain": {
+      "tags": [
+        "glitch",
+        "idm",
+        "live"
+      ],
+      "role": [
+        "fxbus"
+      ],
+      "tone": [],
+      "intensity": "medium",
+      "safe": false
+    },
+    "FXBus/IDM_Glitch_LIVE/DF95_FXBus_FilterGate_RhythmGlitch_LIVE.rfxchain": {
+      "tags": [
+        "glitch",
+        "idm",
+        "live"
+      ],
+      "role": [
+        "fxbus"
+      ],
+      "tone": [],
+      "intensity": "medium",
+      "safe": false
+    },
+    "FXBus/IDM_Glitch_LIVE/DF95_FXBus_SpectralDeform_01_LIVE.rfxchain": {
+      "tags": [
+        "glitch",
+        "idm",
+        "live",
+        "spectral"
+      ],
+      "role": [
+        "fxbus"
+      ],
+      "tone": [],
+      "intensity": "medium",
+      "safe": false
+    },
+    "FXBus/IDM_Glitch_LIVE/DF95_FXBus_StutterMorph_IDM_LIVE.rfxchain": {
+      "tags": [
+        "glitch",
+        "idm",
+        "live"
+      ],
+      "role": [
+        "fxbus"
+      ],
+      "tone": [],
+      "intensity": "medium",
+      "safe": false
+    },
+    "FXBus/IDM_Glitch_LIVE/DF95_FXBus_BitMorph_Pulse_LIVE.rfxchain": {
+      "tags": [
+        "glitch",
+        "idm",
+        "live"
+      ],
+      "role": [
+        "fxbus"
+      ],
+      "tone": [],
+      "intensity": "medium",
+      "safe": false
+    },
+    "FXBus/IDM_Glitch_LIVE/DF95_FXBus_PulseSync_Warp_LIVE.rfxchain": {
+      "tags": [
+        "glitch",
+        "idm",
+        "live"
+      ],
+      "role": [
+        "fxbus"
+      ],
+      "tone": [],
+      "intensity": "medium",
+      "safe": false
+    },
+    "FXBus/IDM_Glitch_LIVE/DF95_FXBus_IDMHybrid_MorphGrid_LIVE.rfxchain": {
+      "tags": [
+        "glitch",
+        "idm",
+        "live"
+      ],
+      "role": [
+        "fxbus"
+      ],
+      "tone": [],
+      "intensity": "medium",
+      "safe": false
+    },
+    "FXBus/IDM_Clicks/Bus_IDM_ClicksPops_Clean_01.rfxchain": {
+      "tags": [
+        "idm",
+        "clicks",
+        "pops",
+        "clean",
+        "bright"
+      ],
+      "role": [
+        "fxbus"
+      ],
+      "tone": [],
+      "intensity": "soft",
+      "safe": true
+    },
+    "FXBus/IDM_Clicks/Bus_IDM_ClicksPops_Trash_01.rfxchain": {
+      "tags": [
+        "idm",
+        "clicks",
+        "pops",
+        "trash",
+        "granular"
+      ],
+      "role": [
+        "fxbus"
+      ],
+      "tone": [],
+      "intensity": "extreme",
+      "safe": false
+    },
+    "FXBus/IDM_MicroPerc/Bus_IDM_MicroPerc_01.rfxchain": {
+      "tags": [
+        "idm",
+        "microperc",
+        "drums"
+      ],
+      "role": [
+        "fxbus"
+      ],
+      "tone": [],
+      "intensity": "medium",
+      "safe": true
+    },
+    "FXBus/IDM_Kicks/Bus_IDM_Kicks_Punch_01.rfxchain": {
+      "tags": [
+        "idm",
+        "kick",
+        "drums",
+        "punch"
+      ],
+      "role": [
+        "fxbus"
+      ],
+      "tone": [],
+      "intensity": "medium",
+      "safe": true
+    },
+    "FXBus/IDM_Kicks/Bus_IDM_Kicks_Punch_Safe_01.rfxchain": {
+      "tags": [
+        "idm",
+        "kick",
+        "drums",
+        "punch",
+        "safe"
+      ],
+      "role": [
+        "fxbus"
+      ],
+      "tone": [],
+      "intensity": "soft",
+      "safe": true
+    },
+    "FXBus/IDM_Kicks/Bus_IDM_Kicks_Punch_Extreme_01.rfxchain": {
+      "tags": [
+        "idm",
+        "kick",
+        "drums",
+        "punch",
+        "granular",
+        "extreme"
+      ],
+      "role": [
+        "fxbus"
+      ],
+      "tone": [],
+      "intensity": "extreme",
+      "safe": false
+    },
+    "FXBus/IDM_Snares/Bus_IDM_Snares_Snap_01.rfxchain": {
+      "tags": [
+        "idm",
+        "snare",
+        "drums",
+        "snap"
+      ],
+      "role": [
+        "fxbus"
+      ],
+      "tone": [],
+      "intensity": "medium",
+      "safe": true
+    },
+    "FXBus/IDM_Snares/Bus_IDM_Snares_Snap_Safe_01.rfxchain": {
+      "tags": [
+        "idm",
+        "snare",
+        "drums",
+        "snap",
+        "safe"
+      ],
+      "role": [
+        "fxbus"
+      ],
+      "tone": [],
+      "intensity": "soft",
+      "safe": true
+    },
+    "FXBus/IDM_Snares/Bus_IDM_Snares_Snap_Extreme_01.rfxchain": {
+      "tags": [
+        "idm",
+        "snare",
+        "drums",
+        "snap",
+        "granular",
+        "extreme"
+      ],
+      "role": [
+        "fxbus"
+      ],
+      "tone": [],
+      "intensity": "extreme",
+      "safe": false
+    },
+    "FXBus/IDM_Hats/Bus_IDM_Hats_Air_01.rfxchain": {
+      "tags": [
+        "idm",
+        "hats",
+        "drums",
+        "bright",
+        "air"
+      ],
+      "role": [
+        "fxbus"
+      ],
+      "tone": [],
+      "intensity": "medium",
+      "safe": true
+    },
+    "FXBus/IDM_Hats/Bus_IDM_Hats_Air_Safe_01.rfxchain": {
+      "tags": [
+        "idm",
+        "hats",
+        "drums",
+        "bright",
+        "air",
+        "safe"
+      ],
+      "role": [
+        "fxbus"
+      ],
+      "tone": [],
+      "intensity": "soft",
+      "safe": true
+    },
+    "FXBus/IDM_Hats/Bus_IDM_Hats_Air_Extreme_01.rfxchain": {
+      "tags": [
+        "idm",
+        "hats",
+        "drums",
+        "bright",
+        "air",
+        "stereo",
+        "extreme"
+      ],
+      "role": [
+        "fxbus"
+      ],
+      "tone": [],
+      "intensity": "extreme",
+      "safe": false
+    }
+  },
+  "Coloring": {
+    "Coloring/Artists/AphexTwin/AT_Drukqs_Perc_Snap.rfxchain": {
+      "tags": [
+        "aphex"
+      ],
+      "role": [
+        "coloring"
+      ],
+      "tone": [],
+      "intensity": "medium",
+      "safe": false
+    },
+    "Coloring/Artists/Arovane/Arovane_Airy_Scapes_Color.rfxchain": {
+      "tags": [],
+      "role": [
+        "coloring"
+      ],
+      "tone": [],
+      "intensity": "medium",
+      "safe": false
+    },
+    "Coloring/Artists/Autechre/AE_MetalFM_Crunch_Bus.rfxchain": {
+      "tags": [
+        "autechre",
+        "fm",
+        "metallic"
+      ],
+      "role": [
+        "coloring"
+      ],
+      "tone": [],
+      "intensity": "medium",
+      "safe": false
+    },
+    "Coloring/Artists/Autechre/AE_Sparse_Glitch_Glue.rfxchain": {
+      "tags": [
+        "autechre",
+        "fm",
+        "glitch",
+        "metallic"
+      ],
+      "role": [
+        "coloring"
+      ],
+      "tone": [],
+      "intensity": "medium",
+      "safe": false
+    },
+    "Coloring/Artists/BoardsOfCanada/BoC_Sunny_Tape_Glow.rfxchain": {
+      "tags": [
+        "boc",
+        "tape"
+      ],
+      "role": [
+        "coloring"
+      ],
+      "tone": [
+        "warm"
+      ],
+      "intensity": "medium",
+      "safe": false
+    },
+    "Coloring/Artists/Moderat/Moderat_Minimal_FilmTone.rfxchain": {
+      "tags": [],
+      "role": [
+        "coloring"
+      ],
+      "tone": [],
+      "intensity": "medium",
+      "safe": false
+    },
+    "Coloring/Artists/Plaid/Plaid_Warm_Chords_Shimmer.rfxchain": {
+      "tags": [
+        "warm"
+      ],
+      "role": [
+        "coloring"
+      ],
+      "tone": [
+        "warm"
+      ],
+      "intensity": "medium",
+      "safe": false
+    },
+    "Coloring/Artists/Proem/Proem_Grain_SoftSat.rfxchain": {
+      "tags": [],
+      "role": [
+        "coloring"
+      ],
+      "tone": [],
+      "intensity": "medium",
+      "safe": false
+    },
+    "Coloring/Artists/Squarepusher/SP_JazzBass_Drive_Glue.rfxchain": {
+      "tags": [],
+      "role": [
+        "coloring"
+      ],
+      "tone": [],
+      "intensity": "medium",
+      "safe": false
+    },
+    "Coloring/Artists/uZiq/uZiq_Bright_IDM_Glue.rfxchain": {
+      "tags": [
+        "idm"
+      ],
+      "role": [
+        "coloring"
+      ],
+      "tone": [],
+      "intensity": "medium",
+      "safe": false
+    },
+    "Coloring/BoC/Color_BoC_Derez_DitherTape7.rfxchain": {
+      "tags": [
+        "boc",
+        "tape"
+      ],
+      "role": [
+        "coloring"
+      ],
+      "tone": [
+        "warm"
+      ],
+      "intensity": "medium",
+      "safe": false
+    },
+    "Coloring/Glitch/Color_Glitch_Burier_Density2.rfxchain": {
+      "tags": [
+        "glitch"
+      ],
+      "role": [
+        "coloring"
+      ],
+      "tone": [],
+      "intensity": "medium",
+      "safe": false
+    },
+    "Coloring/HighDef/Color_Modern_AO_BritPre_Fetish.rfxchain": {
+      "tags": [
+        "highdef",
+        "modern"
+      ],
+      "role": [
+        "coloring"
+      ],
+      "tone": [],
+      "intensity": "medium",
+      "safe": false
+    },
+    "Coloring/IDM/Color_IDM_Pressure3_DeRez.rfxchain": {
+      "tags": [
+        "idm"
+      ],
+      "role": [
+        "coloring"
+      ],
+      "tone": [],
+      "intensity": "medium",
+      "safe": false
+    },
+    "Coloring/Neutral/Color_Reference_NeutralGain_Capacitor.rfxchain": {
+      "tags": [
+        "neutral"
+      ],
+      "role": [
+        "coloring"
+      ],
+      "tone": [],
+      "intensity": "medium",
+      "safe": false
+    },
+    "Coloring/Spectral/Color_Spectral_Spread_Air_Ambi.rfxchain": {
+      "tags": [
+        "spectral"
+      ],
+      "role": [
+        "coloring"
+      ],
+      "tone": [],
+      "intensity": "medium",
+      "safe": false
+    },
+    "Coloring/Warm/Color_WarmTape_Pressure4_ToTape8.rfxchain": {
+      "tags": [
+        "warm"
+      ],
+      "role": [
+        "coloring"
+      ],
+      "tone": [
+        "warm"
+      ],
+      "intensity": "medium",
+      "safe": false
+    },
+    "Coloring/Wide/Color_Wide_ToTape8_Console8.rfxchain": {
+      "tags": [
+        "wide"
+      ],
+      "role": [
+        "coloring"
+      ],
+      "tone": [
+        "wide"
+      ],
+      "intensity": "medium",
+      "safe": false
+    }
+  },
+  "Master": {
+    "Master/DF95_Master_Fallback_Neutral.rfxchain": {
+      "tags": [
+        "neutral"
+      ],
+      "role": [
+        "master"
+      ],
+      "tone": [],
+      "intensity": "medium",
+      "safe": false
+    },
+    "Master/Neutral_SafeGain.rfxchain": {
+      "tags": [
+        "neutral",
+        "safe"
+      ],
+      "role": [
+        "master"
+      ],
+      "tone": [],
+      "intensity": "safe",
+      "safe": true
+    },
+    "Master/Artist_Neutral_Soft.rfxchain": {
+      "tags": [
+        "neutral"
+      ],
+      "role": [
+        "master"
+      ],
+      "tone": [],
+      "intensity": "medium",
+      "safe": false
+    },
+    "Master/Club_Safe_Loud.rfxchain": {
+      "tags": [
+        "safe"
+      ],
+      "role": [
+        "master"
+      ],
+      "tone": [],
+      "intensity": "safe",
+      "safe": true
+    },
+    "Master/BoC/Master_BoC_Vintage_TapeSoft.rfxchain": {
+      "tags": [
+        "boc",
+        "tape"
+      ],
+      "role": [
+        "master"
+      ],
+      "tone": [
+        "warm"
+      ],
+      "intensity": "medium",
+      "safe": false
+    },
+    "Master/IDM/Master_IDM_Transientsafe_Clean.rfxchain": {
+      "tags": [
+        "clean",
+        "idm",
+        "safe"
+      ],
+      "role": [
+        "master"
+      ],
+      "tone": [],
+      "intensity": "soft",
+      "safe": true
+    },
+    "Master/Modern/Master_Modern_Loud_Burier_Air.rfxchain": {
+      "tags": [
+        "modern"
+      ],
+      "role": [
+        "master"
+      ],
+      "tone": [],
+      "intensity": "medium",
+      "safe": false
+    },
+    "Master/Neutral/Master_Neutral_SafeGain_Limiter.rfxchain": {
+      "tags": [
+        "neutral",
+        "safe"
+      ],
+      "role": [
+        "master"
+      ],
+      "tone": [],
+      "intensity": "safe",
+      "safe": true
+    },
+    "Master/Spectral/Master_Spectral_Balance.rfxchain": {
+      "tags": [
+        "spectral"
+      ],
+      "role": [
+        "master"
+      ],
+      "tone": [],
+      "intensity": "medium",
+      "safe": false
+    },
+    "Master/Warm/Master_AO_WarmBus_ToTape8.rfxchain": {
+      "tags": [
+        "warm"
+      ],
+      "role": [
+        "master"
+      ],
+      "tone": [
+        "warm"
+      ],
+      "intensity": "medium",
+      "safe": false
+    },
+    "Master/Wide/Master_Wide_Console8_Finalizer.rfxchain": {
+      "tags": [
+        "wide"
+      ],
+      "role": [
+        "master"
+      ],
+      "tone": [
+        "wide"
+      ],
+      "intensity": "medium",
+      "safe": false
+    }
+  }
+}

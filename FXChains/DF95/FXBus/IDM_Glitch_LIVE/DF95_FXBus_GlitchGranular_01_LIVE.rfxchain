@@ -1,0 +1,14 @@
+// META:category=FXBus
+// META:style=idm_glitch
+// META:seed_lock=ExtState:DF95_SEED_LOCK
+// META:mgm_range_db=0.5
+// META:lufs_target=-15.0
+// META:ceiling=-0.8
+// META:notes=auto-variant
+// META:variant=live
+// META:cpu=light
+// META:plugins=JS+ReaFX only
+<JS: stepfilter>
+<VST "VST: ReaPitch (Cockos)" reapitch.dll>
+<VST "VST: ReaDelay (Cockos)" readelay.dll>
+<JS: volume/pan smoother v5>

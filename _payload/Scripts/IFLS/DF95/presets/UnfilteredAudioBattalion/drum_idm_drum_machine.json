@@ -1,0 +1,13 @@
+{
+  "version": 1,
+  "synth_id": "ua_battalion",
+  "role": "drum",
+  "variant": "idm_drum_machine",
+  "description": "ua_battalion IDM Drum Machine",
+  "params": {
+    "amp_env.attack": 0.0,
+    "amp_env.decay": 0.16,
+    "amp_env.sustain": 0.0,
+    "amp_env.release": 0.18
+  }
+}

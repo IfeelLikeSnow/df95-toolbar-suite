@@ -1,0 +1,170 @@
+IFLS – Phase 91: Rhythm Transformation & Morphing
+===============================================
+
+Goal
+----
+
+Add a pattern-level creative layer that can morph existing drum patterns
+toward rhythm "styles" (IDM, broken beat, late snares, etc.) with a
+continuous amount control. It sits on top of your existing BeatEngine
+and plays nicely with Groove (Phase 87) and MicroSlice (Phase 88).
+
+Files
+-----
+
+1) IFLS_RhythmStyles.lua
+   ----------------------
+   * Defines abstract rhythm style templates with:
+       - resolution  (steps per bar, e.g. 16)
+       - instruments (kick/snare/hat/perc -> prob & accent arrays)
+       - meta        (complexity, density)
+
+   * Included styles:
+       - Straight_4onFloor
+       - BrokenBeat_Stumble
+       - IDM_Chaos
+       - Dilla_LateSnare
+
+   * API:
+       local RhythmStyles = require("IFLS_RhythmStyles")
+       local list  = RhythmStyles.list()
+       local style = RhythmStyles.get("IDM_Chaos")
+       RhythmStyles.add(custom_style)
+
+
+2) IFLS_RhythmMorpher.lua
+   -----------------------
+   * Morphs a pattern toward a style with parameters:
+
+       local RhythmMorpher = require("IFLS_RhythmMorpher")
+
+       local new_pattern = RhythmMorpher.morph(pattern, "IDM_Chaos", 0.75, {
+         instruments       = {"kick","snare","hat","perc"},
+         density_bias      = 0.2,   -- -1..+1
+         preserve_existing = true,  -- existing hits not reduced
+       })
+
+   * Pattern format (adapter-friendly):
+
+       pattern = {
+         resolution  = 16,
+         length_bars = 1,
+         tracks = {
+           kick  = { steps = { [1]={hit=true, vel=110}, [9]={...}, ... } },
+           snare = { ... },
+           hat   = { ... },
+           perc  = { ... },
+         }
+       }
+
+   * Internally:
+       1) pattern_to_grid: instrument -> step grid (0..1)
+       2) style_grid: from style.prob + style.accent
+       3) Interpolation:
+            out = (1-amount)*pattern_grid + amount*style_grid
+       4) Thresholding with density_bias to get hits back.
+
+
+3) IFLS_RhythmMorph_DebugDemo.lua
+   -------------------------------
+   * Builds a straight 4-on-the-floor pattern.
+   * Morphs toward IDM_Chaos with amount=0.5 / 1.0.
+   * Prints step patterns to REAPER console.
+   * Use to verify behaviour and integration.
+
+
+Integration
+-----------
+
+A) Files ins Repo
+   --------------
+   * Kopiere alle drei Dateien in dein IFLS/DF95 Lua-Modulverzeichnis.
+   * Stelle sicher, dass require() von BeatEngine/BeatControlCenter aus
+     funktioniert.
+
+B) Adapter zu deiner BeatEngine
+   ----------------------------
+   * Definiere zwei Adapterfunktionen:
+
+       function BeatEngine.to_rhythm_pattern(beat_pattern)
+         -- mappe deine interne Struktur -> {resolution, length_bars, tracks{inst.steps}}
+       end
+
+       function BeatEngine.from_rhythm_pattern(rhythm_pattern)
+         -- mappe zurück in deine BeatEngine-Struktur
+       end
+
+   * Typischer Ablauf:
+
+       local rp = BeatEngine.to_rhythm_pattern(current_pattern)
+
+       rp = RhythmMorpher.morph(rp, selected_style, amount, {
+         instruments       = user_selected_instruments,
+         density_bias      = user_density,
+         preserve_existing = user_preserve,
+       })
+
+       local new_pattern = BeatEngine.from_rhythm_pattern(rp)
+       BeatEngine.replace_pattern(track, new_pattern)
+
+
+C) BeatControlCenter UI
+   ---------------------
+   * Füge im BeatControlCenter hinzu:
+       - Dropdown "Rhythm Style" (befüllt mit RhythmStyles.list()).
+       - Slider "Morph Amount" (0..100%).
+       - Slider "Density" (-100%..+100%).
+       - Checkbox "Preserve Existing Hits".
+       - Buttons "Preview Morph" und "Apply Morph".
+
+   * Workflow:
+       1) User erstellt oder lädt Pattern.
+       2) Wählt Style + Amount + Density.
+       3) Klickt auf "Preview" (Pattern temporär morphed).
+       4) Bestätigt mit "Apply".
+
+
+D) Zusammenspiel mit anderen Phasen
+   --------------------------------
+   * Empfohlene Reihenfolge:
+       1) Pattern generieren / importieren (BeatEngine).
+       2) RhythmMorpher.morph -> strukturelle Pattern-Veränderung.
+       3) Groove (Phase 87) -> Timing/Feel.
+       4) Humanize -> zusätzliche Varianz.
+       5) MicroSlice / Onset-Fusion (Phase 88) für Audio-Loops.
+       6) FX-Chain Recommender (Phase 89) für Sounddesign pro Instrument.
+       7) SampleGalaxy (Phase 90) für Sample-Tausch & ähnliche Sounds.
+
+   * So bleibt die Trennung:
+       - RhythmMorpher: WELCHE Steps sind aktiv?
+       - Groove/Humanize: WANN und WIE genau (Mikrotiming/Velocity)?
+       - Slices/Samples: WIE klingt das Material?
+       - FX: WIE wird es gefärbt/verfremdet?
+
+
+Nächster sinnvoller Schritt
+---------------------------
+
+Mit Phase 91 ist der Pattern-Level jetzt kreativ sehr stark. Der nächste
+große Hebel ist, das Ganze UX-mäßig zusammenzuführen:
+
+  ► Phase 92 – Macro-Controls & Scene-Presets
+
+Ideen:
+
+  * Globale Makro-Regler im ArtistHub:
+       - "Glitch Intensity"  -> beeinflusst MicroSlice-Mode, RhythmMorph
+         Amount, FX-Glitch-Flavors.
+       - "Rhythm Chaos"      -> steuert RhythmMorph-Stil + Density.
+       - "Texture Depth"     -> steuert FX-Texture-Slots + SampleGalaxy
+         Filter (mehr/noisier/granular).
+       - "Human vs Robot"    -> skaliert GrooveAmount + Humanize.
+
+  * Scene-Presets:
+       - speichern/laden von:
+           Artist + Flavor + GrooveProfile + RhythmStyle +
+           FXChainConfig + SampleGalaxy-Filter
+       - Schnellumschaltung kompletter IDM-Szenen live im Set.
+
+Diese Phase wäre vor allem UI-/Macro-orientiert und würde die bisherigen
+Analyse- und Kreativmodule in performancetaugliche Workflows bündeln.

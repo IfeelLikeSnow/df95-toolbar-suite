@@ -1,0 +1,18 @@
+{
+  "version": 1,
+  "synth_id": "surge_xt",
+  "role": "fx",
+  "variant": "idm_glitch_soft",
+  "description": "Surge XT fx idm glitch soft",
+  "params": {
+    "sceneA.amp_env.attack": 0.01,
+    "sceneA.amp_env.decay": 0.2,
+    "sceneA.amp_env.sustain": 0.5,
+    "sceneA.amp_env.release": 0.25,
+    "sceneA.filter_env.attack": 0.0,
+    "sceneA.filter_env.decay": 0.18,
+    "sceneA.filter_env.sustain": 0.0,
+    "sceneA.filter_env.release": 0.22,
+    "sceneA.filter1.cutoff": 0.65
+  }
+}

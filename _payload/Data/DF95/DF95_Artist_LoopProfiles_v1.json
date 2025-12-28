@@ -1,0 +1,125 @@
+{
+  "version": 1,
+  "defaults": {
+    "bars": 4,
+    "variation_density": 0.5,
+    "target_tempo_behavior": "artist_default"
+  },
+  "artists": {
+    "autechre": {
+      "bars": 8,
+      "variation_density": 0.9,
+      "target_tempo_behavior": "fast_idm"
+    },
+    "aphex_twin": {
+      "bars": 8,
+      "variation_density": 0.7,
+      "target_tempo_behavior": "mid_idm"
+    },
+    "boards_of_canada": {
+      "bars": 4,
+      "variation_density": 0.4,
+      "target_tempo_behavior": "slow_idm"
+    },
+    "venetian_snares": {
+      "bars": 8,
+      "variation_density": 0.9,
+      "target_tempo_behavior": "fast_idm"
+    },
+    "burial": {
+      "bars": 4,
+      "variation_density": 0.4,
+      "target_tempo_behavior": "slow_idm"
+    },
+    "four_tet": {
+      "bars": 8,
+      "variation_density": 0.5,
+      "target_tempo_behavior": "mid_idm"
+    },
+    "amon_tobin": {
+      "bars": 8,
+      "variation_density": 0.7,
+      "target_tempo_behavior": "mid_idm"
+    },
+    "mu_ziq": {
+      "bars": 8,
+      "variation_density": 0.7,
+      "target_tempo_behavior": "mid_idm"
+    },
+    "squarepusher": {
+      "bars": 8,
+      "variation_density": 0.9,
+      "target_tempo_behavior": "fast_idm"
+    },
+    "moderat": {
+      "bars": 8,
+      "variation_density": 0.5,
+      "target_tempo_behavior": "mid_idm"
+    },
+    "apparat": {
+      "bars": 8,
+      "variation_density": 0.5,
+      "target_tempo_behavior": "mid_idm"
+    },
+    "matmos": {
+      "bars": 8,
+      "variation_density": 0.7,
+      "target_tempo_behavior": "mid_idm"
+    },
+    "flying_lotus": {
+      "bars": 8,
+      "variation_density": 0.7,
+      "target_tempo_behavior": "mid_idm"
+    },
+    "arovane": {
+      "bars": 8,
+      "variation_density": 0.7,
+      "target_tempo_behavior": "mid_idm"
+    },
+    "proem": {
+      "bars": 8,
+      "variation_density": 0.7,
+      "target_tempo_behavior": "mid_idm"
+    },
+    "telefon_tel_aviv": {
+      "bars": 8,
+      "variation_density": 0.5,
+      "target_tempo_behavior": "mid_idm"
+    },
+    "styrofoam": {
+      "bars": 4,
+      "variation_density": 0.4,
+      "target_tempo_behavior": "slow_idm"
+    },
+    "jega": {
+      "bars": 8,
+      "variation_density": 0.9,
+      "target_tempo_behavior": "fast_idm"
+    },
+    "monoceros": {
+      "bars": 4,
+      "variation_density": 0.4,
+      "target_tempo_behavior": "slow_idm"
+    },
+    "clark": {
+      "bars": 8,
+      "variation_density": 0.5,
+      "target_tempo_behavior": "mid_idm"
+    },
+    "ben_frost": {
+      "bars": 4,
+      "variation_density": 0.4,
+      "target_tempo_behavior": "slow_idm"
+    },
+    "tim_hecker": {
+      "bars": 4,
+      "variation_density": 0.4,
+      "target_tempo_behavior": "slow_idm"
+    },
+    "mouse_on_mars": {
+      "bars": 8,
+      "variation_density": 0.9,
+      "target_tempo_behavior": "fast_idm"
+    }
+  }
+}

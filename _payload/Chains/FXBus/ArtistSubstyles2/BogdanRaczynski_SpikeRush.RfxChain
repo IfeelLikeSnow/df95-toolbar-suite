@@ -1,0 +1,7 @@
+<FXCHAIN SHOW 0 LASTSEL 0 DOCKED 0>
+<FX VST "VST3" "Fracture" "" 0 WET 0 1.00 >
+<FX VST "VST3" "Hysteresis" "" 0 WET 0 1.00 >
+<FX VST "VST3" "Krush" "" 0 WET 0 1.00 >
+<FX VST "VST3" "ReaLimit (Cockos)" "" 0 WET 0 1.00 >
+<JS "JS: Volume Adjustment">
+<JS "JS: Volume Adjustment">

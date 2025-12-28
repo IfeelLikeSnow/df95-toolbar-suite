@@ -1,0 +1,19 @@
+{
+  "version": 1,
+  "synth_id": "vital",
+  "role": "bass",
+  "variant": "idm_sub_soft",
+  "description": "Vital bass deep idm sub soft",
+  "params": {
+    "amp_env.attack": 0.02,
+    "amp_env.decay": 0.28,
+    "amp_env.sustain": 0.88,
+    "amp_env.release": 0.22,
+    "filter.cutoff": 0.25,
+    "filter.resonance": 0.1,
+    "macros.1": 0.35,
+    "macros.2": 0.2,
+    "macros.3": 0.55,
+    "macros.4": 0.3
+  }
+}

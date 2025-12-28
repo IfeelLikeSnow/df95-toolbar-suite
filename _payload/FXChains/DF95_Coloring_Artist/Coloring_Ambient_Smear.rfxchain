@@ -1,0 +1,21 @@
+<REAPER_FXCHAIN
+SHOW 0
+LASTSEL 0
+DOCKED 0
+
+<FX
+BYPASS 0 0 0
+VST "DF95_META" "GSatPlus (TBProAudio)" 0
+>
+
+<FX
+BYPASS 0 0 0
+VST "DF95_META" "Blindfold EQ (AudioThing)" 0
+>
+
+<FX
+BYPASS 0 0 0
+VST "DF95_META" "Fire (Wings)" 0
+>
+
+>

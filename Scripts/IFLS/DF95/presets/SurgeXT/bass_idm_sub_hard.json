@@ -1,0 +1,18 @@
+{
+  "version": 1,
+  "synth_id": "surge_xt",
+  "role": "bass",
+  "variant": "idm_sub_hard",
+  "description": "Surge XT bass deep idm sub hard",
+  "params": {
+    "sceneA.amp_env.attack": 0.0,
+    "sceneA.amp_env.decay": 0.22,
+    "sceneA.amp_env.sustain": 0.82,
+    "sceneA.amp_env.release": 0.18,
+    "sceneA.filter_env.attack": 0.0,
+    "sceneA.filter_env.decay": 0.28,
+    "sceneA.filter_env.sustain": 0.0,
+    "sceneA.filter_env.release": 0.18,
+    "sceneA.filter1.cutoff": 0.34
+  }
+}

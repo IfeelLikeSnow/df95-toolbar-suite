@@ -1,0 +1,7 @@
+# DF95_MicToolbar_Input.ReaperMenuSet (DF95 v1.56 Smart Context Flow)
+Item01=Custom: Mic FX
+	SCRIPT: Scripts/IfeelLikeSnow/DF95/Input/DF95_MicFX_Manager.lua
+Item02=Custom: GainMatch A/B
+	SCRIPT: Scripts/IfeelLikeSnow/DF95/Input/DF95_GainMatch_AB.lua
+Item03=Custom: LUFS Meter / AutoTarget
+	SCRIPT: Scripts/IfeelLikeSnow/DF95/Input/DF95_LUFS_AutoTarget.lua

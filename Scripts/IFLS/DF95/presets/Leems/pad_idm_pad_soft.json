@@ -1,0 +1,15 @@
+{
+  "version": 1,
+  "synth_id": "leems",
+  "role": "pad",
+  "variant": "idm_pad_soft",
+  "description": "leems pad idm_pad_soft",
+  "params": {
+    "amp_env.attack": 0.35,
+    "amp_env.decay": 0.55,
+    "amp_env.sustain": 0.98,
+    "amp_env.release": 0.9,
+    "filter.cutoff": 0.48,
+    "filter.resonance": 0.18
+  }
+}

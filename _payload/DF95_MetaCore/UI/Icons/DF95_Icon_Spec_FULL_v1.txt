@@ -1,0 +1,118 @@
+DF95 V31 Icon Specification — DarkNeon IDM / Experimental
+
+Style: A2 (DarkNeon Medium), B3 (Hexagon Tech Style), C3 (IDM / Experimental Mode)
+
+1. FORMAT & TECHNICAL REQUIREMENTS
+- File format: PNG, 32-bit RGBA (transparent background)
+- Color space: sRGB, gamma 2.2
+- DPI: 144 dpi (screen-optimized, crisp on HiDPI)
+- Base size: 90 × 90 px
+- Safe content area: 66 × 66 px (12 px padding on all sides)
+- Background: fully transparent (no solid fill)
+- Edges: soft neon glow (radius 4–8 px) around main hexagon
+- No embedded text in icons.
+- No photographic content; icons must be vector-like and flat.
+
+2. SHAPE LANGUAGE (B3: Hexagon Tech Style)
+- Primary container: regular hexagon (6-sided), oriented flat-top.
+- Edge style: slightly beveled corners (subtle 15° chamfer) to avoid overly sharp feel.
+- Main symbol always centered inside hexagon.
+- Line thickness: 2–4 px at 90×90 resolution.
+- Style: minimal, geometric, tech-inspired.
+
+3. COLOR PSYCHOLOGY & PALETTE (C3: IDM / Experimental Mode)
+Base background reference color (UI context): #05070D (not drawn, just for contrast reference).
+
+Primary neon accent colors by category:
+- Routing / Structure: Electric Indigo #4B5DFF
+- Creative / Slicing / Loops / Rearrange: Neon Cyan #00F6FF
+- Sampler / Kits: Acid Green #6DFF7A
+- QA / LUFS / Safety / Validators: Neon Yellow #FFC94B
+- Destruction / Dangerous / Hard Reset: Neon Magenta #FF2EC9
+- IDM / Glitch / Experimental: Vibrant Purple #B84BFF
+- Export / Distribution / Packs: Bright Orange #FF9E4B
+
+Psychological goals:
+- Cyan / green encourage exploration and reduce anxiety.
+- Indigo anchors “trusted technical operations” (routing, master).
+- Yellow draws attention to analysis and QA.
+- Magenta marks high-salience, potentially disruptive actions.
+- Purple signifies “IDM / experimental zones” (glitch, rearrange).
+- Orange signals outbound actions (export, sharing, distribution).
+
+4. ICON CONTENT GUIDELINES
+- Minimalist, no fine-grain texture.
+- Avoid noisy glitch artifacts inside icons (IDM-ness via color, not dirt).
+- Use 1–2 layers of glow: inner solid icon, outer neon aura.
+- No gradients required, but subtle radial glow allowed.
+- Symbols should be legible at 32×32 when downscaled.
+
+5. FOLDER & NAMING CONVENTION
+All icons for the DF95 V31 DarkNeon theme live under:
+
+Data/toolbar_icons/DF95_v2/dark/
+
+Each icon is named by function:
+
+- routing_explode.png
+- fxbus.png
+- coloring.png
+- master.png
+- micfx.png
+- qa.png
+- slice.png
+- slice_weight.png
+- slice_dynamic.png
+- rearrange.png
+- loop2.png
+- kitwiz.png
+- sampler_c2.png
+- kit_layer.png
+- kit_random.png
+- export_pack.png
+- export_roles.png
+- namingstyle.png
+- auto_tag.png
+- mobilefr_import.png
+- mobilefr_qa.png
+- mobilefr_cleanup.png
+- bias.png
+- lufs.png
+- hub.png
+- meta.png
+- df95_generic.png
+(and more, see Icon_Assignment_Summary.txt and Icon_Assignment.json)
+
+6. MAPPING LOGIC
+- Icons should visually encode the function:
+  - routing_explode.png → hexagon with branching arrows splitting from one node into many.
+  - fxbus.png → hexagon with three connected nodes (hub).
+  - coloring.png → hexagon with small color-swatch / palette marks.
+  - master.png → hexagon with crown + tiny meter bars.
+  - micfx.png → hexagon with mic silhouette and small waveform.
+  - qa.png → hexagon with magnifier + checkmark.
+  - slice.png → hexagon with diagonal blade-like cut.
+  - slice_weight.png → slice icon plus small weight/scale hint.
+  - slice_dynamic.png → slice icon plus motion lines.
+  - rearrange.png → arrows left-right-overlapping.
+  - loop2.png → double-loop / circular arrow.
+  - kitwiz.png → pad grid (3×3) with small wand/spark.
+  - sampler_c2.png → note C2 indicator stylized as low note icon inside hexagon.
+  - export_pack.png → box with arrow outward.
+  - export_roles.png → three smaller boxes with outward arrow.
+  - namingstyle.png → small sliders / toggles inside hexagon (representing choices).
+  - auto_tag.png → tag icon with auto-spark/star.
+  - mobilefr_import.png → smartphone + small waveform arrow into box.
+  - mobilefr_qa.png → smartphone + magnifier/check.
+  - mobilefr_cleanup.png → smartphone + little brush/broom.
+
+7. DELETION / MIGRATION
+- All legacy icons under:
+  Data/toolbar_icons/DF95/
+  should be considered legacy and may be replaced by the DF95_v2 set.
+- If both exist, DF95_v2 is the preferred, modern theme.
+
+8. USAGE NOTES
+- Icons are intended for REAPER toolbars and custom actions.
+- Downscaling to 48×48 and 32×32 should remain visually clean.
+- For secondary themes (light / warm_flat), the same icon_base names should be reused with different color palettes and background contrast.

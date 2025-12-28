@@ -1,0 +1,15 @@
+<FXCHAIN SHOW 0 LASTSEL 0 DOCKED 0>
+// META:category=FXBus
+// META:material=drums
+// META:role=drum_bus
+// META:mood=tape_glue_idm
+// META:lufs_target=-10.5
+// META:ceiling=-0.8
+<FX JS "Volume Adjustment" 0 WET 0 1.00 >
+<FX VST "VST" "ToTape8" "" 0 WET 0 1.00 >
+<FX VST "VST3" "Beat Slammer" "" 0 WET 0 1.00 >
+<FX VST "VST3" "ReaEQ (Cockos)" "" 0 WET 0 1.00 >
+<FX VST "VST3" "ReaLimit (Cockos)" "" 0 WET 0 1.00 >
+<FX JS "Loudness Meter Peak/RMS" 0 WET 0 1.00 >
+<JS "JS: Volume Adjustment">
+<JS "JS: Volume Adjustment">

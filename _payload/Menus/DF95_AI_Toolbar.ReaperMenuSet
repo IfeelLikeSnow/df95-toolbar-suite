@@ -1,0 +1,28 @@
+# DF95 AI FXChains / ArtistFXBrain Toolbar
+
+Item01=Custom: DF95 – AI ArtistFXBrain (ImGui)
+	SCRIPT: Scripts/IfeelLikeSnow/DF95/DF95_AI_ArtistFXBrain_ImGui.lua
+
+Item02=Custom: DF95 – Build FXChain Index
+	SCRIPT: Scripts/IfeelLikeSnow/DF95/DF95_FXChains_Index_Builder.lua
+
+Item03=Custom: DF95 – Enrich FXChain Index
+	SCRIPT: Scripts/IfeelLikeSnow/DF95/DF95_FXChains_Index_Enricher.lua
+
+Item04=Custom: DF95 – AI FXChain FullAuto From AIResult
+	SCRIPT: Scripts/IfeelLikeSnow/DF95/DF95_AI_FXChain_FullAuto_From_AIResult.lua
+
+Item05=Custom: DF95 – AI FXChain Apply From AIResult (Resolver only)
+	SCRIPT: Scripts/IfeelLikeSnow/DF95/DF95_AI_FXChain_From_AIResult.lua
+
+Item06=Custom: DF95 – AI FXChain Apply From ExtState (Chunk Loader)
+	SCRIPT: Scripts/IfeelLikeSnow/DF95/DF95_AI_ApplyFXChain_FromExtState.lua
+
+Item07=Custom: DF95 – AI FXChain FullAuto TrackSelection Watcher
+	SCRIPT: Scripts/IfeelLikeSnow/DF95/DF95_AI_FXChain_FullAuto_TrackSelect.lua
+
+Item08=Custom: DF95 – Build AI FXChain BatchRequest (Selection)
+	SCRIPT: Scripts/IfeelLikeSnow/DF95/DF95_AI_FXChain_BatchRequest_FromSelection.lua
+
+Item09=Custom: DF95 – Apply AI FXMacros From AIResult
+	SCRIPT: Scripts/IfeelLikeSnow/DF95/DF95_AI_FXMacro_Apply_From_AIResult.lua

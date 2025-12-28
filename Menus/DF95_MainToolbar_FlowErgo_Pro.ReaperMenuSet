@@ -1,0 +1,57 @@
+# DF95_MainToolbar_FlowErgo_Pro.ReaperMenuSet (DF95 v1.56 Smart Context Flow)
+Item01=Custom: Explode AutoBus
+	SCRIPT: Scripts/IfeelLikeSnow/DF95/DF95_Explode_AutoBus.lua
+Item02=Custom: FX Bus
+	SCRIPT: Scripts/IfeelLikeSnow/DF95/DF95_FXBus_Selector.lua
+Item=Custom: FX Bus Chains
+	SCRIPT: Scripts/IfeelLikeSnow/DF95/DF95_FXBus_Chains_ImGui.lua
+Item03=Custom: Coloring
+	SCRIPT: Scripts/IfeelLikeSnow/DF95/DF95_ColoringBus_Selector.lua
+Item04=Custom: Master Bus
+	SCRIPT: Scripts/IfeelLikeSnow/DF95/DF95_MasterBus_Selector.lua
+Item=Custom: Master Chains
+	SCRIPT: Scripts/IfeelLikeSnow/DF95/DF95_Master_Chains_ImGui.lua
+Item=Custom: Toolbar Switcher (DF95 Toolbars)
+	SCRIPT: Scripts/IfeelLikeSnow/DF95/DF95_Menu_ToolbarSwitcher_ImGui.lua
+Item=Custom: Mic FX
+	SCRIPT: Scripts/IfeelLikeSnow/DF95/Tools/DF95_MicFX_Profile_GUI.lua
+Item=Custom: FX Seed
+	SCRIPT: Scripts/IfeelLikeSnow/DF95/DF95_FXBus_Seed.lua
+Item=Custom: Coloring Bus
+	SCRIPT: Scripts/IfeelLikeSnow/DF95/Core/DF95_Menu_Coloring_Dropdown_v2b.lua
+Item=Custom: Coloring A/B (GainMatch)
+	SCRIPT: Scripts/IfeelLikeSnow/DF95/DF95_GainMatch_AB.lua
+Item=Custom: Bias Neutral
+	SCRIPT: Scripts/IfeelLikeSnow/DF95/Tools/DF95_BiasSnapshot_Neutral.lua
+Item=Custom: Bias IDM
+	SCRIPT: Scripts/IfeelLikeSnow/DF95/Tools/DF95_BiasSnapshot_IDM.lua
+Item=Custom: Bias Glitch
+	SCRIPT: Scripts/IfeelLikeSnow/DF95/Tools/DF95_BiasSnapshot_Glitch.lua
+Item=Custom: Bias BoC Warm
+	SCRIPT: Scripts/IfeelLikeSnow/DF95/Tools/DF95_BiasSnapshot_BoC_Warm.lua
+Item=Custom: Slicing (Weighted)
+	SCRIPT: Scripts/IfeelLikeSnow/DF95/Core/DF95_Slice_Menu_Weighted.lua
+Item=Custom: Rearrange / Align
+	SCRIPT: Scripts/IfeelLikeSnow/DF95/DF95_Rearrange_Align.lua
+Item=Custom: Loop / Rhythm Builder
+	SCRIPT: Scripts/IfeelLikeSnow/DF95/DF95_LoopBuilder.lua
+Item=Custom: MissingPlugin Reporter
+	SCRIPT: Scripts/IfeelLikeSnow/DF95/Tools/DF95_MissingPlugin_Reporter.lua
+Item=Custom: MissingPlugin AutoPatch
+	SCRIPT: Scripts/IfeelLikeSnow/DF95/Tools/DF95_MissingPlugin_AutoPatch.lua
+Item=Custom: META Bulk Wizard
+	SCRIPT: Scripts/IfeelLikeSnow/DF95/Tools/DF95_META_Bulk_Wizard.lua
+Item=Custom: META Helper GUI
+	SCRIPT: Scripts/IfeelLikeSnow/DF95/Tools/DF95_META_Helper_GUI.lua
+Item=Custom: AutoColor Tracks
+	SCRIPT: Scripts/IfeelLikeSnow/DF95/DF95_AutoColor_Tracks_ByRole.lua
+Item=Custom: Reset Track Colors
+	SCRIPT: Scripts/IfeelLikeSnow/DF95/DF95_Reset_TrackColors_All.lua
+Item=Custom: Export (UCS)
+	SCRIPT: Scripts/IfeelLikeSnow/DF95/DF95_Export_UCS_MasterButton.lua
+
+Item=
+Item=Custom: Reamp Hub
+	SCRIPT: Scripts/IfeelLikeSnow/DF95/DF95_Reamp_Hub_ImGui.lua
+
+Item=

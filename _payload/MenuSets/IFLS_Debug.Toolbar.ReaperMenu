@@ -1,0 +1,40 @@
+[toolbar]
+title=IFLS Dev / Debug
+
+; IFLS Dev / Debug Toolbar – Phase 94
+; Sammlung der wichtigen Debug-/Demo-Tools.
+
+; 0: Diagnostics Dump (Phase 93 – Log + PerfProbe Dump)
+;    z.B. Script: IFLS_Diagnostics_Dump_ToConsole.lua
+ACT 0 0 _RS_IFLS_DIAG_DUMP
+ITEM 0 Diagnostics Dump
+
+; 1: Macros / Derived Snapshot to Console
+;    z.B. Script: IFLS_Macros_DebugDump.lua
+ACT 1 0 _RS_IFLS_MACROS_DEBUGDUMP
+ITEM 1 Macros DebugDump
+
+; 2: RhythmMorph Debug Demo (Phase 91)
+;    IFLS_RhythmMorph_DebugDemo.lua
+ACT 2 0 _RS_IFLS_RHYTHMMORPH_DEBUGDEMO
+ITEM 2 RhythmMorph Debug Demo
+
+; 3: SampleGalaxy Debug Demo (Phase 90)
+;    IFLS_SampleGalaxy_DebugDemo.lua
+ACT 3 0 _RS_IFLS_SAMPLEGALAXY_DEBUGDEMO
+ITEM 3 SampleGalaxy Debug Demo
+
+; 4: FXChain Recommender Debug Demo (Phase 89)
+;    IFLS_FXChainRecommender_DebugDemo.lua
+ACT 4 0 _RS_IFLS_FXCHAIN_DEBUGDEMO
+ITEM 4 FXChain Debug Demo
+
+; 5: FlavorState / Flavor Viz Debug Demo (Phase 86)
+;    IFLS_FlavorState_DebugDemo.lua (oder ähnlich)
+ACT 5 0 _RS_IFLS_FLAVOR_DEBUGDEMO
+ITEM 5 FlavorState Debug Demo
+
+; 6: GrooveSystem Debug Demo (Phase 87)
+;    IFLS_GrooveSystem_DebugDemo.lua
+ACT 6 0 _RS_IFLS_GROOVE_DEBUGDEMO
+ITEM 6 GrooveSystem Debug Demo

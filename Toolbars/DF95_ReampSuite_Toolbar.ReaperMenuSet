@@ -1,0 +1,13 @@
+# DF95 ReampSuite Toolbar
+Item01=Custom: ReampSuite GUI
+	SCRIPT: Scripts/IfeelLikeSnow/DF95/ReampSuite/DF95_ReampSuite_MainGUI.lua
+Item02=
+Item03=Custom: ReampSuite – Profil wählen
+	SCRIPT: Scripts/IfeelLikeSnow/DF95/ReampSuite/DF95_ReampSuite_Router.lua
+Item04=Custom: ReampSuite – Pedal Chains
+	SCRIPT: Scripts/IfeelLikeSnow/DF95/ReampSuite/DF95_ReampSuite_PedalChains_GUI.lua
+Item05=Custom: ReampSuite – Latency Helper
+	SCRIPT: Scripts/IfeelLikeSnow/DF95/ReampSuite/DF95_ReampSuite_LatencyHelper.lua
+Item06=
+Item07=Custom: V71 Reamp Router (HW Routing)
+	SCRIPT: Scripts/IfeelLikeSnow/DF95/DF95_V71_ReampRouter.lua

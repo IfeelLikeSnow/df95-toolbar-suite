@@ -1,0 +1,286 @@
+IFLS – Phase 92: Macro Controls & Scene Presets
+==============================================
+
+Goal
+----
+
+Unify your existing IFLS subsystems (Flavors, Groove, RhythmMorph,
+MicroSlice, FX Recommender, SampleGalaxy) under a small set of
+*global macro controls* and *scene presets* to make the engine
+fast, playable, and performance-friendly.
+
+Macros provide high-level knobs; scenes capture the overall state.
+
+
+Files in this package
+---------------------
+
+1) IFLS_MacroControls.lua
+   -----------------------
+   * Global macro controls (stored in project ExtState):
+
+       glitch_intensity : 0..1  (how glitchy/micro-sliced & FX-glitchy)
+       rhythm_chaos     : 0..1  (how far patterns morph from straight)
+       texture_depth    : 0..1  (how heavy/wet FX & textures)
+       human_vs_robot   : 0..1  (0 = robot/quantized, 1 = very human)
+
+   * Raw API:
+
+       local MacroControls = require("IFLS_MacroControls")
+
+       local all = MacroControls.get_all()
+       MacroControls.set("glitch_intensity", 0.8)
+       MacroControls.set_all{ glitch_intensity=0.9, rhythm_chaos=0.4 }
+
+       MacroControls.load() -- from ExtState
+       MacroControls.save() -- to ExtState
+
+   * Derived settings API:
+
+       local glitch  = MacroControls.derive_glitch_settings()
+       local rhythm  = MacroControls.derive_rhythm_settings()
+       local texture = MacroControls.derive_texture_settings()
+       local human   = MacroControls.derive_human_settings()
+
+       local snapshot = MacroControls.get_derived_snapshot()
+
+     Mappings (Beispiele):
+
+       derive_glitch_settings():
+         - slice_mode: "classic" / "precise" / "idm_microslice"
+           depending on glitch_intensity.
+         - micro_slice_density: 0..1 (kann auf OnsetFusion-Threshold /
+           min_gap gemappt werden).
+         - fx_glitch_amount: 0..1 (für FX-Chain-Recommender / Bitcrush etc.).
+
+       derive_rhythm_settings():
+         - style_name: eine von
+             "Straight_4onFloor", "Dilla_LateSnare",
+             "BrokenBeat_Stumble", "IDM_Chaos"
+           je nach rhythm_chaos.
+         - morph_amount: rhythm_chaos (0..1)
+         - density_bias: (-1..+1) aus rhythm_chaos abgeleitet.
+
+       derive_texture_settings():
+         - prefer_minimal_fx / moderate / heavy
+         - texture_slot_weight: 0..1 (Wahrscheinlichkeit, Texture-Slots in
+           FX-Chains zu aktivieren).
+         - reverb_wet_scale, delay_feedback_scale: 0.5..1.0
+
+       derive_human_settings():
+         - groove_amount      : 0..1
+         - humanize_timing    : 0..0.5
+         - humanize_velocity  : 0..0.5
+         - quantize_strength  : 1.0 (roboter) .. 0.0 (free)
+
+   * Integration:
+
+       - BeatEngine / Groove:
+           * groove_amount/humanize_*-Werte beim Export verwenden.
+       - RhythmMorpher:
+           * style_name, morph_amount, density_bias von rhythm-Settings
+             verwenden.
+       - Slice Engine / OnsetFusion:
+           * slice_mode & micro_slice_density aus glitch-Settings.
+       - FXChainRecommender:
+           * fx_glitch_amount & texture-Werte als Extra-Inputs.
+
+
+2) IFLS_ScenePresets.lua
+   ----------------------
+   * Szenen als Snapshot von "oberer" IFLS-Ebene:
+
+       scene = {
+         id             = "scene1",
+         name           = "Glitch Intro",
+         artist_id      = "artist_foo",
+         artist_name    = "Foo",
+         flavor         = "GlitchCore",
+         groove_profile = "IDM_MicroSwing",
+         rhythm_style   = "IDM_Chaos",
+         macros = {
+           glitch_intensity = 0.8,
+           rhythm_chaos     = 0.7,
+           texture_depth    = 0.6,
+           human_vs_robot   = 0.3,
+         },
+         meta = {
+           bpm_min = 140,
+           bpm_max = 180,
+           tags    = {"intro","glitch"},
+           notes   = "High-energy glitch opener",
+         },
+       }
+
+   * Speichern/Laden/Löschen via project ExtState:
+
+       local ScenePresets = require("IFLS_ScenePresets")
+
+       ScenePresets.save(scene)
+       local sc  = ScenePresets.load("scene1")
+       local all = ScenePresets.list()
+       ScenePresets.delete("scene1")
+
+   * Helper:
+
+       ScenePresets.capture_current(args)
+
+     baut ein Scene-Objekt aus übergebenen Werten; du kannst diese
+     Funktion erweitern, um direkt Artist-, Flavor-, Groove-, Macro-
+     Module auszulesen.
+
+
+3) IFLS_MacrosScenes_DebugDemo.lua (optional)
+   ------------------------------------------
+   * Demo-Script:
+       - setzt einige Macro-Werte,
+       - zeigt die abgeleiteten Settings in der REAPER-Konsole,
+       - erstellt eine Demo-Szene,
+       - speichert und listet alle Szenen.
+
+
+Integration Steps
+-----------------
+
+A) Files ins Repo
+   --------------
+   * Kopiere in dein IFLS/DF95-Lua-Modulverzeichnis:
+
+       IFLS_MacroControls.lua
+       IFLS_ScenePresets.lua
+       IFLS_MacrosScenes_DebugDemo.lua (optional)
+
+   * Stelle sicher, dass ArtistHub / BeatControlCenter / Core-Engine
+     sie via require laden können.
+
+
+B) ArtistHub / Global UI: Macro-Section
+   ------------------------------------
+   * Im ArtistHub (oder einem globalen "IFLS Master"-Panel):
+
+       - Slider:
+           "Glitch Intensity"  (0..1 -> MacroControls.set("glitch_intensity", v))
+           "Rhythm Chaos"      (0..1 -> MacroControls.set("rhythm_chaos", v))
+           "Texture Depth"     (0..1 -> MacroControls.set("texture_depth", v))
+           "Human vs Robot"    (0..1 -> MacroControls.set("human_vs_robot", v))
+
+       - Button:
+           "Reset Macros" -> MacroControls.set_all({0.5,0.5,0.5,0.5})
+
+   * Bei jedem Render-/Export-Schritt holst du:
+
+       local derived = MacroControls.get_derived_snapshot()
+
+     und reichst die jeweiligen Subwerte in Groove, RhythmMorpher,
+     SliceEngine, FXRecommender durch.
+
+
+C) BeatEngine / RhythmMorph / Groove: Nutzung der Macros
+   -----------------------------------------------------
+   * RhythmMorpher:
+
+       local rhythm = MacroControls.derive_rhythm_settings()
+       rp = RhythmMorpher.morph(rp, rhythm.style_name, rhythm.morph_amount, {
+         density_bias = rhythm.density_bias,
+         instruments  = {"kick","snare","hat","perc"},
+       })
+
+   * Groove & Humanize:
+
+       local human = MacroControls.derive_human_settings()
+       -- z.B.:
+       groove_amount     = human.groove_amount
+       humanize_timing   = human.humanize_timing
+       humanize_velocity = human.humanize_velocity
+
+   * Slice Engine / OnsetFusion:
+
+       local glitch = MacroControls.derive_glitch_settings()
+       local fused, onsets = OnsetFusion.detect(odfs, {
+         mode       = glitch.slice_mode,
+         samplerate = sr,
+         hop_size   = hop,
+       })
+
+   * FX-Chain Recommender:
+
+       local texture = MacroControls.derive_texture_settings()
+       -- texture.texture_slot_weight / fx_glitch_amount in deinen
+       -- PluginMetaAdapter/Scoring-Logik einbeziehen.
+
+
+D) Scenes: Capture & Recall
+   ------------------------
+   * Szene speichern (im ArtistHub / Global-Panel):
+
+       local scene = ScenePresets.capture_current{
+         id             = user_scene_id,
+         name           = user_scene_name,
+         artist_id      = current_artist_id,
+         artist_name    = current_artist_name,
+         flavor         = current_flavor,
+         groove_profile = current_groove_profile,
+         rhythm_style   = current_rhythm_style,
+         macros         = MacroControls.get_all(),
+         meta           = {
+           bpm_min = current_bpm - 10,
+           bpm_max = current_bpm + 20,
+           tags    = active_tags,
+           notes   = user_notes,
+         },
+       }
+
+       ScenePresets.save(scene)
+
+   * Szene laden:
+
+       local scene = ScenePresets.load(selected_id)
+       if scene then
+         -- Artist/Flavor/Groove/Rhythm wiederherstellen:
+         -- (hier an deine bestehenden Module anbinden)
+         MacroControls.set_all(scene.macros or {})
+       end
+
+   * UI:
+       - Listbox/Dropdown "Scenes" (gefüllt mit ScenePresets.list()).
+       - Buttons: "Save Scene", "Update Scene", "Delete Scene".
+
+
+E) Live/Performance-Use
+   ---------------------
+   * Durch Szenen blättern (Keyboard/MIDI-Bindings):
+
+       - Jede Szene kann:
+         * andere Macros,
+         * andere Rhythm/Groove/Flavor-Kombis,
+         * andere FX-Voreinstellungen
+         aktivieren.
+
+       - So kannst du z.B. live:
+         * von "Ambient Drone Scene" zu "Full Glitch IDM Scene" springen,
+         * Macros crossfaden, indem du bei Szenenwechsel kurzzeitig
+           zwischen Werten interpolierst (optional Erweiterung).
+
+
+Nächster sinnvoller Schritt
+---------------------------
+
+Mit Phase 92 sind die Kernmodule zu einem steuerbaren System verbunden.
+Ein möglicher nächster Schwerpunkt wäre kein neues Feature-Modul,
+sondern:
+
+  ► Phase 93 – QA, Instrumentation & Profiling
+
+Ideen:
+
+  * Logging-Layer, der Flavor/Groove/Rhythm/FX-Entscheidungen mitloggt
+    (für Debugging und späteres ML-Training).
+  * Performance-Profiling (Zeit pro Phase: Feature-Analyse, Slice,
+    Groove, RhythmMorph, FX-Build).
+  * Kleine Diagnostic-Tools im ArtistHub, die zeigen, welche Module
+    aktiv sind und wie viel Zeit sie brauchen.
+
+Alternativ könntest du gezielt einzelne Phasen vertiefen:
+  * Besseres Embedding (PCA/learned models) in Phase 90.
+  * Fortgeschrittenere FX-Chain-Logik (Phase 89) mit Markov/ML.
+  * Erweiterte RhythmStyles mit User-Lernen (Pattern->Style-Extraction).

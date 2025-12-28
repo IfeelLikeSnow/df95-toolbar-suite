@@ -1,0 +1,16 @@
+# DF95 Reamp Template – Creative MultiBus – PreSonus Studio 1824c + Palmer DACCAPO
+# Routing-Idee:
+# - REAMP_SEND_1824C_DACCAPO: Hardware-Out nach Wahl (z.B. Out 3/4) -> DACCAPO -> Pedalboard.
+# - REAMP_RETURN_1824C_DACCAPO: Input 1/3 als Return.
+# - Im DF95 Fieldrec/Creative-Template kann dieser Return-Track zusätzlich
+#   Sends auf FX_GLITCH_BUS, FX_FILTERMOTION_BUS, FX_PERC_BUS, Coloring Bus bekommen.
+# - Dieses Template erzeugt nur Send/Return-Tracks; Busse liegen im Projekt-Template.
+
+<TRACK
+NAME REAMP_SEND_1824C_DACCAPO
+ISBUS 0 0
+>
+<TRACK
+NAME REAMP_RETURN_1824C_DACCAPO
+ISBUS 0 0
+>

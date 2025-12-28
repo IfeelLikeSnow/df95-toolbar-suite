@@ -1,0 +1,22 @@
+{
+  "Hydra": {
+    "profile": "dark_flat",
+    "accent": "turquoise",
+    "notes": "bright theme \u2192 darker icons"
+  },
+  "Commala": {
+    "profile": "warm_flat",
+    "accent": "gold",
+    "notes": "warm neutral"
+  },
+  "Imperial": {
+    "profile": "light_outline",
+    "accent": "amber",
+    "notes": "dark theme \u2192 light icons"
+  },
+  "Default7": {
+    "profile": "mono_standard",
+    "accent": "green",
+    "notes": "general purpose"
+  }
+}

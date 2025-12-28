@@ -1,0 +1,201 @@
+IFLS – Phase 87: GrooveProfile & Groove Pool
+==========================================
+
+Goal
+----
+
+Introduce a reusable groove system that:
+  * Treats groove as a first-class object (timing + velocity map)
+  * Connects to Artist profiles (per-artist groove preference)
+  * Hooks into BeatEngine right before MIDI export
+  * Complements existing Humanize / Microtiming logic (groove = fixed map,
+    humanize = random variation). fileciteturn1file0
+
+Files in this package
+---------------------
+
+1) IFLS_GrooveProfiles.lua
+   ------------------------
+   - Defines the GrooveProfile data model:
+       name          : string
+       grid_division : number (steps per bar, typically 16)
+       offsets       : array[number], length = grid_division
+       velocity_mul  : array[number], same length; 1.0 = neutral
+       prob          : optional array[number] for future use
+
+   - Includes several builtin profiles:
+       * Straight16
+       * SixteenthSwing60
+       * IDM_MicroSwing
+       * BrokenBeat16
+
+   - Public API:
+
+       local GrooveProfiles = require("IFLS_GrooveProfiles")
+
+       local all = GrooveProfiles.list()
+       local p   = GrooveProfiles.get("IDM_MicroSwing")
+
+       local new_profile = GrooveProfiles.make(
+         "MyGroove",
+         16,
+         { ... offsets ... },
+         { ... velocity mul ... },
+         { ... prob ... }
+       )
+       GrooveProfiles.add(new_profile)
+
+
+2) IFLS_GroovePool.lua
+   --------------------
+   - Wraps IFLS_GrooveProfiles and provides:
+       * GroovePool.list()
+       * GroovePool.get(name)
+       * GroovePool.get_default_for_artist(artist)
+       * GroovePool.apply_to_note_events(events, profile, amount)
+
+   - "events" is a generic list of note objects:
+       {
+         beat = <position in beats>,
+         vel  = <MIDI velocity 1..127>,
+         ...  other fields unchanged ...
+       }
+
+   - apply_to_note_events(events, profile, amount):
+
+       * Quantizes each event's beat position to the nearest step in the
+         groove's grid_division (e.g. 16 steps per bar).
+       * Looks up the timing offset/velocity multiplier for that step.
+       * Applies the groove scaled by "amount" (0..1).
+       * Leaves other fields untouched.
+
+   - get_default_for_artist(artist) expects "artist" to have:
+       artist.groove_profile_name
+
+     You can easily adapt this to your existing Artist profile structure.
+
+
+3) IFLS_BeatEngine_GrooveHook.lua
+   -------------------------------
+   - Reference module showing how to integrate the groove logic into your
+     existing BeatEngine export path.
+
+   - Expected usage:
+
+       local GrooveHook = require("IFLS_BeatEngine_GrooveHook")
+
+       local function collect_events(pattern, track_ctx)
+         -- call your existing BeatEngine / AudioPatternBridge here
+         -- and return a list of events {beat, vel, ...}
+       end
+
+       local events = GrooveHook.process(pattern, track_ctx, collect_events)
+
+       -- Then send "events" to your MIDI export / TX16Wx engine, etc.
+
+   - You can drop the "get_current_artist" stub and connect it to your real
+     Artist domain (from ExtState / ArtistHub / Artist profiles).
+
+
+Integration Steps
+-----------------
+
+A) Place the files
+   ---------------
+   - Copy:
+       IFLS_GrooveProfiles.lua
+       IFLS_GroovePool.lua
+       IFLS_BeatEngine_GrooveHook.lua
+     into your IFLS/DF95 Lua module folder.
+
+   - Make sure your ReaScript path (package.path) can "require" them.
+
+
+B) Artist profile extension
+   -------------------------
+   - Extend your Artist profile data model (in your existing Artist system)
+     with a field:
+
+       artist.groove_profile_name = "IDM_MicroSwing" -- or any profile name
+
+   - When loading an Artist, attach or compute this field.
+   - Optionally, expose it in the ArtistHub UI as a dropdown populated by:
+
+       local GroovePool = require("IFLS_GroovePool")
+       for _, p in ipairs(GroovePool.list()) do
+         -- add p.name to dropdown
+       end
+
+
+C) BeatEngine integration
+   -----------------------
+   - In your MIDI export pipeline, before writing MIDI events:
+       1) Collect events (existing logic).
+       2) Pass them through GrooveHook.process().
+       3) Use the returned events as export source.
+
+   - Example skeleton:
+
+       local GrooveHook = require("IFLS_BeatEngine_GrooveHook")
+
+       function BeatEngine.export_midi(pattern, track_ctx)
+         local function collect_events(patt, ctx)
+           return BeatEngine.collect_midi_events(patt, ctx)
+         end
+
+         local events = GrooveHook.process(pattern, track_ctx, collect_events)
+         BeatEngine.write_midi(events, track_ctx)
+       end
+
+
+D) UI: Groove selection in ArtistHub / BeatControlCenter
+   ------------------------------------------------------
+   - In ArtistHub:
+       * Add a dropdown "Groove" that lists all profiles from GroovePool.
+       * When user selects one, store the name in the Artist profile
+         (artist.groove_profile_name) and write back to ExtState.
+
+   - In BeatControlCenter:
+       * Optional override dropdown:
+           - "Use Artist Default"
+           - "Straight16"
+           - "SixteenthSwing60"
+           - etc.
+         and/or:
+           - Slider "Groove Amount" (0..100%), mapped to 0..1.
+
+       * Pass this override + amount into BeatEngineGrooveHook.decide_groove()
+         (you can modify the stub to accept settings from UI).
+
+
+E) Relation to existing Humanize / Microtiming
+   -------------------------------------------
+   - Keep your existing Humanize/Microtiming system as a separate layer.
+   - Recommended order:
+       1) Pattern generation (straight grid).
+       2) Apply Groove (deterministic micro-timing + accents).
+       3) Apply Humanize (small random variations on top).
+       4) Export / playback.
+
+   - This matches common practice in DAWs and gives users an intuitive
+     separation between "style feel" (groove) and "human imperfection"
+     (humanize). citeturn2search9turn2search13turn2search17
+
+
+Next Recommended Phase
+----------------------
+
+With Phase 86 (Flavor Visualization) and Phase 87 (Groove System) in place,
+the most synergistic next step is:
+
+  ► Phase 88 – Onset-Fusion & IDM MicroSlice Mode
+
+Reasoning:
+  * Your Slice Engine and spectral features are already implemented. fileciteturn1file0
+  * A fused onset detector improves slice quality for *all* later stages.
+  * The new IDM groove system pairs extremely well with a "MicroSlice" mode:
+    dense, micro-timed slices + expressive groove = very strong IDM engine.
+
+You can, however, also choose to jump directly to the intelligent
+FX-Chain recommendation phase if sound design is currently a higher
+priority than slicing/micro-editing.

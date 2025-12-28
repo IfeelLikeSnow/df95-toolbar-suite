@@ -1,0 +1,15 @@
+{
+  "version": 1,
+  "synth_id": "tyrelln6",
+  "role": "lead",
+  "variant": "u_he_lead_soft",
+  "description": "TyrellN6 lead u he lead soft",
+  "params": {
+    "amp_env.attack": 0.0,
+    "amp_env.decay": 0.18,
+    "amp_env.sustain": 0.9,
+    "amp_env.release": 0.3,
+    "filter.cutoff": 0.68,
+    "filter.resonance": 0.2
+  }
+}
