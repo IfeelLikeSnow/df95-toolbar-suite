@@ -30,6 +30,9 @@ jobs:
       - name: Install reapack-index
         run: gem install reapack-index
 
+      - name: Sanitize metaheaders (strict hygiene)
+        run: python3 tools/sanitize_metaheaders.py
+
       - name: Build/Amend index.xml
         run: |
           reapack-index --scan --amend --commit .
