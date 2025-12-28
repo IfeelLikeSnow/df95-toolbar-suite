@@ -1,0 +1,15 @@
+{
+  "version": 1,
+  "synth_id": "halion_sonic",
+  "role": "pad",
+  "variant": "keys_wash",
+  "description": "halion_sonic Keys Wash Pad",
+  "params": {
+    "amp_env.attack": 0.35,
+    "amp_env.decay": 0.55,
+    "amp_env.sustain": 0.98,
+    "amp_env.release": 0.85,
+    "filter.cutoff": 0.48,
+    "filter.resonance": 0.18
+  }
+}

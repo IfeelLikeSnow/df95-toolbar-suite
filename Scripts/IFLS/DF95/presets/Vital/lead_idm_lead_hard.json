@@ -1,0 +1,19 @@
+{
+  "version": 1,
+  "synth_id": "vital",
+  "role": "lead",
+  "variant": "idm_lead_hard",
+  "description": "Vital lead idm lead hard",
+  "params": {
+    "amp_env.attack": 0.0,
+    "amp_env.decay": 0.14,
+    "amp_env.sustain": 0.9,
+    "amp_env.release": 0.22,
+    "filter.cutoff": 0.78,
+    "filter.resonance": 0.18,
+    "macros.1": 0.85,
+    "macros.2": 0.45,
+    "macros.3": 0.7,
+    "macros.4": 0.25
+  }
+}

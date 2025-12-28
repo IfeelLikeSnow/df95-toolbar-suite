@@ -1,0 +1,15 @@
+{
+  "version": 1,
+  "synth_id": "bucketpops",
+  "role": "drum",
+  "variant": "idm_machine",
+  "description": "BucketPops drum idm machine",
+  "params": {
+    "global.tempo_sync": 1.0,
+    "global.tempo": 0.4,
+    "global.volume": 0.7,
+    "drum.base.decay": 0.25,
+    "drum.snare1.decay": 0.3,
+    "drum.snare2.decay": 0.35
+  }
+}

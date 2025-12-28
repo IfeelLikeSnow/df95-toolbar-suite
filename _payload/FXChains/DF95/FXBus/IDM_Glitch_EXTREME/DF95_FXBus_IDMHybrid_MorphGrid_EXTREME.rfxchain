@@ -1,0 +1,16 @@
+// META:category=FXBus
+// META:style=idm_glitch
+// META:seed_lock=ExtState:DF95_SEED_LOCK
+// META:mgm_range_db=0.5
+// META:lufs_target=-13.5
+// META:ceiling=-0.6
+// META:notes=auto-variant
+// META:variant=extreme
+// META:drive=high
+// META:density=high
+<VST3 "VST3: Filterstep (AudioModern)" Filterstep.vst3>
+<VST "VST: ReaPitch (Cockos)" reapitch.dll>
+<JS: stutter>
+<VST "VST: ReaDelay (Cockos)" readelay.dll>
+<VST "VST: ReaEQ (Cockos)" reaeq.dll>
+<VST "VST: ReaComp (Cockos)" reacomp.dll>

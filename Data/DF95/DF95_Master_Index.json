@@ -1,0 +1,23 @@
+{
+  "Neutral": [
+    "Neutral/Master_Neutral_SafeGain_Limiter.rfxchain"
+  ],
+  "Warm": [
+    "Warm/Master_AO_WarmBus_ToTape8.rfxchain"
+  ],
+  "Modern": [
+    "Modern/Master_Modern_Loud_Burier_Air.rfxchain"
+  ],
+  "BoC": [
+    "BoC/Master_BoC_Vintage_TapeSoft.rfxchain"
+  ],
+  "IDM": [
+    "IDM/Master_IDM_Transientsafe_Clean.rfxchain"
+  ],
+  "Spectral": [
+    "Spectral/Master_Spectral_Balance.rfxchain"
+  ],
+  "Wide": [
+    "Wide/Master_Wide_Console8_Finalizer.rfxchain"
+  ]
+}

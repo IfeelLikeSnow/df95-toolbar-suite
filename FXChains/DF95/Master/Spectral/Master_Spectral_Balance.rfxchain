@@ -1,0 +1,8 @@
+// META:category=master
+// META:style=spectral
+// META:lufs_target=-14
+// META:ceiling=-0.7
+// META:preferred_subs=aw:capacitor=Capacitor; limiter=ReaLimit
+<VST "VST: ReaEQ (Cockos)" reacomp.dll>
+<VST "VST: ReaComp (Cockos)" reacomp.dll>
+<VST3 "VST3: ReaLimit (Cockos)" realimit.vst3>

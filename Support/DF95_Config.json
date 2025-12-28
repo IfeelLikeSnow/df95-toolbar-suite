@@ -1,0 +1,17 @@
+{
+  "features": {
+    "enable_experimental": false,
+    "enable_diagnostics": true
+  },
+  "compat": {
+    "mode": "auto"
+  },
+  "log": {
+    "to_console": true,
+    "to_file": true,
+    "level": "INFO"
+  },
+  "reapack": {
+    "df95_repo_index_url": "https://raw.githubusercontent.com/IfeelLikeSnow/df95-ifls/refs/heads/main/index.xml?token=GHSAT0AAAAAADRHI5YE4YRLDUVWPMQ5BKVU2J533VA"
+  }
+}

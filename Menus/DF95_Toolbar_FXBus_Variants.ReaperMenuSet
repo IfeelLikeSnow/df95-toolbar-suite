@@ -1,0 +1,5 @@
+# DF95 FXBus Variants Helpers
+Item01=Custom: Seed-Lock Toggle
+	SCRIPT: Scripts/IfeelLikeSnow/DF95/Tools/DF95_SeedLock_Toggle.lua
+Item02=Custom: Micro GainMatch ±0.5 dB
+	SCRIPT: Scripts/IfeelLikeSnow/DF95/Tools/DF95_MicroGainMatch_Trim.lua

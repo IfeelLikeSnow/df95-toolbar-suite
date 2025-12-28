@@ -1,0 +1,125 @@
+{
+  "version": 1,
+  "defaults": {
+    "slice_density": "medium",
+    "crossfade_ms": 5,
+    "allow_odd_meters": true
+  },
+  "artists": {
+    "autechre": {
+      "slice_density": "high",
+      "crossfade_ms": 3,
+      "allow_odd_meters": true
+    },
+    "aphex_twin": {
+      "slice_density": "medium_high",
+      "crossfade_ms": 5,
+      "allow_odd_meters": true
+    },
+    "boards_of_canada": {
+      "slice_density": "low_medium",
+      "crossfade_ms": 8,
+      "allow_odd_meters": false
+    },
+    "venetian_snares": {
+      "slice_density": "high",
+      "crossfade_ms": 3,
+      "allow_odd_meters": true
+    },
+    "burial": {
+      "slice_density": "low_medium",
+      "crossfade_ms": 8,
+      "allow_odd_meters": false
+    },
+    "four_tet": {
+      "slice_density": "medium",
+      "crossfade_ms": 6,
+      "allow_odd_meters": false
+    },
+    "amon_tobin": {
+      "slice_density": "medium_high",
+      "crossfade_ms": 5,
+      "allow_odd_meters": true
+    },
+    "mu_ziq": {
+      "slice_density": "medium_high",
+      "crossfade_ms": 5,
+      "allow_odd_meters": true
+    },
+    "squarepusher": {
+      "slice_density": "high",
+      "crossfade_ms": 3,
+      "allow_odd_meters": true
+    },
+    "moderat": {
+      "slice_density": "medium",
+      "crossfade_ms": 6,
+      "allow_odd_meters": false
+    },
+    "apparat": {
+      "slice_density": "medium",
+      "crossfade_ms": 6,
+      "allow_odd_meters": false
+    },
+    "matmos": {
+      "slice_density": "medium_high",
+      "crossfade_ms": 5,
+      "allow_odd_meters": true
+    },
+    "flying_lotus": {
+      "slice_density": "medium_high",
+      "crossfade_ms": 5,
+      "allow_odd_meters": true
+    },
+    "arovane": {
+      "slice_density": "medium_high",
+      "crossfade_ms": 5,
+      "allow_odd_meters": true
+    },
+    "proem": {
+      "slice_density": "medium_high",
+      "crossfade_ms": 5,
+      "allow_odd_meters": true
+    },
+    "telefon_tel_aviv": {
+      "slice_density": "medium",
+      "crossfade_ms": 6,
+      "allow_odd_meters": false
+    },
+    "styrofoam": {
+      "slice_density": "low_medium",
+      "crossfade_ms": 8,
+      "allow_odd_meters": false
+    },
+    "jega": {
+      "slice_density": "high",
+      "crossfade_ms": 3,
+      "allow_odd_meters": true
+    },
+    "monoceros": {
+      "slice_density": "low_medium",
+      "crossfade_ms": 8,
+      "allow_odd_meters": false
+    },
+    "clark": {
+      "slice_density": "medium",
+      "crossfade_ms": 6,
+      "allow_odd_meters": false
+    },
+    "ben_frost": {
+      "slice_density": "low_medium",
+      "crossfade_ms": 8,
+      "allow_odd_meters": false
+    },
+    "tim_hecker": {
+      "slice_density": "low_medium",
+      "crossfade_ms": 8,
+      "allow_odd_meters": false
+    },
+    "mouse_on_mars": {
+      "slice_density": "high",
+      "crossfade_ms": 3,
+      "allow_odd_meters": true
+    }
+  }
+}

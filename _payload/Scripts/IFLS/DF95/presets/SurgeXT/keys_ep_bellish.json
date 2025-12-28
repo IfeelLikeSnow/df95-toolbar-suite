@@ -1,0 +1,18 @@
+{
+  "version": 1,
+  "synth_id": "surge_xt",
+  "role": "keys",
+  "variant": "ep_bellish",
+  "description": "Surge XT keys ep bellish",
+  "params": {
+    "sceneA.amp_env.attack": 0.0,
+    "sceneA.amp_env.decay": 0.32,
+    "sceneA.amp_env.sustain": 0.75,
+    "sceneA.amp_env.release": 0.6,
+    "sceneA.filter_env.attack": 0.0,
+    "sceneA.filter_env.decay": 0.24,
+    "sceneA.filter_env.sustain": 0.0,
+    "sceneA.filter_env.release": 0.32,
+    "sceneA.filter1.cutoff": 0.5
+  }
+}

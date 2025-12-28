@@ -1,0 +1,15 @@
+{
+  "version": 1,
+  "synth_id": "halion_sonic",
+  "role": "keys",
+  "variant": "ep_soft",
+  "description": "halion_sonic EP Soft",
+  "params": {
+    "amp_env.attack": 0.01,
+    "amp_env.decay": 0.22,
+    "amp_env.sustain": 0.92,
+    "amp_env.release": 0.45,
+    "filter.cutoff": 0.55,
+    "filter.resonance": 0.12
+  }
+}

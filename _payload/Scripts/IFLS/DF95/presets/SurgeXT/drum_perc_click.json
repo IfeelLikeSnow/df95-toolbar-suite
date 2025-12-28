@@ -1,0 +1,18 @@
+{
+  "version": 1,
+  "synth_id": "surge_xt",
+  "role": "drum",
+  "variant": "perc_click",
+  "description": "Surge XT drum perc click",
+  "params": {
+    "sceneA.amp_env.attack": 0.0,
+    "sceneA.amp_env.decay": 0.1,
+    "sceneA.amp_env.sustain": 0.0,
+    "sceneA.amp_env.release": 0.1,
+    "sceneA.filter_env.attack": 0.0,
+    "sceneA.filter_env.decay": 0.1,
+    "sceneA.filter_env.sustain": 0.0,
+    "sceneA.filter_env.release": 0.1,
+    "sceneA.filter1.cutoff": 0.7
+  }
+}

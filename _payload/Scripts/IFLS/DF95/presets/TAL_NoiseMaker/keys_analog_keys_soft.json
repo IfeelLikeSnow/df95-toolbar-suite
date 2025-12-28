@@ -1,0 +1,15 @@
+{
+  "version": 1,
+  "synth_id": "tal_noisemaker",
+  "role": "keys",
+  "variant": "analog_keys_soft",
+  "description": "TAL NoiseMaker keys analog keys soft",
+  "params": {
+    "amp_env.attack": 0.01,
+    "amp_env.decay": 0.24,
+    "amp_env.sustain": 0.9,
+    "amp_env.release": 0.45,
+    "filter.cutoff": 0.55,
+    "filter.resonance": 0.12
+  }
+}

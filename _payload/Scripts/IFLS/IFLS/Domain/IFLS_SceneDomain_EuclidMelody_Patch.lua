@@ -1,0 +1,84 @@
+-- IFLS_SceneDomain_EuclidMelody_Patch.lua
+-- Ergänzungen für IFLS_SceneDomain.lua, damit EuclidMelody pro Scene mitgespeichert wird.
+
+-- 1) Hilfsfunktionen hinzufügen (analog zu EuclidPro):
+
+-- local function read_euclidmelody_cfg()
+--   local NS = "IFLS_EUCLIDMELODY"
+--   local function gnum(key, def)
+--     local s = ext.get_proj(NS, key, tostring(def))
+--     local v = tonumber(s)
+--     if not v then return def end
+--     return v
+--   end
+--   local function gstr(key, def)
+--     return ext.get_proj(NS, key, def or "")
+--   end
+--   local function gbool(key, def)
+--     local s = ext.get_proj(NS, key, def and "1" or "0")
+--     return s == "1"
+--   end
+--
+--   local cfg = {
+--     enabled      = gbool("ENABLED", false),
+--     bars         = gnum("BARS", 4),
+--     steps        = gnum("STEPS", 16),
+--     hits         = gnum("HITS", 7),
+--     rotation     = gnum("ROTATION", 0),
+--     hit_prob     = gnum("HIT_PROB", 1.0),
+--     ghost_prob   = gnum("GHOST_PROB", 0.0),
+--     root         = gnum("ROOT", 0),
+--     scale_type   = gstr("SCALE_TYPE", "minor"),
+--     low_oct      = gnum("LOW_OCT", 4),
+--     high_oct     = gnum("HIGH_OCT", 6),
+--     pattern_mode = gstr("PATTERN_MODE", "up"),
+--     motion_prob  = gnum("MOTION_PROB", 1.0),
+--     leap_prob    = gnum("LEAP_PROB", 0.1),
+--     vel_base     = gnum("VEL_BASE", 90),
+--     vel_accent   = gnum("VEL_ACCENT", 112),
+--   }
+--   return cfg
+-- end
+--
+-- local function write_euclidmelody_cfg(cfg)
+--   if not cfg then return end
+--   local NS = "IFLS_EUCLIDMELODY"
+--   local function setnum(key, v)
+--     if v ~= nil then ext.set_proj(NS, key, tostring(v)) end
+--   end
+--   local function setstr(key, v)
+--     if v ~= nil then ext.set_proj(NS, key, tostring(v)) end
+--   end
+--   local function setbool(key, v)
+--     ext.set_proj(NS, key, v and "1" or "0")
+--   end
+--
+--   setbool("ENABLED",      cfg.enabled)
+--   setnum("BARS",          cfg.bars)
+--   setnum("STEPS",         cfg.steps)
+--   setnum("HITS",          cfg.hits)
+--   setnum("ROTATION",      cfg.rotation)
+--   setnum("HIT_PROB",      cfg.hit_prob)
+--   setnum("GHOST_PROB",    cfg.ghost_prob)
+--   setnum("ROOT",          cfg.root)
+--   setstr("SCALE_TYPE",    cfg.scale_type)
+--   setnum("LOW_OCT",       cfg.low_oct)
+--   setnum("HIGH_OCT",      cfg.high_oct)
+--   setstr("PATTERN_MODE",  cfg.pattern_mode)
+--   setnum("MOTION_PROB",   cfg.motion_prob)
+--   setnum("LEAP_PROB",     cfg.leap_prob)
+--   setnum("VEL_BASE",      cfg.vel_base)
+--   setnum("VEL_ACCENT",    cfg.vel_accent)
+-- end
+--
+-- 2) Im Scene-Speicherobjekt kannst du z.B. ein Feld ergänzen:
+--
+--   scene.euclidmelody_cfg = read_euclidmelody_cfg()
+--
+--   und beim Laden:
+--
+--   if scene.euclidmelody_cfg then
+--     write_euclidmelody_cfg(scene.euclidmelody_cfg)
+--   end
+--
+-- Damit sind EuclidMelody-Settings voll in dein Scenesystem integriert.

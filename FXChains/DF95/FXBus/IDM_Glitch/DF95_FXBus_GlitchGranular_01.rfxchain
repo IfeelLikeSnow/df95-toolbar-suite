@@ -1,0 +1,10 @@
+// META:category=FXBus
+// META:style=idm_granular
+// META:mood=scatter
+// META:lufs_target=-15.0
+// META:ceiling=-0.8
+// META:preferred_subs=aw:graindelay=GrainDelay
+<VST "VST: ReaPitch (Cockos)" reapitch.dll>
+<VST "VST: ReaDelay (Cockos)" readelay.dll>
+<VST "VST: ReaEQ (Cockos)" reaeq.dll>
+<VST "VST: ReaComp (Cockos)" reacomp.dll>

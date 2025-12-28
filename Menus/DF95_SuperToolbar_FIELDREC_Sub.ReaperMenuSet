@@ -1,0 +1,15 @@
+# DF95 SuperToolbar FIELDREC Sub
+Item01=Custom: DF95 – Fieldrec Slicing Hub
+	SCRIPT: Scripts/IfeelLikeSnow/DF95/DF95_Fieldrec_Slicing_Hub_ImGui.lua
+Item02=Custom: DF95 – Fieldrec Fusion GUI
+	SCRIPT: Scripts/IfeelLikeSnow/DF95/DF95_Fieldrec_Fusion_GUI.lua
+Item03=Custom: DF95 – SliceKit RS5k Builder (V98)
+	SCRIPT: Scripts/IfeelLikeSnow/DF95/DF95_V98_Fieldrec_SliceKitBuilder_RS5k.lua
+Item04=Custom: DF95 – Artist Beat Engine (V100)
+	SCRIPT: Scripts/IfeelLikeSnow/DF95/DF95_V100_Fieldrec_ArtistBeatEngine_MIDI.lua
+Item05=Custom: DF95 – Artist Style Beat Engine (V101)
+	SCRIPT: Scripts/IfeelLikeSnow/DF95/DF95_V101_Fieldrec_ArtistStyleBeatEngine_MIDI.lua
+Item06=Custom: DF95 – Adaptive Beat Engine (V107)
+	SCRIPT: Scripts/IfeelLikeSnow/DF95/DF95_V107_Fieldrec_AdaptiveBeatEngine_MIDI.lua
+Item07=Custom: DF95 – Render Beat Audio (V110)
+	SCRIPT: Scripts/IfeelLikeSnow/DF95/DF95_V110_FieldrecBeat_RenderAudioFromSlices.lua
