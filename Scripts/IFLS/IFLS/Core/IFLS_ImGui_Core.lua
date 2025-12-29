@@ -1,7 +1,20 @@
 -- IFLS_ImGui_Core.lua
 local M = {}
 local r = reaper
-local ig = r.ImGui
+
+-- ReaImGui compatibility:
+-- Prefer the official 'imgui' Lua module (table API: CreateContext/Begin/End/...).
+-- Fall back to reaper.ImGui table if present.
+local resource = (r and r.GetResourcePath) and r.GetResourcePath() or ""
+if resource ~= "" then
+  package.path = resource .. "/Scripts/?.lua;" .. package.path
+end
+
+local ig = r and r.ImGui
+if not ig then
+  local ok, mod = pcall(require, "imgui")
+  if ok then ig = mod end
+end
 
 function M.create_context(name)
   if not ig or not ig.CreateContext then
