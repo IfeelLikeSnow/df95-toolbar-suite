@@ -6,6 +6,15 @@ local r = reaper
 -- Prefer the official 'imgui' Lua module (table API: CreateContext/Begin/End/...).
 -- Fall back to reaper.ImGui table if present.
 local resource = (r and r.GetResourcePath) and r.GetResourcePath() or ""
+local function __ifls_add_path(p)
+  if not package.path:find(p, 1, true) then
+    package.path = package.path .. ";" .. p
+  end
+end
+__ifls_add_path(resource .. "/Scripts/?.lua")
+__ifls_add_path(resource .. "/Scripts/IFLS/IFLS/Core/?.lua")
+__ifls_add_path(resource .. "/Scripts/IFLS/IFLS/Domain/?.lua")
+__ifls_add_path(resource .. "/Scripts/IFLS/DF95/?.lua")
 if resource ~= "" then
   package.path = resource .. "/Scripts/?.lua;" .. package.path
 end

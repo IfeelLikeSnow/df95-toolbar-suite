@@ -6,8 +6,23 @@
 --   * profiles a fake expensive function
 --   * dumps diagnostics + perf report to REAPER console
 
-local Diagnostics = require("IFLS_Diagnostics")
-local PerfProbe   = require("IFLS_PerfProbe")
+local resource = reaper.GetResourcePath()
+local domain_path = resource .. "/Scripts/IFLS/IFLS/Domain/"
+
+local function __ifls_add_path(p)
+  if not package.path:find(p, 1, true) then
+    package.path = package.path .. ";" .. p
+  end
+end
+__ifls_add_path(resource .. "/Scripts/?.lua")
+__ifls_add_path(resource .. "/Scripts/IFLS/IFLS/Domain/?.lua")
+__ifls_add_path(resource .. "/Scripts/IFLS/IFLS/Core/?.lua")
+
+local okDiag, Diagnostics = pcall(require, "IFLS_Diagnostics")
+if not okDiag then Diagnostics = dofile(domain_path .. "IFLS_Diagnostics.lua") end
+local okPerf, PerfProbe = pcall(require, "IFLS_PerfProbe")
+if not okPerf then PerfProbe = dofile(domain_path .. "IFLS_PerfProbe.lua") end
+
 
 reaper.ShowConsoleMsg("=== IFLS Diagnostics Demo ===\n")
 

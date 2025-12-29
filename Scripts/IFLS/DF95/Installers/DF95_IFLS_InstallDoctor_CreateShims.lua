@@ -1,5 +1,5 @@
 -- @description DF95 IFLS InstallDoctor - Create Root Shims + Bootstrap
--- @version 1.0
+-- @version 1.0.3
 -- @author DF95/IFLS helper (generated)
 -- @about
 --   Creates root-level compatibility shims in REAPER's Scripts folder:

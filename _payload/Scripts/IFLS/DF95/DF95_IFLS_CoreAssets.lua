@@ -1,5 +1,5 @@
 -- @description DF95 IFLS Core Assets (metapackage)
--- @version 1.0.0
+-- @version 1.0.3
 -- @author IfeelLikeSnow
 -- @about
 --   Installs the full DF95/IFLS toolbar suite assets (scripts + menus/toolbars).
@@ -10,6 +10,7 @@
 --   [nomain] Scripts/IFLS_ImGui_Core.lua > Scripts/IFLS_ImGui_Core.lua
 --   [nomain] Scripts/IFLS_Diagnostics.lua > Scripts/IFLS_Diagnostics.lua
 --   [nomain] Scripts/IFLS/** > Scripts/IFLS/
+--   [nomain] Scripts/DF95Framework/** > Scripts/DF95Framework/
 --   [main] Scripts/IFLS/DF95/Installers/DF95_OneClick_Setup_Theme_Toolbars_IFLS_Main.lua > Scripts/IFLS/DF95/Installers/DF95_OneClick_Setup_Theme_Toolbars_IFLS_Main.lua
 --   [main] Scripts/IFLS/DF95/Installers/DF95_Build_IFLS_Main_Toolbar_MenuSet.lua > Scripts/IFLS/DF95/Installers/DF95_Build_IFLS_Main_Toolbar_MenuSet.lua
 --   [main] Scripts/IFLS/DF95/Installers/DF95_IFLS_InstallDoctor_CreateShims.lua > Scripts/IFLS/DF95/Installers/DF95_IFLS_InstallDoctor_CreateShims.lua
