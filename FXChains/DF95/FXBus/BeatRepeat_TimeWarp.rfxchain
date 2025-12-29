@@ -1,7 +1,0 @@
-// META:category=fxbus
-// META:style=idm,beats
-// META:intensity=medium
-// META:lufs_target=-16
-<VST "VST: ReaEQ (Cockos)" reacomp.dll>
-<JS: delay/tempo delay>
-<VST "VST: ReaComp (Cockos)" reacomp.dll>

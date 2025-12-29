@@ -1,5 +1,0 @@
-
--- @description Slicing FadeShape Set – Fast (2/5 ms)
--- @version 1.0
-local set = dofile((reaper.GetResourcePath().."/Scripts/IFLS/DF95/_DF95_Slicing_FadeCommon.lua"))
-set("fast", 2, 5)

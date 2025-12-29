@@ -1,7 +1,0 @@
-# DF95 QA / Audition Toolbar
-Item01=Custom: FXBus Audition
-	SCRIPT: Scripts/IfeelLikeSnow/DF95/Tools/DF95_FXBus_Audition_v1.lua
-Item02=Custom: Coloring Audition
-	SCRIPT: Scripts/IfeelLikeSnow/DF95/Tools/DF95_Coloring_Audition_v1.lua
-Item03=Custom: Master Audition
-	SCRIPT: Scripts/IfeelLikeSnow/DF95/Tools/DF95_Master_Audition_v1.lua

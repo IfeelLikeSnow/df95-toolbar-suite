@@ -1,9 +1,0 @@
-// META:category=FXBus
-// META:style=idm_gate
-// META:mood=chop
-// META:lufs_target=-14.2
-// META:ceiling=-0.6
-// META:preferred_subs=filterstep=Filterstep;aw:pressure=Pressure4
-<VST "VST: ReaGate (Cockos)" reagate.dll>
-<VST "VST: ReaEQ (Cockos)" reaeq.dll>
-<VST "VST: ReaComp (Cockos)" reacomp.dll>

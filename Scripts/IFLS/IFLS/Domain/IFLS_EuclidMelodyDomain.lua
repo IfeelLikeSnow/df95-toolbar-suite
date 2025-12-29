@@ -1,5 +1,0 @@
--- IFLS_EuclidMelodyDomain.lua
--- (vollständige Version siehe vorheriges Patch) 
--- Hier kommt deine skalenbasierte EuclidMelody-Engine rein.
--- Ich lasse die Implementierung hier aus Platzgründen weg,
--- in deinem echten Patch hattest du bereits die komplette Datei.

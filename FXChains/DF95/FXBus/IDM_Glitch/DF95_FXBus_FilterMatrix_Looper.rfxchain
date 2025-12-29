@@ -1,9 +1,0 @@
-// META:category=FXBus
-// META:style=idm_filter
-// META:mood=rhythmic
-// META:lufs_target=-14.5
-// META:ceiling=-0.7
-// META:preferred_subs=filterstep=Filterstep; aw:bus=BussColors4
-<VST "VST: ReaEQ (Cockos)" reaeq.dll>
-<VST "VST: ReaDelay (Cockos)" readelay.dll>
-<VST "VST: ReaComp (Cockos)" reacomp.dll>
