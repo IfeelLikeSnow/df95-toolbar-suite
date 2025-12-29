@@ -1,0 +1,22 @@
+-- @description IFLS Core Assets (Hubs + Core + Domain + DF95Framework)
+-- @version 1.0.0
+-- @author DF95 / IFLS
+-- @metapackage
+-- @about
+--   Installs the non-indexed runtime files required by the IFLS Main Toolbar + builders.
+--   This package is intentionally a *metapackage*: it doesn't install this file itself,
+--   it only delivers the assets listed under @provides.
+--
+--   Included:
+--     - Scripts/IFLS/IFLS/** (Core, Domain, Hubs, etc.)
+--     - Scripts/IFLS/DF95/DF95_Diagnostics_Insight_Run.lua
+--     - Scripts/DF95Framework/** (shared libraries used by DF95/IFLS scripts)
+--     - MenuSets/IFLS_Main.Toolbar.ReaperMenuSet (template / export)
+--
+-- @provides
+--   [nomain] Scripts/IFLS/IFLS/** > Scripts/IFLS/IFLS/
+--   [nomain] Scripts/IFLS/DF95/DF95_Diagnostics_Insight_Run.lua > Scripts/IFLS/DF95/DF95_Diagnostics_Insight_Run.lua
+--   [nomain] Scripts/DF95Framework/** > Scripts/DF95Framework/
+--   MenuSets/IFLS_Main.Toolbar.ReaperMenuSet > MenuSets/IFLS_Main.Toolbar.ReaperMenuSet
+--
+-- (no runtime code)

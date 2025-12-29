@@ -1,0 +1,99 @@
+-- IFLS_ArtistDomain_EuclidMelody_Patch.lua
+-- Ergänzungen für IFLS_ArtistDomain.lua (Artist-Presets + Helper)
+
+-- 1) Helper-Funktion in IFLS_ArtistDomain.lua ergänzen (z.B. nach apply_euclidpro_defaults_from_preset):
+
+-- local function apply_euclidmelody_defaults_from_preset(preset)
+--   if not preset or not preset.euclidmelody then return end
+--   local cfg = preset.euclidmelody
+--
+--   local NS_MELODY = "IFLS_EUCLIDMELODY"
+--   local function setnum(key, v)
+--     if v ~= nil then ext.set_proj(NS_MELODY, key, tostring(v)) end
+--   end
+--   local function setstr(key, v)
+--     if v ~= nil then ext.set_proj(NS_MELODY, key, tostring(v)) end
+--   end
+--   local function setbool(key, v)
+--     ext.set_proj(NS_MELODY, key, v and "1" or "0")
+--   end
+--
+--   setbool("ENABLED",      cfg.enabled ~= false)
+--   setnum("BARS",          cfg.bars)
+--   setnum("STEPS",         cfg.steps)
+--   setnum("HITS",          cfg.hits)
+--   setnum("ROTATION",      cfg.rotation)
+--   setnum("HIT_PROB",      cfg.hit_prob)
+--   setnum("GHOST_PROB",    cfg.ghost_prob)
+--   setnum("ROOT",          cfg.root)
+--   setstr("SCALE_TYPE",    cfg.scale_type)
+--   setnum("LOW_OCT",       cfg.low_oct)
+--   setnum("HIGH_OCT",      cfg.high_oct)
+--   setstr("PATTERN_MODE",  cfg.pattern_mode)
+--   setnum("MOTION_PROB",   cfg.motion_prob)
+--   setnum("LEAP_PROB",     cfg.leap_prob)
+--   setnum("VEL_BASE",      cfg.vel_base)
+--   setnum("VEL_ACCENT",    cfg.vel_accent)
+-- end
+--
+-- 2) An der Stelle, wo Artist-Presets auf Pattern-Modes reagieren, z.B.:
+--
+--   if mode == "EUCLIDPRO" then
+--     apply_euclidpro_defaults_from_preset(preset)
+--   end
+--
+-- füge hinzu:
+--
+--   if mode == "EUCLIDMELODY" then
+--     apply_euclidmelody_defaults_from_preset(preset)
+--   end
+--
+-- 3) Beispiel-Artist-Presets ergänzen (am Ende der ArtistPreset-Tabelle):
+
+-- IDM_EuclidMelody_Arp = {
+--   name         = "IDM EuclidMelody Arp",
+--   style_group  = "IDM / Melodic",
+--   pattern_mode = "euclid_melody",
+--   euclidmelody = {
+--     enabled      = true,
+--     bars         = 4,
+--     steps        = 16,
+--     hits         = 9,
+--     rotation     = 1,
+--     hit_prob     = 0.9,
+--     ghost_prob   = 0.1,
+--     root         = 0,           -- C
+--     scale_type   = "dorian",
+--     low_oct      = 4,
+--     high_oct     = 6,
+--     pattern_mode = "up",
+--     motion_prob  = 1.0,
+--     leap_prob    = 0.1,
+--     vel_base     = 88,
+--     vel_accent   = 112,
+--   },
+-- },
+--
+-- Ambient_EuclidMelody_Cloud = {
+--   name         = "Ambient EuclidMelody Cloud",
+--   style_group  = "Ambient / Texture",
+--   pattern_mode = "euclid_melody",
+--   euclidmelody = {
+--     enabled      = true,
+--     bars         = 8,
+--     steps        = 12,
+--     hits         = 5,
+--     rotation     = 0,
+--     hit_prob     = 0.7,
+--     ghost_prob   = 0.3,
+--     root         = 9,           -- A
+--     scale_type   = "pentatonic",
+--     low_oct      = 3,
+--     high_oct     = 6,
+--     pattern_mode = "random_walk",
+--     motion_prob  = 0.8,
+--     leap_prob    = 0.4,
+--     vel_base     = 70,
+--     vel_accent   = 96,
+--   },
+-- },

@@ -1,0 +1,14 @@
+{
+  "version": 1,
+  "synth_id": "adc_clap",
+  "role": "drum",
+  "variant": "wide_short",
+  "description": "adc Clap drum wide short",
+  "params": {
+    "drum.clap.head": 0.5,
+    "drum.clap.tail": 0.25,
+    "drum.clap.width": 0.85,
+    "drum.clap.freq": 0.6,
+    "drum.clap.volume": 0.7
+  }
+}

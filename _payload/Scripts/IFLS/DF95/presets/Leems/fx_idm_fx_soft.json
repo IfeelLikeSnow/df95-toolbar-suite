@@ -1,0 +1,15 @@
+{
+  "version": 1,
+  "synth_id": "leems",
+  "role": "fx",
+  "variant": "idm_fx_soft",
+  "description": "leems fx idm_fx_soft",
+  "params": {
+    "amp_env.attack": 0.02,
+    "amp_env.decay": 0.22,
+    "amp_env.sustain": 0.5,
+    "amp_env.release": 0.3,
+    "filter.cutoff": 0.65,
+    "filter.resonance": 0.22
+  }
+}

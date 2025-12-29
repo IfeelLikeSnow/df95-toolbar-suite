@@ -1,0 +1,21 @@
+<REAPER_FXCHAIN
+SHOW 0
+LASTSEL 0
+DOCKED 0
+
+<FX
+BYPASS 0 0 0
+VST "DF95_META" "MJUCjr (Klanghelm)" 0
+>
+
+<FX
+BYPASS 0 0 0
+VST "DF95_META" "Free EQ (Venn Audio)" 0
+>
+
+<FX
+BYPASS 0 0 0
+VST "DF95_META" "kHs Stereo (Kilohearts)" 0
+>
+
+>

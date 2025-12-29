@@ -1,0 +1,11 @@
+# DF95 Co Toolbar – Edit/Creative
+Item01=Custom: Slicing (Dropdown)
+	SCRIPT: Scripts/IfeelLikeSnow/DF95/DF95_Slice_Menu.lua
+Item02=Custom: Humanize (Dropdown)
+	SCRIPT: Scripts/IfeelLikeSnow/DF95/DF95_Menu_Humanize_Dropdown.lua
+Item03=Custom: FX Seed
+	SCRIPT: Scripts/IfeelLikeSnow/DF95/DF95_FXBus_Seed.lua
+Item04=Custom: Loop / Rhythm Builder
+	SCRIPT: Scripts/IfeelLikeSnow/DF95/DF95_LoopBuilder.lua
+Item05=Custom: Rearrange / Align
+	SCRIPT: Scripts/IfeelLikeSnow/DF95/DF95_Rearrange_Align.lua

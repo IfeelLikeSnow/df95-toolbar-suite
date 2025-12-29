@@ -1,0 +1,30 @@
+-- @description DF95 Toolbar Suite - Core
+-- @version 1.0.0
+-- @author DF95 / IFLS
+-- @metapackage
+-- @about
+--   Installs DF95/IFLS core assets. After install, run:
+--   - DF95/IFLS: Sanity check (install paths + dependencies)
+--   - DF95/IFLS: Register all DF95/IFLS actions (first run)
+--
+-- @provides
+--   [main] Scripts/DF95_IFLS_Register_All_Actions.lua
+--   [main] Scripts/DF95_IFLS_Sanity_Check.lua
+--   [main] Scripts/DF95_IFLS_Open_Resource_Path.lua
+--
+--   Scripts/** > Scripts/
+--   DF95_MetaCore/** > DF95_MetaCore/
+--   Data/** > Data/
+--   Config/** > Config/
+--   Effects/** > Effects/
+--   FXChains/** > FXChains/
+--   Chains/** > Chains/
+--   TrackTemplates/** > TrackTemplates/
+--   RenderPresets/** > RenderPresets/
+--   Projects/** > Projects/
+--   Theme/** > Theme/
+--   ThemeMod/** > ThemeMod/
+--   Reports/** > Reports/
+--   Support/** > Support/
+--   _selectors/** > _selectors/
+--   tools/** > tools/

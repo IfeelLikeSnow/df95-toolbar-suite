@@ -1,0 +1,41 @@
+RPP_PROJECT 0.1 6 0 0 60 4 0 0 0 0 0 0 0
+<REAPER_PROJECT
+  NAME "DF95 ExportPrep / UCS Template"
+  SAMPLERATE 48000 0 0
+  MASTER_NCH 2 0
+  MASTER_VOLUME 1 0 -1 -1 1
+  MASTER_MUTESOLO 0 0
+  MASTER_FX 1
+  <MASTERFXLIST
+  >
+  #
+  # DF95 EXPORT / UCS TEMPLATE
+  # Fokus:
+  # - finaler Export
+  # - UCS / Metadata
+  #
+  <TRACK
+    NAME "PRINT_MASTER"
+    ISBUS 1 0
+    <FXCHAIN
+    FXID 2
+    >
+
+  >
+  <TRACK
+    NAME "ALT_MASTER"
+    ISBUS 1 0
+    <FXCHAIN
+    FXID 2
+    >
+
+  >
+  <TRACK
+    NAME "META_UCS_CONTROL"
+    ISBUS 0 0
+  >
+  <TRACK
+    NAME "QA_Reference"
+    ISBUS 0 0
+  >
+>

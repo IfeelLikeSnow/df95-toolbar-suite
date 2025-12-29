@@ -1,0 +1,21 @@
+<REAPER_FXCHAIN
+SHOW 0
+LASTSEL 0
+DOCKED 0
+
+<FX
+BYPASS 0 0 0
+VST "DF95_META" "ReaXcomp (Cockos)" 0
+>
+
+<FX
+BYPASS 0 0 0
+VST "DF95_META" "Smooth Operator (BABY Audio)" 0
+>
+
+<FX
+BYPASS 0 0 0
+VST "DF95_META" "bx_limiter True Peak (Plugin Alliance)" 0
+>
+
+>

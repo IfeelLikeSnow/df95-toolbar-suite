@@ -1,0 +1,31 @@
+<REAPER_FXCHAIN
+SHOW 0
+LASTSEL 0
+DOCKED 0
+
+<FX
+BYPASS 0 0 0
+VST "DF95_META" "Sinc Vereor (Noise Engineering)" 0
+>
+
+<FX
+BYPASS 0 0 0
+VST "DF95_META" "kHs Stereo (Kilohearts)" 0
+>
+
+<FX
+BYPASS 0 0 0
+VST "DF95_META" "PSP stepDelay" 0
+>
+
+<FX
+BYPASS 0 0 0
+VST "DF95_META" "bx_saturator V2 (Plugin Alliance)" 0
+>
+
+<FX
+BYPASS 0 0 0
+VST "DF95_META" "kHs Limiter (Kilohearts)" 0
+>
+
+>

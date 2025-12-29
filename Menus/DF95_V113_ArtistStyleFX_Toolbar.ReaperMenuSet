@@ -1,0 +1,5 @@
+# DF95 V113 Artist/Style FX Toolbar
+Item01=Custom: DF95 – Artist/Style Profil setzen
+	SCRIPT: Scripts/IfeelLikeSnow/DF95/DF95_V113_ArtistStyleFX_SetProfile_Quick.lua
+Item02=Custom: DF95 – Artist/Style FX auf selektierte Tracks anwenden
+	SCRIPT: Scripts/IfeelLikeSnow/DF95/DF95_V113_ArtistStyleFX_Apply.lua

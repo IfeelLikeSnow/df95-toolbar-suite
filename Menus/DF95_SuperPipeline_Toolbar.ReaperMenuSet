@@ -1,0 +1,17 @@
+# DF95 SuperPipeline Toolbar (AutoMic + Export + Fix)
+Item01=Custom: SuperPipeline GUI
+	SCRIPT: Scripts/IfeelLikeSnow/DF95/DF95_Auto_SuperPipeline_GUI.lua
+Item02=Custom: SuperPipeline (All Tracks)
+	SCRIPT: Scripts/IfeelLikeSnow/DF95/DF95_Auto_SuperPipeline.lua
+Item03=
+Item04=Custom: AutoMic GUI
+	SCRIPT: Scripts/IfeelLikeSnow/DF95/DF95_AutoMic_Inserter_GUI.lua
+Item05=Custom: AutoMic (Single Track)
+	SCRIPT: Scripts/IfeelLikeSnow/DF95/DF95_AutoMic_Inserter.lua
+Item06=
+Item07=Custom: Mic Chains Fix (Safe)
+	SCRIPT: Scripts/IfeelLikeSnow/DF95/DF95_AutoChain_Fixer.lua
+Item08=
+Item09=Custom: Export – UCS Mic/Recorder (AutoMicTagger)
+	SCRIPT: Scripts/IfeelLikeSnow/DF95/DF95_Export_UCS_MicRecorder_FromTrackname.lua
+Item10=

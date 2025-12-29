@@ -1,0 +1,99 @@
+\
+[ReaperMenu]
+title=DF95 Fieldrec / SampleDB – Toolbar V2
+
+; --------------------------------------------------
+; 0 – Main Fusion / Export GUI
+; --------------------------------------------------
+ACT 0 0 _RS_DF95_FIELDREC_FUSION_GUI
+ICON 0 toolbar_fieldrec_fusion.png
+ITEM 0 DF95 Fieldrec – Fusion Export (MicFX / BusChain GUI)
+
+SEPARATOR
+
+; --------------------------------------------------
+; 1 – PolyWAV / Zoom-Feldrekorder Werkzeuge
+; --------------------------------------------------
+ACT 1 0 _RS_DF95_POLYWAV_TOOLBOX_V3
+ICON 1 toolbar_polywav_toolbox.png
+ITEM 1 DF95 PolyWAV Toolbox V3 (Zoom F6 / H5 / App)
+
+ACT 2 0 _RS_DF95_ZOOMF6_SCAN_TO_SAMPLEDB
+ICON 2 toolbar_zoomf6_scan.png
+ITEM 2 DF95 SampleDB – Scan Folder (Zoom F6 Sessions)
+
+ACT 3 0 _RS_DF95_HOMEFIELD_SCAN_TO_SAMPLEDB
+ICON 3 toolbar_homefield_scan.png
+ITEM 3 DF95 SampleDB – Scan Folder (UCSLight HomeField)
+
+SEPARATOR
+
+; --------------------------------------------------
+; 2 – SampleDB: Inspector / Tagging / AI-Worker
+; --------------------------------------------------
+ACT 4 0 _RS_DF95_SAMPLEDB_INSPECTOR_V4
+ICON 4 toolbar_sampledb_inspector.png
+ITEM 4 DF95 SampleDB – Inspector V4 (AI Mapping & Filter)
+
+ACT 5 0 _RS_DF95_SAMPLEDB_AITAG_BROWSER
+ICON 5 toolbar_sampledb_aitag.png
+ITEM 5 DF95 SampleDB – AI Tag Browser
+
+ACT 6 0 _RS_DF95_SAMPLEDB_AIWORKER_ZOOMF6
+ICON 6 toolbar_sampledb_aiworker.png
+ITEM 6 DF95 SampleDB – AI Worker (Zoom F6 / Fieldrec)
+
+SEPARATOR
+
+; --------------------------------------------------
+; 3 – SampleDB: Planung, Texturen, Pack Export
+; --------------------------------------------------
+ACT 7 0 _RS_DF95_SAMPLEDB_RECORDPLANNER
+ICON 7 toolbar_sampledb_recordplanner.png
+ITEM 7 DF95 SampleDB – Record Planner (Scenes & Missions)
+
+ACT 8 0 _RS_DF95_SAMPLEDB_SESSION_SCENES
+ICON 8 toolbar_sampledb_scenes.png
+ITEM 8 DF95 SampleDB – Session Planner (Scenes)
+
+ACT 9 0 _RS_DF95_SAMPLEDB_TEXTURE_PRESETS
+ICON 9 toolbar_sampledb_textures.png
+ITEM 9 DF95 SampleDB – Texture Presets (UCSLight)
+
+ACT 10 0 _RS_DF95_SAMPLEDB_PACK_EXPORTER
+ICON 10 toolbar_sampledb_packexport.png
+ITEM 10 DF95 SampleDB – Pack Exporter (Libraries / Packs)
+
+SEPARATOR
+
+; --------------------------------------------------
+; 4 – Fieldrec Export: Direkt-Actions (Legacy / Utility)
+; --------------------------------------------------
+ACT 11 0 _RS_DF95_FIELDREC_EXPORT_MIC_ONLY
+ICON 11 toolbar_fieldrec_micfx.png
+ITEM 11 DF95 Fieldrec – Export Selected Tracks (OrigSrc Post MicFX)
+
+ACT 12 0 _RS_DF95_FIELDREC_EXPORT_MICFUSION_SLICES
+ICON 12 toolbar_fieldrec_micfusion.png
+ITEM 12 DF95 Fieldrec – Export MicFusion Slices (Post MicFX)
+
+ACT 13 0 _RS_DF95_FIELDREC_EXPORT_BUSCHAIN_GUI
+ICON 13 toolbar_fieldrec_buschain.png
+ITEM 13 DF95 Fieldrec – Fusion Export (BusChain Presets) – optional
+
+SEPARATOR
+
+; --------------------------------------------------
+; 5 – Slicing / Time Selection / Utility
+; --------------------------------------------------
+ACT 14 0 _RS_DF95_SLICING_FADE_COMMON
+ICON 14 toolbar_slicing_fades.png
+ITEM 14 DF95 – Slicing Fade Optimizer (ZeroCross / Fade Common)
+
+ACT 15 0 _SWS_SAVELOOP1
+ICON 15
+ITEM 15 SWS – Save Time Selection 1
+
+ACT 16 0 _SWS_RESTLOOP1
+ICON 16
+ITEM 16 SWS – Restore Time Selection 1

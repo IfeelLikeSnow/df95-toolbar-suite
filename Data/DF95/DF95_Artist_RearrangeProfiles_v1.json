@@ -1,0 +1,173 @@
+{
+  "version": 1,
+  "defaults": {
+    "mutation_amount": 0.3,
+    "glitch_intensity": 0.4,
+    "respect_groove": true,
+    "reverse_probability": 0.1,
+    "window_items": 4
+  },
+  "artists": {
+    "autechre": {
+      "mutation_amount": 0.7,
+      "glitch_intensity": 0.9,
+      "respect_groove": false,
+      "reverse_probability": 0.3,
+      "window_items": 7
+    },
+    "aphex_twin": {
+      "mutation_amount": 0.5,
+      "glitch_intensity": 0.6,
+      "respect_groove": true,
+      "reverse_probability": 0.2,
+      "window_items": 5
+    },
+    "boards_of_canada": {
+      "mutation_amount": 0.3,
+      "glitch_intensity": 0.3,
+      "respect_groove": true,
+      "reverse_probability": 0.05,
+      "window_items": 3
+    },
+    "venetian_snares": {
+      "mutation_amount": 0.7,
+      "glitch_intensity": 0.9,
+      "respect_groove": false,
+      "reverse_probability": 0.35,
+      "window_items": 9
+    },
+    "burial": {
+      "mutation_amount": 0.3,
+      "glitch_intensity": 0.3,
+      "respect_groove": true,
+      "reverse_probability": 0.25,
+      "window_items": 4
+    },
+    "four_tet": {
+      "mutation_amount": 0.4,
+      "glitch_intensity": 0.4,
+      "respect_groove": true,
+      "reverse_probability": 0.15,
+      "window_items": 4
+    },
+    "amon_tobin": {
+      "mutation_amount": 0.5,
+      "glitch_intensity": 0.6,
+      "respect_groove": true,
+      "reverse_probability": 0.2,
+      "window_items": 6
+    },
+    "mu_ziq": {
+      "mutation_amount": 0.5,
+      "glitch_intensity": 0.6,
+      "respect_groove": true,
+      "reverse_probability": 0.2,
+      "window_items": 5
+    },
+    "squarepusher": {
+      "mutation_amount": 0.7,
+      "glitch_intensity": 0.9,
+      "respect_groove": false,
+      "reverse_probability": 0.3,
+      "window_items": 8
+    },
+    "moderat": {
+      "mutation_amount": 0.4,
+      "glitch_intensity": 0.4,
+      "respect_groove": true,
+      "reverse_probability": 0.1,
+      "window_items": 3
+    },
+    "apparat": {
+      "mutation_amount": 0.4,
+      "glitch_intensity": 0.4,
+      "respect_groove": true,
+      "reverse_probability": 0.1,
+      "window_items": 3
+    },
+    "matmos": {
+      "mutation_amount": 0.5,
+      "glitch_intensity": 0.6,
+      "respect_groove": true,
+      "reverse_probability": 0.25,
+      "window_items": 6
+    },
+    "flying_lotus": {
+      "mutation_amount": 0.5,
+      "glitch_intensity": 0.6,
+      "respect_groove": true,
+      "reverse_probability": 0.18,
+      "window_items": 4
+    },
+    "arovane": {
+      "mutation_amount": 0.5,
+      "glitch_intensity": 0.6,
+      "respect_groove": true,
+      "reverse_probability": 0.15,
+      "window_items": 4
+    },
+    "proem": {
+      "mutation_amount": 0.5,
+      "glitch_intensity": 0.6,
+      "respect_groove": true,
+      "reverse_probability": 0.22,
+      "window_items": 5
+    },
+    "telefon_tel_aviv": {
+      "mutation_amount": 0.4,
+      "glitch_intensity": 0.4,
+      "respect_groove": true,
+      "reverse_probability": 0.12,
+      "window_items": 4
+    },
+    "styrofoam": {
+      "mutation_amount": 0.3,
+      "glitch_intensity": 0.3,
+      "respect_groove": true,
+      "reverse_probability": 0.1,
+      "window_items": 3
+    },
+    "jega": {
+      "mutation_amount": 0.7,
+      "glitch_intensity": 0.9,
+      "respect_groove": false,
+      "reverse_probability": 0.3,
+      "window_items": 7
+    },
+    "monoceros": {
+      "mutation_amount": 0.3,
+      "glitch_intensity": 0.3,
+      "respect_groove": true,
+      "reverse_probability": 0.15,
+      "window_items": 4
+    },
+    "clark": {
+      "mutation_amount": 0.4,
+      "glitch_intensity": 0.4,
+      "respect_groove": true,
+      "reverse_probability": 0.25,
+      "window_items": 6
+    },
+    "ben_frost": {
+      "mutation_amount": 0.3,
+      "glitch_intensity": 0.3,
+      "respect_groove": true,
+      "reverse_probability": 0.3,
+      "window_items": 7
+    },
+    "tim_hecker": {
+      "mutation_amount": 0.3,
+      "glitch_intensity": 0.3,
+      "respect_groove": true,
+      "reverse_probability": 0.25,
+      "window_items": 5
+    },
+    "mouse_on_mars": {
+      "mutation_amount": 0.7,
+      "glitch_intensity": 0.9,
+      "respect_groove": false,
+      "reverse_probability": 0.2,
+      "window_items": 5
+    }
+  }
+}

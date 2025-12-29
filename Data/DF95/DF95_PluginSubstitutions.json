@@ -1,0 +1,91 @@
+{
+  "ToTape8": [
+    "ToTape7",
+    "PurestDrive",
+    "BussColors4",
+    "PurestConsole5"
+  ],
+  "BussColors4": [
+    "PurestConsole5",
+    "PurestDrive"
+  ],
+  "Pressure4": [
+    "ReaComp",
+    "TDR Kotelnikov",
+    "DC1A3",
+    "MJUCjr"
+  ],
+  "ADClip8": [
+    "ReaLimit",
+    "Limiter No6"
+  ],
+  "Console7": [
+    "PurestConsole5",
+    "Channel9To5",
+    "CStrip"
+  ],
+  "BritPre": [
+    "PurestDrive",
+    "ReaEQ"
+  ],
+  "Burier": [
+    "PurestDrive",
+    "BussColors4"
+  ],
+  "RareSE": [
+    "ReaEQ",
+    "ToTape8"
+  ],
+  "SSQ": [
+    "BussColors4",
+    "PurestDrive"
+  ],
+  "HLQ": [
+    "ReaEQ"
+  ],
+  "Smooth Operator": [
+    "ReaEQ",
+    "ReaXcomp"
+  ],
+  "Spaced Out": [
+    "ReaDelay",
+    "JS: Delay/ch/tempo_delay"
+  ],
+  "Magic Switch": [
+    "JS: Chorus/chorus"
+  ],
+  "Magic Dice": [
+    "ReaDelay",
+    "ReaVerbate"
+  ],
+  "Pitch Drift": [
+    "JS: pitch shifter"
+  ],
+  "Bark of Dog 3": [
+    "ReaEQ"
+  ],
+  "PaulXStretch": [
+    "ReaPitch",
+    "ReaDelay"
+  ],
+  "Argot Lunar": [
+    "ReaDelay",
+    "JS: flanger"
+  ],
+  "Beat Slammer": [
+    "ReaComp",
+    "Pressure4"
+  ],
+  "BitCrusher": [
+    "JS: Distortion/bitcrusher",
+    "ReaComp"
+  ],
+  "DelayMod": [
+    "ReaDelay"
+  ],
+  "TapeSat": [
+    "ToTape8",
+    "ToTape7",
+    "PurestDrive"
+  ]
+}

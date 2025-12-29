@@ -1,0 +1,275 @@
+IFLS – Phase 93: Diagnostics, Logging & Perf Probes
+==================================================
+
+Goal
+----
+
+Give IFLS a lightweight, script-friendly diagnostics layer that lets you:
+
+  * Log "what happened" events (scene load, rhythm morph, FX-chain build, etc.).
+  * Measure how long key operations take (BeatEngine export, RhythmMorph, FX builds).
+  * Quickly dump this information to REAPER's console for debugging and QA.
+  * Add low-overhead timing probes in hotspots without heavy external profilers.
+
+The design follows common logging best practices:
+  * Log events that help understand problems and decisions.
+  * Include timestamps and key context; avoid heavy payloads.
+  * Use a simple, parseable text format. citeturn6search10turn6search12
+
+and typical Lua/application profiling patterns using timers and code
+annotations rather than complex debuggers. citeturn6search1turn6search3turn6search9turn6search13
+
+
+Files in this package
+---------------------
+
+1) IFLS_Diagnostics.lua
+   ---------------------
+   * Central event log for IFLS.
+
+   API:
+
+     local Diagnostics = require("IFLS_Diagnostics")
+
+     -- Generic event
+     Diagnostics.log("scene_load", "Loaded scene demo_glitch_intro", {
+       scene_id = "demo_glitch_intro",
+       flavor   = "GlitchCore",
+       artist   = "Demo Artist",
+     })
+
+     -- Timing event
+     Diagnostics.log_timing("BeatEngine.export", 3.4, {
+       bars = 4,
+       tracks = 8,
+     })
+
+     -- Wrap a function call and log duration
+     local result = Diagnostics.profile_block("RhythmMorpher.morph", function()
+       return RhythmMorpher.morph(pattern, "IDM_Chaos", 0.7, opts)
+     end, {pattern_id="pat_01"})
+
+   * Query / dump:
+
+     local events = Diagnostics.get_events()
+     local last20 = Diagnostics.get_last(20)
+     Diagnostics.dump_to_console(80) -- prints last 80 events
+
+   * Implementation details:
+
+     - Keeps up to MAX_EVENTS (default 500) in memory (ring buffer style).
+     - Attaches:
+         id        : incrementing event id
+         timestamp : human-readable string
+         ts_raw    : numeric time
+       to each event.
+     - Optional MIRROR_TO_CONSOLE can echo each event instantly (for deep debugging).
+
+
+2) IFLS_PerfProbe.lua
+   -------------------
+   * Ultra-simple performance probe facility.
+
+   API:
+
+     local PerfProbe = require("IFLS_PerfProbe")
+
+     PerfProbe.begin("BeatEngine.export")
+     -- ... your export code ...
+     PerfProbe.finish("BeatEngine.export")
+
+     PerfProbe.begin("RhythmMorpher.morph")
+     -- morph work ...
+     PerfProbe.finish("RhythmMorpher.morph")
+
+     PerfProbe.dump_to_console()
+
+   * Behaviour:
+
+     - Uses reaper.time_precise() if available, otherwise os.clock().
+     - Aggregates:
+         total time per label
+         call count per label
+         average time per call
+     - Dumps a sorted flat report (slowest first) to REAPER console:
+
+         BeatEngine.export                    total=  45.123 ms  calls=   10  avg=  4.512 ms
+         RhythmMorpher.morph                  total=  12.345 ms  calls=    5  avg=  2.469 ms
+
+   * Intended usage:
+
+     - Sprinkle PerfProbe.begin/finish around suspected hotspots
+       (BeatEngine, SliceEngine, FX-Chain construction).
+     - Leave probes in place with minimal overhead (no output unless you
+       call dump_to_console() or inspect the data).
+
+
+3) IFLS_Diagnostics_DebugDemo.lua (optional)
+   -----------------------------------------
+   * Demonstration script that:
+
+       - Logs a few demo events (scene_load, rhythm_morph, fx_chain_build).
+       - Uses Diagnostics.profile_block together with PerfProbe.
+       - Dumps events + perf report to console.
+
+   * Use it to verify that:
+
+       - Requires work (modules found).
+       - Log format looks reasonable.
+       - timings show up as expected.
+
+
+Integration Steps
+-----------------
+
+A) Place the files
+   ---------------
+   - Copy into your IFLS/DF95 Lua module folder:
+
+       IFLS_Diagnostics.lua
+       IFLS_PerfProbe.lua
+       IFLS_Diagnostics_DebugDemo.lua (optional)
+
+   - Make sure they are available through require() from your core
+     IFLS modules (BeatEngine, ArtistHub, FXBrain, etc.).
+
+
+B) Wire Diagnostics into key subsystems
+   ------------------------------------
+   1) Scene / Macro / Flavor operations:
+
+       local Diagnostics = require("IFLS_Diagnostics")
+       local MacroControls = require("IFLS_MacroControls")
+       local ScenePresets  = require("IFLS_ScenePresets")
+
+       -- When loading a scene:
+       local scene = ScenePresets.load(scene_id)
+       if scene then
+         MacroControls.set_all(scene.macros or {})
+         Diagnostics.log("scene_load", "Loaded scene "..scene_id, {
+           scene_id = scene_id,
+           flavor   = scene.flavor,
+           groove   = scene.groove_profile,
+           rhythm   = scene.rhythm_style,
+         })
+       end
+
+   2) RhythmMorpher:
+
+       local rhythm = MacroControls.derive_rhythm_settings()
+       Diagnostics.log("rhythm_morph", "Morph pattern toward "..rhythm.style_name, {
+         style  = rhythm.style_name,
+         amount = rhythm.morph_amount,
+       })
+
+       local new_pattern = Diagnostics.profile_block("RhythmMorpher.morph", function()
+         return RhythmMorpher.morph(pattern, rhythm.style_name, rhythm.morph_amount, {
+           density_bias = rhythm.density_bias,
+         })
+       end, {pattern_id = pattern.id})
+
+   3) FX-Chain Recommender:
+
+       Diagnostics.log("fx_chain_build", "FX chain recommended", {
+         instrument   = ctx.instrument,
+         template     = chain_spec.template_name,
+         slot_count   = #chain_spec.slots,
+       })
+
+   4) SampleGalaxy / Similarity search:
+
+       Diagnostics.log("sample_select", "Sample selected from galaxy", {
+         sample_id  = entry.id,
+         instrument = entry.meta.instrument,
+         flavor     = entry.meta.flavor,
+       })
+
+       Diagnostics.log("similar_search", "Find similar samples", {
+         sample_id = id,
+         k         = opts.k or 16,
+       })
+
+
+C) Wire PerfProbe into critical paths
+   ----------------------------------
+   * In BeatEngine exports:
+
+       PerfProbe.begin("BeatEngine.export")
+       -- export work ...
+       PerfProbe.finish("BeatEngine.export")
+
+   * In Slice / OnsetFusion processing:
+
+       PerfProbe.begin("SliceEngine.build_slices")
+       -- compute ODFs, call OnsetFusion.detect, build slices
+       PerfProbe.finish("SliceEngine.build_slices")
+
+   * In FX-Chain building:
+
+       PerfProbe.begin("FXChain.build")
+       -- call FXChainRecommender and instantiate plugins
+       PerfProbe.finish("FXChain.build")
+
+   After running a few operations:
+
+       PerfProbe.dump_to_console()
+
+   will show where most time is spent, helping with optimization and QA.
+
+
+D) Debug / QA workflows
+   ---------------------
+   1) Console-based QA:
+        - Run your IFLS workflow (slice, groove, morph, build FX, etc.).
+        - Execute a small helper script:
+
+            local Diagnostics = require("IFLS_Diagnostics")
+            local PerfProbe   = require("IFLS_PerfProbe")
+            Diagnostics.dump_to_console(120)
+            PerfProbe.dump_to_console()
+
+        - Inspect:
+            * whether the expected events happened in the right order,
+            * how long key operations took.
+
+   2) Issue investigation:
+        - When something "feels wrong" (e.g., too slow export, missing FX):
+            * Use Diagnostics.log() in critical branches
+              to see what path is taken.
+            * Use PerfProbe.begin/finish around suspicious sections.
+
+   3) Future: machine-readable logs
+        - The current console output is simple text; because each line
+          has a stable structure, you can later parse it to:
+            * generate HTML/Markdown reports,
+            * feed into external tools,
+            * correlate with REAPER project data.
+
+
+Relation to previous phases
+---------------------------
+
+With Phase 93, your IFLS engine now has:
+
+  * Strong analysis & creative layers (Phases 86–92).
+  * A macro + scene system to steer them (Phase 92).
+  * A basic diagnostics backbone to understand behaviour and cost.
+
+This matches patterns in larger audio engines, where a lightweight
+logging/profiling layer is critical for maintaining complex processing
+chains over time. citeturn6search6turn6search8
+
+
+Next potential directions
+-------------------------
+
+From here, logical next steps could be:
+
+  * Exporting selected diagnostics to a file (CSV/JSON) for offline
+    inspection or ML dataset building.
+  * A small ImGui-based "IFLS Inspector" panel that shows:
+       - current Flavor / GrooveProfile / RhythmStyle / Macros
+       - last N events
+       - top perf probes
+  * Optional integration with external Lua profilers if you ever need
+    deeper analysis than timers + probes provide. citeturn6search7
