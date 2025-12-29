@@ -1,0 +1,23 @@
+DF95 Toolbar Suite - Repo bundle with all applied fixes
+
+Included fixes:
+1) Primary CI fixes:
+   - Scripts/DF95_IFLS_Register_All_Actions.lua (bootstrap action)
+   - Legacy/.keep
+   - Toolbars/.keep, Menus/.keep, MenuSets/.keep, Icons/.keep
+
+2) Integrated IFLS Main MenuSets:
+   - MenuSets/IFLS_Main.Toolbar.ReaperMenu
+   - MenuSets/IFLS_Main.Toolbar.ReaperMenuSet
+
+3) Import robustness:
+   - Cleaned sections + removed '...' + CRLF line endings for IFLS_Main MenuSet/Menu
+
+4) Builder missing path fix:
+   - Scripts/IFLS/DF95/Installers/DF95_IFLS_InstallDoctor_CreateShims.lua
+     (so DF95_IFLS_Rebuild_Toolbar_MenuSet.lua can resolve it)
+
+How to use:
+- Replace your GitHub repo contents with this bundle (repo root).
+- Commit + push.
+- In REAPER: run InstallDoctor (if needed), restart, then run Rebuild Toolbar MenuSet, then import IFLS_Main.Toolbar.ReaperMenuSet into Floating toolbar 1.
