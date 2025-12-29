@@ -1,0 +1,39 @@
+name: Build ReaPack index
+
+on:
+  push:
+    branches: [ main ]
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  index:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout (full history needed)
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Setup Ruby
+        uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: '3.1'
+
+      - name: Install reapack-index
+        run: gem install reapack-index
+
+      # Wenn du _payload als Quelle willst:
+      - name: Generate index.xml from _payload
+        run: |
+          reapack-index -s _payload -o index.xml --no-progress
+
+      - name: Commit index.xml (if changed)
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add index.xml
+          git commit -m "ci: update index.xml" || echo "No changes"
+          git push
