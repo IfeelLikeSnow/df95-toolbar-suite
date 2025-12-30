@@ -111,25 +111,6 @@ end
 f:write("\n")
 f:close()
 
--- Also write a single-menu export into /Menus (some import dialogs expect .ReaperMenu there)
-local menus_dir = join(resource_path, "Menus")
-ensure_dir(menus_dir)
-local out_menu = join(menus_dir, "IFLS_Main.Toolbar.ReaperMenu")
-do
-  local rf = io.open(out_path, "rb")
-  if rf then
-    local data = rf:read("*a")
-    rf:close()
-    local wf = io.open(out_menu, "wb")
-    if wf then
-      wf:write(data)
-      wf:close()
-      msg("Also wrote: "..out_menu)
-    end
-  end
-end
-
-
 msg("")
 msg("Wrote: "..out_path)
 msg(("Resolved: %d OK, %d missing"):format(ok_count, miss_count))

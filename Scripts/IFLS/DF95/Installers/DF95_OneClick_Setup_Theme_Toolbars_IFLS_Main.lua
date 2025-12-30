@@ -1,12 +1,12 @@
--- @description DF95/IFLS OneClick Setup (Theme + Toolbars) - DEFAULT: IFLS_Main.Toolbar.ReaperMenuSet
--- @version 1.0.3
+-- @description DF95/IFLS OneClick Setup (Theme + Toolbars) - DEFAULT: IFLS_Main.Toolbar.ReaperMenu
+-- @version 1.0.1
 -- @author DF95 (packaging helper by Reaper DAW Ultimate Assistant)
 -- @about
 --   OneClick bootstrap for DF95/IFLS:
 --   - Ensures REAPER\ResourcePath\MenuSets exists
 --   - Copies DF95/IFLS *.ReaperMenuSet and *.ReaperMenu into MenuSets (so they can be loaded from Customize menus/toolbars)
 --   - Installs DF95_BalancedStudio theme into ColorThemes and applies it
---   - Guides you to import IFLS_Main.Toolbar.ReaperMenuSet as the default toolbar/menu preset
+--   - Guides you to import IFLS_Main.Toolbar.ReaperMenu as the default toolbar/menu preset
 --
 --   Safe to run multiple times (overwrites destination files).
 
@@ -124,7 +124,7 @@ end
 
 -- MAIN
 reaper.ClearConsole()
-msg("DF95/IFLS OneClick Setup: Theme + Toolbars (Default: IFLS_Main.Toolbar.ReaperMenuSet)")
+msg("DF95/IFLS OneClick Setup: Theme + Toolbars (Default: IFLS_Main.Toolbar.ReaperMenu)")
 local resource = reaper.GetResourcePath()
 msg("ResourcePath: " .. resource)
 
@@ -150,8 +150,8 @@ msg(("MenuSets installed/updated: %d file(s)"):format(total))
 -- Apply theme
 apply_theme(resource)
 
--- Default target: IFLS_Main.Toolbar.ReaperMenuSet
-local defaultFile = "IFLS_Main.Toolbar.ReaperMenuSet"
+-- Default target: IFLS_Main.Toolbar.ReaperMenu
+local defaultFile = "IFLS_Main.Toolbar.ReaperMenu"
 local defaultDst = join(menuSetsDir, defaultFile)
 
 msg("")
@@ -170,12 +170,3 @@ msg("2) Click: Import...")
 msg("3) Select: " .. defaultFile)
 msg("4) Enable toolbars via View > Toolbars (Toolbar 1..n) as desired.")
 msg("5) If icons look missing: restart REAPER once (toolbar icon cache).")
-
--- Build the toolbar MenuSet with correct local _RS* command IDs
-do
-  local builder = join(resource, "Scripts/IFLS/DF95/Installers/DF95_Build_IFLS_Main_Toolbar_MenuSet.lua")
-  local okBuild, errBuild = pcall(dofile, builder)
-  if not okBuild then
-    reaper.MB("Toolbar builder failed:\n\n" .. tostring(errBuild) .. "\n\nYou can still run it manually via Action list:\nDF95: Build IFLS Main Toolbar MenuSet", "DF95 OneClick", 0)
-  end
-end
